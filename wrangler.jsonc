@@ -5,11 +5,15 @@
   "compatibility_date": "2026-08-20",
   "compatibility_flags": ["nodejs_compat"],
   "workers_dev": false,
-  // psr-property is the origin Worker. Public psrhomes.ae traffic is owned by
-  // psr-media-edge and delegated here through service bindings/downstream Workers.
+
+  // psr-property is the origin Worker. The public apex/www wildcard routes are
+  // owned by psr-media-edge. Preserve the one narrower production route
+  // currently assigned directly to psr-property plus its direct custom domain.
   "routes": [
+    { "pattern": "www.psrhomes.ae/api/sg26/registrations", "zone_name": "psrhomes.ae" },
     { "pattern": "psr.espacios.me", "custom_domain": true }
   ],
+
   "vars": {
     "CAMPAIGN_DELIVERY_ENABLED": "false",
     "EMAIL_INBOX_ENABLED": "true",
@@ -31,20 +35,17 @@
   ],
   "r2_buckets": [{ "binding": "MEDIA", "bucket_name": "psr-property-media" }],
   "ai": { "binding": "AI" },
-  // Sonu is the canonical PSR Durable Object. The v2 migration renames the
-  // existing SQLite-backed GracePublicAgent namespace in place, preserving data.
-  // worker/sonu-public-agent.ts temporarily re-exports the old class name so the
-  // rollout remains safe across the migration deploy.
+
+  // Phase 1 compatibility bridge. Application code uses the Sonu binding name
+  // while the existing production class/namespace remains GracePublicAgent.
+  // The stateful class rename is intentionally a separate release.
   "durable_objects": {
-    "bindings": [{ "name": "SONU_PUBLIC_AGENT", "class_name": "SonuPublicAgent" }]
+    "bindings": [{ "name": "SONU_PUBLIC_AGENT", "class_name": "GracePublicAgent" }]
   },
   "migrations": [
-    { "tag": "psr-public-agent-v1", "new_sqlite_classes": ["GracePublicAgent"] },
-    {
-      "tag": "psr-public-agent-v2-sonu",
-      "renamed_classes": [{ "from": "GracePublicAgent", "to": "SonuPublicAgent" }]
-    }
+    { "tag": "psr-public-agent-v1", "new_sqlite_classes": ["GracePublicAgent"] }
   ],
+
   "images": { "binding": "IMAGES" },
   "triggers": { "crons": ["17 */6 * * *"] },
   "assets": {

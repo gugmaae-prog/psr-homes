@@ -4,68 +4,175 @@
 
 - GitHub repository: `gugmaae-prog/psr-homes`
 - Visibility: **public**
-- Audited main commit: `a6d27e5fa3a8a80ccbbf29eaafc3bf85e857f1c8`
-- Repository files before this audit: **9**
-- GitHub Actions workflows before this audit: **none**
-- Full `psr-property` application source is **not yet present**
-- Companion Worker manifests exist, but corresponding source trees are incomplete/missing
-- Sonu is the intended PSR AI/agent
-- The current Wrangler manifest still contains legacy Grace-named Durable Object binding/class identifiers
-- PSR Supabase foundation is live inside shared project `entity` and the live `psr-ai-api` source has been mirrored into this PR
+- Reconciliation base commit: `3464aa9c863ec86c8353327c899ad689a9469973`
+- Primary application source: **present**
+- GitHub Actions: source CI, repository guardrails, production-media acceptance, and runtime-audit workflow are present
+- Production domain: `psrhomes.ae`
+- Cloudflare model: **Workers**, not Pages
+- Live PSR-prefixed Workers found: **39**
+- Live Worker routes found on the PSR zone: **86**
+- Public wildcard edge owner: **`psr-media-edge`**
+- Primary application Worker: `psr-property`
+- Canonical PSR AI/agent identity: **Sonu**
+- Live Durable Object class identity: **`GracePublicAgent`** pending a state-preserving migration
+- Cloudflare Builds: not configured for the audited `psr-property`, `psr-media-edge`, and `psr-home-edge` Workers
+- Automatic production deployment remains blocked until source parity and runtime drift are fully reconciled
 
-## Cloudflare source gap
+See `docs/cloudflare-live-topology-2026-09-24.md` for the detailed Cloudflare snapshot.
 
-The current repo records manifests for:
+## Repository status
 
-- `psr-property`
-- `psr-home-edge`
-- `psr-media-edge`
+The repository is no longer a scaffold. The lean production application source is present, including:
 
-However the primary app source required to produce `./dist/server/index.js` is not present, and the companion Worker source files referenced by the manifests are also not fully present.
+- `app/`
+- `components/`
+- `lib/`
+- `worker/`
+- `data/`
+- `db/`
+- `scripts/`
+- `tests/`
+- Wrangler manifests
+- Supabase migration/function source
 
-Therefore **do not connect automatic production Cloudflare Builds yet**.
+The `public/` asset tree is intentionally not treated as the primary media authority; production media is substantially R2-backed.
 
-## Cloudflare audit limitation
+The latest production-media gate covers the R2 external-media manifest and brochure readiness in addition to source-referenced media.
 
-The Cloudflare connector returned `FORBIDDEN` before live account API requests could execute. The current Worker/resource list is therefore based on checked-in manifests and prior repository documentation, not a fresh Cloudflare API inventory.
+## GitHub CI status
 
-Before production automation, verify live:
+At the time of reconciliation, the current source line had passing runs for:
 
-- Workers and versions
-- routes and route precedence
-- custom domains
-- service bindings
-- D1/R2 bindings
-- Durable Objects and migrations
-- cron triggers
-- email bindings
+- Repository guardrails
+- Source CI
+- Production Media Acceptance
+
+The runtime audit workflow exists but needs repository Cloudflare credentials before it can perform the full account inventory itself.
+
+## Cloudflare live topology
+
+The connected Cloudflare account was inspected directly.
+
+### Zone
+
+- `psrhomes.ae`: active
+- Pages project for PSR: none found
+- production is routed through Workers
+
+### Public edge
+
+The live root wildcard routes are:
+
+- `psrhomes.ae/*` → `psr-media-edge`
+- `www.psrhomes.ae/*` → `psr-media-edge`
+
+This is materially different from the earlier checked-in primary Wrangler manifest, which claimed those wildcard routes for `psr-property`.
+
+The reconciliation branch narrows `psr-property` to its live direct route and leaves wildcard ownership with `psr-media-edge`.
+
+### Primary Worker
+
+`psr-property` exists and has the expected major resources:
+
+- D1 `cba-property-db`
+- R2 `psr-property-media`
+- Workers AI
+- Images
+- assets
+- email send binding
+- inbox configuration
+- cron `17 */6 * * *`
 - observability
-- Builds connections
-- DNS
-- secret names
 
-## Grace → Sonu mismatch
+The live Worker was most recently deployed through API/Wrangler flows rather than GitHub Builds.
 
-`wrangler.jsonc` currently declares:
+### Media edge
+
+The live `psr-media-edge` service graph includes:
+
+- `HOME` → `psr-home-video-guard`
+- `ROADSHOW` → `psr-sg26-clean`
+- `ROADSHOW_BROCHURE` → `psr-roadshow-brochure`
+- `ROADSHOW_PLAN` → `psr-roadshow-plan`
+- `ROADSHOW_NURTURE` → `psr-roadshow-nurture`
+- `PROJECTS` → `psr-projects-clean`
+- `SHELL` → `psr-shell-events`
+
+The repository previously recorded `ROADSHOW → psr-roadshow-dates`; that drift is corrected on the reconciliation branch.
+
+## Sonu and Durable Object migration
+
+The product identity is already Sonu throughout the active application source.
+
+Production state is still attached to:
 
 - binding: `GRACE_PUBLIC_AGENT`
 - class: `GracePublicAgent`
-- migration tag: `psr-public-agent-v1`
 
-This conflicts with the confirmed tenant architecture: **Grace is Haus & Grace only; Sonu is PSR only**.
+The source exports:
 
-Do not perform a blind text rename. Durable Object class renames require a migration-compatible release and the actual class implementation is not yet in this repo. Treat this as a production release blocker and resolve it during the full source reconciliation.
+- `SonuPublicAgent`
+- temporary compatibility alias `GracePublicAgent`
+
+The previous main-branch manifest had already staged an explicit `GracePublicAgent → SonuPublicAgent` class migration before the live account had been fully reconciled.
+
+The safer sequence is now:
+
+1. keep the live class/namespace unchanged;
+2. expose that existing class to application code through the `SONU_PUBLIC_AGENT` binding name;
+3. verify production state continuity;
+4. perform the explicit class rename only as a separate release;
+5. remove the compatibility alias only after rollback and cross-Worker checks.
+
+This prevents route reconciliation and state migration from occurring in the same production release.
+
+## Companion Worker source gap
+
+The primary source is present, but the complete live service graph is not yet represented as reviewed source in this repository.
+
+At minimum, source provenance still needs to be established for:
+
+- `psr-home-video-guard`
+- `psr-sg26-clean`
+- `psr-roadshow-dates`
+- `psr-roadshow-brochure`
+- `psr-roadshow-plan`
+- `psr-roadshow-nurture`
+- `psr-projects-clean`
+- `psr-shell-events`
+
+These Workers are not optional from a deployment-topology perspective because `psr-media-edge` depends on several of them through service bindings.
+
+## PSR Worker sprawl
+
+There are 39 `psr-` prefixed Workers in the account. They include:
+
+- production application/edge Workers;
+- roadshow Workers;
+- static/media Workers;
+- migration/repair Workers;
+- preview Workers;
+- map Workers;
+- administrative/utility Workers.
+
+This must be classified before cleanup. A Worker with no zone route may still be in use through a service binding, custom domain, schedule, or administrative flow.
+
+## Map tenant boundary
+
+Architecture policy assigns the map platform to Espacios, but the Cloudflare account still includes active `psr-portfolio-map*` and `psr-map-*` Workers and `psrhomes.ae/map*` routing.
+
+Do not delete those Workers merely because their naming conflicts with the desired tenant boundary. First move or proxy the production dependency intentionally, verify the public route, then retire the PSR-named runtime.
 
 ## Supabase PSR foundation
 
 Shared project:
 
-- organization `espacios.me` (Pro)
-- project `entity` (`ypkfganbwdvcjrcxygta`)
-- region Singapore
+- organization: `espacios.me`
+- project: `entity`
+- region: Singapore
 - Postgres 17.6
 
-PSR tables:
+PSR tables include:
 
 - `psr_projects`
 - `psr_units`
@@ -77,42 +184,40 @@ PSR tables:
 - `psr_events`
 - `psr_event_registrations`
 
-The PSR table policies are materially stronger than several older shared-platform tables: direct `anon`/`authenticated` access is explicitly denied.
+The audited PSR policies deny direct anonymous/authenticated table access. The PSR Edge Function source is mirrored in `supabase/functions/psr-ai-api/`.
 
-## PSR Edge Function
+## Shared Supabase platform risk
 
-`psr-ai-api`:
+The shared Supabase project still carries platform-level debt outside the PSR tables, including permissive legacy policies, SECURITY DEFINER/search-path issues, unindexed foreign keys, and noisy callers.
 
-- active
-- version 1
-- JWT verification enabled
-- additionally checks `claims.role === "service_role"`
-- supports project search/snapshot, knowledge matching, lead creation, conversations/messages, and event registration
+Those findings do not mean the PSR tables themselves are open, but they increase the blast radius of keeping unrelated tenants in one project.
 
-The audited source has been copied into this repository under `supabase/functions/psr-ai-api/`.
+A dedicated PSR Supabase project remains a valid isolation target after Cloudflare source parity is complete.
 
-## Shared Supabase risk inherited by PSR
+## Cloudflare Builds
 
-The overall shared Supabase project has security/performance debt outside the PSR tables, including:
+No build configuration was attached to the audited core Workers.
 
-- unrestricted anonymous/public policies on several Aether/Gmail/contact/SMTP tables
-- two SECURITY DEFINER functions callable by anon/authenticated
-- two unauthenticated Edge Functions using service-role access
-- mutable function search paths
-- 12 unindexed foreign keys
-- 31 RLS init-plan warnings
-- 100 multiple-permissive-policy findings
-- a repeated `whatsapp_messages` 404 caller
+This is currently protective: pushing to `main` does not automatically rewrite production Worker routing.
 
-Because the project is shared, these issues create platform-level blast radius even if the PSR tables themselves deny direct access.
+Do not enable production Builds until:
 
-## Required PSR remediation order
+- the runtime audit is credentialed in GitHub Actions;
+- the audit reports zero unexplained topology drift;
+- all required companion Worker sources have a source authority;
+- staging/preview deployment has passed;
+- the Sonu compatibility release has passed;
+- the class rename release is separately approved.
 
-1. complete the `psr-property` and companion Worker source backfill into GitHub;
-2. re-audit Cloudflare and record exact live routes/bindings/versions;
-3. implement a safe Grace-to-Sonu Durable Object migration;
-4. add a deployable staging Worker/domain;
-5. decide whether PSR moves to a dedicated Supabase project;
-6. maintain `psr-ai-api` source and migrations in Git;
-7. add CI/build gates once the application source is complete;
-8. enable GitHub → Cloudflare production deployment only after parity is proven.
+## Required remediation order
+
+1. merge the live-route/service reconciliation;
+2. credential the read-only Cloudflare runtime audit in GitHub Actions;
+3. backfill or formally externalize required companion Worker sources;
+4. create a staging/preview release path;
+5. deploy and verify the Sonu binding compatibility bridge;
+6. perform the Durable Object class rename as its own release;
+7. classify and clean temporary/preview/migration Workers;
+8. migrate the map runtime to its intended Espacios ownership boundary without breaking `/map`;
+9. decide whether PSR should move to a dedicated Supabase project;
+10. connect GitHub → Cloudflare production Builds only after the release gate is green.

@@ -1,10 +1,10 @@
-name: Deploy PSR Origin / Sonu Migration
+name: Deploy PSR Origin / Sonu Compatibility
 
 on:
   workflow_dispatch:
     inputs:
       confirmation:
-        description: 'Type DEPLOY-SONU to deploy psr-property and apply the Sonu Durable Object migration'
+        description: 'Type DEPLOY-SONU-COMPAT to deploy psr-property without renaming the Durable Object class'
         required: true
         type: string
 
@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   deploy:
-    if: ${{ inputs.confirmation == 'DEPLOY-SONU' }}
+    if: ${{ inputs.confirmation == 'DEPLOY-SONU-COMPAT' }}
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
@@ -31,11 +31,17 @@ jobs:
           test -n "$CLOUDFLARE_ACCOUNT_ID" || { echo "CLOUDFLARE_ACCOUNT_ID is not configured"; exit 1; }
       - run: npm ci
       - run: chmod +x scripts/*.sh
-      - name: Verify source and manifests
+      - name: Verify source and compatibility manifest
         run: |
           npm run test:source
           npx wrangler deploy --dry-run --config wrangler.jsonc
-      - name: Deploy psr-property origin and apply Sonu DO rename
+          if grep -q '"renamed_classes"' wrangler.jsonc; then
+            echo "Blocked: compatibility deploy must not contain a Durable Object class rename"
+            exit 1
+          fi
+          grep -q '"name": "SONU_PUBLIC_AGENT"' wrangler.jsonc
+          grep -q '"class_name": "GracePublicAgent"' wrangler.jsonc
+      - name: Deploy psr-property compatibility release
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
