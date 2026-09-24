@@ -73,14 +73,14 @@ const emirateIndexPage = fs.readFileSync(new URL("../app/emirate/page.tsx", impo
 const insightsSectionTabs = fs.readFileSync(new URL("../components/InsightsSectionTabs.tsx", import.meta.url), "utf8");
 const psrPageShell = fs.readFileSync(new URL("../components/PsrPageShell.tsx", import.meta.url), "utf8");
 const marketObservatoryStatus = fs.readFileSync(new URL("../components/MarketObservatoryStatus.tsx", import.meta.url), "utf8");
-const graceFinder = fs.readFileSync(new URL("../components/GraceFinder.tsx", import.meta.url), "utf8");
-const graceChat = fs.readFileSync(new URL("../components/GraceChat.tsx", import.meta.url), "utf8");
+const sonuFinder = fs.readFileSync(new URL("../components/SonuFinder.tsx", import.meta.url), "utf8");
+const sonuChat = fs.readFileSync(new URL("../components/SonuChat.tsx", import.meta.url), "utf8");
 const deferredConcierge = fs.readFileSync(new URL("../components/DeferredConcierge.tsx", import.meta.url), "utf8");
 const projectGallery = fs.readFileSync(new URL("../components/ProjectGallery.tsx", import.meta.url), "utf8");
 const projectLeadExperience = fs.readFileSync(new URL("../components/ProjectLeadExperience.tsx", import.meta.url), "utf8");
 const documentScrollLock = fs.readFileSync(new URL("../lib/document-scroll-lock.ts", import.meta.url), "utf8");
 const chatSourcesMigration = fs.readFileSync(new URL("../drizzle-agent/0026_chat_sources_and_prateek_display.sql", import.meta.url), "utf8");
-const publicAgent = fs.readFileSync(new URL("../worker/grace-public-agent.ts", import.meta.url), "utf8");
+const publicAgent = fs.readFileSync(new URL("../worker/sonu-public-agent.ts", import.meta.url), "utf8");
 const workerIndex = fs.readFileSync(new URL("../worker/index.ts", import.meta.url), "utf8");
 const languageExperience = fs.readFileSync(new URL("../components/LanguageExperience.tsx", import.meta.url), "utf8");
 const cardCurrencyPrice = fs.readFileSync(new URL("../components/CardCurrencyPrice.tsx", import.meta.url), "utf8");
@@ -589,16 +589,16 @@ test("Windows document and nested chat scrolling remain usable after overlays cl
   assert.match(documentScrollLock, /let activeLocks = 0/);
   assert.match(documentScrollLock, /activeLocks = Math\.max\(0, activeLocks - 1\)/);
   assert.match(documentScrollLock, /html\.style\.overflowY = savedState\.htmlOverflowY/);
-  for (const component of [graceFinder, projectGallery, projectLeadExperience]) {
+  for (const component of [sonuFinder, projectGallery, projectLeadExperience]) {
     assert.match(component, /lockDocumentScroll\(\)/);
     assert.doesNotMatch(component, /document\.body\.style\.overflow\s*=\s*"hidden"/);
   }
-  assert.match(themeCss, /\.grace-chat-messages,[\s\S]*?overscroll-behavior-y:\s*auto !important/);
-  assert.match(themeCss, /\.grace-chat-actions \{[\s\S]*?overflow-x:\s*hidden !important/);
-  assert.match(themeCss, /\.grace-chat-quick-replies \{[\s\S]*?max-width:\s*100%/);
+  assert.match(themeCss, /\.sonu-chat-messages,[\s\S]*?overscroll-behavior-y:\s*auto !important/);
+  assert.match(themeCss, /\.sonu-chat-actions \{[\s\S]*?overflow-x:\s*hidden !important/);
+  assert.match(themeCss, /\.sonu-chat-quick-replies \{[\s\S]*?max-width:\s*100%/);
   assert.match(themeCss, /@media \(max-height:\s*520px\) and \(orientation:\s*landscape\) \{[\s\S]*?\.payment-section \.payment-visual \{[\s\S]*?overflow-x:\s*auto !important/);
   assert.match(agentCanonical, /\.agent-messages \{[\s\S]*?overscroll-behavior-y:\s*auto/);
-  assert.match(graceChat, /window\.addEventListener\("hg:overlay-change", handleOverlayChange\)/);
+  assert.match(sonuChat, /window\.addEventListener\("hg:overlay-change", handleOverlayChange\)/);
   assert.match(projectLeadExperience, /window\.addEventListener\("hg:overlay-change", handleOverlayChange\)/);
   assert.match(projectLeadExperience, /if \(automatic && anotherOverlayOpenRef\.current\) return/);
   assert.match(projectLeadExperience, /window\.setTimeout\(\(\) => openForm\(true\), 30_000\)/);
@@ -610,7 +610,7 @@ test("scripted scrolling follows the operating system motion preference", () => 
   assert.equal(preferredScrollBehavior(true), "auto");
   assert.equal(preferredScrollBehavior(false), "smooth");
   for (const relativePath of [
-    "components/GraceChat.tsx",
+    "components/SonuChat.tsx",
     "components/TeamCarousel.tsx",
     "components/ProjectCatalogue.tsx",
     "components/DailyMarketDesk.tsx",
@@ -623,12 +623,12 @@ test("scripted scrolling follows the operating system motion preference", () => 
 });
 
 test("Sonu and restored agent recommendations keep route-safe project record links", () => {
-  assert.match(graceChat, /href=\{`\/projects\/\$\{project\.slug\}`\}/);
-  assert.match(graceChat, /aria-label=\{`Open \$\{project\.name\} project record`\}/);
-  assert.match(graceChat, /<a[\s\S]*?data-project-slug=\{project\.slug\}[\s\S]*?onClick=\{prepareForNativeNavigation\}/);
-  assert.doesNotMatch(graceChat, /from "next\/link"/);
-  assert.doesNotMatch(graceChat, /onNavigate=/);
-  assert.match(themeCss, /\.grace-chat-suggestions a \{[\s\S]*?pointer-events:\s*auto/);
+  assert.match(sonuChat, /href=\{`\/projects\/\$\{project\.slug\}`\}/);
+  assert.match(sonuChat, /aria-label=\{`Open \$\{project\.name\} project record`\}/);
+  assert.match(sonuChat, /<a[\s\S]*?data-project-slug=\{project\.slug\}[\s\S]*?onClick=\{prepareForNativeNavigation\}/);
+  assert.doesNotMatch(sonuChat, /from "next\/link"/);
+  assert.doesNotMatch(sonuChat, /onNavigate=/);
+  assert.match(themeCss, /\.sonu-chat-suggestions a \{[\s\S]*?pointer-events:\s*auto/);
   assert.match(agentWorkspace, /const projectRecord = source\.href\.startsWith\("\/projects\/"\)/);
   assert.match(agentWorkspace, /target=\{internal \? undefined : "_blank"\}/);
   assert.match(agentBackend, /INSERT INTO hg_agent_messages \(id, conversation_id, role, content, sources_json\)/);
@@ -805,7 +805,7 @@ test("every public advisor profile uses one restrained responsive hero scale", (
   assert.match(themeCss, /\.public-advisor-intro h1 \{[\s\S]*?font-size:\s*clamp\(40px, 4\.7vw, 58px\) !important/);
   assert.match(themeCss, /@media \(max-width: 860px\) \{[\s\S]*?\.public-advisor-hero \{[\s\S]*?grid-template-columns:\s*minmax\(220px, \.9fr\) minmax\(0, 1\.1fr\) !important/);
   assert.match(themeCss, /@media \(max-width: 700px\) \{[\s\S]*?\.public-advisor-hero \{[\s\S]*?grid-template-columns:\s*minmax\(0, 1fr\) !important/);
-  assert.match(themeCss, /@media \(max-height: 500px\) and \(min-width: 701px\) \{[\s\S]*?body:has\(\.public-advisor-tabs\) \.grace-chat \{[\s\S]*?top:\s*76px !important;[\s\S]*?bottom:\s*auto !important/);
+  assert.match(themeCss, /@media \(max-height: 500px\) and \(min-width: 701px\) \{[\s\S]*?body:has\(\.public-advisor-tabs\) \.sonu-chat \{[\s\S]*?top:\s*76px !important;[\s\S]*?bottom:\s*auto !important/);
   assert.match(themeCss, /@media \(max-width: 560px\)[\s\S]*?max-width:\s*238px !important/);
   assert.match(themeCss, /html\[data-theme="light"\] body \.public-advisor-hero[\s\S]*?color:\s*#211c17 !important/);
   assert.match(themeCss, /\.public-advisor-actions svg :is\(path,rect,circle\)[\s\S]*?stroke:\s*currentColor !important/);
@@ -952,16 +952,16 @@ test("owner acquisition uses the local HD hero and explicit copy-surface contras
 test("homepage annotations preserve readable theme badges and a calm Finder action row", () => {
   assert.match(homePage, /className="developer-flagship"/);
   assert.match(themeCss, /html\[data-theme="light"\] body \.developer-home-grid \.developer-home-card > div > :is\(b,\.developer-flagship\)[\s\S]*?background:\s*linear-gradient\(135deg, #e1c47e, #b8924f 54%, #d8b66a\) !important;[\s\S]*?color:\s*#17120e !important/);
-  assert.match(graceFinder, /<h3>What should this property do for you\?<\/h3>/);
-  assert.match(graceFinder, />01 · Your goal<\/p>/);
-  assert.doesNotMatch(graceFinder, />01 · Intent<\/p>/);
-  assert.match(graceFinder, /className="grace-step-actions"/);
-  assert.match(themeCss, /\.grace-finder-content \.grace-finder-step :is\(h3,h4,strong,label\)[\s\S]*?color:\s*#f5f7fa !important/);
-  assert.match(themeCss, /html\[data-theme="light"\] body \.grace-finder-content \.grace-finder-step :is\(h3,h4,strong,label\)[\s\S]*?color:\s*#211c17 !important/);
-  assert.match(themeCss, /\.grace-finder-content \.grace-step-actions \{[\s\S]*?background:\s*transparent !important;[\s\S]*?justify-content:\s*space-between !important/);
-  assert.match(themeCss, /\.grace-finder-content \.grace-step-actions button::before,[\s\S]*?content:\s*none !important/);
-  assert.match(themeCss, /html\[data-theme\] body \.grace-finder-dialog \.grace-finder-aside[\s\S]*?linear-gradient\(145deg, #222832, #11151b 72%\) !important;[\s\S]*?-webkit-text-fill-color:\s*#f5f7fa !important/);
-  assert.match(themeCss, /\.grace-finder-aside > p[\s\S]*?-webkit-text-fill-color:\s*#bec6d1 !important/);
+  assert.match(sonuFinder, /<h3>What should this property do for you\?<\/h3>/);
+  assert.match(sonuFinder, />01 · Your goal<\/p>/);
+  assert.doesNotMatch(sonuFinder, />01 · Intent<\/p>/);
+  assert.match(sonuFinder, /className="sonu-step-actions"/);
+  assert.match(themeCss, /\.sonu-finder-content \.sonu-finder-step :is\(h3,h4,strong,label\)[\s\S]*?color:\s*#f5f7fa !important/);
+  assert.match(themeCss, /html\[data-theme="light"\] body \.sonu-finder-content \.sonu-finder-step :is\(h3,h4,strong,label\)[\s\S]*?color:\s*#211c17 !important/);
+  assert.match(themeCss, /\.sonu-finder-content \.sonu-step-actions \{[\s\S]*?background:\s*transparent !important;[\s\S]*?justify-content:\s*space-between !important/);
+  assert.match(themeCss, /\.sonu-finder-content \.sonu-step-actions button::before,[\s\S]*?content:\s*none !important/);
+  assert.match(themeCss, /html\[data-theme\] body \.sonu-finder-dialog \.sonu-finder-aside[\s\S]*?linear-gradient\(145deg, #222832, #11151b 72%\) !important;[\s\S]*?-webkit-text-fill-color:\s*#f5f7fa !important/);
+  assert.match(themeCss, /\.sonu-finder-aside > p[\s\S]*?-webkit-text-fill-color:\s*#bec6d1 !important/);
   assert.match(themeCss, /html\[data-theme\] body main\.project-detail \.project-literature \.brochure-card > \.brochure-cover > b[\s\S]*?color:\s*#f5f7fa !important[\s\S]*?-webkit-text-fill-color:\s*#f5f7fa !important/);
   assert.match(themeCss, /html\[data-theme\] body main\.project-detail \.payment-section \.payment-visual > \.payment-private > strong[\s\S]*?font-size:\s*clamp\(31\.5px, 3\.15vw, 44\.1px\) !important;[\s\S]*?line-height:\s*1\.02 !important/);
 });
@@ -971,13 +971,13 @@ test("mobile navigation stays legible through its full handoff and the Finder op
   assert.match(themeCss, /Controls retain one readable form through the complete 1180px handoff[\s\S]*?\.site-header \.mobile-menu \{[\s\S]*?position:\s*relative !important;[\s\S]*?\.site-header \.mobile-menu summary \{[\s\S]*?display:\s*block !important;[\s\S]*?position:\s*relative !important;[\s\S]*?\.site-header \.mobile-menu summary span \{[\s\S]*?position:\s*absolute !important;[\s\S]*?left:\s*50% !important;[\s\S]*?transform:\s*translate\(-50%, -50%\) !important;[\s\S]*?html\[data-theme="light"\] \.site-header \.mobile-menu summary \{[\s\S]*?background:\s*rgba\(255, 249, 239, \.94\) !important;[\s\S]*?html\[data-theme="light"\] \.site-header \.mobile-menu summary span \{[\s\S]*?background:\s*#6e5028 !important/);
   assert.match(themeCss, /Enlarge the desktop navigation hit area[\s\S]*?@media \(min-width: 981px\)[\s\S]*?\.desktop-nav > a,[\s\S]*?\.nav-about > a \{[\s\S]*?position:\s*relative !important/);
   assert.match(themeCss, /Enlarge the desktop navigation hit area[\s\S]*?@media \(min-width: 981px\)[\s\S]*?\.desktop-nav > a::before,[\s\S]*?\.nav-about > a::before \{[\s\S]*?inset:\s*-16px 0/);
-  assert.match(themeCss, /@media \(max-width: 640px\)\s*\{\s*\.grace-chat-greeting\s*\{\s*display:\s*none !important/);
-  assert.match(themeCss, /@media \(max-height: 560px\) and \(orientation: landscape\)[\s\S]*?\.grace-chat-greeting \{ display:\s*none !important/);
-  assert.equal(deferredConcierge.match(/<GraceFinder initialOpen \/>/g)?.length, 1);
-  assert.doesNotMatch(graceFinder, /openFinder\(true\)|grace-finder:auto-shown|activeBrowsingMs\.current >= 120_000/);
-  assert.match(graceFinder, /const handleOpenRequest = \(\) => openFinder\(\)/);
-  assert.match(graceFinder, /window\.addEventListener\("hg:open-grace-finder", handleOpenRequest\)/);
-  assert.match(graceFinder, /window\.removeEventListener\("hg:open-grace-finder", handleOpenRequest\)/);
+  assert.match(themeCss, /@media \(max-width: 640px\)\s*\{\s*\.sonu-chat-greeting\s*\{\s*display:\s*none !important/);
+  assert.match(themeCss, /@media \(max-height: 560px\) and \(orientation: landscape\)[\s\S]*?\.sonu-chat-greeting \{ display:\s*none !important/);
+  assert.equal(deferredConcierge.match(/<SonuFinder initialOpen \/>/g)?.length, 1);
+  assert.doesNotMatch(sonuFinder, /openFinder\(true\)|sonu-finder:auto-shown|activeBrowsingMs\.current >= 120_000/);
+  assert.match(sonuFinder, /const handleOpenRequest = \(\) => openFinder\(\)/);
+  assert.match(sonuFinder, /window\.addEventListener\("hg:open-sonu-finder", handleOpenRequest\)/);
+  assert.match(sonuFinder, /window\.removeEventListener\("hg:open-sonu-finder", handleOpenRequest\)/);
 });
 
 test("homepage closeout uses a responsive portrait grid, a dark advisory anchor and a theme-aware footer", () => {
@@ -994,7 +994,7 @@ test("homepage closeout uses a responsive portrait grid, a dark advisory anchor 
   assert.match(themeCss, /@media \(max-width:\s*1180px\) \{[\s\S]*?\.cba-team-home-grid \{ grid-template-columns:\s*repeat\(3/);
   assert.match(themeCss, /@media \(max-width:\s*780px\) \{[\s\S]*?\.cba-team-home-grid \{ grid-template-columns:\s*repeat\(2/);
   assert.match(themeCss, /html\[lang="ar"\] body \{[\s\S]*?Noto Sans Arabic/);
-  assert.match(themeCss, /html\[dir="rtl"\] body \.grace-finder-content[\s\S]*?border-right:/);
+  assert.match(themeCss, /html\[dir="rtl"\] body \.sonu-finder-content[\s\S]*?border-right:/);
   assert.match(themeCss, /\.honey \{[\s\S]*?clip-path:\s*inset\(50%\) !important/);
   assert.match(themeCss, /\.owner-process \{[\s\S]*?grid-template-columns:\s*minmax\(0, \.72fr\) minmax\(0, 1\.28fr\) !important/);
   assert.match(agentCanonical, /@media \(min-width: 821px\) and \(max-width: 900px\)[\s\S]*?\.agent-profile-card dl[\s\S]*?grid-column:\s*1 \/ -1 !important/);
@@ -1042,7 +1042,7 @@ test("directory cards and popups have final light-theme contrast ownership", () 
   assert.match(developerDirectory, /<DeveloperImage/);
   assert.match(themeCss, /Final light-theme contrast guard/);
   assert.match(themeCss, /html\[data-theme="light"\] body :is\(\.developer-directory-card,\.community-directory-card\)[\s\S]*?color:\s*#211c17 !important/);
-  assert.match(themeCss, /html\[data-theme="light"\] body :is\(\.grace-chat-panel,\.grace-finder-dialog,\.project-lead-dialog,\.agent-confirm-dialog\)[\s\S]*?color:\s*#211c17 !important/);
+  assert.match(themeCss, /html\[data-theme="light"\] body :is\(\.sonu-chat-panel,\.sonu-finder-dialog,\.project-lead-dialog,\.agent-confirm-dialog\)[\s\S]*?color:\s*#211c17 !important/);
 });
 
 test("footer uses accessible social marks and the workspace exposes isolated mailbox states", () => {
@@ -1198,9 +1198,9 @@ test("advisor portraits follow the verified PSR identity mapping and Sonu has on
   assert.match(teamSource, /profile\("reegan-negi"[^\n]*?"\/team\/psr-advisors\/reegan-negi\.webp"/);
   assert.doesNotMatch(teamSource, /profile\("reegan-negi"[^\n]*?"\/team\/psr-advisors\/janet-genabio\.webp"/);
   assert.match(teamSource, /profile\("adhiyaman-aathimulam"[\s\S]*?"\/team\/psr-advisors\/parv-sondhi\.webp"/);
-  assert.match(graceChat, /Hi I am Sonu, Your AI Broker/);
-  assert.doesNotMatch(graceChat, /className="grace-chat-label"/);
-  assert.match(themeCss, /\.grace-chat-greeting\s*\{[\s\S]*?backdrop-filter:\s*blur\(18px\)/);
+  assert.match(sonuChat, /Hi I am Sonu, Your AI Broker/);
+  assert.doesNotMatch(sonuChat, /className="sonu-chat-label"/);
+  assert.match(themeCss, /\.sonu-chat-greeting\s*\{[\s\S]*?backdrop-filter:\s*blur\(18px\)/);
 });
 
 test("operations staff skip advisor onboarding and temporary passwords must actually change", () => {
@@ -1234,16 +1234,16 @@ test("admin accounts use a compact editable agent sheet and Sonu keeps responsiv
   assert.match(inboxBackend, /SELECT email FROM hg_agent_profiles WHERE lower\(email\) = \? AND active = 1 LIMIT 1/);
   assert.match(agentWorkspace, /activates the Cloudflare identity, sign-in and isolated PSR app inbox immediately/);
   assert.match(agentBackend, /'email_renamed'/);
-  assert.match(graceChat, /className="grace-chat-project-image"/);
-  assert.doesNotMatch(graceChat, /function openSuggestedProject/);
-  assert.match(graceChat, /<a[\s\S]*?href=\{`\/projects\/\$\{project\.slug\}`\}[\s\S]*?onClick=\{prepareForNativeNavigation\}/);
-  assert.match(graceChat, /Preparing your private report/);
-  assert.match(graceChat, /function shouldAutofocusChat\(\)[\s\S]*?\(hover: hover\)[\s\S]*?\(pointer: fine\)[\s\S]*?\(min-width: 681px\)[\s\S]*?\(min-height: 521px\)/);
-  assert.match(graceChat, /shouldAutofocusChat\(\)[\s\S]*?focus\(\{ preventScroll: true \}\)/);
-  assert.doesNotMatch(graceChat, /inputRef\.current\?\.focus\(\);/);
+  assert.match(sonuChat, /className="sonu-chat-project-image"/);
+  assert.doesNotMatch(sonuChat, /function openSuggestedProject/);
+  assert.match(sonuChat, /<a[\s\S]*?href=\{`\/projects\/\$\{project\.slug\}`\}[\s\S]*?onClick=\{prepareForNativeNavigation\}/);
+  assert.match(sonuChat, /Preparing your private report/);
+  assert.match(sonuChat, /function shouldAutofocusChat\(\)[\s\S]*?\(hover: hover\)[\s\S]*?\(pointer: fine\)[\s\S]*?\(min-width: 681px\)[\s\S]*?\(min-height: 521px\)/);
+  assert.match(sonuChat, /shouldAutofocusChat\(\)[\s\S]*?focus\(\{ preventScroll: true \}\)/);
+  assert.doesNotMatch(sonuChat, /inputRef\.current\?\.focus\(\);/);
   assert.match(publicAgent, /image:\s*project\.image/);
-  assert.match(themeCss, /\.grace-chat-panel\s*\{[\s\S]*?height:\s*min\(568px, calc\(100svh - 184px\)\) !important/);
-  assert.match(themeCss, /@media \(max-height: 520px\) and \(orientation: landscape\)[\s\S]*?\.grace-chat-panel[\s\S]*?\.grace-chat-form input \{[\s\S]*?font-size:\s*16px !important/);
+  assert.match(themeCss, /\.sonu-chat-panel\s*\{[\s\S]*?height:\s*min\(568px, calc\(100svh - 184px\)\) !important/);
+  assert.match(themeCss, /@media \(max-height: 520px\) and \(orientation: landscape\)[\s\S]*?\.sonu-chat-panel[\s\S]*?\.sonu-chat-form input \{[\s\S]*?font-size:\s*16px !important/);
 });
 
 test("application and Worker source never ships emoji characters", () => {
@@ -1257,8 +1257,8 @@ test("application and Worker source never ships emoji characters", () => {
 });
 
 test("Sonu stops implausible property requests before matching content", () => {
-  assert.match(publicAgent, /const invalidPropertyBedrooms = !gracePropertyBedroomCombinationIsValid\(profile\.propertyType, profile\.bedrooms\)/);
-  assert.match(publicAgent, /const invalidPropertyBudget = !gracePropertyBudgetCombinationIsValid\(profile\.propertyType, profile\.budget\)/);
+  assert.match(publicAgent, /const invalidPropertyBedrooms = !sonuPropertyBedroomCombinationIsValid\(profile\.propertyType, profile\.bedrooms\)/);
+  assert.match(publicAgent, /const invalidPropertyBudget = !sonuPropertyBudgetCombinationIsValid\(profile\.propertyType, profile\.budget\)/);
   assert.match(publicAgent, /const invalidPropertyRequest = invalidPropertyBedrooms \|\| invalidPropertyBudget/);
   assert.match(publicAgent, /const projects = invalidPropertyRequest \? \[\] : rankedProjects/);
   assert.match(publicAgent, /else if \(invalidPropertyBedrooms\) \{[\s\S]*?one-bedroom mansion/);
@@ -1274,9 +1274,9 @@ test("Sonu keeps one document conversation stable across dual-stack network chan
 });
 
 test("Sonu starts a clean conversation after every document reload", () => {
-  assert.match(graceChat, /let documentSessionId = ""/);
-  assert.match(graceChat, /documentSessionId = window\.crypto\.randomUUID\(\)/);
-  assert.doesNotMatch(graceChat, /localStorage\.(?:getItem|setItem)\([^\n]*grace-chat-session/);
+  assert.match(sonuChat, /let documentSessionId = ""/);
+  assert.match(sonuChat, /documentSessionId = window\.crypto\.randomUUID\(\)/);
+  assert.doesNotMatch(sonuChat, /localStorage\.(?:getItem|setItem)\([^\n]*sonu-chat-session/);
   assert.match(workerIndex, /if \(!visitorSessionId\)/);
   assert.match(workerIndex, /`psr-agent:\$\{agentSession\.email\}:\$\{visitorSessionId\}`/);
 });
