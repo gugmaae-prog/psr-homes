@@ -54,3 +54,24 @@ Actions secrets are configured:
 - `CLOUDFLARE_ACCOUNT_ID`
 
 Do not put either value in a public file or pull request.
+
+## Manual production release
+
+The repository includes `.github/workflows/cloudflare-production-release.yml`.
+
+The workflow is intentionally **manual only** and requires:
+
+- repository secret `CLOUDFLARE_API_TOKEN`
+- repository secret `CLOUDFLARE_ACCOUNT_ID`
+- workflow input exactly `DEPLOY_PSR`
+
+It performs a read-only Cloudflare audit, source tests, Wrangler dry-runs and the
+full production media gate before any write. Deployment order is:
+
+1. `psr-media-edge` — canonical public wildcard router
+2. `psr-home-edge` — downstream service-only edge
+3. `psr-property` — direct origin plus the Sonu Durable Object rename migration
+
+After deployment it reruns the runtime audit and the brochure/media/R2 acceptance
+suite. The old Grace class export remains temporarily for the no-downtime rename
+and should be removed only after the live migration is confirmed stable.
