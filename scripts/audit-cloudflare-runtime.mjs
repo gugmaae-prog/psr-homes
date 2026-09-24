@@ -40,6 +40,47 @@ async function cf(path) {
   return data.result;
 }
 
+
+async function publicProbe(base, pathname) {
+  const url = new URL(pathname, base).toString();
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 15000);
+  try {
+    const response = await fetch(url, {
+      redirect: "manual",
+      signal: controller.signal,
+      headers: { "user-agent": "PSR-Cloudflare-Audit/1.0", accept: "text/html,*/*;q=0.8" },
+    });
+    const body = await response.arrayBuffer();
+    const digest = await crypto.subtle.digest("SHA-256", body);
+    const sha256 = [...new Uint8Array(digest)].map((b) => b.toString(16).padStart(2, "0")).join("");
+    const keep = ["content-type","location","server","cf-ray","x-psr-home-edge","x-psr-media-cutover","x-psr-media","x-psr-document-cache"];
+    const headers = {};
+    for (const name of keep) {
+      const value = response.headers.get(name);
+      if (value) headers[name] = value;
+    }
+    return { url, status: response.status, bytes: body.byteLength, sha256, headers };
+  } catch (error) {
+    return { url, status: 0, error: error instanceof Error ? error.message : String(error) };
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+const publicPaths = ["/", "/events/roadshow", "/projects", "/advisors/jumanah/dubai-south"];
+report.publicRuntime = [];
+for (const pathname of publicPaths) {
+  const production = await publicProbe("https://psrhomes.ae", pathname);
+  const directOrigin = await publicProbe("https://psr.espacios.me", pathname);
+  report.publicRuntime.push({
+    pathname,
+    production,
+    directOrigin,
+    sameBody: Boolean(production.sha256 && directOrigin.sha256 && production.sha256 === directOrigin.sha256),
+  });
+}
+
 if (!report.credentialsAvailable) {
   console.log("Cloudflare Actions credentials are not configured on this repository.");
 } else {
@@ -109,6 +150,7 @@ await fs.writeFile("outputs/cloudflare-runtime-audit.json", JSON.stringify(repor
 console.log("Cloudflare credentials available:", report.credentialsAvailable);
 console.log("Zone:", report.zone?.name || "unavailable");
 console.log("Routes found:", report.routes.length);
+for (const item of report.publicRuntime || []) console.log("PUBLIC", item.pathname, "prod=", item.production.status, "origin=", item.directOrigin.status, "sameBody=", item.sameBody, "prodHeaders=", JSON.stringify(item.production.headers || {}), "originHeaders=", JSON.stringify(item.directOrigin.headers || {}));
 for (const route of report.routes) console.log(route.pattern, "->", route.script || "(no script)");
 for (const [worker, data] of Object.entries(report.workers)) {
   console.log(worker, "deployments=", Array.isArray(data.deployments) ? data.deployments.length : 0, "bindings=", data.settings?.bindings?.length || 0, "errors=", data.errors.length);
