@@ -165,7 +165,7 @@ test("every advertised active brochure is resolved centrally and shared PDFs are
 test("every unique active project has one honest downloadable document", () => {
   const active = getUniqueActiveProjectRecords(getProjectRegistry().projects);
   const documents = active.map((project) => ({ project, document: resolveProjectDocument(project) }));
-  assert.equal(active.length, 1_066);
+  assert.equal(active.length, 1_073);
   assert.ok(documents.every(({ document }) => document));
   assert.equal(new Set(active.map(projectIdentityKey)).size, active.length, "public project identities must not repeat");
   assert.equal(new Set(active.map((project) => project.slug)).size, active.length, "public project slugs must not repeat");
