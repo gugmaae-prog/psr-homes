@@ -54,3 +54,14 @@ Actions secrets are configured:
 - `CLOUDFLARE_ACCOUNT_ID`
 
 Do not put either value in a public file or pull request.
+
+## Manual Sonu migration deploy
+
+After `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` are configured as
+GitHub Actions secrets, run **Deploy PSR Origin / Sonu Migration** and enter
+`DEPLOY-SONU`.
+
+The workflow validates source and the origin Wrangler manifest before deploying
+`psr-property`. Because the origin manifest no longer owns the public wildcard,
+this deploy cannot take over `psrhomes.ae/*`; it only updates the service/custom
+origin and applies the Sonu Durable Object rename migration.
