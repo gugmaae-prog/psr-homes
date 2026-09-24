@@ -8,8 +8,8 @@ import {
   syncDailyMarketInsight,
   syncLatestProjectLaunches,
 } from "./content-sync";
-import { GracePublicAgent } from "./grace-public-agent";
-import { pruneExpiredGraceClientBriefs } from "./grace-brief-service";
+import { SonuPublicAgent, GracePublicAgent } from "./sonu-public-agent";
+import { pruneExpiredSonuClientBriefs } from "./sonu-brief-service";
 import { pruneExpiredBrochureDownloads } from "./brochure-access-cleanup";
 import { handleLeadsDashboardRequest } from "./leads-backend";
 import { handleTranslationRequest } from "./translation";
@@ -25,7 +25,9 @@ import {
   withPrivateDocumentCacheHeaders,
 } from "./cache-policy";
 
-export { GracePublicAgent };
+// GracePublicAgent is a temporary export alias for the existing Cloudflare Durable Object class name.
+// The application identity and API are Sonu; remove the alias only after the live DO migration is verified.
+export { SonuPublicAgent, GracePublicAgent };
 
 const STATIC_ASSET = /\.(?:avif|css|gif|ico|jpe?g|js|json|mp4|png|svg|webm|webp|woff2?)$/i;
 const PUBLIC_DOCUMENT_CACHE_VERSION = "psr-photo-night-20260912-v1";
@@ -55,8 +57,8 @@ function withProductionHeaders(response: Response) {
   });
 }
 
-function graceSessionId(request: Request) {
-  const candidate = request.headers.get("x-grace-session")?.trim() || "";
+function sonuSessionId(request: Request) {
+  const candidate = request.headers.get("x-sonu-session")?.trim() || "";
   return /^[a-f0-9]{8}-[a-f0-9]{4}-[1-8][a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$/i.test(candidate)
     ? candidate
     : "";
@@ -83,7 +85,7 @@ const worker = {
     }
     const presentationAccessResponse = await handlePresentationAccess(request, env);
     if (presentationAccessResponse) return withProductionHeaders(presentationAccessResponse);
-    if (url.pathname === "/api/grace-chat") {
+    if (url.pathname === "/api/sonu-chat") {
       const origin = request.headers.get("origin");
       if (origin && origin !== url.origin && !/^https?:\/\/(?:localhost|127\.0\.0\.1)(?::\d+)?$/i.test(origin)) {
         return withProductionHeaders(Response.json({ error: "Invalid request origin." }, { status: 403 }));
@@ -93,28 +95,29 @@ const worker = {
         agentSession = await currentAgentSession(request, env);
       } catch (error) {
         console.error(JSON.stringify({
-          event: "grace_agent_session_lookup_failed",
+          event: "sonu_agent_session_lookup_failed",
           message: error instanceof Error ? error.message.slice(0, 300) : "Session lookup failed",
         }));
       }
-      const visitorSessionId = graceSessionId(request);
+      const visitorSessionId = sonuSessionId(request);
       if (!visitorSessionId) {
         return withProductionHeaders(Response.json({ error: "A valid chat session is required." }, { status: 400 }));
       }
       const sessionId = agentSession
         ? `psr-agent:${agentSession.email}:${visitorSessionId}`
         : `psr-visitor:${visitorSessionId}`;
-      const grace = env.GRACE_PUBLIC_AGENT.getByName(sessionId);
+      // Legacy binding name retained temporarily to preserve the live Durable Object namespace.
+      const sonu = env.GRACE_PUBLIC_AGENT.getByName(sessionId);
       const headers = new Headers(request.headers);
-      headers.delete("x-grace-agent-email");
-      headers.delete("x-grace-agent-name");
-      headers.delete("x-grace-agent-title");
+      headers.delete("x-sonu-agent-email");
+      headers.delete("x-sonu-agent-name");
+      headers.delete("x-sonu-agent-title");
       if (agentSession) {
-        headers.set("x-grace-agent-email", agentSession.email);
-        headers.set("x-grace-agent-name", agentSession.name);
-        headers.set("x-grace-agent-title", agentSession.title);
+        headers.set("x-sonu-agent-email", agentSession.email);
+        headers.set("x-sonu-agent-name", agentSession.name);
+        headers.set("x-sonu-agent-title", agentSession.title);
       }
-      return withProductionHeaders(await grace.fetch(new Request(request, { headers })));
+      return withProductionHeaders(await sonu.fetch(new Request(request, { headers })));
     }
     const translationResponse = await handleTranslationRequest(request, env);
     if (translationResponse) return withProductionHeaders(translationResponse);
@@ -170,7 +173,7 @@ const worker = {
       pruneAnalyticsData(env),
       syncLatestProjectLaunches(env),
       syncDailyMarketInsight(env),
-      pruneExpiredGraceClientBriefs(env),
+      pruneExpiredSonuClientBriefs(env),
       pruneExpiredBrochureDownloads(env),
     ]));
   },
