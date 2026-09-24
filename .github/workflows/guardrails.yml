@@ -43,6 +43,7 @@ jobs:
           matches="$(
             git grep -I -n -E -- '(SUPABASE_(SERVICE_ROLE|SECRET)_KEY|CLOUDFLARE_API_TOKEN|CF_API_TOKEN|LEADRAT_(API_KEY|SECRET_KEY)|AWS_SECRET_ACCESS_KEY|OPENAI_API_KEY)[[:space:]]*=[[:space:]]*[^[:space:]#]+' -- . \
               ':!*.example' ':!**/*.md' \
+              | grep -v -E '=[[:space:]]*["'"'"']?\$\(|=[[:space:]]*["'"'"']?\$\{|=[[:space:]]*["'"'"']?\$[A-Za-z_]' \
               || true
           )"
           if [ -n "$matches" ]; then
