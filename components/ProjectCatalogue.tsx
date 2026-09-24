@@ -49,7 +49,7 @@ export default function ProjectCatalogue({ initial = {}, initialData }: { initia
     return () => { cancelled = true; };
   }, [initial.query]);
   useEffect(() => {
-    const applyGraceFilter = (event: Event) => {
+    const applySonuFilter = (event: Event) => {
       const detail = event instanceof CustomEvent ? event.detail as { query?: unknown; emirate?: unknown; propertyType?: unknown } : null;
       if (!detail) return;
       const nextQuery = typeof detail.query === "string" ? detail.query : "";
@@ -57,8 +57,8 @@ export default function ProjectCatalogue({ initial = {}, initialData }: { initia
       const nextType = typeof detail.propertyType === "string" ? detail.propertyType : "";
       setLoading(true); setPage(1); setQuery(nextQuery); setActiveQuery(nextQuery); setEmirate(nextEmirate); setPropertyType(nextType); setIntent(emptyIntent);
     };
-    window.addEventListener("hg:grace-filter", applyGraceFilter);
-    return () => window.removeEventListener("hg:grace-filter", applyGraceFilter);
+    window.addEventListener("psr:sonu-filter", applySonuFilter);
+    return () => window.removeEventListener("psr:sonu-filter", applySonuFilter);
   }, []);
   async function search(event: FormEvent) {
     event.preventDefault();
