@@ -26,7 +26,9 @@ async function collectLocalMediaPaths() {
     for (const file of await walk(root)) {
       const source = await readFile(file, "utf8");
       for (const match of source.matchAll(MEDIA_PATH_RE)) {
-        const value = match[0];
+        const value = match[2].split(/[?#]/, 1)[0];
+        if (!MEDIA_EXTENSION_RE.test(value)) continue;
+        if (value.includes("\\\\") || value.includes("${")) continue;
         if (EXCLUDED_PREFIXES.some((prefix) => value.startsWith(prefix))) continue;
         paths.add(value);
       }
