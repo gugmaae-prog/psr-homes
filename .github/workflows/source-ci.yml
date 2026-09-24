@@ -31,7 +31,7 @@ jobs:
       - run: npm ci
       - run: chmod +x scripts/*.sh
       - name: Build and test
-        run: npm test
+        run: npm run test:source
       - name: Lint report
         continue-on-error: true
         run: npm run lint
