@@ -5,21 +5,10 @@
   "compatibility_date": "2026-09-20",
   "compatibility_flags": ["nodejs_compat"],
   "workers_dev": false,
+  // Canonical public router for PSR. Route-specific behavior is delegated
+  // inside worker/media-edge.ts; narrower Workers (for example Jumanah) may
+  // override this wildcard with a more specific route.
   "routes": [
-    { "pattern": "psrhomes.ae/media/external/*", "zone_name": "psrhomes.ae" },
-    { "pattern": "www.psrhomes.ae/media/external/*", "zone_name": "psrhomes.ae" },
-    { "pattern": "psrhomes.ae/events/roadshow", "zone_name": "psrhomes.ae" },
-    { "pattern": "psrhomes.ae/events/roadshow/", "zone_name": "psrhomes.ae" },
-    { "pattern": "www.psrhomes.ae/events/roadshow", "zone_name": "psrhomes.ae" },
-    { "pattern": "www.psrhomes.ae/events/roadshow/", "zone_name": "psrhomes.ae" },
-    { "pattern": "psrhomes.ae/events/roadshow*", "zone_name": "psrhomes.ae" },
-    { "pattern": "www.psrhomes.ae/events/roadshow*", "zone_name": "psrhomes.ae" },
-    { "pattern": "psrhomes.ae/projects", "zone_name": "psrhomes.ae" },
-    { "pattern": "psrhomes.ae/projects/", "zone_name": "psrhomes.ae" },
-    { "pattern": "www.psrhomes.ae/projects", "zone_name": "psrhomes.ae" },
-    { "pattern": "www.psrhomes.ae/projects/", "zone_name": "psrhomes.ae" },
-    { "pattern": "psrhomes.ae/", "zone_name": "psrhomes.ae" },
-    { "pattern": "www.psrhomes.ae/", "zone_name": "psrhomes.ae" },
     { "pattern": "psrhomes.ae/*", "zone_name": "psrhomes.ae" },
     { "pattern": "www.psrhomes.ae/*", "zone_name": "psrhomes.ae" }
   ],
