@@ -1,21 +1,92 @@
 # PSR Cloudflare deployment
 
-> **Release gate:** do not enable automatic deployment yet. Full `psr-property` and companion Worker source parity has not been reached. The checked-in `GRACE_PUBLIC_AGENT` / `GracePublicAgent` identifiers are legacy PSR technical debt; the target PSR agent is **Sonu** and the Durable Object rename must be migrated safely, not text-replaced.
+> **Production release gate:** automatic deployment remains disabled until GitHub and the live Cloudflare topology reach verified parity.
 
-Production app Workers at `https://psrhomes.ae`, `https://www.psrhomes.ae`, and `https://psr.espacios.me`.
+## Current production shape
 
-Declared resources (live):
+Production is Worker-routed, not Cloudflare Pages.
 
-- Worker: `psr-property`
+- Domain: `psrhomes.ae`
+- Public wildcard edge: `psr-media-edge`
+- Primary application/origin Worker: `psr-property`
+- Direct origin/custom domain: `psr.espacios.me`
 - D1: `cba-property-db`
 - R2: `psr-property-media`
-- Durable Object: `GracePublicAgent`
 - Workers AI + Images
-- Email via `inbox.psrhomes.ae` (`EMAIL_INBOX_ENABLED=true`)
-- Campaign delivery off (`CAMPAIGN_DELIVERY_ENABLED=false`)
+- Email receive domain: `inbox.psrhomes.ae`
+- Email sending enabled
+- Campaign delivery disabled
+- Primary cron: `17 */6 * * *`
 
-Do not rename the live D1 binding in a normal release.
+## Route ownership
 
-Full app source sync into this repo is in progress. Builds Connect for `psr-property` should wait until the application tree is present and the release gate is green.
+The live wildcard routes are owned by `psr-media-edge`:
 
-See also `docs/cloudflare-builds.md` and `docs/tenant-boundary.md`.
+- `psrhomes.ae/*`
+- `www.psrhomes.ae/*`
+
+Do **not** deploy `psr-property` with those wildcard routes.
+
+The reconciliation manifest retains only the direct `www.psrhomes.ae/api/sg26/registrations` route observed for `psr-property` plus the direct custom domain.
+
+## Media edge service graph
+
+Production `psr-media-edge` currently binds to:
+
+- `HOME` → `psr-home-video-guard`
+- `ROADSHOW` → `psr-sg26-clean`
+- `ROADSHOW_BROCHURE` → `psr-roadshow-brochure`
+- `ROADSHOW_PLAN` → `psr-roadshow-plan`
+- `ROADSHOW_NURTURE` → `psr-roadshow-nurture`
+- `PROJECTS` → `psr-projects-clean`
+- `SHELL` → `psr-shell-events`
+
+## Sonu Durable Object compatibility
+
+Sonu is the canonical PSR AI identity, but production state is still attached to the existing `GracePublicAgent` class namespace.
+
+The production-safe intermediate manifest therefore uses:
+
+- application binding name: `SONU_PUBLIC_AGENT`
+- current class name: `GracePublicAgent`
+
+This lets Sonu-named application code resolve the existing namespace **without performing the class rename in the same release**.
+
+The explicit `GracePublicAgent → SonuPublicAgent` class migration is a separate release gate documented in `docs/sonu-migration.md`.
+
+## Cloudflare Builds
+
+At audit time, `psr-property`, `psr-media-edge`, and `psr-home-edge` did not have Cloudflare Builds configurations attached.
+
+Keep that state until:
+
+1. runtime-audit credentials are configured in GitHub Actions;
+2. all route/service drift is resolved;
+3. required companion Worker source is under version control or formally externalized;
+4. a staging/preview release succeeds;
+5. Sonu Durable Object compatibility is verified;
+6. rollback targets are recorded.
+
+## Deployment rule
+
+A green source build is necessary but not sufficient for production.
+
+Before a production deploy, verify:
+
+- exact commit SHA;
+- route ownership;
+- service bindings;
+- D1/R2 bindings;
+- Durable Object class/binding state;
+- cron/email bindings;
+- required secrets by **name only**;
+- runtime probes;
+- rollback version.
+
+See:
+
+- `docs/cloudflare-live-topology-2026-09-24.md`
+- `docs/platform-audit-2026-09-24.md`
+- `docs/cloudflare-builds.md`
+- `docs/sonu-migration.md`
+- `docs/tenant-boundary.md`
