@@ -1,29 +1,49 @@
 # PSR Homes
 
-Private source authority for **PSR Homes** (`psrhomes.ae`) — Cloudflare Workers, site, roadshow, and property surfaces.
+> **Repository status — 24 September 2026**
+>
+> This is the **public source-authority repository** for PSR Homes (`psrhomes.ae`). It is still incomplete: the full primary Worker application and companion Worker source trees have not yet all been reconciled from production.
+>
+> **AI ownership:** **Sonu belongs to PSR Homes only.** Grace belongs to Haus & Grace only. Espacios AI/Aether belongs to Espacios only.
+>
+> **Release blocker:** the checked-in primary Wrangler manifest still contains the legacy Durable Object names `GracePublicAgent` / `GRACE_PUBLIC_AGENT`. Do not deploy that naming as the final tenant architecture. The rename to Sonu must be done together with the actual Durable Object source and a Cloudflare-verified migration plan.
+>
+> See [the platform audit](docs/platform-audit-2026-09-24.md), [tenant boundary](docs/tenant-boundary.md), and [security policy](SECURITY.md).
 
-Created as the per-brand GitHub repo (Espacios multi-tenant split). Tenants stay separate: do **not** import Espacios map data or Haus & Grace private CRM/staff/leads.
+## Primary production identity
 
-## Primary Worker
+- Domain: `psrhomes.ae` / `www.psrhomes.ae`
+- Primary Worker: `psr-property`
+- AI/agent: **Sonu**
+- Supabase PSR API source mirrored in this repo: `supabase/functions/psr-ai-api/`
 
-- `psr-property` — main ViNext/Next.js app (routes on `psrhomes.ae`)
-
-## Companion Workers (PSR-owned, non-map)
+## Companion Workers recorded in the current architecture
 
 - `psr-home-edge`
 - `psr-media-edge`
 - `psr-roadshow-dates`
+- `psr-roadshow-brochure`
+- `psr-roadshow-plan`
+- `psr-roadshow-nurture`
 - `psr-projects-clean`
 - `psr-shell-events`
 
-Map Workers and Espacios hotspots are **out of scope** for this repo.
+Not all companion Worker sources are present yet. Cloudflare Builds must remain disabled for any Worker whose complete source tree is missing.
 
-## Status
+## Source-of-truth rule
 
-Initial seed commit. Full Worker app sources sync next from the local Codex checkout (known RED source-reproducibility risk historically).
+Target operating model:
 
-## Cloudflare Builds
+```text
+GitHub reviewed source
+        ↓
+CI / release gate
+        ↓
+Cloudflare + Supabase
+        ↓
+psrhomes.ae
+        ↓
+Sonu
+```
 
-After sources land: Cloudflare Dashboard → Worker `psr-property` → Settings → Builds → Connect → `gugmaae-prog/psr-homes` (branch `main`).
-
-See `docs/cloudflare-builds.md` and `docs/tenant-boundary.md`.
+Runtime secret values stay in Cloudflare/Supabase secret stores and must never be committed to this public repository.

@@ -1,17 +1,27 @@
 # Tenant boundary
 
-| Brand | Site | This repo |
-|-------|------|-----------|
-| PSR Homes | psrhomes.ae | **yes** (`gugmaae-prog/psr-homes`) |
-| Espacios | espacios.me (+ map) | no — separate repo / ownership |
-| Haus & Grace | hausandgrace.ae | no — separate repo |
+| Brand | Site | Agent | Repository |
+|---|---|---|---|
+| PSR Homes | `psrhomes.ae` | **Sonu** | `gugmaae-prog/psr-homes` |
+| Espacios | `espacios.me` | Espacios AI / Aether | separate repo |
+| Haus & Grace | `hausandgrace.ae` | **Grace** | separate repo |
+
+## PSR ownership
+
+PSR owns its site, project/developer catalogue, agents, events, roadshow surfaces, enquiry systems, PSR CRM/lead data, PSR messaging, and Sonu.
 
 ## Allowed across tenants
 
-Only **approved public** catalogue / media / insights / features may transfer.
+Only intentionally approved **public** catalogue, media, market intelligence, and reusable platform patterns may transfer.
 
 ## Never transfer
 
-Staff, leads, CRM, messages, docs, secrets, or Espacios **map** data / hotspots.
+- leads or private CRM data
+- staff data
+- private messages or inbox data
+- credentials or tokens
+- private agent memory
+- private prompts containing customer/staff data
+- internal documents
 
-Map ownership stays with Espacios. PSR map routes remain a cutover concern outside this seed.
+Grace is not a PSR agent. Any Grace-named PSR runtime artifact is legacy technical debt and must be migrated to Sonu with an explicit compatibility/migration plan.
