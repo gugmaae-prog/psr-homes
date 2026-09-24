@@ -1,0 +1,47 @@
+export const cbaCompany = {
+  legalName: "PSR Homes Real Estate LLC",
+  displayName: "PSR Homes Real Estate",
+  shortName: "PSR",
+  sourceUrl: "https://www.psrhomes.ae/",
+  propertyFinderUrl: "",
+  orn: "54275",
+  email: "sales@psrhomes.ae",
+  emailDisplay: "sales@psrhomes.ae",
+  adminEmail: "admin@psrhomes.ae",
+  adminEmailDisplay: "admin@psrhomes.ae",
+  phone: "+971 58 680 1148",
+  phoneHref: "tel:+971586801148",
+  landline: "+971 58 103 5777",
+  landlineHref: "tel:+971581035777",
+  addressLines: [
+    "Office #1504 A, DAMAC Smart Heights",
+    "Barsha Heights",
+    "Dubai, UAE",
+  ],
+  summary: "PSR Homes Real Estate LLC is a Dubai real estate advisory for buyers, owners and investors seeking clear project comparison, local market context and considered transaction support.",
+  footerDescription: "PSR Homes is a premier real estate agency in Dubai specialising in luxury villas, high-ROI off-plan apartments and strategic commercial property investments.",
+  tagline: "Clear market intelligence. Considered homes. Confident decisions.",
+  social: {
+    facebook: "https://www.facebook.com/people/PSR-HOMES/61585355190467/",
+    instagram: "https://www.instagram.com/psrhomes.ae",
+    youtube: "https://youtube.com/@psrhomes?si=zL4GJmxx0VlOur_B",
+    linkedin: "https://www.linkedin.com/company/psr-homes/",
+  },
+  metrics: [
+    { value: "2,000+", label: "Properties represented" },
+    { value: "1,000+", label: "Successful deals" },
+    { value: "25+", label: "Property professionals" },
+    { value: "AED 2.5B+", label: "Transaction volume" },
+  ],
+} as const;
+
+export const cbaServices = [
+  { number: "01", title: "Buy", copy: "Property search, market comparison, viewing support, negotiation and guidance through transfer." },
+  { number: "02", title: "Sell", copy: "Pricing strategy, professional presentation, qualified enquiries, negotiation and transaction support." },
+  { number: "03", title: "Rent", copy: "Residential leasing support for tenants and landlords, from shortlist and viewings through handover." },
+  { number: "04", title: "Commercial", copy: "Commercial property advice shaped around location, business requirements and investment objectives." },
+  { number: "05", title: "Property management", copy: "Tenant coordination, rent follow-up, maintenance, inspections, tenancy documentation and owner updates." },
+  { number: "06", title: "Mortgages", copy: "Introductions and practical support for buyers comparing finance options and preparing a property purchase." },
+  { number: "07", title: "Conveyancing", copy: "Structured coordination of documents, parties and milestones from an agreed transaction through completion." },
+  { number: "08", title: "Property snagging", copy: "Pre-handover inspection of finishes, plumbing, electrical and HVAC items, with an organised defect report." },
+] as const;

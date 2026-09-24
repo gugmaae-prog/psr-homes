@@ -1,0 +1,424 @@
+{
+  "schemaVersion": "2026-09-08",
+  "title": "Dubai South premium off-plan exact-unit evidence",
+  "asOf": "2026-09-08",
+  "currency": "AED",
+  "scope": {
+    "geography": "Expo Living, Expo City Dubai, within Dubai South",
+    "lane": "Off-plan (under construction) options with a planning total above AED 1.70M and no more than AED 1.85M",
+    "returnMetrics": "Rental and ROI projections intentionally omitted for off-plan options.",
+    "volatilityWarning": "Availability, prices, incentives, payment dates, fees and construction timelines can change. Reconfirm the exact unit, reservation form, SPA, payment ledger and all invoices in writing before client issue or commitment."
+  },
+  "calculationPolicy": {
+    "bookingDepositTreatment": "The AED 37,000 booking amount shown by Emaar is treated as a credit toward the first 10% installment, not an additional cost. The signed booking form controls.",
+    "officialUnitPageFees": [
+      {
+        "label": "Land registration fee",
+        "basis": "4% of exact unit price",
+        "timing": "Initial registration; confirm exact collection date on the booking form"
+      },
+      {
+        "label": "Oqood",
+        "amountAed": 3000,
+        "timing": "Initial registration; confirm exact collection date on the booking form"
+      }
+    ],
+    "completionStatutoryAllowance": {
+      "label": "Title deed, apartment map and knowledge/innovation fees",
+      "amountAed": 520,
+      "sourceUrl": "https://dubailand.gov.ae/en/eservices/request-to-complete-the-initial-procedures-data/",
+      "note": "Planning allowance based on the published DLD fee menu; the final completion invoice controls."
+    },
+    "otherPlanningAllowances": [
+      {
+        "label": "DEWA apartment security deposit and move-in activation",
+        "amountAed": 2155,
+        "timing": "At occupancy",
+        "sourceUrl": "https://dewa.gov.ae/en/about-us/service-guide/consumer-services/move-in"
+      },
+      {
+        "label": "Developer administration reserve",
+        "amountAed": 5000,
+        "timing": "Before or at handover",
+        "status": "Unconfirmed reserve, not an Emaar quote"
+      },
+      {
+        "label": "Parking or bay-allocation reserve",
+        "amountAed": 5000,
+        "timing": "At handover if separately charged",
+        "status": "Unconfirmed reserve, not an Emaar quote"
+      },
+      {
+        "label": "Handover and connection reserve",
+        "amountAed": 5000,
+        "timing": "At handover",
+        "status": "Unconfirmed reserve, not an Emaar quote"
+      }
+    ],
+    "otherPlanningAllowancesTotalAed": 17155,
+    "excludedFromAllIn": [
+      "Mortgage, valuation and lender charges",
+      "Currency conversion and international transfer costs",
+      "Furnishing, insurance and post-handover fit-out",
+      "Recurring annual service charges, because no exact-unit rate was verified in current official material"
+    ]
+  },
+  "projects": [
+    {
+      "slug": "terra-gardens",
+      "name": "Terra Gardens",
+      "displayName": "Terra Gardens at Expo Living",
+      "developer": "DWTC EMAAR L.L.C / Emaar",
+      "location": "Expo Living, Expo City Dubai, within Dubai South",
+      "developmentStatus": "Off-plan (under construction)",
+      "handoverTarget": {
+        "date": "2029-10-31",
+        "basis": "Final 20% payment-plan milestone labelled 100% Construction and Handover",
+        "caveat": "Payment milestone date is not a completion guarantee; the SPA controls."
+      },
+      "availabilitySnapshot": {
+        "exactUnitStatus": "Available",
+        "observedOn": "2026-09-08",
+        "communityInventoryCountObserved": 15,
+        "caveat": "Inventory is live and can be reserved or repriced without notice."
+      },
+      "exactUnit": {
+        "unitCode": "EX Terra Gardens Building 1-2-207",
+        "inventoryId": "a0ZNM00000186Q62AI",
+        "bedrooms": 1,
+        "floor": 2,
+        "portalAreaSqft": 760,
+        "floorplanAreaSqft": 758.64,
+        "priceAed": 1642888,
+        "pricePerSqftAed": 2161.69,
+        "bookingDepositAed": 37000,
+        "unitPageUrl": "https://www.emaar.com/en/unit-details/EX%20Terra%20Gardens%20Building%201-2-207"
+      },
+      "fees": {
+        "landRegistrationFeeAed": 65715.52,
+        "landRegistrationRatePercent": 4,
+        "oqoodAed": 3000,
+        "officialUnitPageApplicableFeeAed": 68715.52,
+        "dldWaiver": {
+          "status": "Not applied on the exact official unit",
+          "note": "The current Emaar unit page displays the full 4% land-registration fee. Any waiver requires unit-specific written Emaar reservation evidence."
+        }
+      },
+      "paymentPlan": {
+        "source": {
+          "method": "POST",
+          "url": "https://www.emaar.com/api/payment-plan",
+          "body": {
+            "inventoryID": "a0ZNM00000186Q62AI"
+          },
+          "accessedOn": "2026-09-08"
+        },
+        "milestones": [
+          { "sequence": 1, "date": "2026-09-08", "label": "1st Installment", "percentage": 10, "amountAed": 164289 },
+          { "sequence": 2, "date": "2026-10-20", "label": "2nd Installment", "percentage": 10, "amountAed": 164289 },
+          { "sequence": 3, "date": "2027-02-20", "label": "3rd Installment", "percentage": 10, "amountAed": 164289 },
+          { "sequence": 4, "date": "2027-06-20", "label": "4th Installment", "percentage": 10, "amountAed": 164289 },
+          { "sequence": 5, "date": "2027-10-20", "label": "5th Installment", "percentage": 10, "amountAed": 164289 },
+          { "sequence": 6, "date": "2028-02-20", "label": "6th Installment", "percentage": 10, "amountAed": 164289 },
+          { "sequence": 7, "date": "2028-06-20", "label": "7th Installment", "percentage": 10, "amountAed": 164289 },
+          { "sequence": 8, "date": "2028-10-20", "label": "8th Installment", "percentage": 10, "amountAed": 164289 },
+          { "sequence": 9, "date": "2029-10-31", "label": "100% Construction and Handover", "percentage": 20, "amountAed": 328576 }
+        ],
+        "totals": {
+          "beforeHandoverPercent": 80,
+          "beforeHandoverPricePaymentsAed": 1314312,
+          "atHandoverPercent": 20,
+          "atHandoverPricePaymentAed": 328576,
+          "postHandoverPercent": 0,
+          "postHandoverPricePaymentsAed": 0,
+          "purchasePriceAed": 1642888
+        }
+      },
+      "cashTimingAndAllIn": {
+        "knownBeforeHandoverIncludingDldAndOqoodAed": 1383027.52,
+        "knownAtHandoverPurchasePriceAed": 328576,
+        "postHandoverPurchasePriceAed": 0,
+        "officialUnitPagePricePlusDisplayedFeesAed": 1711603.52,
+        "completionStatutoryAllowanceAed": 520,
+        "otherPlanningAllowancesAed": 17155,
+        "planningAllInCommitmentAed": 1729278.52,
+        "recurringAnnualServiceChargeAed": null,
+        "recurringAnnualChargeStatus": "Not available from current exact-unit official material; excluded and requires written confirmation."
+      },
+      "officialPages": {
+        "project": "https://www.emaar.com/en/properties/terra-gardens-at-expo-living",
+        "communityInventory": "https://www.emaar.com/en/our-communities/expo-living",
+        "exactFloorplan": "https://emaarsales.my.salesforce-sites.com/api/FloorPlanToSiteUsers?id=a0ZNM00000186Q62AI"
+      },
+      "media": {
+        "hero": "/presentations/dubai-south-investor-brief/projects/terra-gardens/terra-gardens-official-hero-20260908.jpg",
+        "exteriors": [
+          "/presentations/dubai-south-investor-brief/projects/terra-gardens/terra-gardens-official-exterior-20260908.jpg"
+        ],
+        "interiors": [
+          "/presentations/dubai-south-investor-brief/projects/terra-gardens/terra-gardens-official-interior-20260908.jpg"
+        ],
+        "floorplans": [
+          "/presentations/dubai-south-investor-brief/projects/terra-gardens/terra-gardens-unit-b1-2-207-floorplan-unit-crop-20260908.webp"
+        ]
+      },
+      "mediaProvenance": [
+        {
+          "role": "hero",
+          "publicPath": "/presentations/dubai-south-investor-brief/projects/terra-gardens/terra-gardens-official-hero-20260908.jpg",
+          "sourceUrl": "https://uae-cms.emaar.com/uploads/422559_property_Hero_Image_b740b360bf.jpg",
+          "source": "Emaar official CMS",
+          "sha256": "d5c1763102e13b0da5b42b234196ebdb677ed5bdfceed40b08e1fbbdce898268"
+        },
+        {
+          "role": "exterior",
+          "publicPath": "/presentations/dubai-south-investor-brief/projects/terra-gardens/terra-gardens-official-exterior-20260908.jpg",
+          "sourceUrl": "https://uae-cms.emaar.com/uploads/422577_exterior_0_81fe11979a.jpg",
+          "source": "Emaar official CMS",
+          "sha256": "46702fdbb14bc4911e92ae42d0c09ccdda21fb25d1ce9cb4144f1d6085eda13d"
+        },
+        {
+          "role": "interior",
+          "publicPath": "/presentations/dubai-south-investor-brief/projects/terra-gardens/terra-gardens-official-interior-20260908.jpg",
+          "sourceUrl": "https://uae-cms.emaar.com/uploads/422595_interior_0_45674028a3.jpg",
+          "source": "Emaar official CMS",
+          "sha256": "9c9387696b690411fd1ba9a457b1aa101f06ba92ef7044bb7f8318dbdb2e1f21"
+        },
+        {
+          "role": "exact-unit-floorplan-source",
+          "publicPath": "/presentations/dubai-south-investor-brief/projects/terra-gardens/terra-gardens-unit-b1-2-207-floorplan-20260908.pdf",
+          "sourceUrl": "https://emaarsales.my.salesforce-sites.com/api/FloorPlanToSiteUsers?id=a0ZNM00000186Q62AI",
+          "source": "Emaar Sales official floor-plan endpoint",
+          "sha256": "a9b6618c5e8f68049097bcba9ba8b5ba51f75a3744a76d3317df5d44225d6fdd"
+        },
+        {
+          "role": "exact-unit-floorplan-presentation",
+          "publicPath": "/presentations/dubai-south-investor-brief/projects/terra-gardens/terra-gardens-unit-b1-2-207-floorplan-unit-crop-20260908.webp",
+          "sourceUrl": "https://emaarsales.my.salesforce-sites.com/api/FloorPlanToSiteUsers?id=a0ZNM00000186Q62AI",
+          "source": "Mechanical document-layout extraction from the official Emaar PDF",
+          "transform": "Page 1 rendered at 180 dpi, rotated clockwise 90 degrees, tightly cropped around the complete unit drawing and room dimensions, and encoded as WebP quality 94. The full official PDF is retained separately.",
+          "sha256": "0c6d852187e27cf352670a4c1e66e15cfd995a2bef0cc505044d835ec0dfaee8"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Emaar exact Terra Gardens unit page",
+          "url": "https://www.emaar.com/en/unit-details/EX%20Terra%20Gardens%20Building%201-2-207"
+        },
+        {
+          "label": "Emaar Terra Gardens project page",
+          "url": "https://www.emaar.com/en/properties/terra-gardens-at-expo-living"
+        },
+        {
+          "label": "Emaar Expo Living live inventory",
+          "url": "https://www.emaar.com/en/our-communities/expo-living"
+        },
+        {
+          "label": "Emaar exact-unit payment-plan API",
+          "url": "https://www.emaar.com/api/payment-plan"
+        },
+        {
+          "label": "Emaar exact-unit floor plan",
+          "url": "https://emaarsales.my.salesforce-sites.com/api/FloorPlanToSiteUsers?id=a0ZNM00000186Q62AI"
+        }
+      ]
+    },
+    {
+      "slug": "terra-woods",
+      "name": "Terra Woods",
+      "displayName": "Terra Woods at Expo Living",
+      "developer": "DWTC EMAAR L.L.C / Emaar",
+      "location": "Expo Living, Expo City Dubai, within Dubai South",
+      "developmentStatus": "Off-plan (under construction)",
+      "handoverTarget": {
+        "date": "2030-03-31",
+        "basis": "Final 20% payment-plan milestone labelled 100% Construction and Handover",
+        "caveat": "Payment milestone date is not a completion guarantee; the SPA controls."
+      },
+      "availabilitySnapshot": {
+        "exactUnitStatus": "Available",
+        "observedOn": "2026-09-08",
+        "communityInventoryCountObserved": 19,
+        "caveat": "Inventory is live and can be reserved or repriced without notice."
+      },
+      "exactUnit": {
+        "unitCode": "EX Terra Woods Building 1-4-415",
+        "inventoryId": "a0ZNM000003nZtk2AE",
+        "bedrooms": 1,
+        "floor": 4,
+        "portalAreaSqft": 765,
+        "floorplanAreaSqft": 765.53,
+        "priceAed": 1704888,
+        "pricePerSqftAed": 2228.61,
+        "bookingDepositAed": 37000,
+        "unitPageUrl": "https://www.emaar.com/en/unit-details/EX%20Terra%20Woods%20Building%201-4-415"
+      },
+      "fees": {
+        "landRegistrationFeeAed": 68195.52,
+        "landRegistrationRatePercent": 4,
+        "oqoodAed": 3000,
+        "officialUnitPageApplicableFeeAed": 71195.52,
+        "dldWaiver": {
+          "status": "Not applied on the exact official unit",
+          "note": "The current Emaar unit page displays the full 4% land-registration fee. Any waiver requires unit-specific written Emaar reservation evidence."
+        }
+      },
+      "paymentPlan": {
+        "source": {
+          "method": "POST",
+          "url": "https://www.emaar.com/api/payment-plan",
+          "body": {
+            "inventoryID": "a0ZNM000003nZtk2AE"
+          },
+          "accessedOn": "2026-09-08"
+        },
+        "milestones": [
+          { "sequence": 1, "date": "2026-09-08", "label": "1st Installment", "percentage": 10, "amountAed": 170489 },
+          { "sequence": 2, "date": "2026-10-20", "label": "2nd Installment", "percentage": 10, "amountAed": 170489 },
+          { "sequence": 3, "date": "2027-02-20", "label": "3rd Installment", "percentage": 10, "amountAed": 170489 },
+          { "sequence": 4, "date": "2027-06-20", "label": "4th Installment", "percentage": 10, "amountAed": 170489 },
+          { "sequence": 5, "date": "2027-10-20", "label": "5th Installment", "percentage": 10, "amountAed": 170489 },
+          { "sequence": 6, "date": "2028-02-24", "label": "50% Construction", "percentage": 10, "amountAed": 170489 },
+          { "sequence": 7, "date": "2028-08-09", "label": "70% Construction", "percentage": 10, "amountAed": 170489 },
+          { "sequence": 8, "date": "2029-03-08", "label": "90% Construction", "percentage": 10, "amountAed": 170489 },
+          { "sequence": 9, "date": "2030-03-31", "label": "100% Construction and Handover", "percentage": 20, "amountAed": 340976 }
+        ],
+        "totals": {
+          "beforeHandoverPercent": 80,
+          "beforeHandoverPricePaymentsAed": 1363912,
+          "atHandoverPercent": 20,
+          "atHandoverPricePaymentAed": 340976,
+          "postHandoverPercent": 0,
+          "postHandoverPricePaymentsAed": 0,
+          "purchasePriceAed": 1704888
+        }
+      },
+      "cashTimingAndAllIn": {
+        "knownBeforeHandoverIncludingDldAndOqoodAed": 1435107.52,
+        "knownAtHandoverPurchasePriceAed": 340976,
+        "postHandoverPurchasePriceAed": 0,
+        "officialUnitPagePricePlusDisplayedFeesAed": 1776083.52,
+        "completionStatutoryAllowanceAed": 520,
+        "otherPlanningAllowancesAed": 17155,
+        "planningAllInCommitmentAed": 1793758.52,
+        "recurringAnnualServiceChargeAed": null,
+        "recurringAnnualChargeStatus": "Not available from current exact-unit official material; excluded and requires written confirmation."
+      },
+      "officialPages": {
+        "project": "https://www.emaar.com/en/properties/terra-woods-at-expo-living",
+        "communityInventory": "https://www.emaar.com/en/our-communities/expo-living",
+        "exactFloorplan": "https://emaarsales.my.salesforce-sites.com/api/FloorPlanToSiteUsers?id=a0ZNM000003nZtk2AE"
+      },
+      "media": {
+        "hero": "/presentations/dubai-south-investor-brief/projects/terra-woods/hero.webp",
+        "exteriors": [
+          "/presentations/dubai-south-investor-brief/projects/terra-woods/exterior-1.webp"
+        ],
+        "interiors": [
+          "/projects/terra-woods/interior-official-20260908.jpg"
+        ],
+        "floorplans": [
+          "/presentations/dubai-south-investor-brief/projects/terra-woods/terra-woods-unit-b1-4-415-floorplan-unit-crop-20260908.webp"
+        ]
+      },
+      "mediaProvenance": [
+        {
+          "role": "exact-unit-floorplan-source",
+          "publicPath": "/presentations/dubai-south-investor-brief/projects/terra-woods/terra-woods-unit-b1-4-415-floorplan-20260908.pdf",
+          "sourceUrl": "https://emaarsales.my.salesforce-sites.com/api/FloorPlanToSiteUsers?id=a0ZNM000003nZtk2AE",
+          "source": "Emaar Sales official floor-plan endpoint",
+          "sha256": "8cd57fa62004f0e00d1fa621e1a12a4f350d5dc3cd76d79b9bc67ed3041c23bf"
+        },
+        {
+          "role": "exact-unit-floorplan-presentation",
+          "publicPath": "/presentations/dubai-south-investor-brief/projects/terra-woods/terra-woods-unit-b1-4-415-floorplan-unit-crop-20260908.webp",
+          "sourceUrl": "https://emaarsales.my.salesforce-sites.com/api/FloorPlanToSiteUsers?id=a0ZNM000003nZtk2AE",
+          "source": "Mechanical document-layout extraction from the official Emaar PDF",
+          "transform": "Page 1 rendered at 180 dpi, rotated clockwise 90 degrees, tightly cropped around the complete unit drawing and room dimensions, and encoded as WebP quality 94. The full official PDF is retained separately.",
+          "sha256": "0901b7ba6808ba28de1263dc89918f2161fbde0de1244594597bc1c1f321e129"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Emaar exact Terra Woods unit page",
+          "url": "https://www.emaar.com/en/unit-details/EX%20Terra%20Woods%20Building%201-4-415"
+        },
+        {
+          "label": "Emaar Terra Woods project page",
+          "url": "https://www.emaar.com/en/properties/terra-woods-at-expo-living"
+        },
+        {
+          "label": "Emaar Expo Living live inventory",
+          "url": "https://www.emaar.com/en/our-communities/expo-living"
+        },
+        {
+          "label": "Emaar exact-unit payment-plan API",
+          "url": "https://www.emaar.com/api/payment-plan"
+        },
+        {
+          "label": "Emaar exact-unit floor plan",
+          "url": "https://emaarsales.my.salesforce-sites.com/api/FloorPlanToSiteUsers?id=a0ZNM000003nZtk2AE"
+        },
+        {
+          "label": "Emaar official Terra Woods interior image",
+          "url": "https://www.emaar.com/cms-media/uploads/PRO_INT_3_2_670x500_996f3faf9d.jpg"
+        }
+      ],
+      "retainedExistingPresentationMedia": {
+        "paths": [
+          "/presentations/dubai-south-investor-brief/projects/terra-woods/hero.webp",
+          "/presentations/dubai-south-investor-brief/projects/terra-woods/exterior-1.webp",
+          "/presentations/dubai-south-investor-brief/projects/terra-woods/floorplan-1.webp",
+          "/presentations/dubai-south-investor-brief/projects/terra-woods/floorplan-2.webp"
+        ],
+        "note": "Retained without replacement. Only the dated exact-unit floor plan carries a new provenance claim in this evidence pass."
+      }
+    }
+  ],
+  "sortedAllInView": [
+    {
+      "rankByPlanningAllIn": 1,
+      "project": "Terra Gardens at Expo Living",
+      "exactUnit": "EX Terra Gardens Building 1-2-207",
+      "unitPriceAed": 1642888,
+      "dldAndOqoodAed": 68715.52,
+      "completionStatutoryAllowanceAed": 520,
+      "otherPlanningAllowancesAed": 17155,
+      "planningAllInCommitmentAed": 1729278.52,
+      "withinPremiumLane": true
+    },
+    {
+      "rankByPlanningAllIn": 2,
+      "project": "Terra Woods at Expo Living",
+      "exactUnit": "EX Terra Woods Building 1-4-415",
+      "unitPriceAed": 1704888,
+      "dldAndOqoodAed": 71195.52,
+      "completionStatutoryAllowanceAed": 520,
+      "otherPlanningAllowancesAed": 17155,
+      "planningAllInCommitmentAed": 1793758.52,
+      "withinPremiumLane": true
+    }
+  ],
+  "sharedSources": [
+    {
+      "label": "Emaar Expo Living live inventory",
+      "url": "https://www.emaar.com/en/our-communities/expo-living",
+      "accessedOn": "2026-09-08"
+    },
+    {
+      "label": "Dubai Land Department initial-sale registration fee schedule",
+      "url": "https://dubailand.gov.ae/en/eservices/request-to-register-the-initial-sale/",
+      "accessedOn": "2026-09-08"
+    },
+    {
+      "label": "Dubai Land Department completion fee schedule",
+      "url": "https://dubailand.gov.ae/en/eservices/request-to-complete-the-initial-procedures-data/",
+      "accessedOn": "2026-09-08"
+    },
+    {
+      "label": "DEWA move-in charges",
+      "url": "https://dewa.gov.ae/en/about-us/service-guide/consumer-services/move-in",
+      "accessedOn": "2026-09-08"
+    }
+  ]
+}

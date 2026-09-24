@@ -1,6 +1,6 @@
 # PSR Workers (non-map)
 
-Placeholder layout for Cloudflare Worker sources. Full application trees sync next.
+`psr-property` application source now lives at the repository root (lean tree, without `public/`). See `workers/psr-property/STATUS.md`. Companion Worker entrypoints that shipped with the app are under `worker/`; the table below is the non-map inventory.
 
 | Worker | Role |
 |--------|------|
