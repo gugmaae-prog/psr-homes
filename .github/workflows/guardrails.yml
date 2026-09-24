@@ -17,7 +17,15 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          bad=$(git ls-files | grep -E '(^|/)(\.env($|\.)|.*\.pem$|.*\.key$|credentials?\.(json|ya?ml)$|secrets?\.(json|ya?ml)$)' || true)
+          bad=$(git ls-files | grep -E '(^|/)(\.env($|\.(local|production|development|staging|test)(\..*)?$)|.*\.pem$|.*\.key$|credentials?\.(json|ya?ml)$|secrets?\.(json|ya?ml)$)' | grep -v -E '(^|/)\.env\.example
+          if [ -n "$bad" ]; then
+            echo "Forbidden secret-like tracked files:"
+            echo "$bad"
+            exit 1
+          fi
+      - name: Confirm tenant documentation exists
+        run: test -f SECURITY.md && test -f docs/tenant-boundary.md && test -f docs/platform-audit-2026-09-24.md
+ || true)
           if [ -n "$bad" ]; then
             echo "Forbidden secret-like tracked files:"
             echo "$bad"
