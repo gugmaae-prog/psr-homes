@@ -107,7 +107,7 @@ export default function SingaporePropertyShowPage() {
 
     <section className={styles.invitationSection} id="request-invite">
       <div className={styles.invitationCopy}>
-        <p className={styles.eyebrow}>Singapore · 30–31 October 2026</p>
+        <p className={styles.eyebrow}>Singapore · 13–14 November 2026</p>
         <h2>Your invitation starts here.</h2>
         <p>This is a focused, appointment-led property show for investors, founders and families considering a move into the UAE.</p>
         <dl>
