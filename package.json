@@ -28,7 +28,8 @@
     "sync:projects": "node scripts/sync-project-registry.mjs",
     "validate:artifact": "bash scripts/validate-artifact.sh",
     "lint": "bash scripts/sites-env.sh -- eslint . --ignore-pattern dist --ignore-pattern .next --ignore-pattern .wrangler",
-    "db:generate": "bash scripts/sites-env.sh -- drizzle-kit generate"
+    "db:generate": "bash scripts/sites-env.sh -- drizzle-kit generate",
+    "test:source": "npm run build && node --test tests/rendered-html.test.mjs && tsx --test tests/property-finder-listings.test.ts tests/sonu-finder.test.ts tests/sonu-chat.test.ts tests/sonu-brief-service.test.ts tests/site-analytics.test.ts tests/translation.test.ts tests/crm-backend.test.ts tests/inbox-backend.test.ts tests/leadrat-backend.test.ts tests/admin-user-management.test.ts tests/document-library.test.ts tests/media-storage.test.ts tests/secondary-unit-media.test.ts tests/curated-brief.test.ts tests/live-market-data.test.ts tests/project-search.test.ts tests/semantic-search.test.ts tests/cache-policy.test.ts tests/launch-payment-schedule.test.ts tests/supabase-memory.test.ts"
   },
   "dependencies": {
     "drizzle-orm": "0.45.2",
