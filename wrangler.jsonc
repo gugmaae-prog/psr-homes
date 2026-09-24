@@ -5,9 +5,9 @@
   "compatibility_date": "2026-08-20",
   "compatibility_flags": ["nodejs_compat"],
   "workers_dev": false,
+  // psr-property is the origin Worker. Public psrhomes.ae traffic is owned by
+  // psr-media-edge and delegated here through service bindings/downstream Workers.
   "routes": [
-    { "pattern": "psrhomes.ae/*", "zone_name": "psrhomes.ae" },
-    { "pattern": "www.psrhomes.ae/*", "zone_name": "psrhomes.ae" },
     { "pattern": "psr.espacios.me", "custom_domain": true }
   ],
   "vars": {

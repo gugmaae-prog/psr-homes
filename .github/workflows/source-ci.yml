@@ -37,3 +37,9 @@ jobs:
       - name: Lint report
         continue-on-error: true
         run: npm run lint
+      - name: Validate Cloudflare manifests
+        run: |
+          npx wrangler deploy --dry-run --config wrangler.jsonc
+          npx wrangler deploy --dry-run --config wrangler.home-edge.jsonc
+          npx wrangler deploy --dry-run --config wrangler.media-edge.jsonc
+          npx wrangler deploy --dry-run --config wrangler.jumanah-presentation-edge.jsonc
