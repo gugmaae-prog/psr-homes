@@ -25,7 +25,7 @@
   ],
   "services": [
     { "binding": "HOME", "service": "psr-home-video-guard", "environment": "production" },
-    { "binding": "ROADSHOW", "service": "psr-roadshow-dates", "environment": "production" },
+    { "binding": "ROADSHOW", "service": "psr-sg26-clean", "environment": "production" },
     { "binding": "ROADSHOW_BROCHURE", "service": "psr-roadshow-brochure", "environment": "production" },
     { "binding": "ROADSHOW_PLAN", "service": "psr-roadshow-plan", "environment": "production" },
     { "binding": "ROADSHOW_NURTURE", "service": "psr-roadshow-nurture", "environment": "production" },
