@@ -1,3 +1,5 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
 # dependencies
 /node_modules
 /.pnp
@@ -8,6 +10,9 @@
 !.yarn/releases
 !.yarn/versions
 
+# testing
+/coverage
+
 # next / vinext
 /.next/
 /out/
@@ -16,17 +21,19 @@
 /.wrangler/
 /.sites-runtime/
 
-# env / secrets
+# env / secrets — examples may be committed; real env files may not
 .env*
 !.env.example
 .psr-sync.env
+*.pem
 
 # misc
 .DS_Store
-*.pem
+._*
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.pnpm-debug.log*
 *.tsbuildinfo
 next-env.d.ts
 
@@ -38,4 +45,19 @@ next-env.d.ts
 /artifacts/
 /.sync/
 /.vercel/
-/coverage/
+/.round3-backup/
+*.dark-backup
+/supabase/.temp/
+
+# transfer artifacts and local chart blobs (not app source)
+/.push-batches/
+/.chart-data-*/
+/psr-mcp-batches.tgz
+__pycache__/
+*.pyc
+
+# public static assets stay on R2 / the live site
+/public/
+*.mp4
+*.webm
+*.mov

@@ -1,0 +1,3066 @@
+{
+  "title": "Dubai South",
+  "clientName": "Mr. Arul",
+  "clientLocation": "Singapore",
+  "preparedAt": "2026-09-08",
+  "coverImage": "/presentations/dubai-south-investor-brief/cover/wasl-dome.webp",
+  "advisor": {
+    "name": "Jumanah",
+    "email": "jumanah@psrhomes.ae",
+    "phone": "+971 58 680 1148",
+    "avatarUrl": "/presentations/dubai-south-investor-brief/advisor/jumanah-cover.webp"
+  },
+  "reports": [
+    {
+      "id": "ready",
+      "filename": "Ready_Up_to_AED_1_2M",
+      "label": "Ready properties",
+      "budgetLabel": "Up to AED 1.2 million, including fees",
+      "intro": "Completed homes selected around a strict total budget, with rental evidence, annual ownership costs and a transparent comparison.",
+      "recommendations": [
+        {
+          "title": "Emaar Golf Views A - the primary Emaar option",
+          "body": "The completed community, vacant listing and lower overall commitment provide room within the budget. Its one-bedroom format offers a focused entry into Emaar South."
+        },
+        {
+          "title": "The Pulse Plaza B8 - a two-bedroom alternative",
+          "body": "The illustrated total leaves more budget flexibility than MAG 540, while the larger layout and operating amenities support a broader household use case."
+        },
+        {
+          "title": "MAG 540 - prioritise space and budget discipline",
+          "body": "The furnished two-bedroom offering merits consideration, provided the final price and every fee keep the first-year commitment within AED 1.2 million."
+        }
+      ]
+    },
+    {
+      "id": "under",
+      "filename": "Offplan_Below_AED_1_7M",
+      "label": "Off-Plan (Under Construction)",
+      "budgetLabel": "Below AED 1.7 million, including fees",
+      "intro": "Under-construction homes screened for a total acquisition budget below AED 1.7 million, with payment obligations and fee treatment shown separately.",
+      "recommendations": [
+        {
+          "title": "Emaar Golf Fields - prioritise the master community",
+          "body": "The Emaar South setting, golf-oriented amenities and staged payment structure support its inclusion. Confirm the exact residence and current developer offer."
+        },
+        {
+          "title": "Ellington Windsor House - consider design and specification",
+          "body": "Ellington provides a design-led alternative in the Residential District. Any resale selection should follow a full reconciliation of the seller payment ledger and total transfer obligation."
+        },
+        {
+          "title": "Golf Trails - consider only a confirmed within-budget unit",
+          "body": "Current one-bedroom broker evidence fits the modelled cap, while Emaar live inventory starts higher. Proceed only if Emaar confirms the exact price, unit and payment schedule."
+        }
+      ]
+    },
+    {
+      "id": "above",
+      "filename": "Offplan_AED_1_7M_to_1_85M",
+      "label": "Off-Plan (Under Construction)",
+      "budgetLabel": "AED 1.7-1.85 million, including fees",
+      "intro": "A measured budget extension for Expo Living opportunities, supported by current Emaar unit records and complete payment schedules.",
+      "recommendations": [
+        {
+          "title": "Terra Woods - the priority premium comparison",
+          "body": "The selected Emaar unit has a published price, floorplan and dated 80/20 schedule. Expo Living provides a distinct proposition around the established Expo City destination."
+        },
+        {
+          "title": "Terra Gardens - the lower total commitment",
+          "body": "The selected available unit offers an earlier published handover and a lower all-in planning total. It should be compared directly with Terra Woods on layout and payment timing."
+        },
+        {
+          "title": "Extend the budget for a clear preference",
+          "body": "The additional commitment should be justified by the preferred residence, developer terms and location. Airport and Expo development support the long-term location case, not a promised appreciation rate."
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Emaar Golf Views A",
+      "developer": "Emaar",
+      "category": "ready",
+      "status": "Ready",
+      "location": "Emaar South",
+      "summary": "A completed one-bedroom home in Emaar South, with covered parking and access to the established golf-oriented community. The selected advertisement is marked vacant.",
+      "media": {
+        "hero": "/presentations/dubai-south-investor-brief/projects/golf-views-ready/hero.webp",
+        "exteriors": [
+          "/presentations/dubai-south-investor-brief/projects/golf-views-ready/exterior-1.webp"
+        ],
+        "interiors": [
+          "/presentations/dubai-south-investor-brief/projects/golf-views-ready/interior-1.webp"
+        ],
+        "floorplans": [
+          "/presentations/dubai-south-investor-brief/projects/golf-views-ready/floorplan-1.webp"
+        ],
+        "gallery": []
+      },
+      "handover": "Completed; advertised vacant",
+      "sources": [
+        {
+          "label": "Property Finder / Golf Views A, 1BR, 645 sq ft",
+          "url": "https://www.propertyfinder.ae/en/plp/buy/apartment-for-sale-dubai-dubai-south-dubai-world-central-emaar-south-golf-views-golf-views-a-70290683.html"
+        },
+        {
+          "label": "Dubizzle / matching Golf Views offer and service-charge indication",
+          "url": "https://uae.dubizzle.com/property-for-sale/residential/apartment/2026/3/30/investor-deal-exclusive-motivated-selle-2-970909/"
+        }
+      ],
+      "scheduleBasis": "Completed resale: 100% of the agreed price is settled through the transfer process. No developer instalment plan is advertised.",
+      "planNote": "Any reservation deposit is part of the price. Its amount and release conditions must be recorded in Form F; no extra deposit is added to this budget.",
+      "waiverNote": "No current unit-specific developer DLD waiver was verified. The full 4% is retained in the budget.",
+      "inventoryNote": "PF listing 70290683; corroborating Dubizzle record updated 5 September 2026. Asking price AED 1,000,000; advertised vacant. Obtain written unit availability and title confirmation.",
+      "parkingNote": "Parking is shown in project or listing information. A separate one-time charge has not been verified; the budget includes an explicit provision, plus a separate handover provision.",
+      "feeNote": "Planning provisions may differ from actual invoices. No borrowing costs are assumed. Refundable utility deposits are included in initial funding.",
+      "serviceNote": "The current unit-specific annual service charge is not confirmed. Obtain the approved budget; recurring charges are separate from acquisition.",
+      "floorplanNote": "Project brochure layout reference, not a verified plan for the listed unit. Confirm the unit type, area and orientation before reservation.",
+      "price": 1000000,
+      "area": 645,
+      "bedroom": "1BR",
+      "fees": [
+        {
+          "label": "DLD registration provision - full 4%",
+          "amount": 40000,
+          "basis": "Buyer assumption; Form F controls the final split",
+          "estimate": true
+        },
+        {
+          "label": "Brokerage - 2% plus VAT",
+          "amount": 21000,
+          "basis": "Planning allowance; agreed agency terms control",
+          "estimate": true
+        },
+        {
+          "label": "Registration trustee incl. VAT",
+          "amount": 4200,
+          "basis": "AED 4,000 + 5% VAT; at transfer",
+          "estimate": false
+        },
+        {
+          "label": "Title deed, unit map and micro-fees",
+          "amount": 520,
+          "basis": "Published DLD schedule; at registration",
+          "estimate": false
+        },
+        {
+          "label": "Developer NOC / administration",
+          "amount": 2500,
+          "basis": "Planning allowance; obtain exact invoice",
+          "estimate": true
+        },
+        {
+          "label": "Parking allocation provision",
+          "amount": 2500,
+          "basis": "Not a quoted charge; verify title and allocation",
+          "estimate": true
+        },
+        {
+          "label": "Handover / closing provision",
+          "amount": 2500,
+          "basis": "Not a quoted charge; reconcile any closing invoice",
+          "estimate": true
+        },
+        {
+          "label": "Other closing provision",
+          "amount": 2500,
+          "basis": "Cooling / adjustments / transaction contingency",
+          "estimate": true
+        },
+        {
+          "label": "DEWA refundable apartment deposit",
+          "amount": 2000,
+          "basis": "Refundable, included in initial funding",
+          "estimate": false
+        },
+        {
+          "label": "DEWA activation and micro-fees",
+          "amount": 155,
+          "basis": "Current published activation components",
+          "estimate": false
+        }
+      ],
+      "schedule": [
+        {
+          "label": "Full purchase price",
+          "due": "At transfer; less any credited deposit",
+          "percent": 100,
+          "stage": "handover"
+        }
+      ],
+      "planSource": {
+        "label": "Property Finder / Golf Views A, 1BR, 645 sq ft",
+        "url": "https://www.propertyfinder.ae/en/plp/buy/apartment-for-sale-dubai-dubai-south-dubai-world-central-emaar-south-golf-views-golf-views-a-70290683.html"
+      },
+      "paymentFootnote": "The agreement will state any reservation deposit. It reduces the transfer balance AED-for-AED and is not added to the total; the illustrated price remains AED 1,000,000.",
+      "rentSources": [
+        {
+          "label": "Property Finder / Golf Views A registered rent comparables",
+          "url": "https://www.propertyfinder.ae/en/transactions/rent/dubai/dubai-south-dubai-world-central-emaar-south-golf-views-golf-views-a"
+        },
+        {
+          "label": "Dubizzle / matching Golf Views offer and service-charge indication",
+          "url": "https://uae.dubizzle.com/property-for-sale/residential/apartment/2026/3/30/investor-deal-exclusive-motivated-selle-2-970909/"
+        }
+      ],
+      "serviceRate": 17.66,
+      "rentLow": 52000,
+      "rentHigh": 62000,
+      "annualOther": 1140
+    },
+    {
+      "name": "MAG 540 / MAG 5 Boulevard",
+      "developer": "MAG Lifestyle Development",
+      "category": "ready",
+      "status": "Ready",
+      "location": "Dubai South Residential District",
+      "summary": "A furnished two-bedroom apartment in the Residential District, with covered parking and community facilities. Its larger layout offers a family-oriented alternative within the strict budget.",
+      "media": {
+        "hero": "/presentations/dubai-south-investor-brief/projects/mag-5-boulevard-ready/hero.webp",
+        "exteriors": [
+          "/presentations/dubai-south-investor-brief/projects/mag-5-boulevard-ready/exterior-1.webp"
+        ],
+        "interiors": [
+          "/presentations/dubai-south-investor-brief/projects/mag-5-boulevard-ready/interior-1.webp"
+        ],
+        "floorplans": [
+          "/presentations/dubai-south-investor-brief/projects/mag-5-boulevard-ready/floorplan-1.webp"
+        ],
+        "gallery": []
+      },
+      "handover": "Completed; possession date to confirm",
+      "sources": [
+        {
+          "label": "Bayut / MAG 540 exact 2BR offer, ref AP-S-29302",
+          "url": "https://www.bayut.com/property/details-16294534.html"
+        },
+        {
+          "label": "Dubizzle / matching MAG 540 offer, updated 7 September",
+          "url": "https://dubai.dubizzle.com/property-for-sale/residential/apartment/2026/8/26/2-bedroom-family-community-high-rental--2-289875/"
+        },
+        {
+          "label": "Bayut / MAG 540 service-charge reference",
+          "url": "https://www.bayut.com/buildings/mag-540/"
+        }
+      ],
+      "scheduleBasis": "Completed resale. The seller agreement determines any credited deposit and the transfer-date balance.",
+      "planNote": "Any reservation payment reduces the final price balance. Obtain the tenancy or vacant-possession position before signing.",
+      "waiverNote": "No current unit-specific developer DLD waiver was verified. The full 4% is retained in the budget.",
+      "inventoryNote": "Exact advertisement: 1,007 sq ft, AED 1,100,000, permit 7127213772. The first-year budget is close to the cap; confirm every invoice and negotiate if any provision is insufficient.",
+      "parkingNote": "Parking is shown in project or listing information. A separate one-time charge has not been verified; the budget includes an explicit provision, plus a separate handover provision.",
+      "feeNote": "Planning provisions may differ from actual invoices. No borrowing costs are assumed. Refundable utility deposits are included in initial funding.",
+      "serviceNote": "The current unit-specific annual service charge is not confirmed. Obtain the approved budget; recurring charges are separate from acquisition.",
+      "floorplanNote": "Project brochure layout reference, not a verified plan for the listed unit. Confirm the unit type, area and orientation before reservation.",
+      "price": 1100000,
+      "area": 1007,
+      "bedroom": "2BR",
+      "fees": [
+        {
+          "label": "DLD registration provision - full 4%",
+          "amount": 44000,
+          "basis": "Buyer assumption; Form F controls the final split",
+          "estimate": true
+        },
+        {
+          "label": "Brokerage - 2% plus VAT",
+          "amount": 23100,
+          "basis": "Planning allowance; agreed agency terms control",
+          "estimate": true
+        },
+        {
+          "label": "Registration trustee incl. VAT",
+          "amount": 4200,
+          "basis": "AED 4,000 + 5% VAT; at transfer",
+          "estimate": false
+        },
+        {
+          "label": "Title deed, unit map and micro-fees",
+          "amount": 520,
+          "basis": "Published DLD schedule; at registration",
+          "estimate": false
+        },
+        {
+          "label": "Developer NOC / administration",
+          "amount": 2500,
+          "basis": "Planning allowance; obtain exact invoice",
+          "estimate": true
+        },
+        {
+          "label": "Parking allocation provision",
+          "amount": 2500,
+          "basis": "Not a quoted charge; verify title and allocation",
+          "estimate": true
+        },
+        {
+          "label": "Handover / closing provision",
+          "amount": 2500,
+          "basis": "Not a quoted charge; reconcile any closing invoice",
+          "estimate": true
+        },
+        {
+          "label": "Other closing provision",
+          "amount": 2500,
+          "basis": "Cooling / adjustments / transaction contingency",
+          "estimate": true
+        },
+        {
+          "label": "DEWA refundable apartment deposit",
+          "amount": 2000,
+          "basis": "Refundable, included in initial funding",
+          "estimate": false
+        },
+        {
+          "label": "DEWA activation and micro-fees",
+          "amount": 155,
+          "basis": "Current published activation components",
+          "estimate": false
+        }
+      ],
+      "schedule": [
+        {
+          "label": "Full purchase price",
+          "due": "At transfer, less any credited deposit",
+          "percent": 100,
+          "stage": "handover"
+        }
+      ],
+      "planSource": {
+        "label": "Bayut / MAG 540 exact 2BR offer, ref AP-S-29302",
+        "url": "https://www.bayut.com/property/details-16294534.html"
+      },
+      "rentSources": [
+        {
+          "label": "Property Finder / MAG 540 registered rental comparables",
+          "url": "https://www.propertyfinder.ae/en/transactions/rent/dubai/dubai-south-dubai-world-central-residential-district-mag-5-boulevard-mag-540"
+        },
+        {
+          "label": "Bayut / MAG 540 service-charge reference",
+          "url": "https://www.bayut.com/buildings/mag-540/"
+        }
+      ],
+      "serviceRate": 13.65,
+      "rentLow": 70000,
+      "rentHigh": 75000,
+      "annualOther": 1450
+    },
+    {
+      "name": "The Pulse Residence Plaza B8",
+      "developer": "Dubai South Properties",
+      "category": "ready",
+      "status": "Ready",
+      "location": "The Pulse, Residential District, Dubai South",
+      "summary": "A two-bedroom, garden-view apartment in an operating residential community. The selected offer includes covered parking, a balcony and access to shared leisure facilities.",
+      "media": {
+        "hero": "/presentations/dubai-south-investor-brief/projects/pulse-ready/pulse-hero.jpg",
+        "exteriors": [
+          "/presentations/dubai-south-investor-brief/projects/pulse-ready/pulse-exterior.jpg"
+        ],
+        "interiors": [
+          "/presentations/dubai-south-investor-brief/projects/pulse-ready/pulse-interior.jpg"
+        ],
+        "floorplans": [
+          "/presentations/dubai-south-investor-brief/projects/pulse-ready/pulse-2br-plan-presentation.jpg"
+        ]
+      },
+      "handover": "Completed; possession date to confirm",
+      "sources": [
+        {
+          "label": "Property Finder / Pulse Plaza B8, 2BR, 1,054 sq ft",
+          "url": "https://www.propertyfinder.ae/en/plp/buy/apartment-for-sale-dubai-dubai-south-dubai-world-central-the-pulse-the-pulse-residence-plaza-the-pulse-residence-plaza-b8-136991959.html"
+        },
+        {
+          "label": "fäm / Pulse B8-B9 service-charge reference",
+          "url": "https://famproperties.com/service-charges-dubai/dubai-south/the-pulse-residence-plaza-b8-b9"
+        }
+      ],
+      "scheduleBasis": "Completed resale. Any deposit is credited toward the price; the seller agreement confirms the transfer balance.",
+      "planNote": "The SPA and current developer statement control the instalment dates, milestones and any amounts already paid.",
+      "waiverNote": "No current unit-specific developer DLD waiver was verified. The full 4% is retained in the budget.",
+      "inventoryNote": "Verified PF advertisement 136991959: AED 1,059,999, 1,054 sq ft, unfurnished. The listing shows availability from 28 August 2026; vacant possession still requires written confirmation.",
+      "parkingNote": "Parking is shown in project or listing information. A separate one-time charge has not been verified; the budget includes an explicit provision, plus a separate handover provision.",
+      "feeNote": "Planning provisions may differ from actual invoices. No borrowing costs are assumed. Refundable utility deposits are included in initial funding.",
+      "serviceNote": "The current unit-specific annual service charge is not confirmed. Obtain the approved budget; recurring charges are separate from acquisition.",
+      "floorplanNote": "Project brochure layout reference, not a verified plan for the listed unit. Confirm the unit type, area and orientation before reservation.",
+      "price": 1059999,
+      "area": 1054,
+      "bedroom": "2BR",
+      "fees": [
+        {
+          "label": "DLD registration provision - full 4%",
+          "amount": 42399.96,
+          "basis": "Buyer assumption; Form F controls the final split",
+          "estimate": true
+        },
+        {
+          "label": "Brokerage - 2% plus VAT",
+          "amount": 22259.98,
+          "basis": "Planning allowance; agreed agency terms control",
+          "estimate": true
+        },
+        {
+          "label": "Registration trustee incl. VAT",
+          "amount": 4200,
+          "basis": "AED 4,000 + 5% VAT; at transfer",
+          "estimate": false
+        },
+        {
+          "label": "Title deed, unit map and micro-fees",
+          "amount": 520,
+          "basis": "Published DLD schedule; at registration",
+          "estimate": false
+        },
+        {
+          "label": "Developer NOC / administration",
+          "amount": 2500,
+          "basis": "Planning allowance; obtain exact invoice",
+          "estimate": true
+        },
+        {
+          "label": "Parking allocation provision",
+          "amount": 2500,
+          "basis": "Not a quoted charge; verify title and allocation",
+          "estimate": true
+        },
+        {
+          "label": "Handover / closing provision",
+          "amount": 2500,
+          "basis": "Not a quoted charge; reconcile any closing invoice",
+          "estimate": true
+        },
+        {
+          "label": "Other closing provision",
+          "amount": 2500,
+          "basis": "Cooling / adjustments / transaction contingency",
+          "estimate": true
+        },
+        {
+          "label": "DEWA refundable apartment deposit",
+          "amount": 2000,
+          "basis": "Refundable, included in initial funding",
+          "estimate": false
+        },
+        {
+          "label": "DEWA activation and micro-fees",
+          "amount": 155,
+          "basis": "Current published activation components",
+          "estimate": false
+        }
+      ],
+      "schedule": [
+        {
+          "label": "Full purchase price",
+          "due": "At transfer, less any credited deposit",
+          "percent": 100,
+          "stage": "handover"
+        }
+      ],
+      "planSource": {
+        "label": "Property Finder / Pulse Plaza B8, 2BR, 1,054 sq ft",
+        "url": "https://www.propertyfinder.ae/en/plp/buy/apartment-for-sale-dubai-dubai-south-dubai-world-central-the-pulse-the-pulse-residence-plaza-the-pulse-residence-plaza-b8-136991959.html"
+      },
+      "rentSources": [
+        {
+          "label": "Property Finder / Pulse Plaza B8 registered rents",
+          "url": "https://www.propertyfinder.ae/en/transactions/rent/dubai/dubai-south-dubai-world-central-the-pulse-the-pulse-residence-plaza-the-pulse-residence-plaza-b8"
+        },
+        {
+          "label": "Property Finder / current Pulse B8 asking rents",
+          "url": "https://www.propertyfinder.ae/en/rent/dubai/properties-for-rent-dubai-south-dubai-world-central-the-pulse-the-pulse-residence-plaza-the-pulse-residence-plaza-b8.html"
+        }
+      ],
+      "serviceRate": 15,
+      "rentLow": 70000,
+      "rentHigh": 78000,
+      "annualOther": 1480
+    },
+    {
+      "name": "Azizi Venice 15",
+      "developer": "Azizi Developments",
+      "category": "under",
+      "status": "Off-Plan (Under Construction)",
+      "location": "Dubai South",
+      "summary": "A one-bedroom option within the Venice master development. The current screen uses Building 15, not the older Building 14 reference, with a lower illustrated entry cost.",
+      "media": {
+        "hero": "/presentations/dubai-south-investor-brief/projects/azizi-venice/hero.webp",
+        "exteriors": [
+          "/presentations/dubai-south-investor-brief/projects/azizi-venice/exterior-1.webp"
+        ],
+        "interiors": [
+          "/presentations/dubai-south-investor-brief/projects/azizi-venice/interior-1.webp"
+        ],
+        "floorplans": [
+          "/presentations/dubai-south-investor-brief/projects/azizi-venice/floorplan-1.webp"
+        ],
+        "gallery": []
+      },
+      "handover": "May / Q2 2027 - confirm exact building SPA",
+      "sources": [
+        {
+          "label": "Dubizzle / Venice 15 initial-sale offer, 736 sq ft",
+          "url": "https://dubai.dubizzle.com/property-for-sale/residential/apartment/2026/8/13/prime-location-7-discount-freehold-high-2-488701/"
+        },
+        {
+          "label": "Property Finder / Venice 15 project payment framework",
+          "url": "https://www.propertyfinder.ae/en/new-projects/azizi-developments/azizi-venice-15"
+        },
+        {
+          "label": "Property Finder / Venice 15 transaction reference",
+          "url": "https://www.propertyfinder.ae/en/transactions/buy/dubai/dubai-south-dubai-world-central-azizi-venice-azizi-venice-15"
+        }
+      ],
+      "scheduleBasis": "Current initial-sale offer shows 50/50, illustrated at AED 1,107,000. The project page publishes a standard 10/40/50 framework, so the unit reservation must resolve the promotion.",
+      "planNote": "The selected offer states 50% before handover and 50% at handover; the project page shows a standard 10% booking, 40% construction and 50% handover framework. Do not combine them. Obtain the promotional unit schedule and any amount due immediately on entry.",
+      "waiverNote": "A separate initial-sale broker advertisement claims a full DLD waiver. It is not a confirmed offer for this unit; the full 4% remains included until Azizi issues written terms.",
+      "inventoryNote": "Verified initial-sale advertisement updated 5 September 2026: AED 1,107,000 and 736 sq ft. Confirm a current Building 15 developer allocation, fees and completion date.",
+      "parkingNote": "Parking is shown in project or listing information. A separate one-time charge has not been verified; the budget includes an explicit provision, plus a separate handover provision.",
+      "feeNote": "Planning provisions may differ from actual invoices. No borrowing costs are assumed. Refundable utility deposits are included in initial funding. No buyer-side brokerage is assumed for this initial-sale option; confirm the agency terms in writing.",
+      "serviceNote": "The current unit-specific annual service charge is not confirmed. Obtain the approved budget; recurring charges are separate from acquisition.",
+      "floorplanNote": "Azizi Venice project-family 1BR reference from the original brief. Not verified against the selected Building 15, 736-sq-ft offer; request the exact unit plan.",
+      "price": 1107000,
+      "area": 736,
+      "bedroom": "1BR",
+      "fees": [
+        {
+          "label": "DLD registration - full 4%",
+          "amount": 44280,
+          "basis": "No unconfirmed promotional waiver deducted",
+          "estimate": false
+        },
+        {
+          "label": "Oqood / interim registration provision",
+          "amount": 1020,
+          "basis": "Confirm exact registration invoice",
+          "estimate": true
+        },
+        {
+          "label": "Future title deed and unit map",
+          "amount": 520,
+          "basis": "DLD schedule; confirm charges not already absorbed",
+          "estimate": false
+        },
+        {
+          "label": "Administration / NOC provision",
+          "amount": 5000,
+          "basis": "Planning allowance; obtain exact invoice",
+          "estimate": true
+        },
+        {
+          "label": "Parking allocation provision",
+          "amount": 5000,
+          "basis": "Not a quoted charge; confirm SPA allocation",
+          "estimate": true
+        },
+        {
+          "label": "Handover provision",
+          "amount": 5000,
+          "basis": "Not a quoted charge; confirm handover statement",
+          "estimate": true
+        },
+        {
+          "label": "DEWA refundable apartment deposit",
+          "amount": 2000,
+          "basis": "Included in funding; refundable",
+          "estimate": false
+        },
+        {
+          "label": "DEWA activation and micro-fees",
+          "amount": 155,
+          "basis": "Current published activation components",
+          "estimate": false
+        }
+      ],
+      "schedule": [
+        {
+          "label": "Before handover",
+          "due": "Booking split and instalment dates to confirm",
+          "percent": 50,
+          "stage": "before"
+        },
+        {
+          "label": "Completion balance",
+          "due": "At handover",
+          "percent": 50,
+          "stage": "handover"
+        }
+      ],
+      "planSource": {
+        "label": "Dubizzle / Venice 15 initial-sale offer, 736 sq ft",
+        "url": "https://dubai.dubizzle.com/property-for-sale/residential/apartment/2026/8/13/prime-location-7-discount-freehold-high-2-488701/"
+      },
+      "waiverSource": {
+        "label": "Dubizzle / separate Venice 15 DLD-waiver advertisement",
+        "url": "https://dubai.dubizzle.com/property-for-sale/residential/apartment/2026/7/28/distress-deal-dld-waiver-lagoon-view-hi-2-232491/"
+      }
+    },
+    {
+      "name": "Enre Residence",
+      "developer": "Imtiaz Developments",
+      "category": "under",
+      "status": "Off-Plan (Under Construction)",
+      "location": "Dubai South Residential District",
+      "summary": "A one-bedroom initial-sale comparison from Imtiaz in the Residential District. The selected discounted offer advertises 40% during construction and 60% at handover.",
+      "media": {
+        "hero": "/presentations/dubai-south-investor-brief/projects/enre-residence/hero.webp",
+        "exteriors": [
+          "/presentations/dubai-south-investor-brief/projects/enre-residence/exterior-1.webp"
+        ],
+        "interiors": [
+          "/presentations/dubai-south-investor-brief/projects/enre-residence/interior-1.webp"
+        ],
+        "floorplans": [
+          "/presentations/dubai-south-investor-brief/projects/enre-residence/floorplan-1.webp",
+          "/presentations/dubai-south-investor-brief/projects/enre-residence/floorplan-2.webp"
+        ],
+        "gallery": []
+      },
+      "handover": "Official Q1 2028; portal Q3 2028 - SPA controls",
+      "sources": [
+        {
+          "label": "Bayut / Enre initial-sale 1BR offer",
+          "url": "https://www.bayut.com/property/details-16196659.html"
+        },
+        {
+          "label": "Imtiaz / Enre Residence official project",
+          "url": "https://imtiaz.ae/property/enre-residence-by-imtiaz"
+        }
+      ],
+      "scheduleBasis": "Selected offer: 40/60 at AED 1,199,000. Imtiaz publishes 60/40; obtain written confirmation of the promotional unit schedule.",
+      "planNote": "The selected offer states 40% during construction and 60% at handover; Imtiaz publishes 20% booking plus 40% construction and 40% handover as its standard framework. Do not combine them. Obtain the promotional unit schedule and let the SPA resolve both payment and completion timing.",
+      "waiverNote": "A waiver was marketed on a different resale advertisement, not on an official Imtiaz offer for this residence. No discount is deducted from DLD.",
+      "inventoryNote": "Initial-sale advertisement added 17 August 2026: AED 1,199,000 and 733 sq ft. Obtain a current unit number and developer reservation form.",
+      "parkingNote": "Parking is shown in project or listing information. A separate one-time charge has not been verified; the budget includes an explicit provision, plus a separate handover provision.",
+      "feeNote": "Planning provisions may differ from actual invoices. No borrowing costs are assumed. Refundable utility deposits are included in initial funding. No buyer-side brokerage is assumed for this initial-sale option; confirm the agency terms in writing.",
+      "serviceNote": "The current unit-specific annual service charge is not confirmed. Obtain the approved budget; recurring charges are separate from acquisition.",
+      "floorplanNote": "Building floorplate references only, not a one-bedroom unit plan. No official 733-sq-ft unit plan was located on the Imtiaz project page; request the exact unit plan before reservation.",
+      "price": 1199000,
+      "area": 733,
+      "bedroom": "1BR",
+      "fees": [
+        {
+          "label": "DLD registration - full 4%",
+          "amount": 47960,
+          "basis": "No unconfirmed promotional waiver deducted",
+          "estimate": false
+        },
+        {
+          "label": "Oqood / interim registration provision",
+          "amount": 1020,
+          "basis": "Confirm exact registration invoice",
+          "estimate": true
+        },
+        {
+          "label": "Future title deed and unit map",
+          "amount": 520,
+          "basis": "DLD schedule; confirm charges not already absorbed",
+          "estimate": false
+        },
+        {
+          "label": "Administration / NOC provision",
+          "amount": 5000,
+          "basis": "Planning allowance; obtain exact invoice",
+          "estimate": true
+        },
+        {
+          "label": "Parking allocation provision",
+          "amount": 5000,
+          "basis": "Not a quoted charge; confirm SPA allocation",
+          "estimate": true
+        },
+        {
+          "label": "Handover provision",
+          "amount": 5000,
+          "basis": "Not a quoted charge; confirm handover statement",
+          "estimate": true
+        },
+        {
+          "label": "DEWA refundable apartment deposit",
+          "amount": 2000,
+          "basis": "Included in funding; refundable",
+          "estimate": false
+        },
+        {
+          "label": "DEWA activation and micro-fees",
+          "amount": 155,
+          "basis": "Current published activation components",
+          "estimate": false
+        }
+      ],
+      "schedule": [
+        {
+          "label": "During construction",
+          "due": "Booking split and instalment dates to confirm",
+          "percent": 40,
+          "stage": "before"
+        },
+        {
+          "label": "Completion balance",
+          "due": "At handover",
+          "percent": 60,
+          "stage": "handover"
+        }
+      ],
+      "planSource": {
+        "label": "Bayut / Enre initial-sale 1BR offer",
+        "url": "https://www.bayut.com/property/details-16196659.html"
+      }
+    },
+    {
+      "name": "Golf Fields",
+      "developer": "Emaar",
+      "category": "under",
+      "status": "Off-Plan (Under Construction)",
+      "location": "Emaar South",
+      "summary": "An Emaar South apartment comparison with golf-oriented amenities and a staged 80/20 overall commitment. The illustrated one-bedroom asking price remains subject to developer allocation.",
+      "media": {
+        "hero": "/presentations/dubai-south-investor-brief/projects/golf-fields/hero.webp",
+        "exteriors": [
+          "/presentations/dubai-south-investor-brief/projects/golf-fields/exterior-1.webp"
+        ],
+        "interiors": [
+          "/presentations/dubai-south-investor-brief/projects/golf-fields/interior-1.webp"
+        ],
+        "floorplans": [
+          "/presentations/dubai-south-investor-brief/projects/golf-fields/floorplan-1.webp",
+          "/presentations/dubai-south-investor-brief/projects/golf-fields/floorplan-2.webp"
+        ],
+        "gallery": [
+          "/presentations/dubai-south-investor-brief/projects/golf-fields/gallery-1.webp"
+        ]
+      },
+      "handover": "2030 - published quarters differ; confirm SPA",
+      "sources": [
+        {
+          "label": "Bayut / Golf Fields initial-sale 1BR offer",
+          "url": "https://www.bayut.com/property/details-15426101.html"
+        },
+        {
+          "label": "Emaar / Golf Fields official project",
+          "url": "https://www.emaar.com/en/properties/golf-fields-at-emaar-south"
+        },
+        {
+          "label": "Mira / published Golf Fields instalment schedule",
+          "url": "https://www.mira-international.com/properties/golf-fields"
+        }
+      ],
+      "scheduleBasis": "Published 10/70/20 schedule, illustrated at AED 1,270,888. Dates are a project reference, not an issued unit payment notice.",
+      "planNote": "Broker schedule indicates September 2030 while a current listing shows Q1 2030. Confirm the actual dates and milestones in the Emaar reservation and SPA.",
+      "waiverNote": "No current unit-specific developer DLD waiver was verified. The full 4% is retained in the budget.",
+      "inventoryNote": "Current initial-sale listing: AED 1,270,888 for approximately 809 sq ft. This is broker-marketed evidence, not an Emaar reservation confirmation.",
+      "parkingNote": "Parking is shown in project or listing information. A separate one-time charge has not been verified; the budget includes an explicit provision, plus a separate handover provision.",
+      "feeNote": "Planning provisions may differ from actual invoices. No borrowing costs are assumed. Refundable utility deposits are included in initial funding. No buyer-side brokerage is assumed for this initial-sale option; confirm the agency terms in writing.",
+      "serviceNote": "The current unit-specific annual service charge is not confirmed. Obtain the approved budget; recurring charges are separate from acquisition.",
+      "floorplanNote": "Project brochure layout reference, not a verified plan for the listed unit. Confirm the unit type, area and orientation before reservation.",
+      "price": 1270888,
+      "area": 809,
+      "bedroom": "1BR",
+      "fees": [
+        {
+          "label": "DLD registration - full 4%",
+          "amount": 50835.52,
+          "basis": "No unconfirmed promotional waiver deducted",
+          "estimate": false
+        },
+        {
+          "label": "Oqood / interim registration provision",
+          "amount": 3020,
+          "basis": "Confirm exact registration invoice",
+          "estimate": true
+        },
+        {
+          "label": "Future title deed and unit map",
+          "amount": 520,
+          "basis": "DLD schedule; confirm charges not already absorbed",
+          "estimate": false
+        },
+        {
+          "label": "Administration / NOC provision",
+          "amount": 5000,
+          "basis": "Planning allowance; obtain exact invoice",
+          "estimate": true
+        },
+        {
+          "label": "Parking allocation provision",
+          "amount": 5000,
+          "basis": "Not a quoted charge; confirm SPA allocation",
+          "estimate": true
+        },
+        {
+          "label": "Handover provision",
+          "amount": 5000,
+          "basis": "Not a quoted charge; confirm handover statement",
+          "estimate": true
+        },
+        {
+          "label": "DEWA refundable apartment deposit",
+          "amount": 2000,
+          "basis": "Included in funding; refundable",
+          "estimate": false
+        },
+        {
+          "label": "DEWA activation and micro-fees",
+          "amount": 155,
+          "basis": "Current published activation components",
+          "estimate": false
+        }
+      ],
+      "schedule": [
+        {
+          "label": "Booking",
+          "due": "At reservation",
+          "percent": 10,
+          "stage": "before"
+        },
+        {
+          "label": "2nd instalment",
+          "due": "October 2026",
+          "percent": 10,
+          "stage": "before"
+        },
+        {
+          "label": "3rd instalment",
+          "due": "June 2027",
+          "percent": 10,
+          "stage": "before"
+        },
+        {
+          "label": "4th instalment",
+          "due": "October 2027",
+          "percent": 10,
+          "stage": "before"
+        },
+        {
+          "label": "20% construction",
+          "due": "March 2028",
+          "percent": 10,
+          "stage": "before"
+        },
+        {
+          "label": "40% construction",
+          "due": "September 2028",
+          "percent": 10,
+          "stage": "before"
+        },
+        {
+          "label": "60% construction",
+          "due": "February 2029",
+          "percent": 10,
+          "stage": "before"
+        },
+        {
+          "label": "80% construction",
+          "due": "July 2029",
+          "percent": 10,
+          "stage": "before"
+        },
+        {
+          "label": "Completion balance",
+          "due": "September 2030; confirm SPA",
+          "percent": 20,
+          "stage": "handover"
+        }
+      ],
+      "planSource": {
+        "label": "Mira / published Golf Fields instalment schedule",
+        "url": "https://www.mira-international.com/properties/golf-fields"
+      }
+    },
+    {
+      "name": "Golf Trails",
+      "developer": "Emaar",
+      "category": "under",
+      "status": "Off-Plan (Under Construction)",
+      "location": "Emaar South",
+      "summary": "A conditional one-bedroom Emaar South comparison. Broker-marketed pricing fits the budget model, but it must be reconciled with Emaar current inventory before selection.",
+      "media": {
+        "hero": "/presentations/dubai-south-investor-brief/projects/golf-trails/hero.webp",
+        "exteriors": [
+          "/presentations/dubai-south-investor-brief/projects/golf-trails/exterior-1.webp"
+        ],
+        "interiors": [
+          "/presentations/dubai-south-investor-brief/projects/golf-trails/interior-1.webp"
+        ],
+        "floorplans": [
+          "/presentations/dubai-south-investor-brief/projects/golf-trails/floorplan-1.webp",
+          "/presentations/dubai-south-investor-brief/projects/golf-trails/floorplan-2.webp"
+        ],
+        "gallery": []
+      },
+      "handover": "Q4 2030 - confirm SPA",
+      "sources": [
+        {
+          "label": "Property Finder / Golf Trails initial-sale 1BR offer",
+          "url": "https://www.propertyfinder.ae/en/plp/buy/apartment-for-sale-dubai-dubai-south-dubai-world-central-emaar-south-golf-trails-137443645.html"
+        },
+        {
+          "label": "Emaar / Emaar South community and current inventory",
+          "url": "https://www.emaar.com/en/our-communities/emaar-south"
+        },
+        {
+          "label": "Emaar / Golf Trails official project",
+          "url": "https://www.emaar.com/en/properties/golf-trails-at-emaar-south"
+        }
+      ],
+      "scheduleBasis": "Marketed 80/20 framework; 10% booking and 70% construction shown as an illustration until the unit schedule is issued.",
+      "planNote": "Do not infer reservable one-bedroom stock from a historical launch price. Confirm the exact Emaar unit and each instalment before relying on this schedule.",
+      "waiverNote": "No current unit-specific developer DLD waiver was verified. The full 4% is retained in the budget.",
+      "inventoryNote": "The current broker 1BR asks AED 1,278,888; Emaar live community stock starts at AED 1,819,888. This lower-priced unit is conditional on a current Emaar reservation.",
+      "parkingNote": "Parking is shown in project or listing information. A separate one-time charge has not been verified; the budget includes an explicit provision, plus a separate handover provision.",
+      "feeNote": "Planning provisions may differ from actual invoices. No borrowing costs are assumed. Refundable utility deposits are included in initial funding. No buyer-side brokerage is assumed for this initial-sale option; confirm the agency terms in writing.",
+      "serviceNote": "The current unit-specific annual service charge is not confirmed. Obtain the approved budget; recurring charges are separate from acquisition.",
+      "floorplanNote": "Project brochure layout reference, not a verified plan for the listed unit. Confirm the unit type, area and orientation before reservation.",
+      "price": 1278888,
+      "area": 755,
+      "bedroom": "1BR",
+      "fees": [
+        {
+          "label": "DLD registration - full 4%",
+          "amount": 51155.52,
+          "basis": "No unconfirmed promotional waiver deducted",
+          "estimate": false
+        },
+        {
+          "label": "Oqood / interim registration provision",
+          "amount": 3020,
+          "basis": "Confirm exact registration invoice",
+          "estimate": true
+        },
+        {
+          "label": "Future title deed and unit map",
+          "amount": 520,
+          "basis": "DLD schedule; confirm charges not already absorbed",
+          "estimate": false
+        },
+        {
+          "label": "Administration / NOC provision",
+          "amount": 5000,
+          "basis": "Planning allowance; obtain exact invoice",
+          "estimate": true
+        },
+        {
+          "label": "Parking allocation provision",
+          "amount": 5000,
+          "basis": "Not a quoted charge; confirm SPA allocation",
+          "estimate": true
+        },
+        {
+          "label": "Handover provision",
+          "amount": 5000,
+          "basis": "Not a quoted charge; confirm handover statement",
+          "estimate": true
+        },
+        {
+          "label": "DEWA refundable apartment deposit",
+          "amount": 2000,
+          "basis": "Included in funding; refundable",
+          "estimate": false
+        },
+        {
+          "label": "DEWA activation and micro-fees",
+          "amount": 155,
+          "basis": "Current published activation components",
+          "estimate": false
+        }
+      ],
+      "schedule": [
+        {
+          "label": "Booking",
+          "due": "Illustrative split; reservation controls",
+          "percent": 10,
+          "stage": "before"
+        },
+        {
+          "label": "Construction instalments",
+          "due": "Subtotal; unit dates to confirm",
+          "percent": 70,
+          "stage": "before"
+        },
+        {
+          "label": "Completion balance",
+          "due": "Q4 2030; confirm SPA",
+          "percent": 20,
+          "stage": "handover"
+        }
+      ],
+      "planSource": {
+        "label": "Property Finder / Golf Trails initial-sale 1BR offer",
+        "url": "https://www.propertyfinder.ae/en/plp/buy/apartment-for-sale-dubai-dubai-south-dubai-world-central-emaar-south-golf-trails-137443645.html"
+      }
+    },
+    {
+      "name": "Altura 2 at Waada",
+      "developer": "BT Properties",
+      "category": "under",
+      "status": "Off-Plan (Under Construction)",
+      "location": "Dubai South",
+      "summary": "A larger two-bedroom comparison within the Waada master development. Its illustrated area and entry price offer a space-led alternative to the one-bedroom options.",
+      "media": {
+        "hero": "/presentations/dubai-south-investor-brief/projects/waada-altura/hero.webp",
+        "exteriors": [
+          "/presentations/dubai-south-investor-brief/projects/waada-altura/exterior-1.webp"
+        ],
+        "interiors": [
+          "/presentations/dubai-south-investor-brief/projects/waada-altura/interior-1.webp"
+        ],
+        "floorplans": [
+          "/presentations/dubai-south-investor-brief/projects/waada-altura/floorplan-1.webp"
+        ],
+        "gallery": [
+          "/presentations/dubai-south-investor-brief/projects/waada-altura/gallery-1.webp"
+        ]
+      },
+      "handover": "March 2029 project record - confirm SPA",
+      "sources": [
+        {
+          "label": "Property Finder / Altura 2 initial-sale 2BR offer",
+          "url": "https://www.propertyfinder.ae/en/plp/buy/apartment-for-sale-dubai-dubai-south-dubai-world-central-waada-by-bahria-town-altura-2-90908883.html"
+        },
+        {
+          "label": "Property Finder / Altura 2 project and construction record",
+          "url": "https://www.propertyfinder.ae/en/new-projects/bt-holdings/altura-2"
+        },
+        {
+          "label": "BT Properties / Waada construction announcement",
+          "url": "https://btproperties.ae/bt-properties-breaks-ground-on-phase-1-of-waada-in-dubai-south/"
+        }
+      ],
+      "scheduleBasis": "Published 10/60/30 structure. The full final 30% is provisionally funded at handover; any later schedule needs written confirmation.",
+      "planNote": "BT marketing describes post-handover payments, while the portal places the final 30% at handover. No later funding benefit is assumed without the SPA schedule.",
+      "waiverNote": "No current unit-specific developer DLD waiver was verified. The full 4% is retained in the budget.",
+      "inventoryNote": "Current public asking-price evidence is not a reserved unit. Confirm availability, registered area and the agreed price in writing.",
+      "parkingNote": "Parking is shown in project or listing information. A separate one-time charge has not been verified; the budget includes an explicit provision, plus a separate handover provision.",
+      "feeNote": "Planning provisions may differ from actual invoices. No borrowing costs are assumed. Refundable utility deposits are included in initial funding. No buyer-side brokerage is assumed for this initial-sale option; confirm the agency terms in writing.",
+      "serviceNote": "The current unit-specific annual service charge is not confirmed. Obtain the approved budget; recurring charges are separate from acquisition.",
+      "floorplanNote": "Waada / Altura design-family reference from the original brief; not an exact Altura 2, 1,251.74-sq-ft unit plan.",
+      "price": 1415000,
+      "area": 1251.74,
+      "bedroom": "2BR",
+      "fees": [
+        {
+          "label": "DLD registration - full 4%",
+          "amount": 56600,
+          "basis": "No unconfirmed promotional waiver deducted",
+          "estimate": false
+        },
+        {
+          "label": "Oqood / interim registration provision",
+          "amount": 1020,
+          "basis": "Confirm exact registration invoice",
+          "estimate": true
+        },
+        {
+          "label": "Future title deed and unit map",
+          "amount": 520,
+          "basis": "DLD schedule; confirm charges not already absorbed",
+          "estimate": false
+        },
+        {
+          "label": "Administration / NOC provision",
+          "amount": 5000,
+          "basis": "Planning allowance; obtain exact invoice",
+          "estimate": true
+        },
+        {
+          "label": "Parking allocation provision",
+          "amount": 5000,
+          "basis": "Not a quoted charge; confirm SPA allocation",
+          "estimate": true
+        },
+        {
+          "label": "Handover provision",
+          "amount": 5000,
+          "basis": "Not a quoted charge; confirm handover statement",
+          "estimate": true
+        },
+        {
+          "label": "DEWA refundable apartment deposit",
+          "amount": 2000,
+          "basis": "Included in funding; refundable",
+          "estimate": false
+        },
+        {
+          "label": "DEWA activation and micro-fees",
+          "amount": 155,
+          "basis": "Current published activation components",
+          "estimate": false
+        }
+      ],
+      "schedule": [
+        {
+          "label": "Booking",
+          "due": "At reservation",
+          "percent": 10,
+          "stage": "before"
+        },
+        {
+          "label": "Construction instalments",
+          "due": "Subtotal; unit dates to confirm",
+          "percent": 60,
+          "stage": "before"
+        },
+        {
+          "label": "Final balance - provision",
+          "due": "At handover in conservative model",
+          "percent": 30,
+          "stage": "handover"
+        }
+      ],
+      "planSource": {
+        "label": "Property Finder / Altura 2 project and construction record",
+        "url": "https://www.propertyfinder.ae/en/new-projects/bt-holdings/altura-2"
+      }
+    },
+    {
+      "name": "AVENEW 888",
+      "developer": "AVENEW Development",
+      "category": "under",
+      "status": "Off-Plan (Under Construction)",
+      "location": "Dubai South Residential District",
+      "summary": "A design-led one-bedroom comparison at the upper edge of the core budget. The dated developer schedule requires a refreshed allocation of any already-due instalments.",
+      "media": {
+        "hero": "/presentations/dubai-south-investor-brief/projects/avenew-888/hero.webp",
+        "exteriors": [
+          "/presentations/dubai-south-investor-brief/projects/avenew-888/exterior-1.webp"
+        ],
+        "interiors": [
+          "/presentations/dubai-south-investor-brief/projects/avenew-888/interior-1.webp"
+        ],
+        "floorplans": [
+          "/presentations/dubai-south-investor-brief/projects/avenew-888/floorplan-1-unit-crop-20260908.webp",
+          "/presentations/dubai-south-investor-brief/projects/avenew-888/floorplan-2-unit-crop-20260908.webp"
+        ],
+        "gallery": []
+      },
+      "handover": "Q1 2028 - confirm live schedule",
+      "sources": [
+        {
+          "label": "AVENEW / official dated 888 payment schedule",
+          "url": "https://avenewdevelopment.ae/landing/avenew-888"
+        },
+        {
+          "label": "AVENEW / official MODO phase payment-plan document",
+          "url": "https://avenewdevelopment.ae/assets/landing-pages/avenew-888/avenew888-modo_payment-plan.pdf"
+        },
+        {
+          "label": "Property Finder / current AVENEW developer-unit record",
+          "url": "https://www.propertyfinder.ae/en/new-projects/avenew-properties/avenew-888"
+        },
+        {
+          "label": "AVENEW / official project overview",
+          "url": "https://avenewdevelopment.ae/projects/avenew-888"
+        }
+      ],
+      "scheduleBasis": "Official dated 50/50 schedule, illustrated at AED 1.6M. The 1 September 2026 milestone has passed and may be payable on entry.",
+      "planNote": "A second developer page describes 60/40. Obtain a current reservation schedule and resolve the inconsistency before proceeding. The dated 50/50 plan is used transparently here.",
+      "waiverNote": "No current unit-specific developer DLD waiver was verified. The full 4% is retained in the budget.",
+      "inventoryNote": "Developer-unit record: 1BR from AED 1.6M and 710 sq ft. Limited budget headroom makes a complete current fee quotation essential.",
+      "parkingNote": "Parking is shown in project or listing information. A separate one-time charge has not been verified; the budget includes an explicit provision, plus a separate handover provision.",
+      "feeNote": "Planning provisions may differ from actual invoices. No borrowing costs are assumed. Refundable utility deposits are included in initial funding. No buyer-side brokerage is assumed for this initial-sale option; confirm the agency terms in writing.",
+      "serviceNote": "The current unit-specific annual service charge is not confirmed. Obtain the approved budget; recurring charges are separate from acquisition.",
+      "floorplanNote": "Project brochure layout reference, not a verified plan for the listed unit. Confirm the unit type, area and orientation before reservation.",
+      "price": 1600000,
+      "area": 710,
+      "bedroom": "1BR",
+      "fees": [
+        {
+          "label": "DLD registration - full 4%",
+          "amount": 64000,
+          "basis": "No unconfirmed promotional waiver deducted",
+          "estimate": false
+        },
+        {
+          "label": "Oqood / interim registration provision",
+          "amount": 1020,
+          "basis": "Confirm exact registration invoice",
+          "estimate": true
+        },
+        {
+          "label": "Future title deed and unit map",
+          "amount": 520,
+          "basis": "DLD schedule; confirm charges not already absorbed",
+          "estimate": false
+        },
+        {
+          "label": "Booking administration fee",
+          "amount": 3500,
+          "basis": "Published charge; confirm unit applicability",
+          "estimate": false
+        },
+        {
+          "label": "Parking allocation provision",
+          "amount": 5000,
+          "basis": "Not a quoted charge; confirm SPA allocation",
+          "estimate": true
+        },
+        {
+          "label": "Handover provision",
+          "amount": 5000,
+          "basis": "Not a quoted charge; confirm handover statement",
+          "estimate": true
+        },
+        {
+          "label": "DEWA refundable apartment deposit",
+          "amount": 2000,
+          "basis": "Included in funding; refundable",
+          "estimate": false
+        },
+        {
+          "label": "DEWA activation and micro-fees",
+          "amount": 155,
+          "basis": "Current published activation components",
+          "estimate": false
+        }
+      ],
+      "schedule": [
+        {
+          "label": "Booking",
+          "due": "At reservation",
+          "percent": 10,
+          "stage": "before"
+        },
+        {
+          "label": "2nd instalment",
+          "due": "1 Sep 2026 - already elapsed",
+          "percent": 10,
+          "stage": "before"
+        },
+        {
+          "label": "3rd instalment",
+          "due": "1 Mar 2027",
+          "percent": 5,
+          "stage": "before"
+        },
+        {
+          "label": "4th instalment",
+          "due": "1 Jun 2027",
+          "percent": 10,
+          "stage": "before"
+        },
+        {
+          "label": "5th instalment",
+          "due": "1 Sep 2027",
+          "percent": 5,
+          "stage": "before"
+        },
+        {
+          "label": "6th instalment",
+          "due": "1 Dec 2027",
+          "percent": 10,
+          "stage": "before"
+        },
+        {
+          "label": "Completion balance",
+          "due": "Q1 2028",
+          "percent": 50,
+          "stage": "handover"
+        }
+      ],
+      "planSource": {
+        "label": "AVENEW / official dated 888 payment schedule",
+        "url": "https://avenewdevelopment.ae/landing/avenew-888"
+      },
+      "paymentFootnote": "The 10% booking instalment is credited toward the property price and is not added twice. The separately itemised AED 3,500 booking administration fee is a published additional charge; confirm its applicability to the selected unit and obtain the developer invoice."
+    },
+    {
+      "name": "Windsor House",
+      "developer": "Ellington Properties",
+      "category": "under",
+      "status": "Off-Plan (Under Construction) / Resale",
+      "location": "Dubai South Residential District",
+      "summary": "An Ellington design-led comparison available through the resale market. The developer release is sold out; the incoming buyer obligation depends on the original price and seller ledger.",
+      "media": {
+        "hero": "/presentations/dubai-south-investor-brief/projects/windsor-house/hero.webp",
+        "exteriors": [
+          "/presentations/dubai-south-investor-brief/projects/windsor-house/exterior-1.webp"
+        ],
+        "interiors": [
+          "/presentations/dubai-south-investor-brief/projects/windsor-house/interior-1.webp"
+        ],
+        "floorplans": [
+          "/presentations/dubai-south-investor-brief/projects/windsor-house/floorplan-1.webp",
+          "/presentations/dubai-south-investor-brief/projects/windsor-house/floorplan-2.webp"
+        ],
+        "gallery": []
+      },
+      "handover": "Q3 2029 used conservatively; SPA to confirm",
+      "sources": [
+        {
+          "label": "Windsor House / current resale asking-price evidence",
+          "url": "https://www.propertyfinder.ae/en/plp/buy/apartment-for-sale-dubai-dubai-south-dubai-world-central-residential-district-windsor-house-windsor-house-building-1-132951599.html"
+        },
+        {
+          "label": "Ellington / resale NOC and service-charge guidance",
+          "url": "https://ellingtonproperties.ae/en/faq"
+        },
+        {
+          "label": "Ellington / Windsor House official project",
+          "url": "https://ellingtonproperties.ae/en/property-for-sale/windsor-house-dubai-south"
+        }
+      ],
+      "scheduleBasis": "Resale / assignment: timing is unallocated. The original developer percentages must not be applied to the resale asking price.",
+      "planNote": "Obtain original SPA price, seller equity paid, premium or discount, remaining developer balance and NOC. These establish the amount due at transfer and all future instalments.",
+      "waiverNote": "No current unit-specific developer DLD waiver was verified. The full 4% is retained in the budget.",
+      "inventoryNote": "Conditional resale comparison. Public asking price and area are shown, but exact unit availability, paid-to-date amount and seller ledger are not independently confirmed.",
+      "parkingNote": "Parking is shown in project or listing information. A separate one-time charge has not been verified; the budget includes an explicit provision, plus a separate handover provision.",
+      "feeNote": "Planning provisions may differ from actual invoices. No borrowing costs are assumed. Refundable utility deposits are included in initial funding.",
+      "serviceNote": "The current unit-specific annual service charge is not confirmed. Obtain the approved budget; recurring charges are separate from acquisition.",
+      "floorplanNote": "Project brochure layout reference, not a verified plan for the listed unit. Confirm the unit type, area and orientation before reservation.",
+      "price": 1200000,
+      "area": 781,
+      "bedroom": "1BR",
+      "fees": [
+        {
+          "label": "DLD registration provision - full 4%",
+          "amount": 48000,
+          "basis": "Buyer assumption; assignment terms control the split",
+          "estimate": true
+        },
+        {
+          "label": "Resale brokerage - 2% plus VAT",
+          "amount": 25200,
+          "basis": "Planning allowance; agreed agency terms control",
+          "estimate": true
+        },
+        {
+          "label": "Registration service-partner provision",
+          "amount": 4200,
+          "basis": "Conservative provision; confirm correct transfer route",
+          "estimate": true
+        },
+        {
+          "label": "Oqood / interim registration provision",
+          "amount": 1020,
+          "basis": "Confirm exact registration invoice",
+          "estimate": true
+        },
+        {
+          "label": "Future title deed and unit map",
+          "amount": 520,
+          "basis": "DLD schedule; confirm charges not already absorbed",
+          "estimate": false
+        },
+        {
+          "label": "Administration / NOC provision",
+          "amount": 5250,
+          "basis": "Published charge; confirm unit applicability",
+          "estimate": false
+        },
+        {
+          "label": "Parking allocation provision",
+          "amount": 5000,
+          "basis": "Not a quoted charge; confirm SPA allocation",
+          "estimate": true
+        },
+        {
+          "label": "Handover provision",
+          "amount": 5000,
+          "basis": "Not a quoted charge; confirm handover statement",
+          "estimate": true
+        },
+        {
+          "label": "DEWA refundable apartment deposit",
+          "amount": 2000,
+          "basis": "Included in funding; refundable",
+          "estimate": false
+        },
+        {
+          "label": "DEWA activation and micro-fees",
+          "amount": 155,
+          "basis": "Current published activation components",
+          "estimate": false
+        }
+      ],
+      "schedule": [
+        {
+          "label": "Total purchase consideration",
+          "due": "Timing unallocated - seller ledger needed",
+          "percent": 100,
+          "stage": "unallocated"
+        }
+      ],
+      "planSource": {
+        "label": "Windsor House / current resale asking-price evidence",
+        "url": "https://www.propertyfinder.ae/en/plp/buy/apartment-for-sale-dubai-dubai-south-dubai-world-central-residential-district-windsor-house-windsor-house-building-1-132951599.html"
+      },
+      "paymentFootnote": "The 100% row reconciles the consideration only; it is not a claim that the full price is due today. The seller statement must split transfer-day payment and future developer instalments."
+    },
+    {
+      "name": "Windsor House II",
+      "developer": "Ellington Properties",
+      "category": "under",
+      "status": "Off-Plan (Under Construction) / Resale",
+      "location": "Dubai South Residential District",
+      "summary": "An Ellington design-led comparison available through the resale market. The developer release is sold out; the incoming buyer obligation depends on the original price and seller ledger.",
+      "media": {
+        "hero": "/presentations/dubai-south-investor-brief/projects/windsor-house-ii/hero.webp",
+        "exteriors": [
+          "/presentations/dubai-south-investor-brief/projects/windsor-house-ii/exterior-1.webp"
+        ],
+        "interiors": [
+          "/presentations/dubai-south-investor-brief/projects/windsor-house-ii/interior-1.webp"
+        ],
+        "floorplans": [
+          "/presentations/dubai-south-investor-brief/projects/windsor-house-ii/floorplan-1.webp",
+          "/presentations/dubai-south-investor-brief/projects/windsor-house-ii/floorplan-2.webp"
+        ],
+        "gallery": []
+      },
+      "handover": "Q3 2029 used conservatively; SPA to confirm",
+      "sources": [
+        {
+          "label": "Windsor House II / current resale asking-price evidence",
+          "url": "https://www.bayut.com/for-sale/property/dubai/dubai-south/residential-district/windsor-house-ii/"
+        },
+        {
+          "label": "Ellington / resale NOC and service-charge guidance",
+          "url": "https://ellingtonproperties.ae/en/faq"
+        },
+        {
+          "label": "Ellington / Windsor House II official project",
+          "url": "https://ellingtonproperties.ae/en/property-for-sale/windsor-house-ii-dubai-south"
+        }
+      ],
+      "scheduleBasis": "Resale / assignment: timing is unallocated. The original developer percentages must not be applied to the resale asking price.",
+      "planNote": "Obtain original SPA price, seller equity paid, premium or discount, remaining developer balance and NOC. These establish the amount due at transfer and all future instalments.",
+      "waiverNote": "No current unit-specific developer DLD waiver was verified. The full 4% is retained in the budget.",
+      "inventoryNote": "Conditional resale comparison. Public asking price and area are shown, but exact unit availability, paid-to-date amount and seller ledger are not independently confirmed.",
+      "parkingNote": "Parking is shown in project or listing information. A separate one-time charge has not been verified; the budget includes an explicit provision, plus a separate handover provision.",
+      "feeNote": "Planning provisions may differ from actual invoices. No borrowing costs are assumed. Refundable utility deposits are included in initial funding.",
+      "serviceNote": "The current unit-specific annual service charge is not confirmed. Obtain the approved budget; recurring charges are separate from acquisition.",
+      "floorplanNote": "Project brochure layout reference, not a verified plan for the listed unit. Confirm the unit type, area and orientation before reservation.",
+      "price": 1425000,
+      "area": 781,
+      "bedroom": "1BR",
+      "fees": [
+        {
+          "label": "DLD registration provision - full 4%",
+          "amount": 57000,
+          "basis": "Buyer assumption; assignment terms control the split",
+          "estimate": true
+        },
+        {
+          "label": "Resale brokerage - 2% plus VAT",
+          "amount": 29925,
+          "basis": "Planning allowance; agreed agency terms control",
+          "estimate": true
+        },
+        {
+          "label": "Registration service-partner provision",
+          "amount": 4200,
+          "basis": "Conservative provision; confirm correct transfer route",
+          "estimate": true
+        },
+        {
+          "label": "Oqood / interim registration provision",
+          "amount": 1020,
+          "basis": "Confirm exact registration invoice",
+          "estimate": true
+        },
+        {
+          "label": "Future title deed and unit map",
+          "amount": 520,
+          "basis": "DLD schedule; confirm charges not already absorbed",
+          "estimate": false
+        },
+        {
+          "label": "Administration / NOC provision",
+          "amount": 5250,
+          "basis": "Published charge; confirm unit applicability",
+          "estimate": false
+        },
+        {
+          "label": "Parking allocation provision",
+          "amount": 5000,
+          "basis": "Not a quoted charge; confirm SPA allocation",
+          "estimate": true
+        },
+        {
+          "label": "Handover provision",
+          "amount": 5000,
+          "basis": "Not a quoted charge; confirm handover statement",
+          "estimate": true
+        },
+        {
+          "label": "DEWA refundable apartment deposit",
+          "amount": 2000,
+          "basis": "Included in funding; refundable",
+          "estimate": false
+        },
+        {
+          "label": "DEWA activation and micro-fees",
+          "amount": 155,
+          "basis": "Current published activation components",
+          "estimate": false
+        }
+      ],
+      "schedule": [
+        {
+          "label": "Total purchase consideration",
+          "due": "Timing unallocated - seller ledger needed",
+          "percent": 100,
+          "stage": "unallocated"
+        }
+      ],
+      "planSource": {
+        "label": "Windsor House II / current resale asking-price evidence",
+        "url": "https://www.bayut.com/for-sale/property/dubai/dubai-south/residential-district/windsor-house-ii/"
+      },
+      "paymentFootnote": "The 100% row reconciles the consideration only; it is not a claim that the full price is due today. The seller statement must split transfer-day payment and future developer instalments."
+    },
+    {
+      "name": "Terra Gardens",
+      "developer": "Emaar Properties",
+      "category": "above",
+      "status": "Off-Plan (Under Construction)",
+      "location": "Expo Living / Expo City, Dubai South",
+      "summary": "An available Emaar one-bedroom residence at Expo Living. The comparison uses a specific unit record, its published floorplan and a dated developer payment schedule.",
+      "media": {
+        "hero": "/presentations/dubai-south-investor-brief/projects/terra-gardens/terra-gardens-official-hero-20260908.jpg",
+        "exteriors": [
+          "/presentations/dubai-south-investor-brief/projects/terra-gardens/terra-gardens-official-exterior-20260908.jpg"
+        ],
+        "interiors": [
+          "/presentations/dubai-south-investor-brief/projects/terra-gardens/terra-gardens-official-interior-20260908.jpg"
+        ],
+        "floorplans": [
+          "/presentations/dubai-south-investor-brief/projects/terra-gardens/terra-gardens-unit-b1-2-207-floorplan-unit-crop-20260908.webp"
+        ]
+      },
+      "handover": "31 October 2029",
+      "sources": [
+        {
+          "label": "Emaar / available unit EX Terra Gardens Building 1-2-207",
+          "url": "https://www.emaar.com/en/unit-details/EX%20Terra%20Gardens%20Building%201-2-207"
+        },
+        {
+          "label": "Emaar / Expo Living community and current inventory",
+          "url": "https://www.emaar.com/en/our-communities/expo-living"
+        },
+        {
+          "label": "Emaar / exact unit floorplan",
+          "url": "https://emaarsales.my.salesforce-sites.com/api/FloorPlanToSiteUsers?id=a0ZNM00000186Q62AI"
+        },
+        {
+          "label": "Emaar exact Terra Gardens unit page",
+          "url": "https://www.emaar.com/en/unit-details/EX%20Terra%20Gardens%20Building%201-2-207"
+        },
+        {
+          "label": "Emaar Terra Gardens project page",
+          "url": "https://www.emaar.com/en/properties/terra-gardens-at-expo-living"
+        },
+        {
+          "label": "Emaar Expo Living live inventory",
+          "url": "https://www.emaar.com/en/our-communities/expo-living"
+        },
+        {
+          "label": "Emaar exact-unit payment-plan API",
+          "url": "https://www.emaar.com/api/payment-plan"
+        },
+        {
+          "label": "Emaar exact-unit floor plan",
+          "url": "https://emaarsales.my.salesforce-sites.com/api/FloorPlanToSiteUsers?id=a0ZNM00000186Q62AI"
+        }
+      ],
+      "scheduleBasis": "Current Emaar unit payment record, including developer rounding. Unit: EX Terra Gardens Building 1-2-207.",
+      "planNote": "All eight pre-handover instalments and the final 20% are shown from the current Emaar record. The booking date and any later changes must be confirmed on reservation.",
+      "waiverNote": "A broker markets a 2% waiver on another Terra Gardens offer. This exact Emaar unit still displays full 4% DLD; no waiver is deducted.",
+      "inventoryNote": "Emaar showed this exact unit as available on 8 September 2026: EX Terra Gardens Building 1-2-207. It is not held or reserved for Mr. Arul and can be allocated at any time.",
+      "parkingNote": "Parking is shown in project or listing information. A separate one-time charge has not been verified; the budget includes an explicit provision, plus a separate handover provision.",
+      "feeNote": "Planning provisions may differ from actual invoices. No borrowing costs are assumed. Refundable utility deposits are included in initial funding. No buyer-side brokerage is assumed for this initial-sale option; confirm the agency terms in writing.",
+      "serviceNote": "The current unit-specific annual service charge is not confirmed. Obtain the approved budget; recurring charges are separate from acquisition.",
+      "floorplanNote": "Official floorplan linked to the exact Emaar unit record: EX Terra Gardens Building 1-2-207. Verify the executed SPA attachment and final registered area.",
+      "price": 1642888,
+      "area": 760,
+      "bedroom": "1BR",
+      "fees": [
+        {
+          "label": "DLD registration - full 4%",
+          "amount": 65715.52,
+          "basis": "Exact Emaar unit charge: 4% land registration",
+          "estimate": false
+        },
+        {
+          "label": "Emaar Oqood plus micro-fee provision",
+          "amount": 3020,
+          "basis": "AED 3,000 published + AED 20 provisional",
+          "estimate": false
+        },
+        {
+          "label": "Future title deed and unit map",
+          "amount": 520,
+          "basis": "DLD schedule; confirm charges not already absorbed",
+          "estimate": false
+        },
+        {
+          "label": "Administration / NOC provision",
+          "amount": 5000,
+          "basis": "Planning allowance; obtain exact invoice",
+          "estimate": true
+        },
+        {
+          "label": "Parking allocation provision",
+          "amount": 5000,
+          "basis": "Not a quoted charge; confirm SPA allocation",
+          "estimate": true
+        },
+        {
+          "label": "Handover provision",
+          "amount": 5000,
+          "basis": "Not a quoted charge; confirm handover statement",
+          "estimate": true
+        },
+        {
+          "label": "DEWA refundable apartment deposit",
+          "amount": 2000,
+          "basis": "Included in funding; refundable",
+          "estimate": false
+        },
+        {
+          "label": "DEWA activation and micro-fees",
+          "amount": 155,
+          "basis": "Current published activation components",
+          "estimate": false
+        }
+      ],
+      "schedule": [
+        {
+          "label": "1 - Instalment",
+          "due": "8 Sep 2026",
+          "percent": 10,
+          "stage": "before",
+          "amount": 164289
+        },
+        {
+          "label": "2 - Instalment",
+          "due": "20 Oct 2026",
+          "percent": 10,
+          "stage": "before",
+          "amount": 164289
+        },
+        {
+          "label": "3 - Instalment",
+          "due": "20 Feb 2027",
+          "percent": 10,
+          "stage": "before",
+          "amount": 164289
+        },
+        {
+          "label": "4 - Instalment",
+          "due": "20 Jun 2027",
+          "percent": 10,
+          "stage": "before",
+          "amount": 164289
+        },
+        {
+          "label": "5 - Instalment",
+          "due": "20 Oct 2027",
+          "percent": 10,
+          "stage": "before",
+          "amount": 164289
+        },
+        {
+          "label": "6 - Instalment",
+          "due": "20 Feb 2028",
+          "percent": 10,
+          "stage": "before",
+          "amount": 164289
+        },
+        {
+          "label": "7 - Instalment",
+          "due": "20 Jun 2028",
+          "percent": 10,
+          "stage": "before",
+          "amount": 164289
+        },
+        {
+          "label": "8 - Instalment",
+          "due": "20 Oct 2028",
+          "percent": 10,
+          "stage": "before",
+          "amount": 164289
+        },
+        {
+          "label": "Completion / handover",
+          "due": "31 October 2029",
+          "percent": 20,
+          "stage": "handover",
+          "amount": 328576
+        }
+      ],
+      "planSource": {
+        "label": "Emaar / available unit EX Terra Gardens Building 1-2-207",
+        "url": "https://www.emaar.com/en/unit-details/EX%20Terra%20Gardens%20Building%201-2-207"
+      },
+      "paymentFootnote": "The AED 37,000 booking deposit is credited toward the first instalment, not added again. The remaining first-instalment amount is AED 127,289. Confirm this credit on the booking form.",
+      "officialUnit": "EX Terra Gardens Building 1-2-207"
+    },
+    {
+      "name": "Terra Woods",
+      "developer": "Emaar Properties",
+      "category": "above",
+      "status": "Off-Plan (Under Construction)",
+      "location": "Expo Living / Expo City, Dubai South",
+      "summary": "An available Emaar one-bedroom residence at Expo Living. The comparison uses a specific unit record, its published floorplan and a dated developer payment schedule.",
+      "media": {
+        "hero": "/presentations/dubai-south-investor-brief/projects/terra-woods/hero.webp",
+        "exteriors": [
+          "/presentations/dubai-south-investor-brief/projects/terra-woods/exterior-1.webp"
+        ],
+        "interiors": [
+          "/projects/terra-woods/interior-official-20260908.jpg"
+        ],
+        "floorplans": [
+          "/presentations/dubai-south-investor-brief/projects/terra-woods/terra-woods-unit-b1-4-415-floorplan-unit-crop-20260908.webp"
+        ]
+      },
+      "handover": "31 March 2030",
+      "sources": [
+        {
+          "label": "Emaar / available unit EX Terra Woods Building 1-4-415",
+          "url": "https://www.emaar.com/en/unit-details/EX%20Terra%20Woods%20Building%201-4-415"
+        },
+        {
+          "label": "Emaar / Expo Living community and current inventory",
+          "url": "https://www.emaar.com/en/our-communities/expo-living"
+        },
+        {
+          "label": "Emaar / exact unit floorplan",
+          "url": "https://emaarsales.my.salesforce-sites.com/api/FloorPlanToSiteUsers?id=a0ZNM000003nZtk2AE"
+        },
+        {
+          "label": "Emaar exact Terra Woods unit page",
+          "url": "https://www.emaar.com/en/unit-details/EX%20Terra%20Woods%20Building%201-4-415"
+        },
+        {
+          "label": "Emaar Terra Woods project page",
+          "url": "https://www.emaar.com/en/properties/terra-woods-at-expo-living"
+        },
+        {
+          "label": "Emaar Expo Living live inventory",
+          "url": "https://www.emaar.com/en/our-communities/expo-living"
+        },
+        {
+          "label": "Emaar exact-unit payment-plan API",
+          "url": "https://www.emaar.com/api/payment-plan"
+        },
+        {
+          "label": "Emaar exact-unit floor plan",
+          "url": "https://emaarsales.my.salesforce-sites.com/api/FloorPlanToSiteUsers?id=a0ZNM000003nZtk2AE"
+        },
+        {
+          "label": "Emaar official Terra Woods interior image",
+          "url": "https://www.emaar.com/cms-media/uploads/PRO_INT_3_2_670x500_996f3faf9d.jpg"
+        }
+      ],
+      "scheduleBasis": "Current Emaar unit payment record, including developer rounding. Unit: EX Terra Woods Building 1-4-415.",
+      "planNote": "All eight pre-handover instalments and the final 20% are shown from the current Emaar record. The booking date and any later changes must be confirmed on reservation.",
+      "waiverNote": "This exact Emaar unit displays the full 4% land-registration charge. No unit-specific official waiver was located.",
+      "inventoryNote": "Emaar showed this exact unit as available on 8 September 2026: EX Terra Woods Building 1-4-415. It is not held or reserved for Mr. Arul and can be allocated at any time.",
+      "parkingNote": "Parking is shown in project or listing information. A separate one-time charge has not been verified; the budget includes an explicit provision, plus a separate handover provision.",
+      "feeNote": "Planning provisions may differ from actual invoices. No borrowing costs are assumed. Refundable utility deposits are included in initial funding. No buyer-side brokerage is assumed for this initial-sale option; confirm the agency terms in writing.",
+      "serviceNote": "The current unit-specific annual service charge is not confirmed. Obtain the approved budget; recurring charges are separate from acquisition.",
+      "floorplanNote": "Official floorplan linked to the exact Emaar unit record: EX Terra Woods Building 1-4-415. Verify the executed SPA attachment and final registered area.",
+      "price": 1704888,
+      "area": 765,
+      "bedroom": "1BR",
+      "fees": [
+        {
+          "label": "DLD registration - full 4%",
+          "amount": 68195.52,
+          "basis": "Exact Emaar unit charge: 4% land registration",
+          "estimate": false
+        },
+        {
+          "label": "Emaar Oqood plus micro-fee provision",
+          "amount": 3020,
+          "basis": "AED 3,000 published + AED 20 provisional",
+          "estimate": false
+        },
+        {
+          "label": "Future title deed and unit map",
+          "amount": 520,
+          "basis": "DLD schedule; confirm charges not already absorbed",
+          "estimate": false
+        },
+        {
+          "label": "Administration / NOC provision",
+          "amount": 5000,
+          "basis": "Planning allowance; obtain exact invoice",
+          "estimate": true
+        },
+        {
+          "label": "Parking allocation provision",
+          "amount": 5000,
+          "basis": "Not a quoted charge; confirm SPA allocation",
+          "estimate": true
+        },
+        {
+          "label": "Handover provision",
+          "amount": 5000,
+          "basis": "Not a quoted charge; confirm handover statement",
+          "estimate": true
+        },
+        {
+          "label": "DEWA refundable apartment deposit",
+          "amount": 2000,
+          "basis": "Included in funding; refundable",
+          "estimate": false
+        },
+        {
+          "label": "DEWA activation and micro-fees",
+          "amount": 155,
+          "basis": "Current published activation components",
+          "estimate": false
+        }
+      ],
+      "schedule": [
+        {
+          "label": "1 - Instalment",
+          "due": "8 Sep 2026",
+          "percent": 10,
+          "stage": "before",
+          "amount": 170489
+        },
+        {
+          "label": "2 - Instalment",
+          "due": "20 Oct 2026",
+          "percent": 10,
+          "stage": "before",
+          "amount": 170489
+        },
+        {
+          "label": "3 - Instalment",
+          "due": "20 Feb 2027",
+          "percent": 10,
+          "stage": "before",
+          "amount": 170489
+        },
+        {
+          "label": "4 - Instalment",
+          "due": "20 Jun 2027",
+          "percent": 10,
+          "stage": "before",
+          "amount": 170489
+        },
+        {
+          "label": "5 - Instalment",
+          "due": "20 Oct 2027",
+          "percent": 10,
+          "stage": "before",
+          "amount": 170489
+        },
+        {
+          "label": "6 - Instalment",
+          "due": "24 Feb 2028 / 50% construction",
+          "percent": 10,
+          "stage": "before",
+          "amount": 170489
+        },
+        {
+          "label": "7 - Instalment",
+          "due": "9 Aug 2028 / 70% construction",
+          "percent": 10,
+          "stage": "before",
+          "amount": 170489
+        },
+        {
+          "label": "8 - Instalment",
+          "due": "8 Mar 2029 / 90% construction",
+          "percent": 10,
+          "stage": "before",
+          "amount": 170489
+        },
+        {
+          "label": "Completion / handover",
+          "due": "31 March 2030",
+          "percent": 20,
+          "stage": "handover",
+          "amount": 340976
+        }
+      ],
+      "planSource": {
+        "label": "Emaar / available unit EX Terra Woods Building 1-4-415",
+        "url": "https://www.emaar.com/en/unit-details/EX%20Terra%20Woods%20Building%201-4-415"
+      },
+      "paymentFootnote": "The AED 37,000 booking deposit is credited toward the first instalment, not added again. The remaining first-instalment amount is AED 133,489. Confirm this credit on the booking form.",
+      "officialUnit": "EX Terra Woods Building 1-4-415"
+    }
+  ],
+  "archive": [
+    {
+      "name": "South Square S1",
+      "developer": "Dubai South Properties",
+      "category": "under",
+      "status": "Off-Plan (Under Construction)",
+      "location": "Dubai South Residential District",
+      "summary": "The supplied analysis identifies South Square as the best-balanced off-plan route within the AED 1.0M-1.7M mandate.",
+      "media": {
+        "hero": "/presentations/dubai-south-investor-brief/projects/south-square-s1/hero.webp",
+        "exteriors": [
+          "/presentations/dubai-south-investor-brief/projects/south-square-s1/exterior-1.webp"
+        ],
+        "interiors": [
+          "/presentations/dubai-south-investor-brief/projects/south-square-s1/interior-1.webp"
+        ],
+        "floorplans": [
+          "/presentations/dubai-south-investor-brief/projects/south-square-s1/floorplan-1.webp",
+          "/presentations/dubai-south-investor-brief/projects/south-square-s1/floorplan-2.webp"
+        ],
+        "gallery": [
+          "/presentations/dubai-south-investor-brief/projects/south-square-s1/gallery-1.webp"
+        ]
+      },
+      "handover": "Q4 2028 target",
+      "sources": [
+        {
+          "label": "Dubai South official launch and client-supplied research dossier",
+          "url": "https://www.dubaisouth.ae/en/newsroom/dubai-south-launches-south-square-sells-out-first-tower-within-three-hours"
+        }
+      ],
+      "scheduleBasis": "Published project framework, illustrated at the selected asking price. Exact unit terms require confirmation.",
+      "planNote": "The SPA and current developer statement control the instalment dates, milestones and any amounts already paid.",
+      "waiverNote": "No current unit-specific developer DLD waiver was verified. The full 4% is retained in the budget.",
+      "inventoryNote": "Current public asking-price evidence is not a reserved unit. Confirm availability, registered area and the agreed price in writing.",
+      "parkingNote": "Parking is shown in project or listing information. A separate one-time charge has not been verified; the budget includes an explicit provision, plus a separate handover provision.",
+      "feeNote": "Planning provisions may differ from actual invoices. No borrowing costs are assumed. Refundable utility deposits are included in initial funding.",
+      "serviceNote": "The current unit-specific annual service charge is not confirmed. Obtain the approved budget; recurring charges are separate from acquisition.",
+      "floorplanNote": "Project brochure layout reference, not a verified plan for the listed unit. Confirm the unit type, area and orientation before reservation.",
+      "note": "The developer release is sold out. A current secondary-market ask of AED 1.1M / 760 sq ft is a research lead only; obtain the seller payment ledger and all transfer terms.",
+      "archiveSource": {
+        "label": "South Square S1 / current status reference",
+        "url": "https://www.dubaisouth.ae/en/newsroom/dubai-south-concludes-a-strong-2025-attracts-653-new-companies"
+      }
+    },
+    {
+      "name": "South Living",
+      "developer": "Dubai South Properties",
+      "category": "under",
+      "status": "Off-Plan (Under Construction)",
+      "location": "Dubai South Residential District",
+      "summary": "Large one- and two-bedroom layouts create a stronger end-user and family proposition than many lower-entry alternatives.",
+      "media": {
+        "hero": "/presentations/dubai-south-investor-brief/projects/south-living/hero.webp",
+        "exteriors": [
+          "/presentations/dubai-south-investor-brief/projects/south-living/exterior-1.webp"
+        ],
+        "interiors": [
+          "/presentations/dubai-south-investor-brief/projects/south-living/interior-1.webp"
+        ],
+        "floorplans": [
+          "/presentations/dubai-south-investor-brief/projects/south-living/floorplan-1.webp",
+          "/presentations/dubai-south-investor-brief/projects/south-living/floorplan-2.webp"
+        ],
+        "gallery": [
+          "/presentations/dubai-south-investor-brief/projects/south-living/gallery-1.webp"
+        ]
+      },
+      "handover": "Q1 2027 target",
+      "sources": [
+        {
+          "label": "Dubai South South Living sell-out release",
+          "url": "https://www.dubaisouth.ae/en/newsroom/dubai-south-sells-out-south-living-project-confirms-huge-demand-for-spacious-units-in-the-area"
+        }
+      ],
+      "scheduleBasis": "Published project framework, illustrated at the selected asking price. Exact unit terms require confirmation.",
+      "planNote": "The SPA and current developer statement control the instalment dates, milestones and any amounts already paid.",
+      "waiverNote": "No current unit-specific developer DLD waiver was verified. The full 4% is retained in the budget.",
+      "inventoryNote": "Current public asking-price evidence is not a reserved unit. Confirm availability, registered area and the agreed price in writing.",
+      "parkingNote": "Parking is shown in project or listing information. A separate one-time charge has not been verified; the budget includes an explicit provision, plus a separate handover provision.",
+      "feeNote": "Planning provisions may differ from actual invoices. No borrowing costs are assumed. Refundable utility deposits are included in initial funding.",
+      "serviceNote": "The current unit-specific annual service charge is not confirmed. Obtain the approved budget; recurring charges are separate from acquisition.",
+      "floorplanNote": "Project brochure layout reference, not a verified plan for the listed unit. Confirm the unit type, area and orientation before reservation.",
+      "note": "The original project context and media are retained for reference. The release is sold out and close to completion, so it is not part of the main under-construction shortlist.",
+      "archiveSource": {
+        "label": "South Living / current status reference",
+        "url": "https://www.dubaisouth.ae/en/newsroom/dubai-south-sells-out-south-living-project-confirms-huge-demand-for-spacious-units-in-the-area"
+      }
+    },
+    {
+      "name": "Divine Elements",
+      "developer": "Takmeel Development",
+      "category": "under",
+      "status": "Off-Plan (Under Construction)",
+      "location": "Dubai South Residential District",
+      "summary": "The official page confirms studios, 1BR and 2BR homes and shows one studio plan.",
+      "media": {
+        "hero": "/presentations/dubai-south-investor-brief/projects/divine-elements/hero.webp",
+        "exteriors": [
+          "/presentations/dubai-south-investor-brief/projects/divine-elements/exterior-1.webp"
+        ],
+        "interiors": [
+          "/presentations/dubai-south-investor-brief/projects/divine-elements/interior-1.webp"
+        ],
+        "floorplans": [
+          "/presentations/dubai-south-investor-brief/projects/divine-elements/floorplan-1.webp"
+        ],
+        "gallery": []
+      },
+      "handover": "To be confirmed",
+      "sources": [
+        {
+          "label": "Takmeel Development official project page",
+          "url": "https://www.takmeeldevelopment.com/divine-elements-page"
+        }
+      ],
+      "scheduleBasis": "Published project framework, illustrated at the selected asking price. Exact unit terms require confirmation.",
+      "planNote": "The SPA and current developer statement control the instalment dates, milestones and any amounts already paid.",
+      "waiverNote": "No current unit-specific developer DLD waiver was verified. The full 4% is retained in the budget.",
+      "inventoryNote": "Current public asking-price evidence is not a reserved unit. Confirm availability, registered area and the agreed price in writing.",
+      "parkingNote": "Parking is shown in project or listing information. A separate one-time charge has not been verified; the budget includes an explicit provision, plus a separate handover provision.",
+      "feeNote": "Planning provisions may differ from actual invoices. No borrowing costs are assumed. Refundable utility deposits are included in initial funding.",
+      "serviceNote": "The current unit-specific annual service charge is not confirmed. Obtain the approved budget; recurring charges are separate from acquisition.",
+      "floorplanNote": "Project brochure layout reference, not a verified plan for the listed unit. Confirm the unit type, area and orientation before reservation.",
+      "note": "A marketed AED 1.275M / 933 sq ft offer conflicts with sold-out developer inventory. Obtain a direct allocation and a matching floorplan before including it in the priced shortlist.",
+      "archiveSource": {
+        "label": "Divine Elements / current status reference",
+        "url": "https://www.propertyfinder.ae/en/new-projects/takmeel-real-estate-development/divine-elements"
+      }
+    },
+    {
+      "name": "Expo Valley Views",
+      "developer": "Expo City Dubai",
+      "category": "above",
+      "status": "Off-Plan (Under Construction)",
+      "location": "Expo Living - Expo City",
+      "summary": "Expo Valley Views is integrated with Expo City's public realm, Metro-linked destination and business districts.",
+      "media": {
+        "hero": "/presentations/dubai-south-investor-brief/projects/expo-valley-views/hero.webp",
+        "exteriors": [
+          "/presentations/dubai-south-investor-brief/projects/expo-valley-views/exterior-1.webp"
+        ],
+        "interiors": [
+          "/presentations/dubai-south-investor-brief/projects/expo-valley-views/interior-1.webp"
+        ],
+        "floorplans": [
+          "/presentations/dubai-south-investor-brief/projects/expo-valley-views/floorplan-1.webp",
+          "/presentations/dubai-south-investor-brief/projects/expo-valley-views/floorplan-2.webp"
+        ],
+        "gallery": []
+      },
+      "handover": "31 October 2029",
+      "sources": [
+        {
+          "label": "Expo City Dubai official Expo Valley Views page",
+          "url": "https://www.expocitydubai.com/en/expo-living/expo-valley/expo-valley-views/"
+        }
+      ],
+      "scheduleBasis": "Published project framework, illustrated at the selected asking price. Exact unit terms require confirmation.",
+      "planNote": "The SPA and current developer statement control the instalment dates, milestones and any amounts already paid.",
+      "waiverNote": "No current unit-specific developer DLD waiver was verified. The full 4% is retained in the budget.",
+      "inventoryNote": "Current public asking-price evidence is not a reserved unit. Confirm availability, registered area and the agreed price in writing.",
+      "parkingNote": "Parking is shown in project or listing information. A separate one-time charge has not been verified; the budget includes an explicit provision, plus a separate handover provision.",
+      "feeNote": "Planning provisions may differ from actual invoices. No borrowing costs are assumed. Refundable utility deposits are included in initial funding.",
+      "serviceNote": "The current unit-specific annual service charge is not confirmed. Obtain the approved budget; recurring charges are separate from acquisition.",
+      "floorplanNote": "Project brochure layout reference, not a verified plan for the listed unit. Confirm the unit type, area and orientation before reservation.",
+      "note": "The original Expo City project context and gallery are retained. A current unit-specific price and complete fee schedule were not established; the earlier starting price is not reused as live availability.",
+      "archiveSource": {
+        "label": "Expo Valley Views / current status reference",
+        "url": "https://www.expocitydubai.com/en/live/expo-valley-views/"
+      }
+    }
+  ],
+  "sources": {
+    "dld": {
+      "label": "Dubai Land Department / property sale registration",
+      "url": "https://dubailand.gov.ae/en/eservices/property-sale-registration/"
+    },
+    "initial": {
+      "label": "Dubai Land Department / initial sale registration",
+      "url": "https://dubailand.gov.ae/en/eservices/request-to-register-the-initial-sale/"
+    },
+    "dewa": {
+      "label": "DEWA / move-in deposit and activation",
+      "url": "https://www.dewa.gov.ae/en/about-us/service-guide/consumer-services/move-in"
+    },
+    "airport": {
+      "label": "Dubai Media Office / airport construction update, 15 June 2026",
+      "url": "https://www.mediaoffice.ae/en/news/2026/june/15-06/hamdan-bin-mohammed-approves-al-maktoum-airport"
+    },
+    "expo": {
+      "label": "Expo City Dubai / Al Wasl Plaza",
+      "url": "https://www.expocitydubai.com/en/things-to-do/attractions/al-wasl-plaza/"
+    },
+    "exhibition": {
+      "label": "Dubai Exhibition Centre / expansion",
+      "url": "https://www.dubaiexhibitioncentre.com/en/expansion"
+    },
+    "residential": {
+      "label": "Dubai South / Residential District and South Living",
+      "url": "https://www.dubaisouth.ae/en/newsroom/dubai-south-properties-unveils-south-living-an-exclusive-luxury-apartment-project-in-the-residential-district"
+    },
+    "emaarSouth": {
+      "label": "Emaar / Emaar South community and current inventory",
+      "url": "https://www.emaar.com/en/our-communities/emaar-south"
+    },
+    "expoLiving": {
+      "label": "Emaar / Expo Living community and current inventory",
+      "url": "https://www.emaar.com/en/our-communities/expo-living"
+    },
+    "school": {
+      "label": "GEMS Founders School Dubai South / school location",
+      "url": "https://www.gemsfoundersschool-dubaisouth.com/en/About-Us/Our-Location"
+    },
+    "maf": {
+      "label": "Dubai South / Majid Al Futtaim announcement, 19 May 2026",
+      "url": "https://www.dubaisouth.ae/en/newsroom/dubai-south-and-majid-al-futtaim-partner-to-develop-aed-62-billion-mixed-use-master-community"
+    },
+    "health": {
+      "label": "NMC Royal Hospital, Dubai Investments Park",
+      "url": "https://nmc.ae/en/locations/dubai/nmc-royal-hospital-dip-dubai"
+    },
+    "visa": {
+      "label": "Dubai Land Department / Golden Visa investor service",
+      "url": "https://dubailand.gov.ae/en/eservices/request-for-golden-visa-investor/"
+    },
+    "ellington": {
+      "label": "Ellington / resale NOC and service-charge guidance",
+      "url": "https://ellingtonproperties.ae/en/faq"
+    }
+  },
+  "distances": [
+    {
+      "fromSlug": "jumanah-dubai-south-avenew-888",
+      "fromName": "AVENEW 888",
+      "toSlug": "jumanah-dubai-south-windsor-house-ii",
+      "toName": "Windsor House II",
+      "distanceKm": 0.1,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-golf-views-ready",
+      "fromName": "Emaar Golf Views",
+      "toSlug": "jumanah-dubai-south-golf-trails",
+      "toName": "Golf Trails",
+      "distanceKm": 0.2,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-terra-woods",
+      "fromName": "Terra Woods",
+      "toSlug": "jumanah-dubai-south-expo-valley-views",
+      "toName": "Expo Valley Views",
+      "distanceKm": 0.2,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-divine-elements",
+      "fromName": "Divine Elements",
+      "toSlug": "jumanah-dubai-south-windsor-house-ii",
+      "toName": "Windsor House II",
+      "distanceKm": 0.3,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-avenew-888",
+      "fromName": "AVENEW 888",
+      "toSlug": "jumanah-dubai-south-divine-elements",
+      "toName": "Divine Elements",
+      "distanceKm": 0.4,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-enre-residence",
+      "fromName": "Enre Residence",
+      "toSlug": "jumanah-dubai-south-divine-elements",
+      "toName": "Divine Elements",
+      "distanceKm": 0.4,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-enre-residence",
+      "fromName": "Enre Residence",
+      "toSlug": "jumanah-dubai-south-windsor-house-ii",
+      "toName": "Windsor House II",
+      "distanceKm": 0.4,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-avenew-888",
+      "fromName": "AVENEW 888",
+      "toSlug": "jumanah-dubai-south-enre-residence",
+      "toName": "Enre Residence",
+      "distanceKm": 0.5,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-golf-fields",
+      "fromName": "Golf Fields",
+      "toSlug": "jumanah-dubai-south-azizi-venice",
+      "toName": "Azizi Venice",
+      "distanceKm": 0.8,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-windsor-house",
+      "fromName": "Windsor House",
+      "toSlug": "jumanah-dubai-south-divine-elements",
+      "toName": "Divine Elements",
+      "distanceKm": 0.9,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-windsor-house",
+      "fromName": "Windsor House",
+      "toSlug": "jumanah-dubai-south-enre-residence",
+      "toName": "Enre Residence",
+      "distanceKm": 1.1,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-windsor-house",
+      "fromName": "Windsor House",
+      "toSlug": "jumanah-dubai-south-windsor-house-ii",
+      "toName": "Windsor House II",
+      "distanceKm": 1.2,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-windsor-house",
+      "fromName": "Windsor House",
+      "toSlug": "jumanah-dubai-south-avenew-888",
+      "toName": "AVENEW 888",
+      "distanceKm": 1.3,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-golf-fields",
+      "fromName": "Golf Fields",
+      "toSlug": "jumanah-dubai-south-mag-5-boulevard-ready",
+      "toName": "MAG 5 Boulevard",
+      "distanceKm": 2.6,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-south-living",
+      "fromName": "South Living",
+      "toSlug": "jumanah-dubai-south-mag-5-boulevard-ready",
+      "toName": "MAG 5 Boulevard",
+      "distanceKm": 2.6,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-azizi-venice",
+      "fromName": "Azizi Venice",
+      "toSlug": "jumanah-dubai-south-golf-trails",
+      "toName": "Golf Trails",
+      "distanceKm": 2.7,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-golf-views-ready",
+      "fromName": "Emaar Golf Views",
+      "toSlug": "jumanah-dubai-south-azizi-venice",
+      "toName": "Azizi Venice",
+      "distanceKm": 2.8,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-golf-fields",
+      "fromName": "Golf Fields",
+      "toSlug": "jumanah-dubai-south-golf-views-ready",
+      "toName": "Emaar Golf Views",
+      "distanceKm": 2.9,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-golf-fields",
+      "fromName": "Golf Fields",
+      "toSlug": "jumanah-dubai-south-golf-trails",
+      "toName": "Golf Trails",
+      "distanceKm": 2.9,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-mag-5-boulevard-ready",
+      "fromName": "MAG 5 Boulevard",
+      "toSlug": "jumanah-dubai-south-azizi-venice",
+      "toName": "Azizi Venice",
+      "distanceKm": 3.1,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-south-living",
+      "fromName": "South Living",
+      "toSlug": "jumanah-dubai-south-terra-woods",
+      "toName": "Terra Woods",
+      "distanceKm": 3.3,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-golf-views-ready",
+      "fromName": "Emaar Golf Views",
+      "toSlug": "jumanah-dubai-south-waada-altura",
+      "toName": "Waada Altura",
+      "distanceKm": 3.5,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-south-living",
+      "fromName": "South Living",
+      "toSlug": "jumanah-dubai-south-expo-valley-views",
+      "toName": "Expo Valley Views",
+      "distanceKm": 3.5,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-waada-altura",
+      "fromName": "Waada Altura",
+      "toSlug": "jumanah-dubai-south-golf-trails",
+      "toName": "Golf Trails",
+      "distanceKm": 3.5,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-south-living",
+      "fromName": "South Living",
+      "toSlug": "jumanah-dubai-south-golf-fields",
+      "toName": "Golf Fields",
+      "distanceKm": 4.6,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-south-living",
+      "fromName": "South Living",
+      "toSlug": "jumanah-dubai-south-azizi-venice",
+      "toName": "Azizi Venice",
+      "distanceKm": 4.7,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-south-square-s1",
+      "fromName": "South Square S1",
+      "toSlug": "jumanah-dubai-south-azizi-venice",
+      "toName": "Azizi Venice",
+      "distanceKm": 5.2,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-south-square-s1",
+      "fromName": "South Square S1",
+      "toSlug": "jumanah-dubai-south-south-living",
+      "toName": "South Living",
+      "distanceKm": 5.4,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-golf-views-ready",
+      "fromName": "Emaar Golf Views",
+      "toSlug": "jumanah-dubai-south-mag-5-boulevard-ready",
+      "toName": "MAG 5 Boulevard",
+      "distanceKm": 5.5,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-mag-5-boulevard-ready",
+      "fromName": "MAG 5 Boulevard",
+      "toSlug": "jumanah-dubai-south-golf-trails",
+      "toName": "Golf Trails",
+      "distanceKm": 5.5,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-south-living",
+      "fromName": "South Living",
+      "toSlug": "jumanah-dubai-south-windsor-house",
+      "toName": "Windsor House",
+      "distanceKm": 5.5,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-south-square-s1",
+      "fromName": "South Square S1",
+      "toSlug": "jumanah-dubai-south-golf-fields",
+      "toName": "Golf Fields",
+      "distanceKm": 5.8,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-windsor-house",
+      "fromName": "Windsor House",
+      "toSlug": "jumanah-dubai-south-terra-woods",
+      "toName": "Terra Woods",
+      "distanceKm": 5.8,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-windsor-house",
+      "fromName": "Windsor House",
+      "toSlug": "jumanah-dubai-south-expo-valley-views",
+      "toName": "Expo Valley Views",
+      "distanceKm": 5.9,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-mag-5-boulevard-ready",
+      "fromName": "MAG 5 Boulevard",
+      "toSlug": "jumanah-dubai-south-terra-woods",
+      "toName": "Terra Woods",
+      "distanceKm": 6,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-south-living",
+      "fromName": "South Living",
+      "toSlug": "jumanah-dubai-south-enre-residence",
+      "toName": "Enre Residence",
+      "distanceKm": 6,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-mag-5-boulevard-ready",
+      "fromName": "MAG 5 Boulevard",
+      "toSlug": "jumanah-dubai-south-expo-valley-views",
+      "toName": "Expo Valley Views",
+      "distanceKm": 6.1,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-south-living",
+      "fromName": "South Living",
+      "toSlug": "jumanah-dubai-south-divine-elements",
+      "toName": "Divine Elements",
+      "distanceKm": 6.1,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-mag-5-boulevard-ready",
+      "fromName": "MAG 5 Boulevard",
+      "toSlug": "jumanah-dubai-south-windsor-house",
+      "toName": "Windsor House",
+      "distanceKm": 6.2,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-azizi-venice",
+      "fromName": "Azizi Venice",
+      "toSlug": "jumanah-dubai-south-waada-altura",
+      "toName": "Waada Altura",
+      "distanceKm": 6.3,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-mag-5-boulevard-ready",
+      "fromName": "MAG 5 Boulevard",
+      "toSlug": "jumanah-dubai-south-enre-residence",
+      "toName": "Enre Residence",
+      "distanceKm": 6.3,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-south-square-s1",
+      "fromName": "South Square S1",
+      "toSlug": "jumanah-dubai-south-terra-woods",
+      "toName": "Terra Woods",
+      "distanceKm": 6.3,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-south-square-s1",
+      "fromName": "South Square S1",
+      "toSlug": "jumanah-dubai-south-expo-valley-views",
+      "toName": "Expo Valley Views",
+      "distanceKm": 6.3,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-south-living",
+      "fromName": "South Living",
+      "toSlug": "jumanah-dubai-south-windsor-house-ii",
+      "toName": "Windsor House II",
+      "distanceKm": 6.4,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-south-square-s1",
+      "fromName": "South Square S1",
+      "toSlug": "jumanah-dubai-south-mag-5-boulevard-ready",
+      "toName": "MAG 5 Boulevard",
+      "distanceKm": 6.4,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-golf-fields",
+      "fromName": "Golf Fields",
+      "toSlug": "jumanah-dubai-south-waada-altura",
+      "toName": "Waada Altura",
+      "distanceKm": 6.5,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-south-living",
+      "fromName": "South Living",
+      "toSlug": "jumanah-dubai-south-avenew-888",
+      "toName": "AVENEW 888",
+      "distanceKm": 6.5,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-mag-5-boulevard-ready",
+      "fromName": "MAG 5 Boulevard",
+      "toSlug": "jumanah-dubai-south-divine-elements",
+      "toName": "Divine Elements",
+      "distanceKm": 6.6,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-mag-5-boulevard-ready",
+      "fromName": "MAG 5 Boulevard",
+      "toSlug": "jumanah-dubai-south-windsor-house-ii",
+      "toName": "Windsor House II",
+      "distanceKm": 6.7,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-terra-woods",
+      "fromName": "Terra Woods",
+      "toSlug": "jumanah-dubai-south-divine-elements",
+      "toName": "Divine Elements",
+      "distanceKm": 6.7,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-expo-valley-views",
+      "fromName": "Expo Valley Views",
+      "toSlug": "jumanah-dubai-south-divine-elements",
+      "toName": "Divine Elements",
+      "distanceKm": 6.8,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-mag-5-boulevard-ready",
+      "fromName": "MAG 5 Boulevard",
+      "toSlug": "jumanah-dubai-south-avenew-888",
+      "toName": "AVENEW 888",
+      "distanceKm": 6.8,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-terra-woods",
+      "fromName": "Terra Woods",
+      "toSlug": "jumanah-dubai-south-enre-residence",
+      "toName": "Enre Residence",
+      "distanceKm": 6.8,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-expo-valley-views",
+      "fromName": "Expo Valley Views",
+      "toSlug": "jumanah-dubai-south-enre-residence",
+      "toName": "Enre Residence",
+      "distanceKm": 6.9,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-south-square-s1",
+      "fromName": "South Square S1",
+      "toSlug": "jumanah-dubai-south-golf-trails",
+      "toName": "Golf Trails",
+      "distanceKm": 7,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-terra-woods",
+      "fromName": "Terra Woods",
+      "toSlug": "jumanah-dubai-south-windsor-house-ii",
+      "toName": "Windsor House II",
+      "distanceKm": 7,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-expo-valley-views",
+      "fromName": "Expo Valley Views",
+      "toSlug": "jumanah-dubai-south-windsor-house-ii",
+      "toName": "Windsor House II",
+      "distanceKm": 7.1,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-terra-woods",
+      "fromName": "Terra Woods",
+      "toSlug": "jumanah-dubai-south-avenew-888",
+      "toName": "AVENEW 888",
+      "distanceKm": 7.1,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-expo-valley-views",
+      "fromName": "Expo Valley Views",
+      "toSlug": "jumanah-dubai-south-avenew-888",
+      "toName": "AVENEW 888",
+      "distanceKm": 7.2,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-south-square-s1",
+      "fromName": "South Square S1",
+      "toSlug": "jumanah-dubai-south-golf-views-ready",
+      "toName": "Emaar Golf Views",
+      "distanceKm": 7.2,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-south-living",
+      "fromName": "South Living",
+      "toSlug": "jumanah-dubai-south-golf-trails",
+      "toName": "Golf Trails",
+      "distanceKm": 7.4,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-south-living",
+      "fromName": "South Living",
+      "toSlug": "jumanah-dubai-south-golf-views-ready",
+      "toName": "Emaar Golf Views",
+      "distanceKm": 7.5,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-golf-fields",
+      "fromName": "Golf Fields",
+      "toSlug": "jumanah-dubai-south-terra-woods",
+      "toName": "Terra Woods",
+      "distanceKm": 7.8,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-terra-woods",
+      "fromName": "Terra Woods",
+      "toSlug": "jumanah-dubai-south-azizi-venice",
+      "toName": "Azizi Venice",
+      "distanceKm": 7.8,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-azizi-venice",
+      "fromName": "Azizi Venice",
+      "toSlug": "jumanah-dubai-south-expo-valley-views",
+      "toName": "Expo Valley Views",
+      "distanceKm": 7.9,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-golf-fields",
+      "fromName": "Golf Fields",
+      "toSlug": "jumanah-dubai-south-expo-valley-views",
+      "toName": "Expo Valley Views",
+      "distanceKm": 7.9,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-golf-fields",
+      "fromName": "Golf Fields",
+      "toSlug": "jumanah-dubai-south-windsor-house",
+      "toName": "Windsor House",
+      "distanceKm": 8.8,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-golf-fields",
+      "fromName": "Golf Fields",
+      "toSlug": "jumanah-dubai-south-enre-residence",
+      "toName": "Enre Residence",
+      "distanceKm": 8.8,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-mag-5-boulevard-ready",
+      "fromName": "MAG 5 Boulevard",
+      "toSlug": "jumanah-dubai-south-waada-altura",
+      "toName": "Waada Altura",
+      "distanceKm": 9,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-golf-fields",
+      "fromName": "Golf Fields",
+      "toSlug": "jumanah-dubai-south-divine-elements",
+      "toName": "Divine Elements",
+      "distanceKm": 9.1,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-golf-fields",
+      "fromName": "Golf Fields",
+      "toSlug": "jumanah-dubai-south-windsor-house-ii",
+      "toName": "Windsor House II",
+      "distanceKm": 9.2,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-golf-fields",
+      "fromName": "Golf Fields",
+      "toSlug": "jumanah-dubai-south-avenew-888",
+      "toName": "AVENEW 888",
+      "distanceKm": 9.3,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-windsor-house",
+      "fromName": "Windsor House",
+      "toSlug": "jumanah-dubai-south-azizi-venice",
+      "toName": "Azizi Venice",
+      "distanceKm": 9.3,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-azizi-venice",
+      "fromName": "Azizi Venice",
+      "toSlug": "jumanah-dubai-south-enre-residence",
+      "toName": "Enre Residence",
+      "distanceKm": 9.4,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-azizi-venice",
+      "fromName": "Azizi Venice",
+      "toSlug": "jumanah-dubai-south-divine-elements",
+      "toName": "Divine Elements",
+      "distanceKm": 9.7,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-azizi-venice",
+      "fromName": "Azizi Venice",
+      "toSlug": "jumanah-dubai-south-windsor-house-ii",
+      "toName": "Windsor House II",
+      "distanceKm": 9.8,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-azizi-venice",
+      "fromName": "Azizi Venice",
+      "toSlug": "jumanah-dubai-south-avenew-888",
+      "toName": "AVENEW 888",
+      "distanceKm": 9.9,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-south-square-s1",
+      "fromName": "South Square S1",
+      "toSlug": "jumanah-dubai-south-waada-altura",
+      "toName": "Waada Altura",
+      "distanceKm": 9.9,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-terra-woods",
+      "fromName": "Terra Woods",
+      "toSlug": "jumanah-dubai-south-golf-trails",
+      "toName": "Golf Trails",
+      "distanceKm": 10.5,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-golf-views-ready",
+      "fromName": "Emaar Golf Views",
+      "toSlug": "jumanah-dubai-south-terra-woods",
+      "toName": "Terra Woods",
+      "distanceKm": 10.6,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-golf-views-ready",
+      "fromName": "Emaar Golf Views",
+      "toSlug": "jumanah-dubai-south-expo-valley-views",
+      "toName": "Expo Valley Views",
+      "distanceKm": 10.7,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-expo-valley-views",
+      "fromName": "Expo Valley Views",
+      "toSlug": "jumanah-dubai-south-golf-trails",
+      "toName": "Golf Trails",
+      "distanceKm": 10.7,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-south-square-s1",
+      "fromName": "South Square S1",
+      "toSlug": "jumanah-dubai-south-windsor-house",
+      "toName": "Windsor House",
+      "distanceKm": 10.8,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-south-living",
+      "fromName": "South Living",
+      "toSlug": "jumanah-dubai-south-waada-altura",
+      "toName": "Waada Altura",
+      "distanceKm": 11,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-south-square-s1",
+      "fromName": "South Square S1",
+      "toSlug": "jumanah-dubai-south-enre-residence",
+      "toName": "Enre Residence",
+      "distanceKm": 11.4,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-golf-views-ready",
+      "fromName": "Emaar Golf Views",
+      "toSlug": "jumanah-dubai-south-enre-residence",
+      "toName": "Enre Residence",
+      "distanceKm": 11.5,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-south-square-s1",
+      "fromName": "South Square S1",
+      "toSlug": "jumanah-dubai-south-divine-elements",
+      "toName": "Divine Elements",
+      "distanceKm": 11.5,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-golf-views-ready",
+      "fromName": "Emaar Golf Views",
+      "toSlug": "jumanah-dubai-south-windsor-house",
+      "toName": "Windsor House",
+      "distanceKm": 11.6,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-enre-residence",
+      "fromName": "Enre Residence",
+      "toSlug": "jumanah-dubai-south-golf-trails",
+      "toName": "Golf Trails",
+      "distanceKm": 11.6,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-south-square-s1",
+      "fromName": "South Square S1",
+      "toSlug": "jumanah-dubai-south-windsor-house-ii",
+      "toName": "Windsor House II",
+      "distanceKm": 11.7,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-windsor-house",
+      "fromName": "Windsor House",
+      "toSlug": "jumanah-dubai-south-golf-trails",
+      "toName": "Golf Trails",
+      "distanceKm": 11.7,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-south-square-s1",
+      "fromName": "South Square S1",
+      "toSlug": "jumanah-dubai-south-avenew-888",
+      "toName": "AVENEW 888",
+      "distanceKm": 11.8,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-golf-views-ready",
+      "fromName": "Emaar Golf Views",
+      "toSlug": "jumanah-dubai-south-divine-elements",
+      "toName": "Divine Elements",
+      "distanceKm": 11.9,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-golf-views-ready",
+      "fromName": "Emaar Golf Views",
+      "toSlug": "jumanah-dubai-south-windsor-house-ii",
+      "toName": "Windsor House II",
+      "distanceKm": 11.9,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-golf-trails",
+      "fromName": "Golf Trails",
+      "toSlug": "jumanah-dubai-south-divine-elements",
+      "toName": "Divine Elements",
+      "distanceKm": 11.9,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-golf-views-ready",
+      "fromName": "Emaar Golf Views",
+      "toSlug": "jumanah-dubai-south-avenew-888",
+      "toName": "AVENEW 888",
+      "distanceKm": 12,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-golf-trails",
+      "fromName": "Golf Trails",
+      "toSlug": "jumanah-dubai-south-windsor-house-ii",
+      "toName": "Windsor House II",
+      "distanceKm": 12,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-avenew-888",
+      "fromName": "AVENEW 888",
+      "toSlug": "jumanah-dubai-south-golf-trails",
+      "toName": "Golf Trails",
+      "distanceKm": 12.1,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-terra-woods",
+      "fromName": "Terra Woods",
+      "toSlug": "jumanah-dubai-south-waada-altura",
+      "toName": "Waada Altura",
+      "distanceKm": 14,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-waada-altura",
+      "fromName": "Waada Altura",
+      "toSlug": "jumanah-dubai-south-expo-valley-views",
+      "toName": "Expo Valley Views",
+      "distanceKm": 14.2,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-waada-altura",
+      "fromName": "Waada Altura",
+      "toSlug": "jumanah-dubai-south-enre-residence",
+      "toName": "Enre Residence",
+      "distanceKm": 14.8,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-windsor-house",
+      "fromName": "Windsor House",
+      "toSlug": "jumanah-dubai-south-waada-altura",
+      "toName": "Waada Altura",
+      "distanceKm": 15,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-waada-altura",
+      "fromName": "Waada Altura",
+      "toSlug": "jumanah-dubai-south-divine-elements",
+      "toName": "Divine Elements",
+      "distanceKm": 15.2,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-waada-altura",
+      "fromName": "Waada Altura",
+      "toSlug": "jumanah-dubai-south-windsor-house-ii",
+      "toName": "Windsor House II",
+      "distanceKm": 15.2,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    },
+    {
+      "fromSlug": "jumanah-dubai-south-waada-altura",
+      "fromName": "Waada Altura",
+      "toSlug": "jumanah-dubai-south-avenew-888",
+      "toName": "AVENEW 888",
+      "distanceKm": 15.3,
+      "basis": "straight-line",
+      "note": "Approximate straight-line distance from the stored PSR coordinates; verify the exact site pin and driving route."
+    }
+  ]
+}

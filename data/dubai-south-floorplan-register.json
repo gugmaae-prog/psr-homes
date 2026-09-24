@@ -1,0 +1,1920 @@
+{
+  "version": "2026-09-12",
+  "scope": "Replacement Dubai South 22-project floorplan shortlist",
+  "projects": [
+    {
+      "id": "the-pulse-residence-park-b3",
+      "name": "The Pulse Residence Park B3",
+      "aliases": [],
+      "selectedAreaSqft": 640,
+      "qualification": "Building and size reference; exact selected unit requires its unit number.",
+      "checkedAt": "2026-09-12T12:51:14.796Z",
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "plans": [],
+      "reviewPlans": [],
+      "status": "source-verification-pending"
+    },
+    {
+      "id": "the-harmony-2",
+      "name": "The Harmony 2",
+      "aliases": [],
+      "selectedAreaSqft": null,
+      "qualification": "Dubai South building reference. Do not substitute Harmony II in Tilal Al Ghaf.",
+      "checkedAt": "2026-09-12T12:51:15.169Z",
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "plans": [],
+      "reviewPlans": [],
+      "status": "source-verification-pending"
+    },
+    {
+      "id": "celestia-b",
+      "name": "Celestia B",
+      "aliases": [],
+      "selectedAreaSqft": null,
+      "qualification": "Tower B typical layout reference.",
+      "checkedAt": "2026-09-12T12:51:15.670Z",
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "plans": [],
+      "reviewPlans": [],
+      "status": "source-verification-pending"
+    },
+    {
+      "id": "seraya-by-zoya",
+      "name": "Seraya by Zoya",
+      "aliases": [],
+      "selectedAreaSqft": null,
+      "qualification": "Project and bedroom reference; selected size and type remain to be matched.",
+      "checkedAt": "2026-09-12T12:51:15.873Z",
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "plans": [],
+      "reviewPlans": [],
+      "status": "source-verification-pending"
+    },
+    {
+      "id": "vivida-residences",
+      "name": "Vivida Residences",
+      "aliases": [],
+      "selectedAreaSqft": null,
+      "qualification": "Published project reference only; selected building, unit, type and area have not been verified.",
+      "checkedAt": "2026-09-12T12:46:01.105Z",
+      "sourceUrl": "https://jre.ae/projects/vivida-residences",
+      "sourceLabel": "JRE published project floorplan library",
+      "plans": [
+        {
+          "remoteUrl": "https://jre.ae/i/vivida-residences-layout-0-bedroom-1-dubai-south-dubai-3281.webp",
+          "bedrooms": 0,
+          "areaSqft": null,
+          "layout": "Vivida Residences Studio floor plan - Dubai South, Dubai - by NAMO Development"
+        },
+        {
+          "remoteUrl": "https://jre.ae/i/vivida-residences-layout-1-bedroom-1-dubai-south-dubai-3281.webp",
+          "bedrooms": 1,
+          "areaSqft": null,
+          "layout": "Vivida Residences 1 BR floor plan - Dubai South, Dubai - by NAMO Development"
+        },
+        {
+          "remoteUrl": "https://jre.ae/i/vivida-residences-layout-2-bedroom-1-dubai-south-dubai-3281.webp",
+          "bedrooms": 2,
+          "areaSqft": null,
+          "layout": "Vivida Residences 2 BR floor plan - Dubai South, Dubai - by NAMO Development"
+        },
+        {
+          "remoteUrl": "https://jre.ae/i/vivida-residences-layout-3-bedroom-1-dubai-south-dubai-3281.webp",
+          "bedrooms": 3,
+          "areaSqft": null,
+          "layout": "Vivida Residences 3 BR floor plan - Dubai South, Dubai - by NAMO Development"
+        }
+      ],
+      "reviewPlans": [
+        {
+          "remoteUrl": "https://jre.ae/i/vivida-residences-layout-1-bedroom-1-dubai-south-dubai-3281.webp",
+          "bedrooms": 1,
+          "areaSqft": null,
+          "layout": "Vivida Residences 1 BR floor plan - Dubai South, Dubai - by NAMO Development",
+          "localUrl": "/projects/dubai-south-floorplan-review/vivida-residences-1.webp",
+          "sha256": "a337c4a5fc00a25e52a4bb5d784198785d06e98641d6accb516d44c44e08e6d2",
+          "reviewStatus": "reviewed-project-reference",
+          "matchStatus": "project-reference"
+        }
+      ],
+      "status": "reference-available"
+    },
+    {
+      "id": "azizi-venice-14-building-g",
+      "name": "Azizi Venice 14 - Building G",
+      "aliases": [],
+      "selectedAreaSqft": null,
+      "qualification": "Published Venice 14 Building G layout reference. Exact selected unit, area and floor remain to be confirmed.",
+      "checkedAt": "2026-09-12T12:46:01.728Z",
+      "sourceUrl": "https://www.propertyfinder.ae/en/new-projects/azizi-developments/azizi-venice-14",
+      "sourceLabel": "Property Finder project floorplan library",
+      "plans": [
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/284628e7-24f6-4c2c-ab66-2b474e798dc8/floor_plan/image/JQJe-qEOR2TrfdjZSkR21VHBo5nT56h5wtYFz0lT3P8=/original.webp",
+          "bedrooms": 0,
+          "areaSqft": 408,
+          "layout": "Type 131-Building A"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/8d90ea76-29b6-4402-881e-f6ff14e27122/floor_plan/image/c7q3gwpkaTC7vgO_cEiPO1nHbVwyz_r8HRiGhCc4oUg=/original.webp",
+          "bedrooms": 0,
+          "areaSqft": 431,
+          "layout": "Type 138-Building A"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/fc5f89e1-ac04-499e-90e6-7428c6bc559c/floor_plan/image/ugKjyqhOVh9bRJGmVwAWihcX7IYYzRSgGoiyQvX37xc=/original.webp",
+          "bedrooms": 0,
+          "areaSqft": 364,
+          "layout": "Type 102-Building A"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/ceda9623-86c3-4964-bb78-9d0341de4ce7/floor_plan/image/caDPxi3nlf3LLiq3J-DvBfRtc2F3tbXyqbpTXiEfhak=/original.webp",
+          "bedrooms": 0,
+          "areaSqft": 422,
+          "layout": "Type 134-Building A"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/362e7e4a-dfbc-45e2-a1ac-6ef1bacac49c/floor_plan/image/opfn5qEymHW7S7Dx27OBPi_Q_M_J8hGG8UDVqAYy2Js=/original.webp",
+          "bedrooms": 0,
+          "areaSqft": 792,
+          "layout": "Type 243-Building A"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/d4e046cb-ad6d-41b2-abcf-a6148ad1a493/floor_plan/image/rkW-KwpDriciIxhqxz3cWASHW4qtf-OemX683D3Y7Hw=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 792,
+          "layout": "Type 230-Building A"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/c2a8f9b0-1484-439d-b80a-5da107d0303d/floor_plan/image/uLq9VGo4Tgzby75MLbJXXnmsaLI0SLEfnXfqfW7_Erk=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 724,
+          "layout": "Type 113-Building A"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/c5172266-0e6e-4772-8b62-bf6ee3450546/floor_plan/image/9IykT1XJLwtICZp_Qy3u9g0qG2k-wSLis_JA3PydaxQ=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 720,
+          "layout": "Type 219-Building A"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/451467a4-942a-466f-a5b8-732b14b1c01b/floor_plan/image/BqDPv3wIi1x8PeLR4rytAX6yWWaslWMBErNTEIoB53A=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 974,
+          "layout": "Type 143-Building A"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/5729b795-a36e-4f8b-97db-c8ea4e200b13/floor_plan/image/rtne5lrQ19hFJbyn3VgDOkh2tFi8QPNpo1hDyEh51Ms=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 884,
+          "layout": "Type 111-Building A"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/de29ac8c-1258-47ff-851c-7106bbdffe0a/floor_plan/image/hY8x-hO_ueRMIMEzI3Qfm6FgqVa0cOnW67VCt48yQnM=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1090,
+          "layout": "Type 229-Building A"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/a196d610-17bd-4d2c-a862-5d95acaf0e34/floor_plan/image/Pc4Z5OBTrt7ti9s4BMHguTQzpFTu0ZxF40QPR2VANvM=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1226,
+          "layout": "Type 101-Building A"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/85b9d58d-3477-4043-bab8-cbd62dc683c2/floor_plan/image/BMCE9zIpvWYV-9c344yNkSZ2TNbIMy9UqE7zpkJiIZI=/original.webp",
+          "bedrooms": 0,
+          "areaSqft": 376,
+          "layout": "Type 212-Building B"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/d1f73bda-6534-4166-865c-c8b61f209df2/floor_plan/image/5VZO5zS7_N6IiOy8jfIvuOm5X4jY7NW1WN1i_hduB6o=/original.webp",
+          "bedrooms": 0,
+          "areaSqft": 357,
+          "layout": "Type 104-Building B"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/040c1f81-582b-4698-9d2c-947ddb54670a/floor_plan/image/xcp2wY06fltq6aotT2BpQEaNrDTsXxJQrNZh64nd4f4=/original.webp",
+          "bedrooms": 0,
+          "areaSqft": 414,
+          "layout": "Type 112-Building B"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/b05f6d01-d36c-4729-9ca7-1f05d7fc8c13/floor_plan/image/65bL3p4gl9j8lq_GJlMkabsfmfafzL-x8fq4FI4VXzM=/original.webp",
+          "bedrooms": 0,
+          "areaSqft": 357,
+          "layout": "Type 103-Building B"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/941c9f9d-4eaf-46e6-a7b0-68ced75584ef/floor_plan/image/TKm9zYRBY3VdJDMx7pyI7i-BSnRRndL4_Zut1Yjwo18=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 724,
+          "layout": "Type 109-Building B"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/d408843a-a615-4349-bf5a-8beaa7f0ab95/floor_plan/image/pOfq0tnD_-Q0j420sN0kTYVSxLaW-FA5HYNt00vgRAY=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 827,
+          "layout": "Type 201-Building B"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/b6135982-96ab-4189-ba92-c1ff8c97cdce/floor_plan/image/wXiSPokXw85h-SCto88IaBeud9S6jPZobRluVxTw13w=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 823,
+          "layout": "Type 216-Building B"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/2b375a81-3b8f-48e5-a501-5a12fe9b9cf8/floor_plan/image/LqioAb5xTwkvtgtIEet6mv4NN025Jk9GrCWJurll-Oc=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 934,
+          "layout": "Type 115-Building B"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/1095f1f0-c061-4105-b2c5-0516c3f254c8/floor_plan/image/xzxkXcOPOcKbpHCAiHfd-_5CgO6wdMJI-Ttgt_bhG1g=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 758,
+          "layout": "Type 215-Building B"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/7a333883-d3e5-4bce-a714-af29a5c5e391/floor_plan/image/i8kbzujknfWJMV-P_h7jUtTZDH6FwlfhhPVpDVDwHIY=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 993,
+          "layout": "Type 101-Building B"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/b579dedc-190f-41e2-83cb-82392f5e4784/floor_plan/image/oRKOpUj1s7Q890dA6uiNAg1XZxvsUULd_QCkUAUVdiM=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1145,
+          "layout": "Type 211-Building B"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/b52123a1-c1cc-4e31-8e1f-6fd1eb00102e/floor_plan/image/apN8iCa1m_HSg4TEtob8DxHBiITu2OrAohAU_P2c4NQ=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1308,
+          "layout": "Type 111-Building B"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/b1b675ae-9962-4ef2-bf01-e83ad1d8f34c/floor_plan/image/tyMkHRU9n9LwBCn7FcfuLu-sYUznWYSbAUFaKl4XT1k=/original.webp",
+          "bedrooms": 3,
+          "areaSqft": 1578,
+          "layout": "Type 210-Building B"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/6f4165a2-edbb-4822-89f4-89a7c627779e/floor_plan/image/hGByrd64T5wBuq_Pq38WGzUjnO9FnioqBaKnuFcLw9w=/original.webp",
+          "bedrooms": 3,
+          "areaSqft": 1710,
+          "layout": "Type 110-Building B"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/ad5645cb-3164-4cd6-9e0a-a8f414b33f08/floor_plan/image/GJbYON-VCOODCPGOcthq2F_I5wSVfHhHY2AmMaaSosE=/original.webp",
+          "bedrooms": 0,
+          "areaSqft": 364,
+          "layout": "Type 105-Building C"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/8f5640d0-8b4f-464f-af3a-dcc33a3fd7f4/floor_plan/image/mhd-DliIGTev0yoJ-sNygM8BGc-IqsIWNaxpzPMQJxA=/original.webp",
+          "bedrooms": 0,
+          "areaSqft": 408,
+          "layout": "Type 106-Building C"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/72b57565-2fcf-4afc-9947-57c525e1d220/floor_plan/image/uGxIxKi1scBJrUWZa5TwckdEhYYKs6PcEZftt7OIAgI=/original.webp",
+          "bedrooms": 0,
+          "areaSqft": 427,
+          "layout": "Type 102-Building C"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/002e02ab-79bc-414b-9ce7-445c6cf6beed/floor_plan/image/zxIGpdwDuS2V7VDREbmcFMDEWEVpH9Wi7Y1zFHOtl5I=/original.webp",
+          "bedrooms": 0,
+          "areaSqft": 364,
+          "layout": "Type 104-Building C"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/5f461905-e155-4af3-bc8c-9ac0194d3d9c/floor_plan/image/VBhv8qMA6t8B3j3uwY1-uqjgP6acdnLwq56XsHrYbQ8=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 792,
+          "layout": "Type 208-Building C"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/0142d6c3-47b4-45f6-825c-e982f31b5aea/floor_plan/image/sdtKYol-QMETNLDuupSTaR7e-SyUUmnniJptju2o4Ks=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 793,
+          "layout": "Type 114-Building C"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/4dac7c3a-846e-485b-9098-fc3970c05e66/floor_plan/image/gWodoTk3cG91aI8UECwuAKG8EFoq-gkok8EJWCzPXy0=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 793,
+          "layout": "Type 103-Building C"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/a3143eb7-d37e-4ee3-84ca-9f1be38b19ce/floor_plan/image/RzGS0_x4O7MDZmdfyq5qLjWYYNg1gqDr7Tjt8lGJhWc=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 735,
+          "layout": "Type 115-Building C"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/15d2ce49-1256-4697-a02e-f016ca7e66d9/floor_plan/image/71fuTuiVTVukDYGMhjIkoh-o_uxBGOi_UENLmvU4kxU=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 724,
+          "layout": "Type 214-Building C"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/fca8d3d3-e2e8-40ac-921f-9ee13c9dee02/floor_plan/image/5_3lNNMC66DNsNKr5v3bVEz6BPEhGlnaecYSJcSMwv0=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 821,
+          "layout": "Type 101-Building C"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/ca5feeba-5c0a-4bb7-bcf0-9f7a5e310483/floor_plan/image/4YFWTDeEDhlkl7O6fti6ez4al0W5WEBUbaZxfYSqqdM=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 974,
+          "layout": "Type 108-Building C"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/da14c108-a394-42ad-b439-37d4cb9ecedf/floor_plan/image/AOa3h31b3V0xHD1q0CjqzypjY_R8h_D4-8GEL0-0hJA=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 724,
+          "layout": "Type 203-Building C"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/5f232385-885b-4eca-8a5e-01f171acf3dd/floor_plan/image/e8l4zWN42pC_4dfaxsll8WWLSeO5nvaOnmq0aBJhOjg=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1090,
+          "layout": "Type 207-Building C"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/00f2576a-64f0-47f1-9d19-b7ab2aef084a/floor_plan/image/WXsB4CZFN_nFawUWUKA6jHEZHB00-Z_dW99tcQpVX20=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1226,
+          "layout": "Type 107-Building C"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/c76bbd29-11cb-4f92-b86b-625a29ff4829/floor_plan/image/-bdsHU6_PjWMwFPCfveWNf4E4kUP7Rmh4PWqMPRwivo=/original.webp",
+          "bedrooms": 0,
+          "areaSqft": 427,
+          "layout": "Type 102-Building D"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/dd7a1d9d-2557-4392-a278-ebf049fc7a06/floor_plan/image/uhDl4NfJhFAXv90sP5jOegfwFX3ba4rzC4aHQ4acxzg=/original.webp",
+          "bedrooms": 0,
+          "areaSqft": 408,
+          "layout": "Type 106-Building D"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/fe90833c-6912-4c12-b281-be2ea0a6913c/floor_plan/image/atkRpDuNwNZ9fXVlYSi7TPsz0uX3od7JVVV-5fCVN3o=/original.webp",
+          "bedrooms": 0,
+          "areaSqft": 364,
+          "layout": "Type 104-Building D"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/7b88a89d-7243-4f6b-9afd-37ecec23829f/floor_plan/image/1GeeDvWCeHqgv_Wq92Gm0nO0I0kOAccf5ZWLlrxAAXs=/original.webp",
+          "bedrooms": 0,
+          "areaSqft": 364,
+          "layout": "Type 105-Building D"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/7fdc4cc1-4ef3-4c74-9412-021c2323f268/floor_plan/image/XFfoDQ-nhWgCpW0QUjlDQEFr3Cl1Loqhd39wxZ7MQUM=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 974,
+          "layout": "Type 108-Building D"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/4c04598a-0426-4a46-a5d9-a915835f2c4d/floor_plan/image/JpPaYF947NDYS61Jt3YGyZHb1NTPbQxBwhNNyZIZRb4=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 793,
+          "layout": "Type 114-Building D"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/e342cd5f-cf8e-423c-8fd4-6f4b193656db/floor_plan/image/EuN2YawrRg8r4zNAxM86HqgoR9mw6ZpYJjEidOq9dg8=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 724,
+          "layout": "Type 203-Building D"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/958f90c9-fb16-43d2-b522-635c2db6c444/floor_plan/image/maK7vxg6oRTUrB57DkTuGMWgESoR7_aMT3tyEG1ZGs4=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 792,
+          "layout": "Type 208-Building D"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/4b6743fd-1411-4433-8031-f1d49418b656/floor_plan/image/qPLBcFuhaZukA4vDBTkS56JsgoNvPqe_wFB0oqAXNpA=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 735,
+          "layout": "Type 115-Building D"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/c19dc9fc-e463-4c5e-be02-3c96d5c2ab51/floor_plan/image/Sjk3JA0i6y4y6akHyd3RT2VvBm-DS5xoe7BF44YoNLo=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 793,
+          "layout": "Type 103-Building D"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/adc21b1a-b40e-4e1f-afe3-cb002baa2e61/floor_plan/image/EXHai9ceL-ZoIyC4CfLfxOvEq-G0ymv0BzpDraag1Kw=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 821,
+          "layout": "Type 101-Building D"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/6926bdfc-8a06-400a-8b52-303631320371/floor_plan/image/aio9UcTWXEY2Ad6nX5wPZEsuDjjnBkOg1rubLB2B4D8=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1226,
+          "layout": "Type 107-Building D"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/f2fe0d2f-c0ba-402c-87b2-e1613eaea423/floor_plan/image/NJrOwrk4bPLk34FMQxhwoGsHrHrxoa7_h8CO8_00kBY=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1090,
+          "layout": "Type 207-Building D"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/86a1c9ad-a5f5-4117-bd8f-3ac86554f1dd/floor_plan/image/RipKjb_xTnOAM8AC7fXxFkDH6Zexc2AiQv0h9yEsTSM=/original.webp",
+          "bedrooms": 0,
+          "areaSqft": 376,
+          "layout": "Type 201-Building E"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/845c431b-0468-4a4e-ab7e-44f958a5011c/floor_plan/image/mvHsiARxFs6MpBRfg3_DEVZElm8YLp_QBm63DESpZlw=/original.webp",
+          "bedrooms": 0,
+          "areaSqft": 417,
+          "layout": "Type 136-Building E"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/a56ae61b-f336-41dd-b88b-8bd10d3740e4/floor_plan/image/nGIn33ff9TOLVbESwjbluPAKK2I958iZ59Ske0us8g4=/original.webp",
+          "bedrooms": 0,
+          "areaSqft": 410,
+          "layout": "Type 129-Building E"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/3791e6aa-a43e-4485-8b5a-2cf76a5f189f/floor_plan/image/VtfM5wlgW91GjiG__aRlGP487pawJ0eUSTUp9iw_eDE=/original.webp",
+          "bedrooms": 0,
+          "areaSqft": 421,
+          "layout": "Type 101-Building E"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/bd62757c-339d-45d5-86a6-d3851221b8d0/floor_plan/image/qoPkyaRYYCO-efM-kbskcfW2qegwIdnMW1IIXauSGTo=/original.webp",
+          "bedrooms": 0,
+          "areaSqft": 375,
+          "layout": "Type 102-Building E"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/e1cf063f-dd6e-4df0-a72f-176fd0df8406/floor_plan/image/ICIHW29R3AxNHja7HX6aJfLt6FLAWUI3xw7LnQNU9B8=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 844,
+          "layout": "Type 1620-Building E"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/faf3d770-6b1b-4e38-bf40-d02f4199c43e/floor_plan/image/4bUK6wNTaZABxbsoCraMSLWXoC1lLVX5QQdBmfcYDHM=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 768,
+          "layout": "Type 124-Building E"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/56a51fb4-6678-4c48-bb3f-905e6ecb2a92/floor_plan/image/_CYHmnaXGHJO0k-OszEAKvbQm4JiDuQBB76sLUxpeyI=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 758,
+          "layout": "Type 117-Building E"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/4db7eada-d113-403a-a876-49eb967985c6/floor_plan/image/n7d96rnExvIBgndclFAfWG5YET3355OFeT8Qb408cVU=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 753,
+          "layout": "Type 115-Building E"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/224769f9-905a-4e01-900a-7bf4b271d23d/floor_plan/image/iuYfA32ZR2qdWmADaPz_bWyE0-13fN4QWxqRol0UChQ=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 758,
+          "layout": "Type 112-Building E"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/6038f3d4-06e3-4b06-896d-ff6934e110da/floor_plan/image/lpd5Sp8nxD0VJYzoiMb5SsHBlvUg44pqMx2Z8sw3Ddc=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 974,
+          "layout": "Type 131-Building E"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/860b4bdc-d3ce-46dc-8ec5-9b92f4ab5d28/floor_plan/image/j4B_QRHE_z-8HGDqhacwUqjWdwBI7PicbeTyzQgumDM=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 792,
+          "layout": "Type 1610-Building E"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/69a6d542-66ea-45f5-ac2b-c4ef72662844/floor_plan/image/lDVNFtGVT1l9WXRMjWj-j2R2ZEgGxnNvNI_4zSPuwnY=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 1062,
+          "layout": "Type 123-Building E"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/ed022d74-3c7c-4c25-a8ed-58a5db7a559c/floor_plan/image/cJ2NAWH0KHXRz11_R03LKq289oBJW0AZ8FcseJCm7NQ=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 797,
+          "layout": "Type 116-Building E"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/5f953058-c7d6-4005-a468-d60fb3b90e8b/floor_plan/image/iNPSnqUjdTFgtJ9Q7q-_qB-AZ5TVII-HNadt-Vkp8V8=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 753,
+          "layout": "Type 114-Building E"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/e171461a-9b10-4ce4-9d38-013af5e5bfc2/floor_plan/image/GfcIAaVeh0X8QQH5O8wPmP1IfrErSpzHfo8WywhXLHs=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1101,
+          "layout": "Type 214-Building E"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/7913e89e-9395-4040-bf1c-72fd3e1a1857/floor_plan/image/aVepYQZ4jMYG0ao2MXR34dfGxID4j49Pg5LXrOSNhug=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1246,
+          "layout": "Type 114-Building E"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/221431a2-f675-47d4-ac05-bbd2345e370c/floor_plan/image/-0QWF_8IHbJWWB77GhKTWMSHfuRDWoPdHoGAdZK4yHQ=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1268,
+          "layout": "Type 130-Building E"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/f18b3989-ccde-4122-bf2c-ebc24e3e82d4/floor_plan/image/v20u1cSBDCU3Uj0cRnthXMGB7HTMi-wy8ZXdywPXo9k=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1090,
+          "layout": "Type 1609-Building E"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/bad39c68-e4db-4097-8289-08f01ae1f62b/floor_plan/image/WeHAtSzm2gUDJntg6nXGu_ckfty6qv8y8j_HQBLA8-s=/original.webp",
+          "bedrooms": 3,
+          "areaSqft": 1578,
+          "layout": "Type 213-Building E"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/95a52e40-5fb7-4e1d-8dd5-386c9d89ac1e/floor_plan/image/wMS90tu8LHN9AfrEPsRPBllrNtCvWbaeeeNomYPwfeI=/original.webp",
+          "bedrooms": 3,
+          "areaSqft": 1710,
+          "layout": "Type 113-Building E"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/fe6186d1-f053-4f00-9fc2-7df3541f65f2/floor_plan/image/SccEH7YAcaxzxFPnssD5_w2X8mCljzMJ90pC96ZSc5A=/original.webp",
+          "bedrooms": 0,
+          "areaSqft": 364,
+          "layout": "Type 102-Building F"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/271e2de8-350b-4d63-9cf2-171e7437dfd5/floor_plan/image/OF8AzuO_9tqwNym1xbny652vqrlq0Tg3FLSPdOTHGjY=/original.webp",
+          "bedrooms": 0,
+          "areaSqft": 431,
+          "layout": "Type 136-Building F"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/50669a2d-b408-4868-b6f7-366b1ba50bf3/floor_plan/image/HBbKqBLbP85GDC6tS6QNqGCrFPkBgwfAx3S1eA4awAA=/original.webp",
+          "bedrooms": 0,
+          "areaSqft": 408,
+          "layout": "Type 132-Building F"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/96a91375-0eb3-4298-9197-d4e75d1ed059/floor_plan/image/rzpETLbO2acCbwLDZo7IfJbnWGwMLRH9s-_UpSz3h2I=/original.webp",
+          "bedrooms": 0,
+          "areaSqft": 422,
+          "layout": "Type 135-Building F"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/a27f737f-5178-4a4e-a128-93ff1a085920/floor_plan/image/TzGQWKM8Jy0QjQmxOM9TjKGumlRfY3J2ZFrBMOyrHJw=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 974,
+          "layout": "Type 130-Building F"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/4a9eeff5-bbd5-47dc-87ce-a8b69e3d9dda/floor_plan/image/1b5lhMejVA6HvPf_VqVTmXQsWeP1GnzLRbvU-WxqEmA=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 884,
+          "layout": "Type 111-Building F"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/edd58630-dffb-4295-b33d-8b551ee96728/floor_plan/image/RL-1OYmDoDWOp4NS4hlShcXXLEFsA6EpDW1Ekv_Q_iU=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 769,
+          "layout": "Type 133-Building F"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/6bea96a7-2520-4872-ae23-0c0caf0f47fd/floor_plan/image/2JYs6wZiugsC1i3vpd0GdiXBsovgwGQu7UttzY5xLog=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 724,
+          "layout": "Type 112-Building F"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/48d67699-104e-4e78-9d27-32a47b92df9d/floor_plan/image/BspywCBTj5EJONPqY-8lk8VAVDiVu7AfNkG6uZomwpQ=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 792,
+          "layout": "Type 230-Building F"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/63d43be7-9444-499b-8fac-f9004a3d2fde/floor_plan/image/lvmtki9imlQrglataoxeAFPBgtKgvk1Crev00lpKscE=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1090,
+          "layout": "Type 201-Building F"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/849b36f0-3e4f-44b9-a307-8fe06c340228/floor_plan/image/4yzt8H91kV_XpQ8yx9LOJAn0yBp_PzTzAwEmBvq3XKw=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1226,
+          "layout": "Type 101-Building F"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/c7adce97-7d36-45f4-bb94-79771167dbac/floor_plan/image/Dk5Rhcblx8ir0aU22LCcrUVljDqRInTA0hkX9MKqGSI=/original.webp",
+          "bedrooms": 0,
+          "areaSqft": 422,
+          "layout": "Type 134-Building G"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/580cd2e7-8043-442e-bf6c-b605ac604d99/floor_plan/image/zaTxefi-mIOjn8wo_K5HaSWRoWuVLNGPeYc3t44sa5o=/original.webp",
+          "bedrooms": 0,
+          "areaSqft": 364,
+          "layout": "Type 102-Building G"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/afed8c36-d915-4296-abd5-6d9571315df3/floor_plan/image/89UdAjXCztOlLwkTTGEZKXmO7yWjR32U3PtfFYZ87yU=/original.webp",
+          "bedrooms": 0,
+          "areaSqft": 431,
+          "layout": "Type 135-Building G"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/d4df9256-423d-4d47-a4a7-34956526b684/floor_plan/image/aa4yj9Y9PPTsLGLWH4CgQ4JVVU8KvF_EBtwhiipAxmc=/original.webp",
+          "bedrooms": 0,
+          "areaSqft": 408,
+          "layout": "Type 131-Building G"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/b7107fe9-c354-4b3b-8dfc-70034f5d9c90/floor_plan/image/e_SSeoUWy_y35rTyU6olhOlZkBDMVnxHqiINBotd7v4=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 974,
+          "layout": "Type 143-Building G"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/01ea5f08-b790-4f10-a1d4-76412491b813/floor_plan/image/Bz375fNtF8H0UGJW6gn7oKfMYrKU5kH8n1P1liVBoQs=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 769,
+          "layout": "Type 141-Building G"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/a6fc2eff-49e4-4d79-b162-b6c0a4fe73d6/floor_plan/image/PFWHSFIT5xjSuRg4g1AlVW7XaRjNljNhby8NTm9PQ74=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 792,
+          "layout": "Type 230-Building G"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/f89bf32c-bbcc-4af2-8b9d-05f5aa57f307/floor_plan/image/V_6UoAgE07Sy0uDCVHba8TcbHNdt3PmoD4jHUvVx_jo=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 720,
+          "layout": "Type 211-Building G"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/84a6fa56-eb70-4d5b-ac89-5e5be451091d/floor_plan/image/030gDTTG0gQyAcctbHpOPJcpyIMRe0Gs498clZkmi4U=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 724,
+          "layout": "Type 112-Building G"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/c40aa8a6-d184-4de8-b510-9510223e9701/floor_plan/image/aJAqTkZagpM-gtPjGWi1rRFbAJ_J31mVEw2NGdfv-Vc=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 884,
+          "layout": "Type 111-Building G"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/0249f39b-d59b-400d-bd49-2dc37ad19de6/floor_plan/image/MCm0ima7awsmAzasj8u_CWdHsdZDziQtPRO3We0y1Is=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 769,
+          "layout": "Type 132-Building G"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/acc51dcc-1157-4892-be5c-9ae9e611adc7/floor_plan/image/OU1GhtoyAm-lqR-CxRa4OHNY0tLg2gRGCtcpVtgdJXU=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 1090,
+          "layout": "Type 201-Building G"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/3761d21a-f069-4903-988e-20dd8bcfd318/floor_plan/image/yDhf-XdkcEV-IVxVMu-mT7ZTb-bQs0gKCnEt0fEa_CM=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 974,
+          "layout": "Type 130-Building G"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/6602a8cb-0819-4000-a987-a051d2be61dc/floor_plan/image/7UsIn3_jP-K-FQHPmHxSArZiS-PnJeuzpEwk0GvOYSk=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1226,
+          "layout": "Type 129-Building G"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/06c59d11-1fbc-438d-b3b7-9754088d7e23/floor_plan/image/6hehKpavtHIJlc210b7s0i6BU5L_-hcza9oMIJhxEDQ=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1226,
+          "layout": "Type 101-Building G"
+        }
+      ],
+      "reviewPlans": [
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/f89bf32c-bbcc-4af2-8b9d-05f5aa57f307/floor_plan/image/V_6UoAgE07Sy0uDCVHba8TcbHNdt3PmoD4jHUvVx_jo=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 720,
+          "layout": "Type 211-Building G",
+          "localUrl": "/projects/dubai-south-floorplan-review/azizi-venice-14-building-g-2.webp",
+          "sha256": "8a5eca88bec18512430a91fd4ee627a2182d1aa208344124850130b735a1c7c4",
+          "reviewStatus": "reviewed-project-reference",
+          "matchStatus": "building-reference"
+        }
+      ],
+      "status": "reference-available"
+    },
+    {
+      "id": "cresswell-views",
+      "name": "Cresswell Views",
+      "aliases": [],
+      "selectedAreaSqft": 823,
+      "qualification": "1BR Type A reference; distinct from Cresswell Plaza.",
+      "checkedAt": "2026-09-12T12:46:02.254Z",
+      "sourceUrl": "https://www.propertyfinder.ae/en/new-projects/arady-properties/cresswell-views",
+      "sourceLabel": "Property Finder project floorplan library",
+      "plans": [
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/93a1c792-fa54-4397-bf5a-4ad3776821da/floor_plan/image/uaY06qAvA2t9K21jeOq3KPgg24TgDY6Hr5HDLB3wjhI=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 823,
+          "layout": "Type A"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/fd6bb8e1-c23d-4e6e-87a9-b36e50fb9798/floor_plan/image/Dk94M7lggRd7_BNi-U6zgDCiKboEwoM117U4sDFioU4=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1387,
+          "layout": "Type B"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/1c35ac9a-e722-4732-bf78-1134c2e56ed4/floor_plan/image/xT3DpJ4Om3Fbpd3uRi8T7bgp-KpzlUlYOmO5_kgnGX0=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1312,
+          "layout": "Type A"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/955ea595-9fc1-4166-a27d-1c679ecd222a/floor_plan/image/ywYL5hbrCL2ko4horkdomSx-hHuvt9Sd-uR60y1zPHM=/original.webp",
+          "bedrooms": 3,
+          "areaSqft": 2150,
+          "layout": "Type A"
+        }
+      ],
+      "reviewPlans": [
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/93a1c792-fa54-4397-bf5a-4ad3776821da/floor_plan/image/uaY06qAvA2t9K21jeOq3KPgg24TgDY6Hr5HDLB3wjhI=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 823,
+          "layout": "Type A",
+          "localUrl": "/projects/dubai-south-floorplan-review/cresswell-views-1.webp",
+          "sha256": "9e1bd9f53718b3ba568e40de01a7ed9df51ab68730bd0f2d0faf46258b28290b",
+          "reviewStatus": "reviewed-project-reference",
+          "matchStatus": "project-reference"
+        }
+      ],
+      "status": "reference-available"
+    },
+    {
+      "id": "golf-point-tower-2",
+      "name": "Golf Point Tower 2",
+      "aliases": [],
+      "selectedAreaSqft": null,
+      "qualification": "Published project reference only; selected building, unit, type and area have not been verified.",
+      "checkedAt": "2026-09-12T12:46:02.678Z",
+      "sourceUrl": "https://jre.ae/projects/golf-point",
+      "sourceLabel": "JRE published project floorplan library",
+      "plans": [
+        {
+          "remoteUrl": "https://jre.ae/i/golf-point-layout-3-bedroom-1-emaar-south-dubai-1733.webp",
+          "bedrooms": 3,
+          "areaSqft": null,
+          "layout": "Golf Point 3 BR floor plan - Emaar South, Dubai - by Emaar"
+        }
+      ],
+      "reviewPlans": [],
+      "status": "source-verification-pending"
+    },
+    {
+      "id": "golf-vale",
+      "name": "Golf Vale",
+      "aliases": [],
+      "selectedAreaSqft": null,
+      "qualification": "Published project layouts; select by bedroom, area and unit type.",
+      "checkedAt": "2026-09-12T12:46:05.108Z",
+      "sourceUrl": "https://www.propertyfinder.ae/en/new-projects/emaar-properties/golf-vale",
+      "sourceLabel": "Property Finder project floorplan library",
+      "plans": [
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/8ff35a8f-95dc-4043-88d4-f20389193a3c/floor_plan/image/fYhpk9vZknpILP36c0dCzUIJiJbv3vOF9j8gAHs8yLA=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 672,
+          "layout": "Type P-P13"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/5fdd9028-c8b2-4cf2-b30b-15dbed17f9d7/floor_plan/image/NHG2tddax-bBe7i4zSodxk34dWL7vKsy42btfGt5Rd0=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 680,
+          "layout": "Type P-P10"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/4c990176-f4b0-4997-88bd-24ca608c5263/floor_plan/image/8elkZRMXgleffQf0lXZP3ZM40_mAiIo204NVVY6Pj-Y=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 676,
+          "layout": "Type P-P05"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/7e688e72-ad15-4ab8-bb2f-570f638bd705/floor_plan/image/BcbPpRr1xR8a5CgYb93r618okDriSx_8rKQ2PXZ9WnQ=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 993,
+          "layout": "Type 10-1022"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/a862929b-e61b-400c-958a-57043c87910c/floor_plan/image/UQ6tWB8R2VgXG2GLVT4FPjpEi4HtvkPaWO2wNDKbdBA=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 990,
+          "layout": "Type 4-416"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/69c46e25-ebc7-40ac-8a71-c5f401a1fbc4/floor_plan/image/vDh27HFSnWrgAsyjvfCEY8x_3EyU0Sb60WlQvIvWI8Q=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 986,
+          "layout": "Type 7-706"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/c1fae909-ec80-4ad4-bcad-84eed6901a31/floor_plan/image/xbhJtMgWURo8a-Osq8UWUs8iXr1xd8FoEKd-ILdgNOY=/original.webp",
+          "bedrooms": 3,
+          "areaSqft": 1724,
+          "layout": "Type 6-619"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/e5334348-cd59-4ace-bb1c-41e578adb40b/floor_plan/image/HJLsSUNssrgfAtde3iSXf5c0xAYwfAHkkjZmci-Xuq0=/original.webp",
+          "bedrooms": 3,
+          "areaSqft": 1725,
+          "layout": "Type 4-404"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/198bec45-bcd6-49bf-b621-cc8d875cc7b5/floor_plan/image/acwna6mwW_Enwa9PpfjvqWp5PzI5qZL8FkgJNWbqMiA=/original.webp",
+          "bedrooms": 3,
+          "areaSqft": 2796,
+          "layout": "Type G-TH01"
+        }
+      ],
+      "reviewPlans": [
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/8ff35a8f-95dc-4043-88d4-f20389193a3c/floor_plan/image/fYhpk9vZknpILP36c0dCzUIJiJbv3vOF9j8gAHs8yLA=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 672,
+          "layout": "Type P-P13",
+          "localUrl": "/projects/dubai-south-floorplan-review/golf-vale-1.webp",
+          "sha256": "e6f1f993ed29447dd3c30ef5453a4676838d0086865c7f2472a54acc6e1df175",
+          "reviewStatus": "reviewed-project-reference",
+          "matchStatus": "project-reference"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/4c990176-f4b0-4997-88bd-24ca608c5263/floor_plan/image/8elkZRMXgleffQf0lXZP3ZM40_mAiIo204NVVY6Pj-Y=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 676,
+          "layout": "Type P-P05",
+          "localUrl": "/projects/dubai-south-floorplan-review/golf-vale-2.webp",
+          "sha256": "42e73416bb2311e87249262cae145878acef8cd408c320c1e50093445b88eb02",
+          "reviewStatus": "reviewed-project-reference",
+          "matchStatus": "project-reference"
+        }
+      ],
+      "status": "reference-available"
+    },
+    {
+      "id": "golf-hills",
+      "name": "Golf Hills",
+      "aliases": [],
+      "selectedAreaSqft": null,
+      "qualification": "Published project layouts; select by bedroom, area and unit type.",
+      "checkedAt": "2026-09-12T12:46:05.621Z",
+      "sourceUrl": "https://www.propertyfinder.ae/en/new-projects/emaar-properties/golf-hills",
+      "sourceLabel": "Property Finder project floorplan library",
+      "plans": [
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/f923e579-e060-4485-a780-c57f18fb4d86/floor_plan/image/F-hD7dHlSiaWPmAQKB2DbBPFHXgDNNfDCmkZZog6IsI=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 862,
+          "layout": "Type 1.1"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/8c5336f6-f6cb-488e-872d-2e28050521fb/floor_plan/image/DWFpAJSLnnt3ApVa2i9o0rmc4Jg5r2_mk5whBHar51c=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 671,
+          "layout": "Type 1A"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/2708d711-88d5-43d6-ba5f-7283f4d74dd6/floor_plan/image/7uXIf3JPag0X5bR53mbar6PmXDlYtv1wwLzVupObtMc=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 674,
+          "layout": "Type 1"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/963f0374-9f8a-4781-99b5-440029b13205/floor_plan/image/TP4EAFoNyJ3TyacHpqyNFZh2H1l0YPuD2b2Yg_lnKFc=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 867,
+          "layout": "Type 1A.1"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/0efc64d8-90cb-4df2-9d3b-60cd4c2c501b/floor_plan/image/sIXi-gC9pJ2x4IoQa27yH1fmdnThIyoIJzm6Uh1OqYA=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1291,
+          "layout": "Type 1.1"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/4549c13c-4fb4-40b6-ae67-6e798a181782/floor_plan/image/TIhSUNycdZwdtw3a3WRUboPfRLdrqXL7_kDPSJo5FuA=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1060,
+          "layout": "Type 1"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/594f2de8-ceab-415c-a503-d7ad5bee1570/floor_plan/image/uiaMgyZD9s77fdtthAE79J0gSINC6Y8dZMkQesrS6LI=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1306,
+          "layout": "Type 2.1"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/fc1afea2-2bfb-43b0-8717-3d63fa3e526c/floor_plan/image/gBywqKYstFBKpEwXcJs6mFM_UDsGVS-AE0H8Azhcqog=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1064,
+          "layout": "Type 1A"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/50785589-e945-455e-a708-1503cd3949e6/floor_plan/image/55_XseiYG12nVcPpz1Xkil5uTrP6KRYudWbUGSAwW2o=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 990,
+          "layout": "Type 2"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/04963af1-fa45-4908-a6fa-da7ae16ce093/floor_plan/image/k9vLgd-4bqVhHImCxlTzjgfd581ioUmJsRrVPcpBh_s=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 995,
+          "layout": "Type 2A"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/4f856d17-877a-46d1-ac09-a3f317c70c84/floor_plan/image/6raodDRiqJvTaEKw-kAwbAfokBYE9P3_ubcZTb9v6iU=/original.webp",
+          "bedrooms": 3,
+          "areaSqft": 2510,
+          "layout": "Type 1.1"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/72a77129-ec74-435f-83fd-e23e765b4068/floor_plan/image/dnQ0AAKBIi2GY4ZV0NA1fo_-qyCN-4cUA5wi4yX79RI=/original.webp",
+          "bedrooms": 3,
+          "areaSqft": 1738,
+          "layout": "Type 1"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/b29b3c9c-37c3-40c8-91d3-f63d05927c63/floor_plan/image/2jJ02eqXt2mtYMXoXeUJ2ITKnZVV75lq1IBzuP08WCM=/original.webp",
+          "bedrooms": 3,
+          "areaSqft": 1738,
+          "layout": "Type 1A"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/0bd16eab-32ad-4624-a1ba-234a03bade01/floor_plan/image/lLdINtu43YZBYvYNw3GomNBFXcNRaX20lTyyewuMMjw=/original.webp",
+          "bedrooms": 3,
+          "areaSqft": 2274,
+          "layout": "Type 1A.1"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/22de0e5c-48de-4d12-932a-2abea2a86bb2/floor_plan/image/b70youeaM2U2vV1FqoVcE_Kao3BU2q_uf3s4OBqdWE8=/original.webp",
+          "bedrooms": 3,
+          "areaSqft": 3081,
+          "layout": "Type 1A"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/49af556a-f983-400f-9f82-f59298154fc9/floor_plan/image/RB0udOW4jG9jwqzplZmeVDxod2-SseRyg2zuzf0phjU=/original.webp",
+          "bedrooms": 3,
+          "areaSqft": 3081,
+          "layout": "Type 1"
+        }
+      ],
+      "reviewPlans": [
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/8c5336f6-f6cb-488e-872d-2e28050521fb/floor_plan/image/DWFpAJSLnnt3ApVa2i9o0rmc4Jg5r2_mk5whBHar51c=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 671,
+          "layout": "Type 1A",
+          "localUrl": "/projects/dubai-south-floorplan-review/golf-hills-1.webp",
+          "sha256": "3d94d578fbad520d2599eafba46c70cb54a5b808f55079ddf43ed3a9a5013e83",
+          "reviewStatus": "reviewed-project-reference",
+          "matchStatus": "project-reference"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/2708d711-88d5-43d6-ba5f-7283f4d74dd6/floor_plan/image/7uXIf3JPag0X5bR53mbar6PmXDlYtv1wwLzVupObtMc=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 674,
+          "layout": "Type 1",
+          "localUrl": "/projects/dubai-south-floorplan-review/golf-hills-2.webp",
+          "sha256": "56d834c858e87c2ef030961841153fe7fd4bf91d65165558caaae8bf1ee89f0b",
+          "reviewStatus": "reviewed-project-reference",
+          "matchStatus": "project-reference"
+        }
+      ],
+      "status": "reference-available"
+    },
+    {
+      "id": "golf-trails",
+      "name": "Golf Trails",
+      "aliases": [],
+      "selectedAreaSqft": null,
+      "qualification": "Published project layouts; confirm unit code against the developer plan.",
+      "checkedAt": "2026-09-12T12:51:15.884Z",
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "plans": [],
+      "reviewPlans": [],
+      "status": "source-verification-pending"
+    },
+    {
+      "id": "windsor-house-ii-building-b",
+      "name": "Windsor House II - Building B",
+      "aliases": [],
+      "selectedAreaSqft": 779,
+      "qualification": "Phase 2 Type 1 reference. Building B and selected unit require confirmation.",
+      "checkedAt": "2026-09-12T12:51:15.892Z",
+      "sourceUrl": "https://www.propertyfinder.ae/en/new-projects/ellington/windsor-house-phase-2-by-ellington",
+      "sourceLabel": "Property Finder project floorplan library",
+      "plans": [
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/f44aa77a-caf0-40ab-92fd-52f6328dc36c/floor_plan/image/_AnBtMGc72aO-gXtSIOawvBy-EZz-AWuRm0ITrjOk1c=/original.webp",
+          "bedrooms": 0,
+          "areaSqft": 432,
+          "layout": "Type 1"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/8a3ecd8d-0447-4831-8372-c2e5323a2683/floor_plan/image/hdlPJ73O8OkkUCzXIwp5vCoOAWssq0-VAKmT_6jI5wg=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 779,
+          "layout": "Type 1"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/b8dd088b-bac1-43af-be9e-029c0afb4512/floor_plan/image/jjANL20JiHAB_U83ul4H7U3Y9zzeBUAQcgOoDI-btF8=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1127,
+          "layout": "Type 1"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/b427d5ac-5e28-4ab4-882a-4e758a2a7ac0/floor_plan/image/TcChKbCTd-gZGgb9UqduXKBvEn46KqFVx9UlPlbIJqk=/original.webp",
+          "bedrooms": 3,
+          "areaSqft": 1491,
+          "layout": "Type 1"
+        }
+      ],
+      "reviewPlans": [
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/8a3ecd8d-0447-4831-8372-c2e5323a2683/floor_plan/image/hdlPJ73O8OkkUCzXIwp5vCoOAWssq0-VAKmT_6jI5wg=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 779,
+          "layout": "Type 1",
+          "localUrl": "/projects/dubai-south-floorplan-review/windsor-house-ii-building-b-1.webp",
+          "sha256": "83dc78e9a73e997c86c4cf0f422848747093e7689a053552f90ad51094422319",
+          "reviewStatus": "reviewed-project-reference",
+          "matchStatus": "project-reference"
+        }
+      ],
+      "status": "reference-available"
+    },
+    {
+      "id": "south-square-s1",
+      "name": "South Square S1",
+      "aliases": [],
+      "selectedAreaSqft": null,
+      "qualification": "Project reference; match S1 building, selected unit and area.",
+      "checkedAt": "2026-09-12T12:46:08.667Z",
+      "sourceUrl": "https://www.propertyfinder.ae/en/new-projects/dubai-south/south-square",
+      "sourceLabel": "Property Finder project floorplan library",
+      "plans": [
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/2a50053f-e85a-4940-885a-74bf673d20d1/floor_plan/image/vCQhrby2KvB3wu6OrdoOyY7P4xoAlL-RfLFlQIOl3p0=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 1028,
+          "layout": "Type 01"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/e5dfaa80-035a-4486-bf3a-b392ddfe306d/floor_plan/image/4M7jqQqZqi3C_KLwbUHZrB59bk2Asu5W4afi-jP5YsA=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 810,
+          "layout": "Type 1E"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/f2a1fef0-3f33-4f74-ab22-c74834f62499/floor_plan/image/44TUJNr7JzB_085ALcVGBHLC-FGAD4S7DQSCWuqx27A=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 756,
+          "layout": "Type 1C"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/8ac9ef3a-2bb3-4261-be1f-1456aac26ac5/floor_plan/image/C7yTr9wc8k25dkccbM62PoDVGfI0RnHPCEPEjx4uiO8=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 2135,
+          "layout": "Type A"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/59cc6ac6-d914-4e31-b55f-7df58474d1f6/floor_plan/image/9TOq9FMKWMYGtHViOQZF5N2fI-KNQr1N-yuy77MN_ew=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1605,
+          "layout": "Type 02"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/4e49c70a-5f09-41a9-b567-ca0e05d80fdb/floor_plan/image/SsiHdOQfP-dJPxalgC2qg-rwvaMswsCPTSPWJqamfmI=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1135,
+          "layout": "Type 07"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/89d8aeab-df7b-4374-93e2-96d3f3b58f24/floor_plan/image/aeriex10IbIxxBNG739lo9wDyHI8PBBGE-jX2EroqPc=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1229,
+          "layout": "Type 06A"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/61b225ce-afe9-4018-a8c7-0b2f92e839b4/floor_plan/image/7wCjXszJsmjirY5B97wwaW0hVeCcVXuVAnosX4l8Jfo=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1110,
+          "layout": "Type 06"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/c8306970-07b0-4b61-91f0-42ccdceda88d/floor_plan/image/HQsOnE2PXObIGGY3TBx_gulyl9x1xYaMLSXoLfPV46s=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1279,
+          "layout": "Type 08A"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/154269b8-7129-402c-96ab-2253bea35aec/floor_plan/image/6PJbwd2L1a360jUGyyePEqWJNOxYVsf7NKyYIemNQhY=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1301,
+          "layout": "Type 07A"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/96ee4654-82f8-49c3-ada7-efd9c77fb5da/floor_plan/image/NHl68wwATTiPWM4SMGpS0iQVDCL3Lt8uo13W5BjQquo=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1639,
+          "layout": "Type 04"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/c66d6e39-2b5e-4d6b-99da-57d3245aab60/floor_plan/image/Z--7__rnTGJm4WqI4W7SCPoYNMHkY0sIah3iCohVjpk=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1197,
+          "layout": "Type 08"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/3bbf4903-d58f-4d8a-815a-a77859ad50a9/floor_plan/image/HuESunyKrZd-e7kIkVtpJiGU_PpL1w3RxI76wKMGbqA=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1646,
+          "layout": "Type 05"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/a4605f3a-1e56-40c9-8578-d196b51fe0c5/floor_plan/image/c1MnFu_dxcjOZUFPa-knE9kiI3RRDULnljUR5k6u1ME=/original.webp",
+          "bedrooms": 3,
+          "areaSqft": 1292,
+          "layout": "Type 02 + Study"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/09a93de0-9789-4505-ab01-541793356a9e/floor_plan/image/Y3ZvlG5vNvl7kwvFTyFPb2uzsLQv-gz12I1vVQGa-60=/original.webp",
+          "bedrooms": 3,
+          "areaSqft": 1798,
+          "layout": "Type 02C"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/b95ed6ef-1c60-487a-8fe6-f8937c1b23e1/floor_plan/image/4uroIK9pZuJug_jgIHyh5bEcE95PCw8qvDegZfIXWsA=/original.webp",
+          "bedrooms": 3,
+          "areaSqft": 1942,
+          "layout": "Type 01 + Study"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/5161404c-591e-42f1-88f4-32de02f0232e/floor_plan/image/ea5E7yP9C4mXj4_6cxm8ObuDuyOarpF7Zn8_s4PujgE=/original.webp",
+          "bedrooms": 3,
+          "areaSqft": 1577,
+          "layout": "Type 02A"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/b25d22cf-b5d1-441d-b233-2f93d20954c8/floor_plan/image/ftCsWVCo8SIwI8ahzwHSZW8Xmq0W7X6FZKlWmuWbRV0=/original.webp",
+          "bedrooms": 3,
+          "areaSqft": 1522,
+          "layout": "Type 02B + Study"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/6c176c70-6aa1-4285-88fe-b32ba3e8ee91/floor_plan/image/1-TneYY2wIpYrRpHYV-Hw_C-Bj9_T7wpT2E3DN1_1ZI=/original.webp",
+          "bedrooms": 3,
+          "areaSqft": 2534,
+          "layout": "Type 01"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/18ef3f62-5430-4531-812f-2d08cb5d4f0e/floor_plan/image/pYgOjepBKRXTzkMtapSG1T4s1RdjMIIry6iwF2or3Dw=/original.webp",
+          "bedrooms": 3,
+          "areaSqft": 1671,
+          "layout": "Type 02B"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/9dbdc203-a81b-4871-b755-1cf80978ff98/floor_plan/image/BXwlSlETs7mHnX7tzh_MipCb8byflsLR40aDgVBGnZ4=/original.webp",
+          "bedrooms": 3,
+          "areaSqft": 1380,
+          "layout": "Type 02A + Study"
+        }
+      ],
+      "reviewPlans": [
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/f2a1fef0-3f33-4f74-ab22-c74834f62499/floor_plan/image/44TUJNr7JzB_085ALcVGBHLC-FGAD4S7DQSCWuqx27A=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 756,
+          "layout": "Type 1C",
+          "localUrl": "/projects/dubai-south-floorplan-review/south-square-s1-1.webp",
+          "sha256": "2a6a55777c11efbfce945e908010466da0f91e23c1f832046b7f4ecd15db5867",
+          "reviewStatus": "reviewed-project-reference",
+          "matchStatus": "project-reference"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/e5dfaa80-035a-4486-bf3a-b392ddfe306d/floor_plan/image/4M7jqQqZqi3C_KLwbUHZrB59bk2Asu5W4afi-jP5YsA=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 810,
+          "layout": "Type 1E",
+          "localUrl": "/projects/dubai-south-floorplan-review/south-square-s1-2.webp",
+          "sha256": "cf143d46676edd7feb92b0e842d65a3608bcb2290a47043e5834d4cde04af19a",
+          "reviewStatus": "reviewed-project-reference",
+          "matchStatus": "project-reference"
+        }
+      ],
+      "status": "reference-available"
+    },
+    {
+      "id": "south-living",
+      "name": "South Living",
+      "aliases": [],
+      "selectedAreaSqft": null,
+      "qualification": "Published layout reference; confirm the unit and floor.",
+      "checkedAt": "2026-09-12T12:51:16.383Z",
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "plans": [],
+      "reviewPlans": [],
+      "status": "source-verification-pending"
+    },
+    {
+      "id": "divine-elements",
+      "name": "Divine Elements",
+      "aliases": [],
+      "selectedAreaSqft": 716.55,
+      "qualification": "Published project reference only; selected building, unit, type and area have not been verified.",
+      "checkedAt": "2026-09-12T12:46:12.163Z",
+      "sourceUrl": "https://jre.ae/projects/divine-elements",
+      "sourceLabel": "JRE published project floorplan library",
+      "plans": [
+        {
+          "remoteUrl": "https://jre.ae/i/divine-elements-layout-0-bedroom-1-madinat-al-mataar-dubai-3148.webp",
+          "bedrooms": 0,
+          "areaSqft": null,
+          "layout": "Divine Elements Studio floor plan - Madinat Al Mataar, Dubai - by Takmeel Real Estate Development"
+        },
+        {
+          "remoteUrl": "https://jre.ae/i/divine-elements-layout-1-bedroom-1-madinat-al-mataar-dubai-3148.webp",
+          "bedrooms": 1,
+          "areaSqft": null,
+          "layout": "Divine Elements 1 BR floor plan - Madinat Al Mataar, Dubai - by Takmeel Real Estate Development"
+        },
+        {
+          "remoteUrl": "https://jre.ae/i/divine-elements-layout-2-bedroom-1-madinat-al-mataar-dubai-3148.webp",
+          "bedrooms": 2,
+          "areaSqft": null,
+          "layout": "Divine Elements 2 BR floor plan - Madinat Al Mataar, Dubai - by Takmeel Real Estate Development"
+        }
+      ],
+      "reviewPlans": [
+        {
+          "remoteUrl": "https://jre.ae/i/divine-elements-layout-1-bedroom-1-madinat-al-mataar-dubai-3148.webp",
+          "bedrooms": 1,
+          "areaSqft": null,
+          "layout": "Divine Elements 1 BR floor plan - Madinat Al Mataar, Dubai - by Takmeel Real Estate Development",
+          "localUrl": "/projects/dubai-south-floorplan-review/divine-elements-1.webp",
+          "sha256": "dd11cbea3bb2aeda1edd7533ed78b9b20714e4ec8dcf444afa471849bbb57d37",
+          "reviewStatus": "reviewed-project-reference",
+          "matchStatus": "project-reference"
+        }
+      ],
+      "status": "reference-available"
+    },
+    {
+      "id": "the-eighty-three",
+      "name": "The Eighty Three by OKSA",
+      "aliases": [],
+      "selectedAreaSqft": null,
+      "qualification": "Published project layouts; select by bedroom, area and unit type.",
+      "checkedAt": "2026-09-12T12:46:13.041Z",
+      "sourceUrl": "https://www.propertyfinder.ae/en/new-projects/oksa-developer/the-eighty-three",
+      "sourceLabel": "Property Finder project floorplan library",
+      "plans": [
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/f837e324-c929-4af3-ad8b-6935f3d5c7d7/floor_plan/image/zNAVK1ywGWqqyGHVKyl8EgheS_d7OTnqQLkD-gmlyLw=/original.webp",
+          "bedrooms": 0,
+          "areaSqft": 369,
+          "layout": "Type 5"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/19a00ecd-8118-40a5-80a2-6a14442d83cc/floor_plan/image/1t3oPb5dJJ_fla2BzNzgrTPWwI5RQ6ktoNWrQMAGXjs=/original.webp",
+          "bedrooms": 0,
+          "areaSqft": 326,
+          "layout": "Type 2"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/e660cfb4-b499-48f7-bcef-98102d2c9ab3/floor_plan/image/EzZrGvM_rcBi8iT9ivQtdaW5EGPP1rn4AvPX-6Kx5js=/original.webp",
+          "bedrooms": 0,
+          "areaSqft": 371,
+          "layout": "Type 1"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/6bcf6178-9e59-463f-954e-0feb340fcb8a/floor_plan/image/yWad6oGXnAR_kmvQcYGyqpP3QEfQzCH1Hiw_wsT6wPs=/original.webp",
+          "bedrooms": 0,
+          "areaSqft": 377,
+          "layout": "Type 3"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/6293153d-8c75-46ed-924d-56d0a2bd025d/floor_plan/image/9u81fQUejvnTcB94tlj4QlYrg8EHQTOtg-xpQZNpZYI=/original.webp",
+          "bedrooms": 0,
+          "areaSqft": 355,
+          "layout": "Type 4"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/4ffb4a10-b889-499c-a7a1-a0fc21e021cd/floor_plan/image/lSNNAV4tyd1vYo_Eudc7HoT2W56JSmZb6UBI0UoAPH8=/original.webp",
+          "bedrooms": 0,
+          "areaSqft": 326,
+          "layout": "Type 6"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/4c2413a0-4ada-44e0-bba2-455a84d2e1e0/floor_plan/image/CXa-E022EhyFh3XIz3xV1YT4VE0FcWEeBd1auSbOblI=/original.webp",
+          "bedrooms": 0,
+          "areaSqft": 355,
+          "layout": "Type 7"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/3733a4a9-99d9-471f-b708-81db317367d4/floor_plan/image/tISVe-5PBUH5Lyv6npEi7pI11UPEV6GMSYPicnbuk4o=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 774,
+          "layout": "Type 1"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/17c4c592-97de-4455-b783-21d522b505ac/floor_plan/image/aqT03ZkvJTVTtpQahtJX0wU3zA4RmxpQms217LsbjPs=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 780,
+          "layout": "Type 2"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/6a817bc4-7560-4a22-8419-ab1b7bb3ba3b/floor_plan/image/rCcqS5LUocg53cqBKLCYEfhchTWMB_Ootntprqoq294=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 667,
+          "layout": "Type 3"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/5bc65ed6-4d24-4459-9bd5-a5c24c39c9e3/floor_plan/image/C514tacW1PWRsu0eE9RQXCusL-fRJ_L2-zk_3D8zUF0=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 682,
+          "layout": "Type 4"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/ec705e16-68db-42b8-8c4e-f748f72e6d23/floor_plan/image/TfoubxAVPEBVzNeM07OM0GhhR83CIGkFrmpq7lyfi5c=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 799,
+          "layout": "Type 5"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/f9beb339-2d71-4bec-ba23-1906fbdb6766/floor_plan/image/QiVA_MMMq2qfr77RgUzmY5s29QecGBuizecSO0V99YU=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 791,
+          "layout": "Type 6"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/73db2732-b699-469e-b182-77dc35f35d21/floor_plan/image/nkxUeFnvG6cO4EoStUEz6KmMKXDwPvu-33nFxTAlQw8=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 680,
+          "layout": "Type 7"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/66030d9b-d46c-4cf8-83c4-50c721dbeffc/floor_plan/image/-M4nQQBXFEyGD7cDEZYzUMEudyT68LliK4Vj5GVYHX0=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 794,
+          "layout": "Type 8"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/2b1d24fc-98be-4d6d-9f7e-1b1726c713f6/floor_plan/image/uGCWv7io4o64ZEKn5vbguamMIAdjHHsqeLRVgzIhLMs=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 1200,
+          "layout": "Type 9"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/9f6f73b4-14d9-4ac3-ac4d-cc4f196f679b/floor_plan/image/p3BgX2Wc21nXqu1OXqMuQ8MLMdDdjbaEHz1ZOVntIxQ=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 788,
+          "layout": "Type 10"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/9b0543e3-c805-4317-a8c9-35fafead404b/floor_plan/image/Pi2f_5c9nFjlDBodkwMWe-lU6GapU0GrnJXniGQlzYY=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 791,
+          "layout": "Type 11"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/da799197-8fe3-47cc-a5e0-b21a02cf308b/floor_plan/image/IKpnN7g954PVdabBtv4SCV6vQQKfXXv4h5CfTRG6LV8=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1390,
+          "layout": "Type 1"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/2380058e-dbed-4b4c-ad75-232a952396ae/floor_plan/image/0heXZoTS_NuYCmGW6TsDH6odRvDetlbKYAhO4qiw4JY=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1296,
+          "layout": "Type 3"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/be3641f3-6528-44af-939f-dd0f07944248/floor_plan/image/ouwtvsIcZteBq5oAM8LpBsj2nEuASGwQ9IONKDio2Fg=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1167,
+          "layout": "Type 2"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/0e6c593d-da73-4f88-a326-2b97b15533dc/floor_plan/image/jQiUAr3jpx3dLHeSfPvniZZHKbWlGH_dKII2fSxW-YE=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1080,
+          "layout": "Type 14"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/1afb342d-bbc4-4df6-b993-7418e581c9ac/floor_plan/image/OhUiWxG27neJktFAPbgOa4WD0I_XfFjgplkT1lI_b0U=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 900,
+          "layout": "Type 4"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/d105e168-72f7-4490-8060-dab6b17961ae/floor_plan/image/2d6ioYfG2U3GUmJzsXdRPvmYnwwI2Bbd4I_WjHY6Yzw=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 977,
+          "layout": "Type 5"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/caf11111-ddf4-4834-844a-60e9a4586624/floor_plan/image/9w0xHIIdhPGvFVboKVFI85dZ-Lh09LCLhcGVcL6VvJ4=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 993,
+          "layout": "Type 14"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/62916c9e-ec8f-43ea-b0e2-9ba71600fc99/floor_plan/image/8n8EL1nkwFbOJtpPuKS6MoO7QvlamVIeeWvsoZLaTC0=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1163,
+          "layout": "Type 6"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/11bbc7b6-d330-4e4f-a168-7379c3296c14/floor_plan/image/GQ_Tiv6yAhaBw208VAIVUmBbC3Sz5am-5f3fZ7iBvyc=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1134,
+          "layout": "Type 7"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/7b1f9753-e320-43e4-a0e0-188dd1e39b76/floor_plan/image/uvoJia90jKVigLsEXt3TRpaQBNDchzPpVaffvDJIJgg=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1407,
+          "layout": "Type 8"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/bbdc590b-bb4d-4d92-920d-71c8c9b17fab/floor_plan/image/YIDVwSPwMBvYrQ8q0818U45v68DdnsE5H8OW4MriSw8=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1945,
+          "layout": "Type 9"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/69e3be3c-6a66-40f2-b013-12c0a8fe6ad1/floor_plan/image/rgqBxULaNKOxm_hyoEM3-EoPziPqguYYOtZwZ8XPqas=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1282,
+          "layout": "Type 10"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/274a1116-5a94-4a7a-ac9d-fadce6f36c62/floor_plan/image/smrTgozoFFF2JB-kThNRa2Nw7NRsUVWNJ1-F7hMCxmo=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1142,
+          "layout": "Type 11"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/7f9e944d-cc0b-466e-be9a-a73a9c909814/floor_plan/image/ywCgk4c8G7HwdqsMRHSV-Wj1K5SNpP5J1yrhlrIugGk=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1296,
+          "layout": "Type 13"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/487090b1-bb64-4ad8-9492-7d9b1fef5afc/floor_plan/image/FeALSjgJIX0_GtfU6n4AmrXQbEGWxBPB7Bq6j9UfyXw=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1176,
+          "layout": "Type 12"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/96adb073-fa22-4628-8bb6-d0ce855ba5ef/floor_plan/image/fk4_qowIlxYkPXxnMvoLWs3ja3GdeL4esph2s5Co15g=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 2070,
+          "layout": "Type 3"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/a6ba66cd-4fdb-4575-aee0-ebfb9694a253/floor_plan/image/P8vBbaj62cP6wCiKGWEQdNxm49FiEOkO5SqUdmzzhzc=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 2052,
+          "layout": "Type 1"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/01ee297d-2490-4d58-95ee-2c6fe73fb473/floor_plan/image/zA_kZm20kcliU3-eRFC16U5qZzRVorWBPrlldNPAMAI=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1582,
+          "layout": "Type 2"
+        }
+      ],
+      "reviewPlans": [
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/6a817bc4-7560-4a22-8419-ab1b7bb3ba3b/floor_plan/image/rCcqS5LUocg53cqBKLCYEfhchTWMB_Ootntprqoq294=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 667,
+          "layout": "Type 3",
+          "localUrl": "/projects/dubai-south-floorplan-review/the-eighty-three-1.webp",
+          "sha256": "a16643d680c616170a18780e9aa34ae446dc20b22af9bb376b85bf2295e0caff",
+          "reviewStatus": "reviewed-project-reference",
+          "matchStatus": "project-reference"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/73db2732-b699-469e-b182-77dc35f35d21/floor_plan/image/nkxUeFnvG6cO4EoStUEz6KmMKXDwPvu-33nFxTAlQw8=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 680,
+          "layout": "Type 7",
+          "localUrl": "/projects/dubai-south-floorplan-review/the-eighty-three-2.webp",
+          "sha256": "796ffdae214300884da99f55c53f8aebdd7cd9f5472b94eb72599121c76d5ba6",
+          "reviewStatus": "reviewed-project-reference",
+          "matchStatus": "project-reference"
+        }
+      ],
+      "status": "reference-available"
+    },
+    {
+      "id": "golf-acres",
+      "name": "Golf Acres",
+      "aliases": [],
+      "selectedAreaSqft": null,
+      "qualification": "Published project layouts; select by bedroom, area and unit type.",
+      "checkedAt": "2026-09-12T12:46:13.783Z",
+      "sourceUrl": "https://www.propertyfinder.ae/en/new-projects/emaar-properties/golf-acres",
+      "sourceLabel": "Property Finder project floorplan library",
+      "plans": [
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/c44ecacc-38d2-47a8-88bf-5ec6703d29bc/floor_plan/image/8XT0Yyu7ckdS_-B4CRm4hndzOCyqm6KCYI2EHkFREMc=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 812,
+          "layout": "Type 2"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/fdacca34-c72d-4102-a375-b9e5d4f5d6e5/floor_plan/image/fard4s62uCmssMidd9HtK_m49POWFuhnElUvNUPLu2k=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 756,
+          "layout": "Type 1"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/e3382432-79fc-495e-8461-a0b3f6f6fc3f/floor_plan/image/NSnWzr6NGrYoolrQktxrmslTsRopYNh9wWpSwc-BE_c=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 738,
+          "layout": "Type 1A"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/5410c3e4-f9b4-44f2-ae2f-fb2c6fefac56/floor_plan/image/VEhhK3bo6b-ew36C_FaqnozteEoOEjgl_uywil_7ZPU=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1510,
+          "layout": "Type 4"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/69e02d0d-0335-4752-a1a7-0e2b28385089/floor_plan/image/lsK2j4ArVKu-YOmW0ZpT90bQZ6fvhiyhG-xFLcEM-E4=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1219,
+          "layout": "Type 5"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/0116cb3b-2376-44fd-ba17-8e35237225b8/floor_plan/image/8hPmwyvr2FTpDqE6RzOwoblrEUm3r7TAJPEIWAuLv_A=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1731,
+          "layout": "Type 3"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/82979f19-92f1-4ba9-b316-ad3370c75a92/floor_plan/image/Ih8Cn7bjGhT5-KzPx1D3681fQ3pswv3pQMTW5-EmBjo=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1361,
+          "layout": "Type 6"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/2a1e7943-c65a-4342-aaa8-b88369defef2/floor_plan/image/RzR4yIzK3NaGXdf4mq3mdsr-L3OU6iPO12AEyQkNOuk=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1377,
+          "layout": "Type 6A"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/3aa84dce-a073-493f-9a72-ad2373c53255/floor_plan/image/gwFt-seklAXDWW1xMzyW1FzaB1cK_EGdexAfxW-Yh4o=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1712,
+          "layout": "Type 2"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/3a1cd7f2-b545-4252-ad6a-8b64a90e0776/floor_plan/image/1iz5Aa666SWyfW1ydZ3iup4dU21kDISuVZ3OADZzgZc=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1500,
+          "layout": "Type 1"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/2b2d1833-745c-48f5-b095-466342fa222c/floor_plan/image/P3sqoU5WqxEhz4mZw3O8lZ4NyalfyKV2BMAlp14uO5Y=/original.webp",
+          "bedrooms": 3,
+          "areaSqft": 2255,
+          "layout": "Type 1"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/6748c5ba-b907-4460-b80f-45d499626669/floor_plan/image/cHZM_YfglAW7ohJyY9QTpHW3dwuY7sa5a8RrfYSTupM=/original.webp",
+          "bedrooms": 3,
+          "areaSqft": 1812,
+          "layout": "Type 2"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/552ec29a-589e-40d4-a5ad-1b2e01d45497/floor_plan/image/1pOxQqtHUTFp5Oni5UF4KyakhWeQpwCYXZpJQHBuCh8=/original.webp",
+          "bedrooms": 3,
+          "areaSqft": 1804,
+          "layout": "Type 2A"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/2bce3d22-6919-455f-a55d-a6a6b888662f/floor_plan/image/qrOH6GEaSYEYAOJOW1ZtbB6lwWjf3wk7jrdDmZa0pqY=/original.webp",
+          "bedrooms": 3,
+          "areaSqft": 2563,
+          "layout": "Type 2A"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/03575988-2805-4172-bccc-41ebe195d4d1/floor_plan/image/mRR8FiwMGRWWO03ySQb3UvRsO5wU4B-KJr3sKVTP4-A=/original.webp",
+          "bedrooms": 3,
+          "areaSqft": 2563,
+          "layout": "Type 1"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/a07d1b0e-1497-4fdb-9412-40a57401727a/floor_plan/image/oz6DLMuh_Kl8oKXjhRRTNZrtKS8ay_jbSfvyh_vnevc=/original.webp",
+          "bedrooms": 3,
+          "areaSqft": 2563,
+          "layout": "Type 2"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/3a22bd43-1a91-4c7f-978d-1702bdf112b1/floor_plan/image/PmyW7WTNTlACyMTaajr3ghS8KYotLoyatflVOjv039A=/original.webp",
+          "bedrooms": 3,
+          "areaSqft": 2564,
+          "layout": "Type 1A"
+        }
+      ],
+      "reviewPlans": [
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/e3382432-79fc-495e-8461-a0b3f6f6fc3f/floor_plan/image/NSnWzr6NGrYoolrQktxrmslTsRopYNh9wWpSwc-BE_c=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 738,
+          "layout": "Type 1A",
+          "localUrl": "/projects/dubai-south-floorplan-review/golf-acres-1.webp",
+          "sha256": "e4f24d638af10379289f664bdb6c9350a4cad8ba70009186e62e59c0b0aff89b",
+          "reviewStatus": "reviewed-project-reference",
+          "matchStatus": "project-reference"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/fdacca34-c72d-4102-a375-b9e5d4f5d6e5/floor_plan/image/fard4s62uCmssMidd9HtK_m49POWFuhnElUvNUPLu2k=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 756,
+          "layout": "Type 1",
+          "localUrl": "/projects/dubai-south-floorplan-review/golf-acres-2.webp",
+          "sha256": "1ef7183c43f71a4f0208bb431fbd5144d4e62b3b85306b18cee1197aaa9159fc",
+          "reviewStatus": "reviewed-project-reference",
+          "matchStatus": "project-reference"
+        }
+      ],
+      "status": "reference-available"
+    },
+    {
+      "id": "marquis-horizon",
+      "name": "Marquis Horizon",
+      "aliases": [],
+      "selectedAreaSqft": null,
+      "qualification": "Published project reference only; selected building, unit, type and area have not been verified.",
+      "checkedAt": "2026-09-12T12:46:14.427Z",
+      "sourceUrl": "https://jre.ae/projects/marquis-horizon",
+      "sourceLabel": "JRE published project floorplan library",
+      "plans": [
+        {
+          "remoteUrl": "https://jre.ae/i/marquis-horizon-layout-1-bedroom-1-madinat-al-mataar-dubai-3143.webp",
+          "bedrooms": 1,
+          "areaSqft": null,
+          "layout": "Marquis Horizon 1 BR floor plan - Madinat Al Mataar, Dubai - by Marquis"
+        },
+        {
+          "remoteUrl": "https://jre.ae/i/marquis-horizon-layout-2-bedroom-1-madinat-al-mataar-dubai-3143.webp",
+          "bedrooms": 2,
+          "areaSqft": null,
+          "layout": "Marquis Horizon 2 BR floor plan - Madinat Al Mataar, Dubai - by Marquis"
+        }
+      ],
+      "reviewPlans": [
+        {
+          "remoteUrl": "https://jre.ae/i/marquis-horizon-layout-1-bedroom-1-madinat-al-mataar-dubai-3143.webp",
+          "bedrooms": 1,
+          "areaSqft": null,
+          "layout": "Marquis Horizon 1 BR floor plan - Madinat Al Mataar, Dubai - by Marquis",
+          "localUrl": "/projects/dubai-south-floorplan-review/marquis-horizon-1.webp",
+          "sha256": "bc25b977bb65777b47de1691a01601d2b6de316429a70b824f77489c1fa907b1",
+          "reviewStatus": "reviewed-project-reference",
+          "matchStatus": "project-reference"
+        }
+      ],
+      "status": "reference-available"
+    },
+    {
+      "id": "golf-meadow",
+      "name": "Golf Meadow",
+      "aliases": [],
+      "selectedAreaSqft": null,
+      "qualification": "Published project layouts; confirm the selected unit number.",
+      "checkedAt": "2026-09-12T12:46:16.311Z",
+      "sourceUrl": "https://www.propertyfinder.ae/en/new-projects/emaar-properties/golf-meadow",
+      "sourceLabel": "Property Finder project floorplan library",
+      "plans": [
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/eb128b23-5a9b-4a6a-9080-b1c045e8d046/floor_plan/image/1GV8jDmD6EbGlfX3RuzzAIC1psMvxAKXzfKF2bdLi8A=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 711,
+          "layout": "Type 4 (Unit P06-1509)"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/b31a2a25-2927-47b6-83a1-1c0cfc423086/floor_plan/image/QPCQ9Tr3AIBk_YbX_3E2ENHG1hPp1y-LBqcFnOka0Ik=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 721,
+          "layout": "Type 1 (Unit  P02 , 1506)"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/63f1d1a6-d2cb-42f3-8dd7-f697376bc365/floor_plan/image/EiAF6mLXzZl8eN0bFhrwolpKuuSHVFL5O1O5WpkE18c=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 891,
+          "layout": "Type 3 (Unit 114)"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/b611e0b0-ce66-4f38-ba94-3fdae13292a2/floor_plan/image/xZeXV6dKl5H7NW55r0y-Wx_yBj7SU8S1yL3N57unLtE=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 904,
+          "layout": "Type 2 (Unit 112 , 113)"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/41725e50-bb3c-4b1b-a4b0-c6096fdecac4/floor_plan/image/MoiJEAj0DalwUh9zwPJXTHKmrv0zcUGMDGzsrCa5Odg=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1369,
+          "layout": "Type 2 (Unit 102)"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/06bd88d5-7bb5-4854-baf1-fa1b93f5fee0/floor_plan/image/GolPsF7MZAh4jw2EwtKrYFeaGH7shKL1HjM5Xe6E0fo=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1148,
+          "layout": "Type 4 (Unit P05-1508)"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/4e41e55a-5b9e-4f0e-99d6-b0697f00b39b/floor_plan/image/o-v-VKEQxp0c5eUXlVnsR-2CQySMlnO6gVBt3xn_S8U=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1149,
+          "layout": "Type 4A (UNIT P01-1504)"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/bee9690b-2f96-4df7-89f8-b93c1e217398/floor_plan/image/Lt3Ubxae0MeTR11TeCzI4_UQsGU0e9khgcfN025vAGI=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1084,
+          "layout": "Type 1 (Unit P07 ,1507)"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/8e9a1db6-f4f7-4eb9-9938-6da9b5043955/floor_plan/image/5YHkVieoF-orfizkIuViHr1bd-OKjK1pP82xCmApJeI=/original.webp",
+          "bedrooms": 2,
+          "areaSqft": 1383,
+          "layout": "Type 3 (Unit 101)"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/503a657e-95d9-4fb1-88e1-5058ad5b1872/floor_plan/image/Fsfy7T_eyPfq8GtbRT3Fu_p-F6IPMoXlSxtensxXtV8=/original.webp",
+          "bedrooms": 3,
+          "areaSqft": 1854,
+          "layout": "Type 2 (Unit 111)"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/b3180308-21ac-449c-98b9-31781edf73b6/floor_plan/image/oFwyl3uVCOZ98y6_CNI9_W5fy2OoKo-l1sFHY1daWsk=/original.webp",
+          "bedrooms": 3,
+          "areaSqft": 2870,
+          "layout": "Type 1A (Unit 203 ,1503)"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/0fc9cc16-de6a-4060-8921-73d579e84c78/floor_plan/image/grSxD6xMVFJXuvBhpnym-4GU6bePH9CLC17win4U52k=/original.webp",
+          "bedrooms": 3,
+          "areaSqft": 2844,
+          "layout": "Type 1"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/2dd3fe81-5b19-4d6f-86c6-5de4080e4247/floor_plan/image/PY03DcmIPgwOskUdBL_n3-ggIXeWA2b5l63H5XSSKxM=/original.webp",
+          "bedrooms": 3,
+          "areaSqft": 2861,
+          "layout": "Type 1A (Unit 02 ,04)"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/4c07e726-c84b-4eae-8317-754105b3942c/floor_plan/image/OV9N42BO0k8vBLz-OcTOX3i8gLJatEsqa2T_tscSWpY=/original.webp",
+          "bedrooms": 3,
+          "areaSqft": 2799,
+          "layout": "Type 4"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/5390f023-2248-400c-8111-4b8c4da3355b/floor_plan/image/VCgc5zZmtEVocKGWCyvposPiYk20TLHjn7-gzJ9hxP0=/original.webp",
+          "bedrooms": 3,
+          "areaSqft": 2663,
+          "layout": "Type 1 (Unit 01, 03 , 05)"
+        }
+      ],
+      "reviewPlans": [
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/eb128b23-5a9b-4a6a-9080-b1c045e8d046/floor_plan/image/1GV8jDmD6EbGlfX3RuzzAIC1psMvxAKXzfKF2bdLi8A=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 711,
+          "layout": "Type 4 (Unit P06-1509)",
+          "localUrl": "/projects/dubai-south-floorplan-review/golf-meadow-1.webp",
+          "sha256": "b72122743eda4a47ca7a345b513dd479a1c10dcf2942e14f07e2a49df84ac86d",
+          "reviewStatus": "reviewed-project-reference",
+          "matchStatus": "project-reference"
+        },
+        {
+          "remoteUrl": "https://new-projects-media.propertyfinder.com/unit/b31a2a25-2927-47b6-83a1-1c0cfc423086/floor_plan/image/QPCQ9Tr3AIBk_YbX_3E2ENHG1hPp1y-LBqcFnOka0Ik=/original.webp",
+          "bedrooms": 1,
+          "areaSqft": 721,
+          "layout": "Type 1 (Unit  P02 , 1506)",
+          "localUrl": "/projects/dubai-south-floorplan-review/golf-meadow-2.webp",
+          "sha256": "463bf9fde38e6dda45c60b7d8dd1eece738feeb323d7b5811d6c30e7b1dab3b0",
+          "reviewStatus": "reviewed-project-reference",
+          "matchStatus": "project-reference"
+        }
+      ],
+      "status": "reference-available"
+    },
+    {
+      "id": "enre-residence",
+      "name": "Enre Residence",
+      "aliases": [],
+      "selectedAreaSqft": null,
+      "qualification": "Published layout reference; distinguish a building floorplate from an individual unit plan.",
+      "checkedAt": "2026-09-12T12:51:16.393Z",
+      "sourceUrl": "",
+      "sourceLabel": "",
+      "plans": [],
+      "reviewPlans": [],
+      "status": "source-verification-pending"
+    },
+    {
+      "id": "terra-heights-building-2",
+      "name": "Terra Heights - Building 2",
+      "aliases": [],
+      "selectedAreaSqft": 735,
+      "qualification": "Published project reference only; selected building, unit, type and area have not been verified.",
+      "checkedAt": "2026-09-12T12:46:18.159Z",
+      "sourceUrl": "https://jre.ae/projects/terra-heights",
+      "sourceLabel": "JRE published project floorplan library",
+      "plans": [
+        {
+          "remoteUrl": "https://jre.ae/i/terra-heights-layout-2-bedroom-1-dubai-expo-city-dubai-2056.webp",
+          "bedrooms": 2,
+          "areaSqft": null,
+          "layout": "Terra Heights 2 BR floor plan - Dubai Expo City, Dubai - by Emaar"
+        }
+      ],
+      "reviewPlans": [],
+      "status": "source-verification-pending"
+    },
+    {
+      "id": "expo-valley-views",
+      "name": "Expo Valley Views",
+      "aliases": [],
+      "selectedAreaSqft": null,
+      "qualification": "Official published one-bedroom project layout. Selected unit, building, area and dimensions require confirmation.",
+      "checkedAt": "2026-09-12T12:57:34.777Z",
+      "sourceUrl": "https://www.expocitydubai.com/en/live/expo-valley-views/",
+      "sourceLabel": "Expo City Dubai official project page",
+      "plans": [
+        {
+          "remoteUrl": "https://jre.ae/i/expo-valley-views-layout-2-bedroom-1-dubai-expo-city-dubai-3105.webp",
+          "bedrooms": 2,
+          "areaSqft": null,
+          "layout": "Expo Valley Views 2 BR floor plan - Dubai Expo City, Dubai - by Expo City Development"
+        },
+        {
+          "remoteUrl": "https://jre.ae/i/expo-valley-views-layout-3-bedroom-1-dubai-expo-city-dubai-3105.webp",
+          "bedrooms": 3,
+          "areaSqft": null,
+          "layout": "Expo Valley Views 3 BR floor plan - Dubai Expo City, Dubai - by Expo City Development"
+        }
+      ],
+      "reviewPlans": [
+        {
+          "remoteUrl": "https://images.ctfassets.net/r2cfrvo3y08m/2XK72tOyAXqb4XynUMz4WL/8eeeedfc1ae1c5cf947e4e55e1c9a393/Foor_plan-1_bed.jpg",
+          "localUrl": "/projects/dubai-south-floorplan-review/expo-valley-views-1.jpg",
+          "bedrooms": 1,
+          "areaSqft": null,
+          "layout": "Official 1-bedroom layout",
+          "sha256": "758ed4f876ed91037ac74e24bbd992db23c5f463f7d1402e6fe1dccb406f3299",
+          "reviewStatus": "reviewed-project-reference",
+          "matchStatus": "project-reference"
+        }
+      ],
+      "status": "reference-available"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "name": "psr-homes-property",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "install:ci": "bash scripts/install-ci.sh",
+    "dev": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vite",
+    "build": "bash scripts/build-verified.sh",
+    "build:cloudflare": "NEXT_PUBLIC_BASE_PATH='/psr/properties' npm run build && node scripts/prepare-cloudflare-assets.mjs",
+    "build:primary": "NEXT_PUBLIC_SITE_ORIGIN='https://psrhomes.ae' npm run build",
+    "start": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext start",
+    "deploy:psr": "wrangler deploy --config wrangler.jsonc",
+    "release:archive": "bash scripts/create-release-archive.sh",
+    "sync:platforms": "bash scripts/sync-platforms.sh --dry-run",
+    "sync:platforms:apply": "bash scripts/sync-platforms.sh --apply",
+    "sync:auto-install": "bash scripts/install-auto-sync.sh",
+    "sync:secrets:store": "bash scripts/configure-local-sync-secrets.sh",
+    "sync:supabase-secrets": "bash scripts/configure-supabase-cloudflare.sh",
+    "sync:amazon:assets": "node scripts/sync-amazon-assets.mjs",
+    "sync:amazon:assets:apply": "node scripts/sync-amazon-assets.mjs --apply",
+    "test": "npm run build && node --test tests/rendered-html.test.mjs && tsx --test tests/property-finder-listings.test.ts tests/sonu-finder.test.ts tests/sonu-chat.test.ts tests/sonu-brief-service.test.ts tests/brochure-access.test.ts tests/site-analytics.test.ts tests/insights-images.test.ts tests/translation.test.ts tests/crm-backend.test.ts tests/inbox-backend.test.ts tests/leadrat-backend.test.ts tests/admin-user-management.test.ts tests/document-library.test.ts tests/media-policy.test.ts tests/media-storage.test.ts tests/secondary-unit-media.test.ts tests/curated-brief.test.ts tests/live-market-data.test.ts tests/project-search.test.ts tests/dubai-south-expansion.test.ts tests/dubai-south-presentation.test.ts tests/semantic-search.test.ts tests/design-system.test.ts tests/cache-policy.test.ts tests/launch-payment-schedule.test.ts tests/staff-directory.test.ts tests/supabase-memory.test.ts",
+    "test:media": "tsx --test tests/media-policy.test.ts",
+    "audit:media-text": "tsx scripts/audit-curated-media-text.ts",
+    "audit:brochures": "tsx scripts/audit-brochure-readiness.ts",
+    "sync:projects": "node scripts/sync-project-registry.mjs",
+    "validate:artifact": "bash scripts/validate-artifact.sh",
+    "lint": "bash scripts/sites-env.sh -- eslint . --ignore-pattern dist --ignore-pattern .next --ignore-pattern .wrangler",
+    "db:generate": "bash scripts/sites-env.sh -- drizzle-kit generate",
+    "test:source": "npm run build && node --test tests/rendered-html.test.mjs && tsx --test tests/property-finder-listings.test.ts tests/sonu-finder.test.ts tests/sonu-chat.test.ts tests/sonu-brief-service.test.ts tests/site-analytics.test.ts tests/translation.test.ts tests/crm-backend.test.ts tests/inbox-backend.test.ts tests/leadrat-backend.test.ts tests/admin-user-management.test.ts tests/document-library.test.ts tests/media-storage.test.ts tests/secondary-unit-media.test.ts tests/curated-brief.test.ts tests/live-market-data.test.ts tests/project-search.test.ts tests/semantic-search.test.ts tests/cache-policy.test.ts tests/launch-payment-schedule.test.ts tests/supabase-memory.test.ts"
+  },
+  "dependencies": {
+    "drizzle-orm": "0.45.2",
+    "next": "16.3.0",
+    "pdf-lib": "^1.17.1",
+    "postal-mime": "^3.0.0",
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "1.46.0",
+    "@tailwindcss/postcss": "4.2.1",
+    "@types/node": "22.19.19",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.2",
+    "@vitejs/plugin-rsc": "0.5.28",
+    "drizzle-kit": "0.31.10",
+    "eslint": "9.39.4",
+    "eslint-config-next": "16.2.6",
+    "react-server-dom-webpack": "19.2.6",
+    "tailwindcss": "4.2.1",
+    "typescript": "5.9.3",
+    "vinext": "1.0.0-beta.3",
+    "vite": "8.0.13",
+    "wrangler": "^4.124.0"
+  },
+  "type": "module",
+  "displayName": "PSR"
+}
