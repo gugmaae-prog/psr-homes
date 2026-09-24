@@ -1,0 +1,30 @@
+name: Cloudflare read-only audit
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22.13.0"
+      - name: Audit Cloudflare without mutations
+        run: node scripts/audit-cloudflare-readonly.mjs
+      - name: Upload sanitized audit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cloudflare-readonly-audit
+          path: cloudflare-audit.json
+          if-no-files-found: ignore
+          retention-days: 7
