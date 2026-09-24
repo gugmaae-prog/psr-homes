@@ -5,8 +5,8 @@ const ORIGIN = (process.env.PSR_MEDIA_AUDIT_ORIGIN || "https://psrhomes.ae").rep
 const CONCURRENCY = Math.max(1, Math.min(32, Number(process.env.PSR_MEDIA_AUDIT_CONCURRENCY || 16)));
 const TIMEOUT_MS = Math.max(2000, Number(process.env.PSR_MEDIA_AUDIT_TIMEOUT_MS || 12000));
 const TEXT_EXTENSIONS = new Set([".ts", ".tsx", ".js", ".mjs", ".json", ".css"]);
-const MEDIA_PATH_RE = /(["'\`])(\\/[^"'\`\\r\\n]+)\\1/g;
-const MEDIA_EXTENSION_RE = /\\.(?:avif|gif|jpe?g|png|svg|webm|webp|mp4|pdf)$/i;
+const MEDIA_PATH_RE = /(["'])(\/[^"'\r\n]+)\1/g;
+const MEDIA_EXTENSION_RE = /\.(?:avif|gif|jpe?g|png|svg|webm|webp|mp4|pdf)$/i;
 const EXCLUDED_PREFIXES = ["/api/", "/private-", "/_next/"];
 const ROOTS = ["app", "components", "data", "lib", "worker"];
 
