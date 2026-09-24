@@ -31,15 +31,19 @@
   ],
   "r2_buckets": [{ "binding": "MEDIA", "bucket_name": "psr-property-media" }],
   "ai": { "binding": "AI" },
-  // LEGACY RELEASE BLOCKER: PSR agent ownership is Sonu. These Grace-named
-  // Durable Object identifiers are preserved temporarily to avoid an unsafe
-  // class rename without the live class source and a verified Cloudflare
-  // Durable Object migration. Resolve during full psr-property source sync.
+  // Sonu is the canonical PSR Durable Object. The v2 migration renames the
+  // existing SQLite-backed GracePublicAgent namespace in place, preserving data.
+  // worker/sonu-public-agent.ts temporarily re-exports the old class name so the
+  // rollout remains safe across the migration deploy.
   "durable_objects": {
-    "bindings": [{ "name": "GRACE_PUBLIC_AGENT", "class_name": "GracePublicAgent" }]
+    "bindings": [{ "name": "SONU_PUBLIC_AGENT", "class_name": "SonuPublicAgent" }]
   },
   "migrations": [
-    { "tag": "psr-public-agent-v1", "new_sqlite_classes": ["GracePublicAgent"] }
+    { "tag": "psr-public-agent-v1", "new_sqlite_classes": ["GracePublicAgent"] },
+    {
+      "tag": "psr-public-agent-v2-sonu",
+      "renamed_classes": [{ "from": "GracePublicAgent", "to": "SonuPublicAgent" }]
+    }
   ],
   "images": { "binding": "IMAGES" },
   "triggers": { "crons": ["17 */6 * * *"] },

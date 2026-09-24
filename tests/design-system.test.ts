@@ -1270,7 +1270,7 @@ test("Sonu keeps one document conversation stable across dual-stack network chan
   assert.doesNotMatch(workerIndex, /cf-connecting-ip|x-forwarded-for|sec-ch-ua-platform/);
   assert.match(workerIndex, /psr-visitor:\$\{visitorSessionId\}/);
   assert.match(workerIndex, /psr-agent:\$\{agentSession\.email\}:\$\{visitorSessionId\}/);
-  assert.match(workerIndex, /env\.GRACE_PUBLIC_AGENT\.getByName\(sessionId\)/);
+  assert.match(workerIndex, /env\\.SONU_PUBLIC_AGENT\\.getByName\\(sessionId\\)/);
 });
 
 test("Sonu starts a clean conversation after every document reload", () => {

@@ -39,8 +39,8 @@ const localBindingConfig = {
   durable_objects: {
     bindings: [
       {
-        name: "GRACE_PUBLIC_AGENT",
-        class_name: "GracePublicAgent",
+        name: "SONU_PUBLIC_AGENT",
+        class_name: "SonuPublicAgent",
       },
     ],
   },
