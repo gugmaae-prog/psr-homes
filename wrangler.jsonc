@@ -5,11 +5,16 @@
   "compatibility_date": "2026-08-20",
   "compatibility_flags": ["nodejs_compat"],
   "workers_dev": false,
+
+  // Production route ownership is intentionally narrow here.
+  // The live apex/www wildcard routes are owned by psr-media-edge.
+  // psr-property remains the origin service and only retains the direct
+  // registration route currently assigned to it plus the direct custom domain.
   "routes": [
-    { "pattern": "psrhomes.ae/*", "zone_name": "psrhomes.ae" },
-    { "pattern": "www.psrhomes.ae/*", "zone_name": "psrhomes.ae" },
+    { "pattern": "www.psrhomes.ae/api/sg26/registrations", "zone_name": "psrhomes.ae" },
     { "pattern": "psr.espacios.me", "custom_domain": true }
   ],
+
   "vars": {
     "CAMPAIGN_DELIVERY_ENABLED": "false",
     "EMAIL_INBOX_ENABLED": "true",
@@ -17,10 +22,13 @@
     "EMAIL_RECEIVE_DOMAIN": "inbox.psrhomes.ae",
     "EMAIL_CANONICAL_REPLY_TO_ENABLED": "false"
   },
+
   "secrets": {
     "required": ["LEADRAT_API_KEY", "LEADRAT_SECRET_KEY", "LEADRAT_TENANT"]
   },
+
   "send_email": [{ "name": "EMAIL" }],
+
   "d1_databases": [
     {
       "binding": "DB",
@@ -29,24 +37,26 @@
       "migrations_dir": "drizzle-agent"
     }
   ],
+
   "r2_buckets": [{ "binding": "MEDIA", "bucket_name": "psr-property-media" }],
   "ai": { "binding": "AI" },
-  // Sonu is the canonical PSR Durable Object. The v2 migration renames the
-  // existing SQLite-backed GracePublicAgent namespace in place, preserving data.
-  // worker/sonu-public-agent.ts temporarily re-exports the old class name so the
-  // rollout remains safe across the migration deploy.
+
+  // Compatibility bridge: application code uses the Sonu binding name while
+  // the live Durable Object class/namespace is still GracePublicAgent.
+  // Keeping class_name=GracePublicAgent preserves the existing namespace and
+  // stored conversations. The class rename is a separate release gate.
   "durable_objects": {
-    "bindings": [{ "name": "SONU_PUBLIC_AGENT", "class_name": "SonuPublicAgent" }]
+    "bindings": [
+      { "name": "SONU_PUBLIC_AGENT", "class_name": "GracePublicAgent" }
+    ]
   },
   "migrations": [
-    { "tag": "psr-public-agent-v1", "new_sqlite_classes": ["GracePublicAgent"] },
-    {
-      "tag": "psr-public-agent-v2-sonu",
-      "renamed_classes": [{ "from": "GracePublicAgent", "to": "SonuPublicAgent" }]
-    }
+    { "tag": "psr-public-agent-v1", "new_sqlite_classes": ["GracePublicAgent"] }
   ],
+
   "images": { "binding": "IMAGES" },
   "triggers": { "crons": ["17 */6 * * *"] },
+
   "assets": {
     "directory": "./dist/client",
     "binding": "ASSETS",
@@ -59,6 +69,7 @@
       "!/social/assets/*"
     ]
   },
+
   "observability": {
     "enabled": true,
     "logs": { "enabled": true, "head_sampling_rate": 1, "invocation_logs": true },
