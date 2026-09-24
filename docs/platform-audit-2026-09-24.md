@@ -4,7 +4,7 @@
 
 - GitHub repository: `gugmaae-prog/psr-homes`
 - Visibility: **public**
-- Reconciliation base commit: `b07948d1bd14560777dc57b2540d01a824633fad`
+- Reconciliation base commit: `3464aa9c863ec86c8353327c899ad689a9469973`
 - Primary application source: **present**
 - GitHub Actions: source CI, repository guardrails, production-media acceptance, and runtime-audit workflow are present
 - Production domain: `psrhomes.ae`
