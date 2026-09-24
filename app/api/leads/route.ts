@@ -4,19 +4,19 @@ import { getDb } from "@/db";
 import { brochureDownloads, leads } from "@/db/schema";
 import { brochurePdfIsReachable, createBrochureAccessToken, resolveProjectDocument } from "@/lib/brochure-access";
 import {
-  gracePreferenceMessage,
-  normalizeGracePreferences,
-  recommendGraceProjects,
-  type GraceFinderPreferences,
-  type GraceRecommendation,
-} from "@/lib/grace-finder";
+  sonuPreferenceMessage,
+  normalizeSonuPreferences,
+  recommendSonuProjects,
+  type SonuFinderPreferences,
+  type SonuRecommendation,
+} from "@/lib/sonu-finder";
 import { getProjectRecord, type RegistryProject } from "@/lib/imported-projects";
 import { getAreaPricePerSqft } from "@/lib/market-pricing";
 import {
-  graceClientBriefFilename,
-  renderGraceClientBriefPdf,
-  type GraceClientNarrative,
-} from "@/worker/grace-client-brief";
+  sonuClientBriefFilename,
+  renderSonuClientBriefPdf,
+  type SonuClientNarrative,
+} from "@/worker/sonu-client-brief";
 import type { AgentEnv } from "@/worker/agent-backend";
 import { pushWebsiteLeadToLeadRat } from "@/worker/leadrat-backend";
 import { cbaCompany } from "@/data/cba-company";
@@ -42,12 +42,12 @@ type LeadPayload = {
   deliveryType?: unknown;
   bedroomPreference?: unknown;
   preferences?: unknown;
-  graceSessionId?: unknown;
+  sonuSessionId?: unknown;
   behaviorSignals?: unknown;
   attribution?: unknown;
 };
 
-type DeliveryType = "enquiry" | "project_brief" | "brochure_download" | "grace_finder";
+type DeliveryType = "enquiry" | "project_brief" | "brochure_download" | "sonu_finder";
 
 function clean(value: unknown, max: number) {
   return typeof value === "string" ? value.replaceAll("\0", "").trim().slice(0, max) : "";
@@ -81,7 +81,7 @@ async function storePrivateBrief(leadId: number, clientName: string, pdf: Uint8A
   const tokenBytes = crypto.getRandomValues(new Uint8Array(32));
   const token = [...tokenBytes].map((byte) => byte.toString(16).padStart(2, "0")).join("");
   const tokenHash = await sha256Hex(token);
-  const filename = graceClientBriefFilename(clientName);
+  const filename = sonuClientBriefFilename(clientName);
   const objectKey = `private-briefs/${leadId}/${crypto.randomUUID()}.pdf`;
   const expiresAt = new Date(Date.now() + 24 * 60 * 60 * 1_000).toISOString();
   await env.MEDIA.put(objectKey, pdf, {
@@ -115,14 +115,14 @@ function leadPayload(value: unknown): LeadPayload | null {
     deliveryType: record.deliveryType,
     bedroomPreference: record.bedroomPreference,
     preferences: record.preferences,
-    graceSessionId: record.graceSessionId,
+    sonuSessionId: record.sonuSessionId,
     behaviorSignals: record.behaviorSignals,
     attribution: record.attribution,
   };
 }
 
 function deliveryType(value: unknown): DeliveryType {
-  return value === "project_brief" || value === "brochure_download" || value === "grace_finder" ? value : "enquiry";
+  return value === "project_brief" || value === "brochure_download" || value === "sonu_finder" ? value : "enquiry";
 }
 
 function formatBudget(value: string) {
@@ -170,7 +170,7 @@ function leadAttribution(value: unknown) {
   };
 }
 
-function fallbackNarrative(name: string, preferences: GraceFinderPreferences): GraceClientNarrative {
+function fallbackNarrative(name: string, preferences: SonuFinderPreferences): SonuClientNarrative {
   const purpose = preferences.goal === "investment"
     ? "an investment acquisition"
     : preferences.goal === "home"
@@ -200,10 +200,10 @@ function fallbackNarrative(name: string, preferences: GraceFinderPreferences): G
   };
 }
 
-async function createGraceNarrative(
+async function createSonuNarrative(
   name: string,
-  preferences: GraceFinderPreferences,
-  recommendations: GraceRecommendation[],
+  preferences: SonuFinderPreferences,
+  recommendations: SonuRecommendation[],
 ) {
   const fallback = fallbackNarrative(name, preferences);
   if (!env.AI) return fallback;
@@ -259,7 +259,7 @@ async function createGraceNarrative(
       },
     }) as { response?: string };
     const raw = clean(response.response, 8_000).replace(/^```(?:json)?\s*/i, "").replace(/\s*```$/i, "");
-    const parsed = JSON.parse(raw) as Partial<GraceClientNarrative>;
+    const parsed = JSON.parse(raw) as Partial<SonuClientNarrative>;
     return {
       headline: clean(parsed.headline, 140) || fallback.headline,
       executiveSummary: clean(parsed.executiveSummary, 1_200) || fallback.executiveSummary,
@@ -270,7 +270,7 @@ async function createGraceNarrative(
     };
   } catch (error) {
     console.error(JSON.stringify({
-      event: "grace_client_narrative_fallback",
+      event: "sonu_client_narrative_fallback",
       message: error instanceof Error ? error.message.slice(0, 240) : "AI narrative failed",
     }));
     return fallback;
@@ -454,7 +454,7 @@ function projectBriefEmail(project: RegistryProject, bedroomPreference: string) 
   };
 }
 
-function graceFinderEmail(name: string, preferences: GraceFinderPreferences, recommendations: GraceRecommendation[]) {
+function sonuFinderEmail(name: string, preferences: SonuFinderPreferences, recommendations: SonuRecommendation[]) {
   const safeName = escapeHtml(name);
   const rows = recommendations.map((project, index) => {
     const projectUrl = `https://psrhomes.ae/projects/${encodeURIComponent(project.slug)}`;
@@ -547,7 +547,7 @@ export async function POST(request: Request) {
     const requestedPropertyTitle = clean(payload.propertyTitle, 160);
     const requestedDelivery = deliveryType(payload.deliveryType);
     const bedroomPreference = clean(payload.bedroomPreference, 40);
-    const graceSessionId = clean(payload.graceSessionId, 64);
+    const sonuSessionId = clean(payload.sonuSessionId, 64);
     const visitSignals = behaviorSignals(payload.behaviorSignals);
     const attribution = leadAttribution(payload.attribution);
     const consent = payload.consent === "yes" || payload.consent === true;
@@ -576,21 +576,21 @@ export async function POST(request: Request) {
       });
     }
 
-    const preferences = requestedDelivery === "grace_finder"
-      ? normalizeGracePreferences(payload.preferences)
+    const preferences = requestedDelivery === "sonu_finder"
+      ? normalizeSonuPreferences(payload.preferences)
       : null;
-    if (requestedDelivery === "grace_finder" && !preferences) {
+    if (requestedDelivery === "sonu_finder" && !preferences) {
       return Response.json({ error: "Complete the property finder questions." }, { status: 400 });
     }
 
-    const recommendations = preferences ? recommendGraceProjects(preferences, 4) : [];
+    const recommendations = preferences ? recommendSonuProjects(preferences, 4) : [];
     const propertyTitle = referencedProject?.name || requestedPropertyTitle;
     const contextualMessage = requestedDelivery === "project_brief"
       ? `Private brief requested\nBedroom preference: ${bedroomPreference}`
       : requestedDelivery === "brochure_download"
         ? `${brochureDocument?.label || "Project document"} download requested after contact validation`
       : preferences
-        ? `PSR Property Finder request\n${gracePreferenceMessage(preferences)}`
+        ? `PSR Property Finder request\n${sonuPreferenceMessage(preferences)}`
         : "";
     const attributionMessage = attribution ? [
       attribution.firstLandingPath && `First landing: ${attribution.firstLandingPath}`,
@@ -632,10 +632,10 @@ export async function POST(request: Request) {
       brochureDownloadUrl = `/api/brochures/${encodeURIComponent(brochureProject.slug)}?access=${access.token}`;
     }
 
-    if (preferences && /^[a-f0-9-]{36}$/i.test(graceSessionId)) {
+    if (preferences && /^[a-f0-9-]{36}$/i.test(sonuSessionId)) {
       try {
         await env.DB.prepare(
-          `INSERT INTO hg_grace_memories
+          `INSERT INTO hg_sonu_memories
            (session_id, lead_id, email, preferences_json, behavior_json, summary, created_at, updated_at)
            VALUES (?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)
            ON CONFLICT(session_id) DO UPDATE SET
@@ -646,16 +646,16 @@ export async function POST(request: Request) {
              summary = excluded.summary,
              updated_at = CURRENT_TIMESTAMP`,
         ).bind(
-          graceSessionId,
+          sonuSessionId,
           lead.id,
           email,
           JSON.stringify(preferences),
           JSON.stringify(visitSignals || {}),
-          gracePreferenceMessage(preferences),
+          sonuPreferenceMessage(preferences),
         ).run();
       } catch (memoryError) {
         console.error(JSON.stringify({
-          event: "grace_memory_write_failed",
+          event: "sonu_memory_write_failed",
           leadId: lead.id,
           message: memoryError instanceof Error ? memoryError.message.slice(0, 240) : "Memory write failed",
         }));
@@ -694,13 +694,13 @@ export async function POST(request: Request) {
     const clientEmail = project
       ? projectBriefEmail(project, bedroomPreference)
       : preferences
-        ? graceFinderEmail(name, preferences, recommendations)
+        ? sonuFinderEmail(name, preferences, recommendations)
         : null;
     const briefNarrative = preferences
-      ? await createGraceNarrative(name, preferences, recommendations)
+      ? await createSonuNarrative(name, preferences, recommendations)
       : null;
     const clientPdf = preferences && briefNarrative
-      ? await renderGraceClientBriefPdf({
+      ? await renderSonuClientBriefPdf({
         id: `PSR-${lead.id}`,
         clientName: name,
         preparedAt: new Date().toLocaleDateString("en-AE", {
@@ -729,7 +729,7 @@ export async function POST(request: Request) {
         ...(clientPdf ? {
           attachments: [{
             content: clientPdf,
-            filename: graceClientBriefFilename(name),
+            filename: sonuClientBriefFilename(name),
             type: "application/pdf",
             disposition: "attachment",
           }],
@@ -750,9 +750,9 @@ export async function POST(request: Request) {
         await env.DB.prepare(
           `INSERT INTO hg_client_briefs
            (id, lead_id, email, brief_type, status, project_slugs_json, generated_at, sent_at, error_message)
-           VALUES (?, ?, ?, 'grace_finder', ?, ?, CURRENT_TIMESTAMP, ?, ?)`,
+           VALUES (?, ?, ?, 'sonu_finder', ?, ?, CURRENT_TIMESTAMP, ?, ?)`,
         ).bind(
-          `GRACE-${lead.id}`,
+          `SONU-${lead.id}`,
           lead.id,
           email,
           briefSent ? "sent" : briefDownloadUrl ? "generated" : "failed",
@@ -762,7 +762,7 @@ export async function POST(request: Request) {
         ).run();
       } catch (briefLogError) {
         console.error(JSON.stringify({
-          event: "grace_brief_log_failed",
+          event: "sonu_brief_log_failed",
           leadId: lead.id,
           message: briefLogError instanceof Error ? briefLogError.message.slice(0, 240) : "Brief log failed",
         }));
