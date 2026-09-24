@@ -10,6 +10,8 @@ on:
       - "worker/**"
       - "tests/**"
       - "scripts/verify-production-media.mjs"
+      - "scripts/verify-r2-manifest.mjs"
+      - "scripts/audit-brochure-readiness.ts"
       - ".github/workflows/production-media.yml"
   push:
     branches: [main]
@@ -38,17 +40,28 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22.13.0"
-      - name: Verify media against live PSR production
+      - run: npm ci
+      - name: Verify brochures against live sources
+        run: npx tsx scripts/audit-brochure-readiness.ts
+      - name: Verify referenced media against live PSR production
         env:
           PSR_MEDIA_BASE_URL: https://psrhomes.ae
           PSR_MEDIA_CONCURRENCY: "12"
           PSR_MEDIA_TIMEOUT_MS: "12000"
           PSR_MEDIA_RETRIES: "1"
         run: node scripts/verify-production-media.mjs
+      - name: Verify the complete R2 external-media manifest
+        env:
+          PSR_MEDIA_BASE_URL: https://psrhomes.ae
+          PSR_MEDIA_CONCURRENCY: "20"
+          PSR_MEDIA_TIMEOUT_MS: "12000"
+        run: node scripts/verify-r2-manifest.mjs
       - name: Upload acceptance report
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: production-media-acceptance
-          path: outputs/production-media-acceptance.json
+          path: |
+            outputs/production-media-acceptance.json
+            outputs/r2-manifest-acceptance.json
           if-no-files-found: warn
