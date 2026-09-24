@@ -1,0 +1,38 @@
+name: Production media gate
+
+on:
+  pull_request:
+    paths:
+      - 'app/**'
+      - 'components/**'
+      - 'data/**'
+      - 'lib/**'
+      - 'worker/**'
+      - 'scripts/audit-live-media.mjs'
+      - 'scripts/audit-brochure-readiness.ts'
+      - 'package.json'
+      - '.github/workflows/media-production.yml'
+  workflow_dispatch:
+  schedule:
+    - cron: '23 2 * * 1'
+
+permissions:
+  contents: read
+
+jobs:
+  live-media:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      PSR_MEDIA_AUDIT_ORIGIN: https://psrhomes.ae
+      PSR_MEDIA_AUDIT_CONCURRENCY: '20'
+      PSR_MEDIA_AUDIT_TIMEOUT_MS: '12000'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22.13.0"
+          cache: npm
+      - run: npm ci
+      - name: Verify brochures and live media
+        run: npm run audit:release:media
