@@ -1,54 +1,160 @@
-# Sonu Migration Plan
+# Sonu Durable Object Migration Plan
 
-Status: **source reconciliation in progress — no production deployment authorized by this document**.
+Status: **compatibility release first; class rename remains blocked until production continuity is verified**.
 
 ## Canonical identity
 
 PSR Homes AI/agent identity is **Sonu**.
 
-Active application source on the reconciliation branch uses Sonu for:
+Active application source uses Sonu for:
 
-- user-facing chat/finder UI
-- API route (`/api/sonu-chat`)
-- session and advisor headers (`x-sonu-*`)
-- component/library/service/test names
-- client-brief functions
-- frontend CSS/events/storage namespace
+- user-facing chat/finder UI;
+- API route `/api/sonu-chat`;
+- session and advisor headers;
+- component/library/service/test names;
+- client-brief functions;
+- frontend events/storage namespace.
 
 Grace belongs to Haus & Grace only.
 
-## Temporary compatibility identifiers
+## What is still legacy in production
 
-These names may remain temporarily because they are tied to existing runtime/storage state rather than product identity:
+The live Cloudflare Worker still has the existing stateful namespace attached to:
 
-- Cloudflare Durable Object binding: `GRACE_PUBLIC_AGENT`
-- Cloudflare Durable Object legacy class export: `GracePublicAgent`
-- historical D1 table names such as `haus_grace_leads` / `hg_*`
-- historical migration filenames containing `grace`
-- old asset hostname `haus-grace-assets.thekeifferjapeth.workers.dev` where still referenced by existing media records
+- binding: `GRACE_PUBLIC_AGENT`
+- class: `GracePublicAgent`
 
-Do not treat these as current PSR branding.
+That class name is technical state, not product branding.
 
-## Durable Object migration
+The source already exports:
 
-The checked-in production manifest still uses the legacy Cloudflare Durable Object namespace. A blind rename can orphan or remap stored state incorrectly.
+- `SonuPublicAgent`
+- temporary alias `GracePublicAgent`
 
-Cloudflare currently supports class renames through Durable Object lifecycle migrations. Before changing the production manifest:
+The alias exists specifically to make a no-downtime migration possible.
 
-1. restore live Cloudflare account access and verify the namespace, class, bindings, and all external Worker references;
-2. keep the new `SonuPublicAgent` implementation exported with the temporary alias `GracePublicAgent`;
-3. deploy a compatibility release if required so both class exports resolve;
-4. apply an explicit class rename from `GracePublicAgent` to `SonuPublicAgent` using the supported Cloudflare migration mechanism;
-5. change the binding name to `SONU_PUBLIC_AGENT` only after the namespace/class migration is confirmed;
-6. redeploy and verify existing object state/conversations;
-7. remove the old alias only after rollback and cross-Worker dependency checks pass.
+## Why the rename must be separate
 
-## Data/table migration
+A Durable Object class rename is a stateful Cloudflare lifecycle operation. It is not equivalent to renaming a TypeScript symbol.
 
-Legacy table names should be migrated only when there is a schema/data migration with tests and rollback. Do not rename historical migrations.
+The repository previously staged the explicit rename in the normal production manifest before route/service parity had been reconciled. That would combine two unrelated risk domains in one release:
 
-Where a legacy table remains, new code should wrap it behind PSR/Sonu-named service functions so the legacy identifier does not leak into UI/API semantics.
+1. edge routing/service topology changes;
+2. stateful Durable Object class migration.
+
+The reconciliation branch separates them.
+
+## Phase 1 — compatibility bridge
+
+Goal: let Sonu-named application code use the existing namespace **without renaming the class yet**.
+
+Production-compatible binding:
+
+```jsonc
+{
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "SONU_PUBLIC_AGENT",
+        "class_name": "GracePublicAgent"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "psr-public-agent-v1",
+      "new_sqlite_classes": ["GracePublicAgent"]
+    }
+  ]
+}
+```
+
+This keeps the already-provisioned `GracePublicAgent` class namespace in place while application code addresses it through `env.SONU_PUBLIC_AGENT`.
+
+Do not add the rename migration in this phase.
+
+### Verify after Phase 1
+
+- existing visitor sessions can continue;
+- signed-in advisor sessions can continue;
+- old Durable Object records remain readable;
+- new conversations write to the same namespace;
+- no external Worker binding breaks;
+- rollback to the previous Worker version remains possible.
+
+## Phase 2 — explicit class rename
+
+Only after Phase 1 is verified, perform the state-preserving class rename as a dedicated release.
+
+The legacy migration form is:
+
+```jsonc
+{
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "SONU_PUBLIC_AGENT",
+        "class_name": "SonuPublicAgent"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "psr-public-agent-v1",
+      "new_sqlite_classes": ["GracePublicAgent"]
+    },
+    {
+      "tag": "psr-public-agent-v2-sonu",
+      "renamed_classes": [
+        {
+          "from": "GracePublicAgent",
+          "to": "SonuPublicAgent"
+        }
+      ]
+    }
+  ]
+}
+```
+
+Cloudflare also supports the newer declarative Durable Object `exports` lifecycle model, but migrating an existing Worker from legacy migrations to `exports` is a separate platform change. Do not combine that conversion with this class rename.
+
+## Phase 3 — cleanup
+
+After the class rename is confirmed in production:
+
+1. verify existing object IDs and stored conversations through the Sonu class;
+2. verify all external Worker references;
+3. retain the `GracePublicAgent` code alias through the rollback window;
+4. remove the alias only after rollback is no longer required;
+5. regenerate Cloudflare environment types from the final PSR Wrangler config;
+6. update architecture docs so Grace appears only in historical migration context.
+
+## Historical database names
+
+Legacy table names and migration filenames containing `grace`, `haus_grace`, or `hg_` are data-history identifiers.
+
+Do not rename historical migrations.
+
+Rename live tables only through explicit schema/data migrations with:
+
+- data copy or in-place rename plan;
+- compatibility code;
+- tests;
+- rollback;
+- production verification.
+
+Until then, wrap legacy storage names behind Sonu/PSR-named service functions so historical identifiers do not leak into UI/API semantics.
 
 ## Release gate
 
-PR #5 must pass source CI and public-repo guardrails. Cloudflare automatic production Builds remain disabled until live route/binding parity is re-audited.
+The class rename is blocked until all of these are true:
+
+- live wildcard route ownership matches Git;
+- `psr-media-edge` service bindings match Git;
+- the compatibility bridge has been deployed and observed;
+- Durable Object continuity has been verified;
+- external Worker references have been checked;
+- a rollback target is recorded;
+- source CI and runtime probes are green.
+
+Automatic GitHub → Cloudflare production Builds must remain disabled until after this sequence is complete.
