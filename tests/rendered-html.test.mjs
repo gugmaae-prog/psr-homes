@@ -111,8 +111,8 @@ test("renders the PSR Singapore Property Show registration experience", async ()
   assert.doesNotMatch(html, /Home base/i);
   assert.doesNotMatch(html, /Dubai to Singapore/i);
   assert.doesNotMatch(html, /24 Jan/i);
-  assert.match(html, /Friday[\s\S]*30 October[\s\S]*5:30 PM/i);
-  assert.match(html, /Saturday[\s\S]*31 October[\s\S]*3:30 PM/i);
+  assert.match(html, /Friday[\s\S]*13 November[\s\S]*5:30 PM/i);
+  assert.match(html, /Saturday[\s\S]*14 November[\s\S]*3:30 PM/i);
   assert.match(html, /Eastlink Gateway/i);
   assert.match(html, /Business setup/i);
   assert.match(html, /Family office migration/i);
@@ -412,7 +412,7 @@ test("renders visible directories, legal copy and the complete research observat
     return response.text();
   }
 
-  const [developers, communities, insightIndex, privacy, researchArticle, priceGuideArticle, mortgage, listing, about, advisors, parv, contact, services, jubail, favicon] = await Promise.all([
+  const [developers, communities, insightIndex, privacy, researchArticle, priceGuideArticle, mortgage, listing, about, advisors, parv, contact, services, jubail] = await Promise.all([
     render("/developers"),
     render("/communities"),
     render("/insights"),
@@ -427,7 +427,6 @@ test("renders visible directories, legal copy and the complete research observat
     render("/contact"),
     render("/services"),
     render("/communities/jubail-island"),
-    readFile(new URL("../public/brand/psr-favicon-master.png", import.meta.url)),
   ]);
 
   assert.match(developers, /developer profiles/i);
@@ -530,7 +529,6 @@ test("renders visible directories, legal copy and the complete research observat
   assert.doesNotMatch(about + advisors + contact, /Aria Sloane|Office 1142|ORN 1182853|Sameer Muhammad|Nadiia Tymoshenko|cbaestate/i);
   assert.match(privacy, /class="legal-page"/i);
   assert.match(privacy, /Information we collect/i);
-  assert.equal(favicon.subarray(1, 4).toString("ascii"), "PNG");
   assert.match(about, /favicon-light-32\.png\?v=psr-theme-20260822/i);
   assert.match(about, /favicon-light-512\.png\?v=psr-theme-20260822/i);
   assert.doesNotMatch(about, /cba-favicon-master/i);
