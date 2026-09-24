@@ -1,3 +1,5 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
 # dependencies
 /node_modules
 /.pnp
@@ -8,34 +10,45 @@
 !.yarn/releases
 !.yarn/versions
 
-# next / vinext
+# testing
+/coverage
+
+# next.js
 /.next/
 /out/
 /.vinext/
-/dist/
-/.wrangler/
-/.sites-runtime/
-
-# env / secrets
-.env*
-!.env.example
-.psr-sync.env
 
 # misc
 .DS_Store
 *.pem
+
+# debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-*.tsbuildinfo
-next-env.d.ts
+.pnpm-debug.log*
 
-# local
-/output/
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+next-env.d.ts
+*.tsbuildinfo
+/dist/
+/.wrangler/
+/.sites-runtime/
 /outputs/
+/output/
 /tmp/
+/.round3-backup/
+*.dark-backup
 /work/
-/artifacts/
+
+# local release and platform-sync state
 /.sync/
-/.vercel/
-/coverage/
+/.psr-sync.env
+/artifacts/
+/supabase/.temp/
