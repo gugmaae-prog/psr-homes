@@ -5,9 +5,10 @@
   "compatibility_date": "2026-08-20",
   "compatibility_flags": ["nodejs_compat"],
   "workers_dev": false,
+  // psr-media-edge is the verified outer router for psrhomes.ae/*.
+  // psr-property stays addressable by service binding plus this private/custom origin
+  // domain so deploying the origin Worker cannot take over public production routes.
   "routes": [
-    { "pattern": "psrhomes.ae/*", "zone_name": "psrhomes.ae" },
-    { "pattern": "www.psrhomes.ae/*", "zone_name": "psrhomes.ae" },
     { "pattern": "psr.espacios.me", "custom_domain": true }
   ],
   "vars": {
