@@ -122,8 +122,8 @@ test("renders the PSR Singapore Property Show registration experience", async ()
   assert.match(html, /property budget/i);
   assert.match(html, /OfflineEventAttendanceMode/i);
   assert.equal((html.match(/"@type":"Event"/g) || []).length, 2);
-  assert.match(html, /2026-10-30T17:30:00\+08:00/i);
-  assert.match(html, /2026-10-31T15:30:00\+08:00/i);
+  assert.match(html, /2026-11-13T17:30:00\+08:00/i);
+  assert.match(html, /2026-11-14T15:30:00\+08:00/i);
   assert.match(html, /hero\/psr-global-roadshow-singapore-cover\.png/i);
   assert.match(html, /projects\/al-yalayis\/hero\.webp/i);
   assert.equal((html.match(/<small[^>]*>Concept imagery<\/small>/g) || []).length, 2);
