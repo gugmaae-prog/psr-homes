@@ -1,0 +1,54 @@
+name: Production Media Acceptance
+
+on:
+  pull_request:
+    paths:
+      - "app/**"
+      - "components/**"
+      - "data/**"
+      - "lib/**"
+      - "worker/**"
+      - "tests/**"
+      - "scripts/verify-production-media.mjs"
+      - ".github/workflows/production-media.yml"
+  push:
+    branches: [main]
+    paths:
+      - "app/**"
+      - "components/**"
+      - "data/**"
+      - "lib/**"
+      - "worker/**"
+      - "tests/**"
+      - "scripts/verify-production-media.mjs"
+      - ".github/workflows/production-media.yml"
+  schedule:
+    - cron: "23 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-production-media:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22.13.0"
+      - name: Verify media against live PSR production
+        env:
+          PSR_MEDIA_BASE_URL: https://psrhomes.ae
+          PSR_MEDIA_CONCURRENCY: "12"
+          PSR_MEDIA_TIMEOUT_MS: "12000"
+          PSR_MEDIA_RETRIES: "1"
+        run: node scripts/verify-production-media.mjs
+      - name: Upload acceptance report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: production-media-acceptance
+          path: outputs/production-media-acceptance.json
+          if-no-files-found: warn
