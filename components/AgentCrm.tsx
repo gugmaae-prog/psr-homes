@@ -674,11 +674,11 @@ function BotSpaceDesk({
     event.dataTransfer.setData("text/plain", contact.id);
   }
 
-  function openLeadCard(event: MouseEvent<HTMLElement>, contact: CrmContact) {
+  function openLeadCard(event: MouseEvent<HTMLElement>, contact: CrmContact, now: number) {
     const target = event.target as HTMLElement;
     if (target.closest("button, input, select, textarea, label, a")) return;
     const lastDrag = lastDraggedLead.current;
-    if (lastDrag?.contactId === contact.id && Date.now() - lastDrag.endedAt < 450) {
+    if (lastDrag?.contactId === contact.id && now - lastDrag.endedAt < 450) {
       lastDraggedLead.current = null;
       return;
     }
@@ -691,7 +691,7 @@ function BotSpaceDesk({
     const moving = movingContactId === contact.id;
     const project = projectFor(contact);
     const tags = contact.tags.filter((tag) => !["botspace", legacyMetaLeadProjectSlug, waslParkGateProject.slug].includes(tag));
-    return <article key={contact.id} draggable={canDrag && !loading} data-moving={moving ? "" : undefined} onClick={(event) => openLeadCard(event, contact)} onDragStart={(event) => beginDrag(event, contact)} onDragEnd={() => { lastDraggedLead.current = { contactId: contact.id, endedAt: Date.now() }; setMovingContactId(""); setDropTarget(""); }}>
+    return <article key={contact.id} draggable={canDrag && !loading} data-moving={moving ? "" : undefined} onClick={(event) => openLeadCard(event, contact, Date.now())} onDragStart={(event) => beginDrag(event, contact)} onDragEnd={() => { lastDraggedLead.current = { contactId: contact.id, endedAt: Date.now() }; setMovingContactId(""); setDropTarget(""); }}>
       <button type="button" className="agent-crm-meta-lead-open" onClick={() => onOpenContact(contact.id)} aria-label={`Open ${contact.fullName} and update private notes`}><span>{opportunity ? botSpacePipelineStages.find((item) => item.stage === stage)?.label : "New Meta Lead"}</span><strong>{contact.fullName}</strong><small>{contact.email || contact.phone || "No contact details"}</small><small className="agent-crm-meta-lead-open-hint">Open lead · update notes</small></button>
       <div><small>{tags.join(" · ") || "Meta"}</small><small>{contact.updatedAt ? `Updated ${dateLabel(contact.updatedAt, true)}` : ""}</small></div>
       {contact.notes && <p>{metaLeadCopy(contact.notes)}</p>}

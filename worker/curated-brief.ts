@@ -1788,7 +1788,7 @@ function fitSingleLine(text: string, font: PDFFont, size: number, width: number)
   const suffix = "...";
   const words = value.split(" ");
   while (words.length > 1 && font.widthOfTextAtSize(`${words.join(" ")}${suffix}`, size) > width) words.pop();
-  let candidate = `${words.join(" ")}${suffix}`;
+  const candidate = `${words.join(" ")}${suffix}`;
   if (font.widthOfTextAtSize(candidate, size) <= width) return candidate;
   let fragment = words[0] || value;
   while (fragment.length > 1 && font.widthOfTextAtSize(`${fragment}${suffix}`, size) > width) fragment = fragment.slice(0, -1);

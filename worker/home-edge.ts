@@ -1,4 +1,5 @@
 import { isCacheablePublicDocument, servePublicDocument } from "./cache-policy";
+import { ServiceBodyTooLargeError, serviceRequest } from "./forward-request";
 
 interface HomeEdgeEnv {
   ORIGIN: Fetcher;
@@ -87,6 +88,15 @@ async function rewriteHomeResponse(request: Request, response: Response, ctx: Ex
 export default {
   async fetch(request: Request, env: HomeEdgeEnv, ctx: ExecutionContext): Promise<Response> {
     const url = new URL(request.url);
+    let forwarded: Request;
+    try {
+      forwarded = await serviceRequest(request);
+    } catch (error) {
+      if (error instanceof ServiceBodyTooLargeError) {
+        return new Response("Request body is too large.", { status: 413, headers: { "cache-control": "no-store" } });
+      }
+      throw error;
+    }
     if (url.hostname === "www.psrhomes.ae") {
       url.hostname = "psrhomes.ae";
       url.protocol = "https:";
@@ -99,9 +109,9 @@ export default {
         "permissions-policy": "camera=(), microphone=(), geolocation=()",
       } });
     }
-    if (url.pathname !== "/") return env.ORIGIN.fetch(request);
+    if (url.pathname !== "/") return env.ORIGIN.fetch(forwarded);
     const render = async () => {
-      const response = await rewriteHomeResponse(request, await env.ORIGIN.fetch(request), ctx);
+      const response = await rewriteHomeResponse(request, await env.ORIGIN.fetch(forwarded), ctx);
       if (response.headers.get("x-psr-document-cache") !== "STALE") return response;
       // The application is already refreshing this document in the background.
       // Keep the outer entry stale so the next request can pick up that refresh,
