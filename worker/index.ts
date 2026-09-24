@@ -25,8 +25,8 @@ import {
   withPrivateDocumentCacheHeaders,
 } from "./cache-policy";
 
-// GracePublicAgent is a temporary export alias for the existing Cloudflare Durable Object class name.
-// The application identity and API are Sonu; remove the alias only after the live DO migration is verified.
+// GracePublicAgent is a temporary rollout alias required by the no-downtime Durable Object rename.
+// Remove the alias only after the Sonu class migration has deployed and fully rolled out.
 export { SonuPublicAgent, GracePublicAgent };
 
 const STATIC_ASSET = /\.(?:avif|css|gif|ico|jpe?g|js|json|mp4|png|svg|webm|webp|woff2?)$/i;
@@ -107,7 +107,7 @@ const worker = {
         ? `psr-agent:${agentSession.email}:${visitorSessionId}`
         : `psr-visitor:${visitorSessionId}`;
       // Legacy binding name retained temporarily to preserve the live Durable Object namespace.
-      const sonu = env.GRACE_PUBLIC_AGENT.getByName(sessionId);
+      const sonu = env.SONU_PUBLIC_AGENT.getByName(sessionId);
       const headers = new Headers(request.headers);
       headers.delete("x-sonu-agent-email");
       headers.delete("x-sonu-agent-name");
