@@ -1,0 +1,18 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "psr-home-edge",
+  "main": "worker/home-edge.ts",
+  "compatibility_date": "2026-09-10",
+  "workers_dev": false,
+  "routes": [
+    { "pattern": "psrhomes.ae/", "zone_name": "psrhomes.ae" },
+    { "pattern": "www.psrhomes.ae/", "zone_name": "psrhomes.ae" }
+  ],
+  "services": [
+    { "binding": "ORIGIN", "service": "psr-property", "environment": "production" }
+  ],
+  "observability": {
+    "enabled": true,
+    "logs": { "enabled": true, "head_sampling_rate": 1, "invocation_logs": true }
+  }
+}

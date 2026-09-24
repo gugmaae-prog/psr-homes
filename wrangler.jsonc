@@ -1,0 +1,59 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "psr-property",
+  "main": "./dist/server/index.js",
+  "compatibility_date": "2026-08-20",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": false,
+  "routes": [
+    { "pattern": "psrhomes.ae/*", "zone_name": "psrhomes.ae" },
+    { "pattern": "www.psrhomes.ae/*", "zone_name": "psrhomes.ae" },
+    { "pattern": "psr.espacios.me", "custom_domain": true }
+  ],
+  "vars": {
+    "CAMPAIGN_DELIVERY_ENABLED": "false",
+    "EMAIL_INBOX_ENABLED": "true",
+    "EMAIL_SENDING_ENABLED": "true",
+    "EMAIL_RECEIVE_DOMAIN": "inbox.psrhomes.ae",
+    "EMAIL_CANONICAL_REPLY_TO_ENABLED": "false"
+  },
+  "secrets": {
+    "required": ["LEADRAT_API_KEY", "LEADRAT_SECRET_KEY", "LEADRAT_TENANT"]
+  },
+  "send_email": [{ "name": "EMAIL" }],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "cba-property-db",
+      "database_id": "a5165cff-70a5-4685-af87-5ffdcf08652a",
+      "migrations_dir": "drizzle-agent"
+    }
+  ],
+  "r2_buckets": [{ "binding": "MEDIA", "bucket_name": "psr-property-media" }],
+  "ai": { "binding": "AI" },
+  "durable_objects": {
+    "bindings": [{ "name": "GRACE_PUBLIC_AGENT", "class_name": "GracePublicAgent" }]
+  },
+  "migrations": [
+    { "tag": "psr-public-agent-v1", "new_sqlite_classes": ["GracePublicAgent"] }
+  ],
+  "images": { "binding": "IMAGES" },
+  "triggers": { "crons": ["17 */6 * * *"] },
+  "assets": {
+    "directory": "./dist/client",
+    "binding": "ASSETS",
+    "run_worker_first": [
+      "/*",
+      "!/_next/static/*",
+      "!/hero/*",
+      "!/brand/*",
+      "!/team/*",
+      "!/social/assets/*"
+    ]
+  },
+  "observability": {
+    "enabled": true,
+    "logs": { "enabled": true, "head_sampling_rate": 1, "invocation_logs": true },
+    "traces": { "enabled": true, "head_sampling_rate": 0.01 }
+  }
+}

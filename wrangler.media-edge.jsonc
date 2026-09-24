@@ -1,0 +1,41 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "psr-media-edge",
+  "main": "worker/media-edge.ts",
+  "compatibility_date": "2026-09-20",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": false,
+  "routes": [
+    { "pattern": "psrhomes.ae/media/external/*", "zone_name": "psrhomes.ae" },
+    { "pattern": "www.psrhomes.ae/media/external/*", "zone_name": "psrhomes.ae" },
+    { "pattern": "psrhomes.ae/events/roadshow", "zone_name": "psrhomes.ae" },
+    { "pattern": "psrhomes.ae/events/roadshow/", "zone_name": "psrhomes.ae" },
+    { "pattern": "www.psrhomes.ae/events/roadshow", "zone_name": "psrhomes.ae" },
+    { "pattern": "www.psrhomes.ae/events/roadshow/", "zone_name": "psrhomes.ae" },
+    { "pattern": "psrhomes.ae/events/roadshow*", "zone_name": "psrhomes.ae" },
+    { "pattern": "www.psrhomes.ae/events/roadshow*", "zone_name": "psrhomes.ae" },
+    { "pattern": "psrhomes.ae/projects", "zone_name": "psrhomes.ae" },
+    { "pattern": "psrhomes.ae/projects/", "zone_name": "psrhomes.ae" },
+    { "pattern": "www.psrhomes.ae/projects", "zone_name": "psrhomes.ae" },
+    { "pattern": "www.psrhomes.ae/projects/", "zone_name": "psrhomes.ae" },
+    { "pattern": "psrhomes.ae/", "zone_name": "psrhomes.ae" },
+    { "pattern": "www.psrhomes.ae/", "zone_name": "psrhomes.ae" },
+    { "pattern": "psrhomes.ae/*", "zone_name": "psrhomes.ae" },
+    { "pattern": "www.psrhomes.ae/*", "zone_name": "psrhomes.ae" }
+  ],
+  "services": [
+    { "binding": "HOME", "service": "psr-home-video-guard", "environment": "production" },
+    { "binding": "ROADSHOW", "service": "psr-roadshow-dates", "environment": "production" },
+    { "binding": "ROADSHOW_BROCHURE", "service": "psr-roadshow-brochure", "environment": "production" },
+    { "binding": "ROADSHOW_PLAN", "service": "psr-roadshow-plan", "environment": "production" },
+    { "binding": "ROADSHOW_NURTURE", "service": "psr-roadshow-nurture", "environment": "production" },
+    { "binding": "PROJECTS", "service": "psr-projects-clean", "environment": "production" },
+    { "binding": "SHELL", "service": "psr-shell-events", "environment": "production" }
+  ],
+  "r2_buckets": [{ "binding": "MEDIA", "bucket_name": "psr-property-media" }],
+  "observability": {
+    "enabled": true,
+    "logs": { "enabled": true, "head_sampling_rate": 1, "invocation_logs": true },
+    "traces": { "enabled": true, "head_sampling_rate": 0.05 }
+  }
+}
