@@ -1,7 +1,7 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
 
-const ROOTS = ["app", "components", "data", "lib", "worker", "tests"];
+const ROOTS = ["app", "components", "data", "lib", "worker"];
 const TEXT_EXTENSIONS = new Set([".ts", ".tsx", ".js", ".mjs", ".json", ".md"]);
 const MEDIA_RE = /["'`]((?:\/(?!\/)[^"'\`\s?#]+)\.(?:avif|gif|jpe?g|png|svg|webm|webp|pdf))(?:\?[^"'\`\s]*)?["'`]/gi;
 const BASE_URL = process.env.PSR_MEDIA_BASE_URL || "https://psrhomes.ae";
