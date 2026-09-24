@@ -14,6 +14,8 @@ Declared resources (live):
 
 Do not rename the live D1 binding in a normal release.
 
-Full app source sync into this repo is in progress. Builds Connect for `psr-property` should wait until the application tree is present and the release gate is green.
+Full app source is not in this repo yet. See `workers/psr-property/STATUS.md`.
+
+Do not enable Workers Builds production auto-deploy for `psr-property` until that source is here and tests pass.
 
 See also `docs/cloudflare-builds.md` and `docs/tenant-boundary.md`.

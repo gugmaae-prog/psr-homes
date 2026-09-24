@@ -20,10 +20,12 @@ Map Workers and Espacios hotspots are **out of scope** for this repo.
 
 ## Status
 
-Initial seed commit. Full Worker app sources sync next from the local Codex checkout (known RED source-reproducibility risk historically).
+Initial seed. The full Next.js / ViNext app tree is **not** in this repo. The local Codex checkout git is unhealthy; the next sync must copy working-tree sources and must omit secrets and map data.
+
+See `workers/psr-property/STATUS.md`.
 
 ## Cloudflare Builds
 
-After sources land: Cloudflare Dashboard → Worker `psr-property` → Settings → Builds → Connect → `gugmaae-prog/psr-homes` (branch `main`).
+When source and tests are in this repo: Cloudflare Dashboard → Worker `psr-property` → Settings → Builds → Connect → `gugmaae-prog/psr-homes` (branch `main`).
 
-See `docs/cloudflare-builds.md` and `docs/tenant-boundary.md`.
+Do not enable production auto-deploy before that. See `docs/cloudflare-builds.md` and `docs/tenant-boundary.md`.
