@@ -3158,7 +3158,7 @@ async function renderDocumentPdf(document: Awaited<ReturnType<typeof getDocument
 }
 
 function documentFilename(document: { title: string }) {
-  const stem = document.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 90) || "haus-grace-document";
+  const stem = document.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 90) || "psr-document";
   return `${stem}.pdf`;
 }
 
