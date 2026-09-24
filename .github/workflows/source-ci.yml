@@ -2,6 +2,8 @@ name: Source CI
 
 on:
   pull_request:
+  push:
+    branches: [main]
     paths:
       - 'app/**'
       - 'components/**'
