@@ -1,0 +1,27 @@
+name: Repository guardrails
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  public-repo-safety:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Block common committed secret files
+        shell: bash
+        run: |
+          set -euo pipefail
+          bad=$(git ls-files | grep -E '(^|/)(\.env($|\.)|.*\.pem$|.*\.key$|credentials?\.(json|ya?ml)$|secrets?\.(json|ya?ml)$)' || true)
+          if [ -n "$bad" ]; then
+            echo "Forbidden secret-like tracked files:"
+            echo "$bad"
+            exit 1
+          fi
+      - name: Confirm tenant documentation exists
+        run: test -f SECURITY.md && test -f docs/tenant-boundary.md && test -f docs/platform-audit-2026-09-24.md

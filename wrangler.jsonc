@@ -31,6 +31,10 @@
   ],
   "r2_buckets": [{ "binding": "MEDIA", "bucket_name": "psr-property-media" }],
   "ai": { "binding": "AI" },
+  // LEGACY RELEASE BLOCKER: PSR agent ownership is Sonu. These Grace-named
+  // Durable Object identifiers are preserved temporarily to avoid an unsafe
+  // class rename without the live class source and a verified Cloudflare
+  // Durable Object migration. Resolve during full psr-property source sync.
   "durable_objects": {
     "bindings": [{ "name": "GRACE_PUBLIC_AGENT", "class_name": "GracePublicAgent" }]
   },
