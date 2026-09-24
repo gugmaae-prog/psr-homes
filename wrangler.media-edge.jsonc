@@ -32,7 +32,9 @@
     { "binding": "PROJECTS", "service": "psr-projects-clean", "environment": "production" },
     { "binding": "SHELL", "service": "psr-shell-events", "environment": "production" }
   ],
-  "r2_buckets": [{ "binding": "MEDIA", "bucket_name": "psr-property-media" }],
+  "r2_buckets": [
+    { "binding": "MEDIA", "bucket_name": "psr-property-media" }
+  ],
   "observability": {
     "enabled": true,
     "logs": { "enabled": true, "head_sampling_rate": 1, "invocation_logs": true },

@@ -1,0 +1,2093 @@
+<div id="psr-social-calendar" aria-label="PSR Homes ten-week Instagram calendar">
+  <style>
+    #psr-social-calendar {
+      --psr-bg: #080808;
+      --psr-raised: #0f0f0f;
+      --psr-text: #eeeae5;
+      --psr-muted: #a39c96;
+      --psr-line: rgba(223, 193, 169, 0.20);
+      --psr-gold: #d8ae93;
+      --psr-ink: #080808;
+      --psr-limestone: #eee6dc;
+      color-scheme: dark;
+      color: var(--psr-text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      width: 100%;
+    }
+    #psr-social-calendar * { box-sizing: border-box; }
+    #psr-social-calendar .psr-window {
+      background: var(--psr-bg);
+      border: 1px solid var(--psr-line);
+      border-radius: 0;
+      overflow: clip;
+    }
+    #psr-social-calendar .psr-profile {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr) auto;
+      gap: 14px;
+      align-items: center;
+      padding: 19px 22px;
+    }
+    #psr-social-calendar .psr-avatar {
+      width: 62px;
+      height: 62px;
+      object-fit: cover;
+      border-radius: 0;
+      border: 1px solid var(--psr-line);
+      background: #121212;
+      filter: grayscale(1);
+    }
+    #psr-social-calendar .psr-handle-row {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      min-width: 0;
+    }
+    #psr-social-calendar .psr-handle {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+    }
+    #psr-social-calendar .psr-verified {
+      display: inline-grid;
+      place-items: center;
+      width: 17px;
+      height: 17px;
+      border-radius: 50%;
+      background: #1687f8;
+      color: #ffffff;
+      font-size: 11px;
+      line-height: 1;
+    }
+    #psr-social-calendar .psr-subline {
+      margin: 4px 0 0;
+      color: var(--psr-muted);
+      font-size: 13px;
+    }
+    #psr-social-calendar .psr-live {
+      text-align: right;
+      color: var(--psr-muted);
+      font-size: 12px;
+      line-height: 1.5;
+    }
+    #psr-social-calendar .psr-live strong {
+      color: var(--psr-text);
+      font-weight: 500;
+    }
+    #psr-social-calendar .psr-audit {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px 26px;
+      padding: 11px 22px;
+      background: #0c0c0c;
+      border-top: 1px solid var(--psr-line);
+      border-bottom: 1px solid var(--psr-line);
+    }
+    #psr-social-calendar .psr-audit-item {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      flex: 1 1 140px;
+      min-width: min(100%, 140px);
+    }
+    #psr-social-calendar .psr-audit-item span {
+      display: block;
+      color: var(--psr-gold);
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+    #psr-social-calendar .psr-audit-item p {
+      margin: 0;
+      color: var(--psr-text);
+      font-size: 12px;
+      line-height: 1.3;
+    }
+    #psr-social-calendar .psr-plan-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 28px 22px 16px;
+    }
+    #psr-social-calendar .psr-plan-head h2 {
+      margin: 0;
+      max-width: 520px;
+      font-size: clamp(22px, 3.6vw, 36px);
+      font-weight: 400;
+      line-height: 1.04;
+      letter-spacing: -0.035em;
+      text-transform: uppercase;
+    }
+    #psr-social-calendar .psr-plan-head p {
+      margin: 9px 0 0;
+      color: var(--psr-muted);
+      font-size: 12px;
+    }
+    #psr-social-calendar .psr-direction {
+      color: var(--psr-gold);
+      font-size: 12px;
+      white-space: nowrap;
+    }
+    #psr-social-calendar .psr-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(240px, 0.7fr);
+      gap: 26px;
+      padding: 0 22px 20px;
+      align-items: start;
+    }
+    #psr-social-calendar .psr-columns {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 6px;
+      margin-bottom: 9px;
+      color: var(--psr-muted);
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    #psr-social-calendar .psr-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 6px;
+      background: var(--psr-bg);
+    }
+    #psr-social-calendar .psr-tile {
+      position: relative;
+      display: block;
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      padding: 0;
+      overflow: hidden;
+      border: 0;
+      border-radius: 0;
+      background: #11100f;
+      color: #ffffff;
+      cursor: pointer;
+      text-align: left;
+    }
+    #psr-social-calendar .psr-tile img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: saturate(0.72) contrast(1.05);
+      transition: transform 320ms ease, filter 320ms ease;
+    }
+    #psr-social-calendar .psr-tile:hover img { transform: scale(1.02); filter: saturate(0.9) contrast(1.06); }
+    #psr-social-calendar .psr-shade {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(5, 5, 5, 0.04) 18%, rgba(5, 5, 5, 0.88) 100%);
+      transition: background 180ms ease;
+    }
+    #psr-social-calendar[data-cover-system="graphite"] .psr-shade {
+      background: linear-gradient(180deg, rgba(6, 7, 9, 0.34) 0%, rgba(6, 7, 9, 0.92) 100%);
+    }
+    #psr-social-calendar[data-cover-system="limestone"] .psr-shade {
+      background: linear-gradient(180deg, rgba(244, 239, 230, 0.08) 0%, rgba(33, 28, 23, 0.84) 100%);
+    }
+    #psr-social-calendar .psr-series,
+    #psr-social-calendar .psr-slide-count {
+      position: absolute;
+      z-index: 5;
+      padding: 4px 5px;
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      background: rgba(5, 9, 8, 0.76);
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 7px;
+      line-height: 1;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+    }
+    #psr-social-calendar .psr-series { top: 9px; left: 9px; background: rgba(24, 75, 57, 0.88); }
+    #psr-social-calendar .psr-slide-count { top: 9px; right: 36px; }
+    #psr-social-calendar .psr-tile[data-series="dubai-next"][data-generated="true"] .psr-series { top: 43px; }
+    #psr-social-calendar .psr-tile[data-series="broker-weekly"] .psr-series {
+      background: rgba(36, 29, 25, 0.9);
+      border-color: rgba(216, 174, 147, 0.56);
+      color: #f1d3bf;
+    }
+    #psr-social-calendar .psr-tile[data-series="dubai-next"][data-style="brief"]::before { display: none; }
+    #psr-social-calendar .psr-tile[data-series="broker-weekly"] .psr-tile-copy,
+    #psr-social-calendar .psr-tile[data-series="broker-weekly"] .psr-series,
+    #psr-social-calendar .psr-tile[data-series="broker-weekly"] .psr-format,
+    #psr-social-calendar .psr-tile[data-series="broker-weekly"] .psr-shade {
+      display: none;
+    }
+    #psr-social-calendar .psr-tile[data-series="broker-weekly"] img {
+      object-position: 50% 50%;
+      filter: saturate(0.78) contrast(1.03);
+    }
+    #psr-social-calendar .psr-tile[data-series="broker-weekly"]:hover img {
+      transform: scale(1.015);
+      filter: saturate(0.92) contrast(1.04);
+    }
+    #psr-social-calendar .psr-format {
+      position: absolute;
+      top: 9px;
+      right: 9px;
+      display: grid;
+      place-items: center;
+      width: 25px;
+      height: 25px;
+      background: transparent;
+      color: rgba(255, 255, 255, 0.82);
+    }
+    #psr-social-calendar .psr-format svg { width: 14px; height: 14px; }
+    #psr-social-calendar .psr-format i[data-lucide] {
+      position: relative;
+      display: block;
+      width: 14px;
+      height: 14px;
+      color: currentColor;
+      font-style: normal;
+    }
+    #psr-social-calendar .psr-format i[data-lucide="play"] {
+      border: 1px solid currentColor;
+      border-radius: 50%;
+    }
+    #psr-social-calendar .psr-format i[data-lucide="play"]::after {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 5px;
+      width: 0;
+      height: 0;
+      border-top: 3px solid transparent;
+      border-bottom: 3px solid transparent;
+      border-left: 4px solid currentColor;
+    }
+    #psr-social-calendar .psr-format i[data-lucide="camera"] {
+      width: 14px;
+      height: 10px;
+      margin-top: 2px;
+      border: 1px solid currentColor;
+      border-radius: 2px;
+    }
+    #psr-social-calendar .psr-format i[data-lucide="camera"]::before {
+      content: "";
+      position: absolute;
+      top: -3px;
+      left: 2px;
+      width: 5px;
+      height: 2px;
+      border: 1px solid currentColor;
+      border-bottom: 0;
+      border-radius: 1px 1px 0 0;
+    }
+    #psr-social-calendar .psr-format i[data-lucide="camera"]::after {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 5px;
+      width: 3px;
+      height: 3px;
+      border: 1px solid currentColor;
+      border-radius: 50%;
+    }
+    #psr-social-calendar .psr-format i[data-lucide="layers-3"]::before,
+    #psr-social-calendar .psr-format i[data-lucide="layers-3"]::after {
+      content: "";
+      position: absolute;
+      left: 2px;
+      width: 10px;
+      height: 6px;
+      border: 1px solid currentColor;
+      transform: rotate(30deg) skew(-8deg);
+    }
+    #psr-social-calendar .psr-format i[data-lucide="layers-3"]::before { top: 1px; }
+    #psr-social-calendar .psr-format i[data-lucide="layers-3"]::after { top: 5px; }
+    #psr-social-calendar .psr-tile-copy {
+      position: absolute;
+      inset: auto 12px 13px;
+      z-index: 2;
+    }
+    #psr-social-calendar .psr-date {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--psr-gold);
+      font-size: 10px;
+      letter-spacing: 0.12em;
+    }
+    #psr-social-calendar .psr-title {
+      display: block;
+      font-size: clamp(12px, 1.48vw, 15px);
+      font-weight: 400;
+      line-height: 1.12;
+      letter-spacing: 0.015em;
+      text-transform: uppercase;
+      text-wrap: balance;
+    }
+    #psr-social-calendar .psr-tile[data-style="group"] img {
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 48%;
+      filter: grayscale(1) contrast(1.06);
+    }
+    #psr-social-calendar .psr-tile[data-style="group"] .psr-shade {
+      background: linear-gradient(180deg, transparent 25%, #090909 70%);
+    }
+    #psr-social-calendar .psr-tile[data-style="portrait"] img {
+      object-position: 50% 28%;
+      filter: grayscale(1) contrast(1.08) brightness(0.96);
+    }
+    #psr-social-calendar .psr-tile[data-style="portrait"]:hover img {
+      filter: grayscale(0.9) contrast(1.08) brightness(0.99);
+    }
+    #psr-social-calendar .psr-tile[data-style="portrait"] .psr-shade {
+      background: linear-gradient(180deg, rgba(5, 5, 5, 0.02) 30%, rgba(5, 5, 5, 0.92) 100%);
+    }
+    #psr-social-calendar .psr-tile[data-person="jummanah"] img { object-position: 50% 40%; }
+    #psr-social-calendar .psr-tile[data-person="parv"] img { object-position: 50% 50%; }
+    #psr-social-calendar .psr-tile[data-person="louay"] img { object-position: 50% 22%; }
+    #psr-social-calendar .psr-tile[data-person="sonu"] img { object-position: 50% 18%; }
+    #psr-social-calendar .psr-tile[data-person="ujwal"] img { object-position: 50% 18%; }
+    #psr-social-calendar .psr-tile[data-person="mazhar"] img { object-position: 50% 18%; }
+    #psr-social-calendar .psr-tile[data-style="dubai"] img { object-position: 67% center; }
+    #psr-social-calendar .psr-tile[data-generated="true"] img {
+      filter: saturate(0.96) contrast(1.03) brightness(1.05);
+    }
+    #psr-social-calendar .psr-tile[data-generated="true"]:hover img {
+      filter: saturate(1) contrast(1.04) brightness(1.07);
+    }
+    #psr-social-calendar .psr-tile[data-generated="true"] .psr-shade {
+      background: linear-gradient(180deg, rgba(5, 5, 5, 0.01) 22%, rgba(5, 5, 5, 0.70) 100%);
+    }
+    #psr-social-calendar .psr-disclosure {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 4;
+      max-width: calc(100% - 52px);
+      padding: 5px 6px;
+      border: 1px solid rgba(255, 255, 255, 0.36);
+      background: rgba(5, 5, 5, 0.72);
+      color: rgba(255, 255, 255, 0.94);
+      font-size: 7px;
+      font-weight: 600;
+      line-height: 1.25;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    #psr-social-calendar .psr-tile:focus-visible,
+    #psr-social-calendar .psr-detail-close:focus-visible {
+      outline: 2px solid var(--psr-gold);
+      outline-offset: 3px;
+    }
+    #psr-social-calendar .psr-tile[data-style="brief"] {
+      color: #f5f0e9;
+      background: #10231d;
+      border-top: 1px solid rgba(216, 174, 147, 0.78);
+    }
+    #psr-social-calendar .psr-tile[data-style="brief"] img {
+      display: block;
+      filter: saturate(0.54) contrast(1.08) brightness(0.72);
+    }
+    #psr-social-calendar .psr-tile[data-style="brief"] .psr-shade {
+      display: block;
+      background:
+        linear-gradient(180deg, rgba(8, 18, 15, 0.10) 0%, rgba(8, 18, 15, 0.48) 42%, rgba(7, 14, 12, 0.96) 100%);
+    }
+    #psr-social-calendar .psr-tile[data-style="brief"][data-tone="warm"] img {
+      filter: sepia(0.18) saturate(0.58) contrast(1.08) brightness(0.76);
+    }
+    #psr-social-calendar .psr-tile[data-style="brief"][data-tone="green"] {
+      background: #123a2d;
+      border-top-color: #b6ca92;
+    }
+    #psr-social-calendar .psr-tile[data-style="brief"][data-tone="green"] img {
+      filter: saturate(0.86) hue-rotate(8deg) contrast(1.04) brightness(0.76);
+    }
+    #psr-social-calendar .psr-tile[data-style="brief"][data-tone="green"] .psr-shade {
+      background:
+        linear-gradient(180deg, rgba(9, 45, 34, 0.06) 0%, rgba(9, 45, 34, 0.38) 44%, rgba(7, 28, 22, 0.96) 100%);
+    }
+    #psr-social-calendar .psr-tile[data-style="brief"][data-tone="green"]::before {
+      content: "UAE FIELD NOTE";
+      position: absolute;
+      top: 11px;
+      left: 11px;
+      z-index: 3;
+      color: rgba(245, 240, 233, 0.88);
+      font-size: 7px;
+      letter-spacing: 0.16em;
+    }
+    #psr-social-calendar .psr-tile[data-style="brief"] .psr-format {
+      color: rgba(255, 255, 255, 0.84);
+    }
+    #psr-social-calendar .psr-tile[data-style="brief"] .psr-date {
+      color: #d8ae93;
+    }
+    #psr-social-calendar .psr-tile[data-style="brief"] .psr-title {
+      max-width: 12ch;
+      color: #ffffff;
+      font-size: clamp(15px, 2.08vw, 23px);
+      line-height: 1.02;
+      letter-spacing: -0.025em;
+      text-shadow: 0 2px 18px rgba(0, 0, 0, 0.5);
+    }
+    #psr-social-calendar .psr-tile[data-style="brief"][data-tone="green"] .psr-title {
+      font-family: Iowan Old Style, Baskerville, Georgia, serif;
+      letter-spacing: -0.02em;
+      text-transform: none;
+    }
+    #psr-social-calendar .psr-tile[aria-pressed="true"]::after {
+      content: "";
+      position: absolute;
+      inset: 4px;
+      z-index: 3;
+      border: 1px solid var(--psr-gold);
+      pointer-events: none;
+    }
+    #psr-social-calendar .psr-detail {
+      position: sticky;
+      top: 12px;
+      background: transparent;
+      border-left: 1px solid var(--psr-line);
+      border-radius: 0;
+      padding: 4px 0 2px 22px;
+      min-width: 0;
+      align-self: start;
+    }
+    #psr-social-calendar .psr-detail-close {
+      display: none;
+      appearance: none;
+      border: 1px solid var(--psr-line);
+      background: #171615;
+      color: var(--psr-text);
+      cursor: pointer;
+    }
+    #psr-social-calendar .psr-detail-kicker {
+      margin: 0 0 7px;
+      color: var(--psr-gold);
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    #psr-social-calendar .psr-detail h3 {
+      margin: 0;
+      color: var(--psr-text);
+      font-size: clamp(22px, 3vw, 34px);
+      font-weight: 400;
+      line-height: 1.04;
+      letter-spacing: -0.03em;
+    }
+    #psr-social-calendar .psr-hook {
+      margin: 14px 0 16px;
+      padding-left: 12px;
+      border-left: 2px solid var(--psr-gold);
+      color: var(--psr-text);
+      font-size: 14px;
+      line-height: 1.45;
+    }
+    #psr-social-calendar .psr-tile .psr-tile-copy,
+    #psr-social-calendar .psr-tile .psr-shade,
+    #psr-social-calendar .psr-tile .psr-badge,
+    #psr-social-calendar .psr-tile .psr-series,
+    #psr-social-calendar .psr-tile .psr-slide-count {
+      display: none;
+    }
+    #psr-social-calendar .psr-tile[data-style="brief"][data-tone="green"]::before {
+      display: none;
+    }
+    #psr-social-calendar .psr-detail[data-view="visual-only"] .psr-detail-kicker,
+    #psr-social-calendar .psr-detail[data-view="visual-only"] > h3,
+    #psr-social-calendar .psr-detail[data-view="visual-only"] .psr-hook,
+    #psr-social-calendar .psr-detail[data-view="visual-only"] .psr-meta,
+    #psr-social-calendar .psr-detail[data-view="visual-only"] .psr-detail-cta,
+    #psr-social-calendar .psr-detail[data-view="visual-only"] .psr-cta,
+    #psr-social-calendar .psr-detail[data-view="visual-only"] .psr-platform-head > span,
+    #psr-social-calendar .psr-detail[data-view="visual-only"] .psr-carousel-preview {
+      display: none;
+    }
+    #psr-social-calendar .psr-detail[data-view="visual-only"] .psr-platform-preview {
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+    #psr-social-calendar .psr-detail[data-view="visual-only"] .psr-platform-head {
+      justify-content: flex-end;
+    }
+    #psr-social-calendar .psr-detail[data-view="visual-only"] .psr-format-card {
+      display: block;
+      padding: 0;
+      border: 0;
+      background: transparent;
+    }
+    #psr-social-calendar .psr-detail[data-view="visual-only"] .psr-format-media {
+      width: 100%;
+    }
+    #psr-social-calendar .psr-luxe-grade { display: none; }
+    #psr-social-calendar .psr-grid .psr-tile {
+      background: #1a1816;
+      border-color: rgba(216, 174, 147, 0.28);
+    }
+    #psr-social-calendar .psr-grid .psr-tile img {
+      filter: saturate(0.94) contrast(0.96) brightness(1.08) !important;
+    }
+    #psr-social-calendar .psr-grid .psr-tile[data-style="group"] img {
+      filter: grayscale(1) contrast(0.98) brightness(1.10) !important;
+    }
+    #psr-social-calendar .psr-grid .psr-tile[data-generated="true"] img,
+    #psr-social-calendar .psr-grid .psr-tile[data-concept="true"] img {
+      filter: saturate(0.90) contrast(0.97) brightness(1.06) !important;
+    }
+    #psr-social-calendar .psr-grid .psr-shade,
+    #psr-social-calendar[data-cover-system="graphite"] .psr-grid .psr-shade,
+    #psr-social-calendar[data-cover-system="limestone"] .psr-grid .psr-shade {
+      background: linear-gradient(180deg, rgba(20, 17, 14, 0.01) 55%, rgba(20, 17, 14, 0.16) 100%) !important;
+    }
+    #psr-social-calendar .psr-grid .psr-tile:hover img {
+      filter: saturate(0.98) contrast(0.98) brightness(1.12) !important;
+    }
+    #psr-social-calendar .psr-publish-copy {
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px solid var(--psr-line);
+    }
+    #psr-social-calendar .psr-publish-copy[hidden] {
+      display: none;
+    }
+    #psr-social-calendar .psr-publish-label {
+      display: block;
+      margin-bottom: 7px;
+      color: var(--psr-gold);
+      font-size: 9px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    #psr-social-calendar .psr-publish-copy h3 {
+      margin: 0 0 9px;
+      color: var(--psr-text);
+      font-size: clamp(18px, 2vw, 25px);
+      font-weight: 400;
+      line-height: 1.08;
+      letter-spacing: -0.025em;
+    }
+    #psr-social-calendar .psr-publish-caption {
+      margin: 0;
+      color: rgba(238, 234, 229, 0.86);
+      font-size: 12px;
+      line-height: 1.55;
+      white-space: pre-line;
+    }
+    #psr-social-calendar .psr-publish-hashtags {
+      margin: 10px 0 0;
+      color: #cba587;
+      font-size: 10px;
+      line-height: 1.5;
+      overflow-wrap: anywhere;
+    }
+    #psr-social-calendar .psr-platform-preview {
+      margin: 0 0 16px;
+      padding: 12px 0 14px;
+      border-top: 1px solid var(--psr-line);
+    }
+    #psr-social-calendar .psr-platform-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 9px;
+    }
+    #psr-social-calendar .psr-platform-head > span {
+      color: var(--psr-muted);
+      font-size: 9px;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+    }
+    #psr-social-calendar .psr-platform-tabs { display: flex; gap: 5px; }
+    #psr-social-calendar .psr-platform-tab {
+      min-height: 30px;
+      padding: 5px 8px;
+      border: 1px solid var(--psr-line);
+      background: transparent;
+      color: var(--psr-muted);
+      font: inherit;
+      font-size: 9px;
+      cursor: pointer;
+    }
+    #psr-social-calendar .psr-platform-tab[aria-selected="true"] {
+      border-color: var(--psr-gold);
+      background: rgba(216, 174, 147, 0.11);
+      color: var(--psr-text);
+    }
+    #psr-social-calendar .psr-format-card {
+      display: grid;
+      grid-template-columns: minmax(92px, 0.78fr) minmax(0, 1.22fr);
+      gap: 10px;
+      padding: 9px;
+      background: #111110;
+      border: 1px solid var(--psr-line);
+    }
+    #psr-social-calendar .psr-format-media {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 2px;
+      overflow: hidden;
+      background: #080808;
+    }
+    #psr-social-calendar .psr-format-media[data-platform="instagram"] { aspect-ratio: 4 / 5; }
+    #psr-social-calendar .psr-format-media[data-platform="linkedin"] { aspect-ratio: 1.91 / 1; }
+    #psr-social-calendar .psr-format-media[data-single="true"] { grid-template-columns: 1fr; }
+    #psr-social-calendar .psr-format-frame {
+      position: relative;
+      min-width: 0;
+      min-height: 0;
+      overflow: hidden;
+    }
+    #psr-social-calendar .psr-format-media img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      min-height: 0;
+      object-fit: cover;
+    }
+    #psr-social-calendar .psr-frame-hook {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      gap: 4px;
+      padding: clamp(8px, 1.25vw, 16px);
+      background: linear-gradient(180deg, rgba(5, 8, 8, 0.04) 30%, rgba(5, 8, 8, 0.92) 100%);
+      color: #fff;
+      text-align: left;
+    }
+    #psr-social-calendar .psr-frame-hook b {
+      color: #d8ae93;
+      font-size: clamp(6px, 0.62vw, 9px);
+      font-weight: 500;
+      letter-spacing: 0.12em;
+    }
+    #psr-social-calendar .psr-frame-hook strong {
+      font-size: clamp(11px, 1.38vw, 21px);
+      font-weight: 500;
+      line-height: 1.04;
+      letter-spacing: -0.025em;
+    }
+    #psr-social-calendar .psr-frame-hook span {
+      color: rgba(255, 255, 255, 0.82);
+      font-size: clamp(6px, 0.67vw, 9px);
+      line-height: 1.25;
+    }
+    #psr-social-calendar .psr-frame-hook small {
+      color: rgba(255, 255, 255, 0.58);
+      font-size: clamp(5px, 0.55vw, 8px);
+      letter-spacing: 0.04em;
+    }
+    #psr-social-calendar .psr-format-copy b {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--psr-gold);
+      font-size: 9px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    #psr-social-calendar .psr-format-copy h4 {
+      margin: 0 0 5px;
+      color: var(--psr-text);
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+    #psr-social-calendar .psr-format-copy p {
+      margin: 0;
+      color: var(--psr-muted);
+      font-size: 10px;
+      line-height: 1.35;
+    }
+    #psr-social-calendar .psr-carousel-preview {
+      margin: 0 0 16px;
+      padding: 12px 0 14px;
+      border-top: 1px solid var(--psr-line);
+      border-bottom: 1px solid var(--psr-line);
+    }
+    #psr-social-calendar .psr-carousel-preview[hidden] { display: none; }
+    #psr-social-calendar .psr-carousel-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 9px;
+      color: var(--psr-muted);
+      font-size: 9px;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+    }
+    #psr-social-calendar .psr-carousel-strip {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 7px;
+    }
+    #psr-social-calendar .psr-carousel-frame { position: relative; margin: 0; background: #151515; }
+    #psr-social-calendar .psr-carousel-frame img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      filter: saturate(0.72) contrast(1.04) brightness(0.82);
+    }
+    #psr-social-calendar .psr-carousel-frame figcaption {
+      min-height: 38px;
+      padding: 6px 7px 7px;
+      color: var(--psr-text);
+      font-size: 9px;
+      line-height: 1.25;
+    }
+    #psr-social-calendar .psr-carousel-frame b {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--psr-gold);
+      font-size: 8px;
+      font-weight: 500;
+      letter-spacing: 0.09em;
+    }
+    #psr-social-calendar .psr-meta {
+      display: grid;
+      gap: 12px;
+      margin: 0;
+    }
+    #psr-social-calendar .psr-meta div {
+      display: grid;
+      gap: 3px;
+    }
+    #psr-social-calendar .psr-meta dt {
+      color: var(--psr-muted);
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    #psr-social-calendar .psr-meta dd {
+      margin: 0;
+      color: var(--psr-text);
+      font-size: 13px;
+      line-height: 1.4;
+    }
+    #psr-social-calendar .psr-cta {
+      margin-top: 16px;
+      padding: 11px 12px;
+      border-radius: 0;
+      background: var(--psr-gold);
+      color: #171310;
+      font-size: 13px;
+      line-height: 1.35;
+    }
+    #psr-social-calendar .psr-cta strong { font-weight: 500; }
+    #psr-social-calendar .psr-rhythm {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+      padding: 15px 22px 19px;
+      border-top: 1px solid var(--psr-line);
+      color: var(--psr-muted);
+      font-size: 12px;
+      line-height: 1.4;
+    }
+    #psr-social-calendar .psr-rhythm strong {
+      display: block;
+      margin-bottom: 3px;
+      color: var(--psr-text);
+      font-weight: 500;
+    }
+    #psr-social-calendar .psr-glass-surface-marker { display: none; }
+    #psr-social-calendar .psr-tile .psr-disclosure {
+      display: none !important;
+    }
+    #psr-social-calendar .psr-detail {
+      background: linear-gradient(145deg, rgba(38, 35, 32, 0.72), rgba(10, 10, 10, 0.60));
+      border: 1px solid rgba(235, 214, 199, 0.22);
+      box-shadow: 0 22px 80px rgba(0, 0, 0, 0.46), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+      -webkit-backdrop-filter: blur(24px) saturate(1.15);
+      backdrop-filter: blur(24px) saturate(1.15);
+    }
+    #psr-social-calendar .psr-platform-tab {
+      background: rgba(255, 255, 255, 0.035);
+      border-color: rgba(235, 214, 199, 0.18);
+    }
+    #psr-social-calendar .psr-platform-tab[aria-selected="true"] {
+      background: rgba(216, 174, 147, 0.14);
+      border-color: rgba(235, 214, 199, 0.58);
+    }
+    @supports not ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+      #psr-social-calendar .psr-detail { background: rgba(18, 17, 16, 0.94); }
+    }
+    @media (max-width: 700px) {
+      #psr-social-calendar .psr-profile { grid-template-columns: auto 1fr; }
+      #psr-social-calendar .psr-live { grid-column: 1 / -1; text-align: left; }
+      #psr-social-calendar .psr-layout { grid-template-columns: 1fr; }
+      #psr-social-calendar .psr-detail {
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        left: 10px;
+        z-index: 50;
+        max-height: min(68vh, 540px);
+        overflow-y: auto;
+        padding: 43px 18px 18px;
+        border: 1px solid var(--psr-line);
+        background: linear-gradient(145deg, rgba(38, 35, 32, 0.74), rgba(10, 10, 10, 0.66));
+        -webkit-backdrop-filter: blur(28px) saturate(1.18);
+        backdrop-filter: blur(28px) saturate(1.18);
+        box-shadow: 0 22px 70px rgba(0, 0, 0, 0.58);
+        transform: translateY(calc(100% + 30px));
+        transition: transform 240ms ease;
+      }
+      #psr-social-calendar .psr-detail[data-open="true"] { transform: translateY(0); }
+      #psr-social-calendar .psr-detail-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: grid;
+        width: 28px;
+        height: 28px;
+        place-items: center;
+        font-size: 18px;
+        line-height: 1;
+      }
+      #psr-social-calendar .psr-rhythm { grid-template-columns: 1fr; }
+      #psr-social-calendar .psr-title { font-size: 13px; }
+    }
+    @media (max-width: 420px) {
+      #psr-social-calendar .psr-profile,
+      #psr-social-calendar .psr-plan-head,
+      #psr-social-calendar .psr-layout,
+      #psr-social-calendar .psr-rhythm { padding-left: 14px; padding-right: 14px; }
+      #psr-social-calendar .psr-audit { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 16px; }
+      #psr-social-calendar .psr-audit-item { min-width: 0; }
+      #psr-social-calendar .psr-plan-head { align-items: start; flex-direction: column; }
+      #psr-social-calendar .psr-columns { font-size: 9px; }
+      #psr-social-calendar .psr-tile-copy { inset: auto 7px 8px; }
+      #psr-social-calendar .psr-title { font-size: 11px; }
+      #psr-social-calendar .psr-format { top: 6px; right: 6px; width: 22px; height: 22px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      #psr-social-calendar .psr-tile img,
+      #psr-social-calendar .psr-shade { transition: none; }
+    }
+    #psr-social-calendar .psr-minimal-carousel-marker { display: none; }
+    #psr-social-calendar .psr-layout { grid-template-columns: 1fr; }
+    #psr-social-calendar .psr-tile .psr-format { display: none; }
+    #psr-social-calendar .psr-detail {
+      position: fixed;
+      top: 22px;
+      right: 22px;
+      bottom: 22px;
+      left: auto;
+      z-index: 50;
+      width: min(520px, calc(100vw - 44px));
+      max-height: calc(100vh - 44px);
+      overflow-y: auto;
+      padding: 54px 20px 20px;
+      border-radius: 18px;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transform: translateX(calc(100% + 36px));
+      transition: transform 240ms ease, opacity 180ms ease, visibility 180ms ease;
+    }
+    #psr-social-calendar .psr-detail[data-open="true"] {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transform: translateX(0);
+    }
+    #psr-social-calendar .psr-detail-close {
+      position: absolute;
+      top: 13px;
+      right: 13px;
+      display: grid;
+      width: 30px;
+      height: 30px;
+      padding: 0;
+      place-items: center;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.045);
+      font-size: 17px;
+      line-height: 1;
+    }
+    #psr-social-calendar .psr-detail[data-view="visual-only"] .psr-format-copy { display: none; }
+    #psr-social-calendar .psr-detail[data-view="visual-only"] .psr-format-media {
+      gap: 4px;
+      border-radius: 12px;
+    }
+    #psr-social-calendar .psr-detail[data-view="visual-only"] .psr-publish-copy {
+      margin-top: 18px;
+      padding-top: 16px;
+    }
+    @media (max-width: 700px) {
+      #psr-social-calendar .psr-detail {
+        top: auto;
+        right: 10px;
+        bottom: 10px;
+        left: 10px;
+        width: auto;
+        max-height: min(72vh, 620px);
+        border-radius: 16px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(calc(100% + 30px));
+      }
+      #psr-social-calendar .psr-detail[data-open="true"] {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+    }
+  </style>
+
+  <section class="psr-window">
+    <header class="psr-profile">
+      <img class="psr-avatar" src="/social/assets/social-012943d9a0255e8c0b6c.png" alt="PSR Homes logo">
+      <div>
+        <div class="psr-handle-row">
+          <h1 class="psr-handle">psrhomes.ae</h1>
+          <span class="psr-verified" aria-label="Verified">✓</span>
+        </div>
+        <p class="psr-subline">A quieter view of UAE real estate · Sep—Nov 2026</p>
+      </div>
+      <div class="psr-live"><strong>Live check · 6 Sep</strong><br>Verified · 211 followers · 18 following</div>
+    </header>
+
+    <section class="psr-audit" aria-label="Content pillars">
+      <div class="psr-audit-item"><span>01</span><p>Residences</p></div>
+      <div class="psr-audit-item"><span>02</span><p>Market insight</p></div>
+      <div class="psr-audit-item"><span>03</span><p>Inside PSR + brokers</p></div>
+      <div class="psr-audit-item"><span>04</span><p>Dubai next · 30%</p></div>
+    </section>
+
+    <div class="psr-plan-head">
+      <div>
+        <h2>Property. Perspective. People.</h2>
+        <p>Thirty posts. Ten weeks. One composed visual language.</p>
+      </div>
+      <div class="psr-direction">Publish each row right → centre → left</div>
+    </div>
+
+    <div class="psr-layout">
+      <section aria-label="Thirty-post Instagram grid">
+        <div class="psr-columns" aria-hidden="true"><span>People + place</span><span>Upcoming residence</span><span>Market intelligence</span></div>
+        <div class="psr-grid">
+          <button class="psr-tile" type="button" data-index="0" data-style="place" aria-pressed="true" aria-label="14 November, Guggenheim Abu Dhabi opening on Saadiyat Island, culture editorial">
+            <img loading="lazy" decoding="async" src="/social/assets/social-476ac801e9240f5dbaab.jpg" alt=""><span class="psr-shade"></span><span class="psr-format"><i data-lucide="camera" aria-hidden="true"></i></span><span class="psr-tile-copy"><span class="psr-date">14 NOV</span><span class="psr-title">Guggenheim Abu Dhabi — Opening 11 December 2026</span></span>
+          </button>
+          <button class="psr-tile" type="button" data-index="1" data-style="brief" data-tone="green" aria-pressed="false" aria-label="12 November, Al Maktoum International Airport and the airport city, infrastructure carousel" data-series="dubai-next" data-slide-count="4"><span class="psr-slide-count">4 frames</span><span class="psr-series">Dubai next</span>
+            <img loading="lazy" decoding="async" src="/social/assets/social-065c8fe38466f175d57c.png" alt=""><span class="psr-shade"></span><span class="psr-format"><i data-lucide="layers-3" aria-hidden="true"></i></span><span class="psr-tile-copy"><span class="psr-date">12 NOV</span><span class="psr-title">Al Maktoum Airport — The AED 128BN Expansion</span></span>
+          </button>
+          <button class="psr-tile" type="button" data-index="2" data-style="brief" data-tone="green" aria-pressed="false" aria-label="10 November, Etihad Rail passenger service connecting the Emirates, mobility carousel" data-slide-count="6"><span class="psr-slide-count">6 frames</span>
+            <img loading="lazy" decoding="async" src="/social/assets/social-09fe71abdc1b3412e16b.png" alt=""><span class="psr-shade"></span><span class="psr-format"><i data-lucide="layers-3" aria-hidden="true"></i></span><span class="psr-tile-copy"><span class="psr-date">10 NOV</span><span class="psr-title">Etihad Rail — What Passenger Service Changes</span></span>
+          </button>
+          <button class="psr-tile" type="button" data-index="3" data-style="editorial" data-person="ujwal" aria-pressed="false" aria-label="7 November, Know Your Broker with Ujwal, editorial portrait" data-series="broker-weekly"><span class="psr-series">Know your broker</span>
+            <img loading="lazy" decoding="async" src="/social/assets/social-c0ee8fbde8840744461f.png" alt=""><span class="psr-shade"></span><span class="psr-format"><i data-lucide="camera" aria-hidden="true"></i></span><span class="psr-tile-copy"><span class="psr-date">07 NOV</span><span class="psr-title">Know Your Broker — Ujwal</span></span>
+          </button>
+          <button class="psr-tile" type="button" data-index="4" data-style="place" aria-pressed="false" aria-label="5 November, Disney theme park resort announced for Yas Island, destination editorial">
+            <img loading="lazy" decoding="async" src="/social/assets/social-f8a5160503400a808c3b.jpg" alt=""><span class="psr-shade"></span><span class="psr-format"><i data-lucide="camera" aria-hidden="true"></i></span><span class="psr-tile-copy"><span class="psr-date">05 NOV</span><span class="psr-title">Disney Is Coming to Yas Island</span></span>
+          </button>
+          <button class="psr-tile" type="button" data-index="5" data-style="place" aria-pressed="false" aria-label="3 November, Harry Potter themed land announced for Warner Bros World Abu Dhabi, destination editorial">
+            <img loading="lazy" decoding="async" src="/social/assets/social-30f91100849c3d361c00.webp" alt=""><span class="psr-shade"></span><span class="psr-format"><i data-lucide="camera" aria-hidden="true"></i></span><span class="psr-tile-copy"><span class="psr-date">03 NOV</span><span class="psr-title">Harry Potter Is Coming to Yas Island</span></span>
+          </button>
+          <button class="psr-tile" type="button" data-index="6" data-generated="true" aria-pressed="false" aria-label="31 October, future form, generated architectural editorial concept" data-series="dubai-next"><span class="psr-series">Dubai next</span>
+            <img loading="lazy" decoding="async" src="/social/assets/social-1bed22b01332688fb8b4.jpg" alt=""><span class="psr-disclosure">AI EDITORIAL CONCEPT · NOT A PROPERTY</span><span class="psr-shade"></span><span class="psr-format"><i data-lucide="camera" aria-hidden="true"></i></span><span class="psr-tile-copy"><span class="psr-date">31 OCT</span><span class="psr-title">Future Form</span></span>
+          </button>
+          <button class="psr-tile" type="button" data-index="7" aria-pressed="false" aria-label="29 October, The Archive design versus investment case, project carousel" data-series="dubai-next" data-slide-count="4"><span class="psr-slide-count">4 frames</span><span class="psr-series">Dubai next</span>
+            <img loading="lazy" decoding="async" src="/social/assets/social-ee61b63dd0a83dbc0a8f.jpg" alt=""><span class="psr-shade"></span><span class="psr-format"><i data-lucide="layers-3" aria-hidden="true"></i></span><span class="psr-tile-copy"><span class="psr-date">29 OCT</span><span class="psr-title">The Archive — When Design Has to Perform</span></span>
+          </button>
+          <button class="psr-tile" type="button" data-index="8" data-style="brief" aria-pressed="false" aria-label="27 October, read the handover date properly, buyer guide carousel" data-slide-count="4"><span class="psr-slide-count">4 frames</span>
+            <img loading="lazy" decoding="async" src="/social/assets/social-0ab915ef94ccd410ac12.jpg" alt=""><span class="psr-shade"></span><span class="psr-format"><i data-lucide="layers-3" aria-hidden="true"></i></span><span class="psr-tile-copy"><span class="psr-date">27 OCT</span><span class="psr-title">Between Promise and Handover</span></span>
+          </button>
+          <button class="psr-tile" type="button" data-index="9" data-style="editorial" data-person="mazhar" aria-pressed="false" aria-label="24 October, Know Your Broker with Mazhar, editorial portrait" data-series="broker-weekly"><span class="psr-series">Know your broker</span>
+            <img loading="lazy" decoding="async" src="/social/assets/social-1b38da9f21e71eab035e.png" alt=""><span class="psr-shade"></span><span class="psr-format"><i data-lucide="camera" aria-hidden="true"></i></span><span class="psr-tile-copy"><span class="psr-date">24 OCT</span><span class="psr-title">Know Your Broker — Mazhar</span></span>
+          </button>
+          <button class="psr-tile" type="button" data-index="10" aria-pressed="false" aria-label="22 October, Nawayef Park Views who it fits, project Reel">
+            <img loading="lazy" decoding="async" src="/social/assets/social-dfdced1f5e63ca3eb55a.jpg" alt=""><span class="psr-shade"></span><span class="psr-format"><i data-lucide="play" aria-hidden="true"></i></span><span class="psr-tile-copy"><span class="psr-date">22 OCT</span><span class="psr-title">Nawayef Park Views — Island Life, Examined</span></span>
+          </button>
+          <button class="psr-tile" type="button" data-index="11" data-style="place" aria-pressed="false" aria-label="20 October, top Dubai beach clubs by neighbourhood, lifestyle carousel" data-slide-count="4"><span class="psr-slide-count">4 frames</span>
+            <img loading="lazy" decoding="async" src="/social/assets/social-7d8680621f8a49b36b9b.jpg" alt=""><span class="psr-shade"></span><span class="psr-format"><i data-lucide="layers-3" aria-hidden="true"></i></span><span class="psr-tile-copy"><span class="psr-date">20 OCT</span><span class="psr-title">Dubai Beach Clubs — Four Addresses Worth Knowing</span></span>
+          </button>
+          <button class="psr-tile" type="button" data-index="12" data-style="place" aria-pressed="false" aria-label="17 October, coffee before the viewing, Dubai lifestyle editorial">
+            <img loading="lazy" decoding="async" src="/social/assets/social-11e761c2ef29cc3e0ac9.png" alt=""><span class="psr-shade"></span><span class="psr-format"><i data-lucide="camera" aria-hidden="true"></i></span><span class="psr-tile-copy"><span class="psr-date">17 OCT</span><span class="psr-title">Coffee Before the Viewing</span></span>
+          </button>
+          <button class="psr-tile" type="button" data-index="13" aria-pressed="false" aria-label="15 October, 113 Residences Al Sufouh, residence editorial" data-series="dubai-next"><span class="psr-series">Dubai next</span>
+            <img loading="lazy" decoding="async" src="/social/assets/social-8478e3d7957bec6e13c1.jpg" alt=""><span class="psr-shade"></span><span class="psr-format"><i data-lucide="camera" aria-hidden="true"></i></span><span class="psr-tile-copy"><span class="psr-date">15 OCT</span><span class="psr-title">Al Sufouh — The Case for 113 Residences</span></span>
+          </button>
+          <button class="psr-tile" type="button" data-index="14" data-style="brief" aria-pressed="false" aria-label="13 October, five checks before you reserve, buyer guide carousel" data-slide-count="4"><span class="psr-slide-count">4 frames</span>
+            <img loading="lazy" decoding="async" src="/social/assets/social-6a653ebc99ce54d33f1a.jpg" alt=""><span class="psr-shade"></span><span class="psr-format"><i data-lucide="layers-3" aria-hidden="true"></i></span><span class="psr-tile-copy"><span class="psr-date">13 OCT</span><span class="psr-title">Before the Reservation Form</span></span>
+          </button>
+          <button class="psr-tile" type="button" data-index="15" data-style="editorial" data-person="sonu" aria-pressed="false" aria-label="10 October, Know Your Broker with Sonu, editorial portrait and Reel" data-series="broker-weekly"><span class="psr-series">Know your broker</span>
+            <img loading="lazy" decoding="async" src="/social/assets/social-278ef9e9260bc3ad390c.png" alt=""><span class="psr-shade"></span><span class="psr-format"><i data-lucide="play" aria-hidden="true"></i></span><span class="psr-tile-copy"><span class="psr-date">10 OCT</span><span class="psr-title">Know Your Broker — Sonu</span></span>
+          </button>
+          <button class="psr-tile" type="button" data-index="16" data-concept="true" aria-pressed="false" aria-label="8 October, Al Yalayis and Dubai South infrastructure watchlist, eight-frame carousel with project terms unconfirmed" data-series="dubai-next" data-slide-count="8"><span class="psr-slide-count">8 frames</span><span class="psr-series">Dubai next</span>
+            <img loading="lazy" decoding="async" src="/social/assets/social-f4dbef047aa0dc4e6034.jpg" alt=""><span class="psr-disclosure">PSR WATCHLIST · PROJECT TERMS UNCONFIRMED</span><span class="psr-shade"></span><span class="psr-format"><i data-lucide="layers-3" aria-hidden="true"></i></span><span class="psr-tile-copy"><span class="psr-date">08 OCT</span><span class="psr-title">Al Yalayis — The Infrastructure Watchlist</span></span>
+          </button>
+          <button class="psr-tile" type="button" data-index="17" data-style="brief" data-tone="warm" aria-pressed="false" aria-label="6 October, Dubai apartment areas with strong reported gross rental yields, market carousel" data-series="dubai-next" data-slide-count="5"><span class="psr-slide-count">5 frames</span><span class="psr-series">Dubai next</span>
+            <img loading="lazy" decoding="async" src="/social/assets/social-ad92ed929cd1f0f7ba46.jpg" alt=""><span class="psr-shade"></span><span class="psr-format"><i data-lucide="layers-3" aria-hidden="true"></i></span><span class="psr-tile-copy"><span class="psr-date">06 OCT</span><span class="psr-title">Dubai Yield Watchlist — Gross Is Not Net</span></span>
+          </button>
+<button class="psr-tile" type="button" data-index="18" data-style="group" aria-pressed="false" aria-label="3 October, behind every decision, PSR group portrait">
+            <img loading="lazy" decoding="async" src="/social/assets/social-529e4a2d24044f22808e.png" alt=""><span class="psr-shade"></span><span class="psr-format"><i data-lucide="camera" aria-hidden="true"></i></span><span class="psr-tile-copy"><span class="psr-date">03 OCT</span><span class="psr-title">Behind Every Decision</span></span>
+          </button>
+<button class="psr-tile" type="button" data-index="19" aria-pressed="false" aria-label="1 October, The WADI in 45 seconds, Reel" data-series="dubai-next"><span class="psr-series">Dubai next</span>
+            <img loading="lazy" decoding="async" src="/social/assets/social-130c63449ca3ccc6344b.jpg" alt=""><span class="psr-shade"></span><span class="psr-format"><i data-lucide="play" aria-hidden="true"></i></span><span class="psr-tile-copy"><span class="psr-date">01 OCT</span><span class="psr-title">The WADI — 45 Seconds of Calm</span></span>
+          </button>
+<button class="psr-tile" type="button" data-index="20" data-style="brief" aria-pressed="false" aria-label="29 September, the hidden service charge, carousel" data-slide-count="4"><span class="psr-slide-count">4 frames</span>
+            <img loading="lazy" decoding="async" src="/social/assets/social-373d25697ec9637154c9.jpg" alt=""><span class="psr-shade"></span><span class="psr-format"><i data-lucide="layers-3" aria-hidden="true"></i></span><span class="psr-tile-copy"><span class="psr-date">29 SEP</span><span class="psr-title">What the Service Charge Really Pays For</span></span>
+          </button>
+<button class="psr-tile" type="button" data-index="21" data-style="dubai" data-generated="true" aria-pressed="false" aria-label="26 September, Dubai built forward, generated editorial city concept" data-series="dubai-next"><span class="psr-series">Dubai next</span>
+            <img loading="lazy" decoding="async" src="/social/assets/social-d6b21fa8fdd4741ff365.jpg" alt=""><span class="psr-disclosure">AI EDITORIAL CONCEPT · NOT A PROPERTY</span><span class="psr-shade"></span><span class="psr-format"><i data-lucide="camera" aria-hidden="true"></i></span><span class="psr-tile-copy"><span class="psr-date">26 SEP</span><span class="psr-title">Dubai, Built Forward</span></span>
+          </button>
+<button class="psr-tile" type="button" data-index="22" data-style="seated" data-person="parv" aria-pressed="false" aria-label="24 September, Know Your Broker with Parv, seated editorial portrait and Reel" data-series="broker-weekly"><span class="psr-series">Know your broker</span>
+            <img loading="lazy" decoding="async" src="/social/assets/social-55f6e828cef9c787d853.png" alt=""><span class="psr-shade"></span><span class="psr-format"><i data-lucide="play" aria-hidden="true"></i></span><span class="psr-tile-copy"><span class="psr-date">24 SEP</span><span class="psr-title">Know Your Broker — Parv</span></span>
+          </button>
+<button class="psr-tile" type="button" data-index="23" data-style="brief" data-tone="green" aria-pressed="false" aria-label="22 September, Sharjah growth decoded, carousel" data-slide-count="5"><span class="psr-slide-count">5 frames</span>
+            <img loading="lazy" decoding="async" src="/social/assets/social-3d2c386f2c57c0268d9d.jpg" alt=""><span class="psr-shade"></span><span class="psr-format"><i data-lucide="layers-3" aria-hidden="true"></i></span><span class="psr-tile-copy"><span class="psr-date">22 SEP</span><span class="psr-title">Sharjah — Growth Beyond the Headline</span></span>
+          </button>
+<button class="psr-tile" type="button" data-index="24" data-style="portrait" data-person="jummanah" aria-pressed="false" aria-label="19 September, Know Your Broker with Jumanah, editorial portrait and Reel" data-series="broker-weekly"><span class="psr-series">Know your broker</span>
+            <img loading="lazy" decoding="async" src="/social/assets/social-78e41179e543dbed1143.jpg" alt=""><span class="psr-shade"></span><span class="psr-format"><i data-lucide="play" aria-hidden="true"></i></span><span class="psr-tile-copy"><span class="psr-date">19 SEP</span><span class="psr-title">Know Your Broker — Jumanah</span></span>
+          </button>
+<button class="psr-tile" type="button" data-index="25" aria-pressed="false" aria-label="17 September, Linar waterfront without hype, Reel" data-series="dubai-next"><span class="psr-series">Dubai next</span>
+            <img loading="lazy" decoding="async" src="/social/assets/social-108e7a38de2766a6d8a7.jpg" alt=""><span class="psr-shade"></span><span class="psr-format"><i data-lucide="play" aria-hidden="true"></i></span><span class="psr-tile-copy"><span class="psr-date">17 SEP</span><span class="psr-title">Linar — A Waterfront Reality Check</span></span>
+          </button>
+<button class="psr-tile" type="button" data-index="26" data-style="brief" aria-pressed="false" aria-label="15 September, 30 70 is not monthly cost, carousel" data-slide-count="4"><span class="psr-slide-count">4 frames</span>
+            <img loading="lazy" decoding="async" src="/social/assets/social-308df8a6efd4c9526566.jpg" alt=""><span class="psr-shade"></span><span class="psr-format"><i data-lucide="layers-3" aria-hidden="true"></i></span><span class="psr-tile-copy"><span class="psr-date">15 SEP</span><span class="psr-title">The Payment Plan After the Headline</span></span>
+          </button>
+<button class="psr-tile" type="button" data-index="27" data-generated="true" aria-pressed="false" aria-label="12 September, one brief three paths, generated penthouse editorial concept">
+            <img loading="lazy" decoding="async" src="/social/assets/social-a380d9e4c94a41980f22.jpg" alt=""><span class="psr-disclosure">AI EDITORIAL CONCEPT · NOT A PROPERTY</span><span class="psr-shade"></span><span class="psr-format"><i data-lucide="play" aria-hidden="true"></i></span><span class="psr-tile-copy"><span class="psr-date">12 SEP</span><span class="psr-title">One Brief, Three Ways Home</span></span>
+          </button>
+<button class="psr-tile" type="button" data-index="28" aria-pressed="false" aria-label="10 September, Know Your Broker with Louay, seated editorial portrait and Reel" data-series="broker-weekly"><span class="psr-series">Know your broker</span>
+            <img loading="lazy" decoding="async" src="/social/assets/social-26443802afb6d41769a0.png" alt=""><span class="psr-shade"></span><span class="psr-format"><i data-lucide="play" aria-hidden="true"></i></span><span class="psr-tile-copy"><span class="psr-date">10 SEP</span><span class="psr-title">Know Your Broker — Louay</span></span>
+          </button>
+<button class="psr-tile" type="button" data-index="29" data-style="brief" data-tone="warm" aria-pressed="false" aria-label="8 September, AED 1.5 million three market paths, carousel" data-slide-count="4"><span class="psr-slide-count">4 frames</span>
+            <img loading="lazy" decoding="async" src="/social/assets/social-5753bee575a79b46c5fd.jpg" alt=""><span class="psr-shade"></span><span class="psr-format"><i data-lucide="layers-3" aria-hidden="true"></i></span><span class="psr-tile-copy"><span class="psr-date">08 SEP</span><span class="psr-title">What AED 1.5M Buys Across Three Markets</span></span>
+          </button>
+        </div>
+      </section>
+
+      <aside class="psr-detail" data-view="visual-only" data-open="false" aria-live="polite" aria-label="Selected post visual"><button class="psr-detail-close" type="button" aria-label="Close post visual">×</button>
+        <p class="psr-detail-kicker" id="psr-detail-kicker"></p>
+        <h3 id="psr-detail-title"></h3>
+        <p class="psr-hook" id="psr-detail-hook"></p>
+        <section class="psr-platform-preview" aria-label="Platform format preview">
+          <div class="psr-platform-head">
+            <span>Platform adaptation</span>
+            <div class="psr-platform-tabs" role="tablist" aria-label="Preview platform">
+              <button class="psr-platform-tab" type="button" role="tab" data-platform="instagram" aria-selected="true">Instagram</button>
+              <button class="psr-platform-tab" type="button" role="tab" data-platform="linkedin" aria-selected="false">LinkedIn</button>
+            </div>
+          </div>
+          <div id="psr-format-preview"></div>
+          <section class="psr-publish-copy" hidden aria-label="Selected platform caption">
+            <span class="psr-publish-label" id="psr-publish-label"></span>
+            <h3 id="psr-publish-title"></h3>
+            <p class="psr-publish-caption" id="psr-publish-caption"></p>
+            <p class="psr-publish-hashtags" id="psr-publish-hashtags"></p>
+          </section>
+        </section>
+        <section class="psr-carousel-preview" id="psr-carousel-preview" hidden aria-label="Carousel frame plan">
+          <div class="psr-carousel-head"><span>Carousel sequence</span><span id="psr-carousel-count"></span></div>
+          <div class="psr-carousel-strip" id="psr-carousel-strip"></div>
+        </section>
+        <dl class="psr-meta">
+          <div><dt>Build</dt><dd id="psr-detail-build"></dd></div>
+          <div><dt>Stories</dt><dd id="psr-detail-stories"></dd></div>
+          <div><dt>Repurpose</dt><dd id="psr-detail-repurpose"></dd></div>
+          <div><dt>Measure</dt><dd id="psr-detail-measure"></dd></div>
+        </dl>
+        <div class="psr-cta" id="psr-detail-cta"></div>
+      </aside>
+    </div>
+
+    <footer class="psr-rhythm">
+      <div><strong>Feed</strong>3 weekly · 12 subject-specific carousels · 18 single-image posts.</div>
+      <div><strong>Stories + Live</strong>3–8 useful frames on 5 days weekly · one expert Collab Live each fortnight.</div>
+      <div><strong>Cross-channel</strong>LinkedIn 2× weekly · Facebook best 3 · YouTube Shorts best 1–2 Reels.</div>
+    </footer>
+  </section>
+
+  <script>
+    (() => {
+      const root = document.getElementById("psr-social-calendar");
+      const carouselPlans = {
+        "1": [
+                {
+                        "label": "The airport now",
+                        "src": "/social/media/al-maktoum-airport-expansion-v1.png"
+                },
+                {
+                        "label": "Construction programme",
+                        "src": "/social/media/watchlist-02-dwc-construction-v1.jpg"
+                },
+                {
+                        "label": "The mobility corridor",
+                        "src": "/social/media/watchlist-03-mobility-corridor-v1.jpg"
+                },
+                {
+                        "label": "Dubai South today",
+                        "src": "/social/media/watchlist-01-al-yalayis-aerial-v1.jpg"
+                }
+        ],
+        "2": [
+                {
+                        "label": "Passenger train",
+                        "src": "/social/media/etihad-rail-train-official-v1.png"
+                },
+                {
+                        "label": "Boarding and station experience",
+                        "src": "/social/media/etihad-rail-boarding-official-v1.jpg"
+                },
+                {
+                        "label": "Onboard environment",
+                        "src": "/social/media/etihad-rail-carriage-official-v1.jpg"
+                },
+                {
+                        "label": "Working while travelling",
+                        "src": "/social/media/etihad-rail-work-official-v1.jpg"
+                },
+                {
+                        "label": "Passenger network",
+                        "src": "/social/media/etihad-rail-route-official-v1.jpg"
+                },
+                {
+                        "label": "Rail through the Emirates",
+                        "src": "/social/media/etihad-rail-fujairah-official-v1.jpg"
+                }
+        ],
+        "7": [
+                {
+                        "label": "The library-led identity",
+                        "src": "/social/media/archive-library-single-v1.jpg"
+                },
+                {
+                        "label": "Arrival and material language",
+                        "src": "/social/media/archive-lobby-single-v1.jpg"
+                },
+                {
+                        "label": "Living space and outlook",
+                        "src": "/social/media/archive-living-single-v1.jpg"
+                },
+                {
+                        "label": "Private-space finish",
+                        "src": "/social/media/archive-bedroom-single-v1.jpg"
+                }
+        ],
+        "8": [
+                {
+                        "label": "What the brochure says",
+                        "src": "/social/media/handover-construction-editorial-v1.jpg"
+                },
+                {
+                        "label": "Milestones and notices",
+                        "src": "/social/media/watchlist-02-dwc-construction-v1.jpg"
+                },
+                {
+                        "label": "The reservation record",
+                        "src": "/social/media/reservation-diligence-editorial-v1.jpg"
+                },
+                {
+                        "label": "The payment trigger",
+                        "src": "/social/media/payment-plan-editorial-v1.jpg"
+                }
+        ],
+        "11": [
+                {
+                        "label": "Gigi Rigolatto",
+                        "src": "/social/media/beach-club-gigi-rigolatto-v1.jpg",
+                        "overlay": {
+                                "eyebrow": "JUMEIRAH 1",
+                                "figures": [
+                                        "GIGI RIGOLATTO"
+                                ],
+                                "note": "Italian dining · pool · private beach",
+                                "source": "Visit Dubai"
+                        }
+                },
+                {
+                        "label": "Gitano",
+                        "src": "/social/media/beach-club-gitano-v1.jpg",
+                        "overlay": {
+                                "eyebrow": "J1 BEACH",
+                                "figures": [
+                                        "GITANO"
+                                ],
+                                "note": "Tropical dining · beachfront setting",
+                                "source": "Visit Dubai"
+                        }
+                },
+                {
+                        "label": "Bâoli",
+                        "src": "/social/media/beach-club-baoli-v1.jpg",
+                        "overlay": {
+                                "eyebrow": "J1 BEACH",
+                                "figures": [
+                                        "BÂOLI"
+                                ],
+                                "note": "Poolside daybeds · dining · music",
+                                "source": "Visit Dubai"
+                        }
+                },
+                {
+                        "label": "Sirene by GAIA",
+                        "src": "/social/media/beach-club-sirene-v2.jpg",
+                        "overlay": {
+                                "eyebrow": "J1 BEACH",
+                                "figures": [
+                                        "SIRENE BY GAIA"
+                                ],
+                                "note": "Beachfront cabanas · Mediterranean dining",
+                                "source": "Visit Dubai"
+                        }
+                }
+        ],
+        "14": [
+                {
+                        "label": "Developer record",
+                        "src": "/social/media/reservation-diligence-editorial-v1.jpg"
+                },
+                {
+                        "label": "The exact unit",
+                        "src": "/social/media/square-foot-editorial-v1.jpg"
+                },
+                {
+                        "label": "Payment obligations",
+                        "src": "/social/media/payment-plan-editorial-v1.jpg"
+                },
+                {
+                        "label": "Delivery evidence",
+                        "src": "/social/media/handover-construction-editorial-v1.jpg"
+                }
+        ],
+        "16": [
+                {
+                        "label": "Al Yalayis and Dubai South",
+                        "src": "/social/media/watchlist-01-al-yalayis-aerial-v1.jpg",
+                        "overlay": {
+                                "eyebrow": "THE WATCHLIST",
+                                "figures": [
+                                        "2032",
+                                        "AED 128BN",
+                                        "260M+"
+                                ],
+                                "note": "Operations target · approved terminal programme · final annual passenger capacity",
+                                "source": "Dubai Media Office · Apr 2024 + Jun 2026"
+                        }
+                },
+                {
+                        "label": "Airport construction scale",
+                        "src": "/social/media/watchlist-02-dwc-construction-v1.jpg",
+                        "overlay": {
+                                "eyebrow": "DELIVERY NOW / NEXT",
+                                "figures": [
+                                        "AED 13BN+",
+                                        "AED 55BN+"
+                                ],
+                                "note": "Packages underway · packages preparing for award",
+                                "source": "Dubai Media Office · 15 Jun 2026"
+                        }
+                },
+                {
+                        "label": "The mobility corridor",
+                        "src": "/social/media/watchlist-03-mobility-corridor-v1.jpg",
+                        "overlay": {
+                                "eyebrow": "ULTIMATE AIRPORT SCALE",
+                                "figures": [
+                                        "5 RUNWAYS",
+                                        "430+ STANDS",
+                                        "12M T"
+                                ],
+                                "note": "Independent runways · aircraft stands · annual cargo capacity",
+                                "source": "Dubai Media Office · 15 Jun 2026"
+                        }
+                },
+                {
+                        "label": "Neighbourhood reality",
+                        "src": "/social/media/watchlist-04-neighbourhood-v1.jpg"
+                },
+                {
+                        "label": "Residential direction — editorial concept",
+                        "src": "/social/media/watchlist-05-residence-concept-v1.jpg"
+                },
+                {
+                        "label": "Interior direction — editorial concept",
+                        "src": "/social/media/watchlist-06-interior-concept-v1.jpg"
+                },
+                {
+                        "label": "What remains unconfirmed",
+                        "src": "/social/media/watchlist-07-research-table-v1.jpg"
+                },
+                {
+                        "label": "PSR watchlist conclusion",
+                        "src": "/social/media/watchlist-08-closing-view-v1.jpg"
+                }
+        ],
+        "17": [
+                {
+                        "label": "Dubai gross-yield context",
+                        "src": "/social/media/09-dubai-market.jpg",
+                        "overlay": {
+                                "eyebrow": "DLD CITYWIDE CONTEXT",
+                                "figures": [
+                                        "6–8%"
+                                ],
+                                "note": "Indicative gross rental yield · not a guaranteed return",
+                                "source": "Dubai Land Department · Annual Report 2024"
+                        }
+                },
+                {
+                        "label": "Dubai Sports City",
+                        "src": "/social/media/watchlist-04-neighbourhood-v1.jpg",
+                        "overlay": {
+                                "eyebrow": "2025 REPORTED GROSS ROI",
+                                "figures": [
+                                        "8.76%"
+                                ],
+                                "note": "Verify the exact unit, rent, vacancy and service charge",
+                                "source": "Bayut Dubai Sales Market Report 2025"
+                        }
+                },
+                {
+                        "label": "Dubai Silicon Oasis",
+                        "src": "/social/media/generated-dubai.jpg",
+                        "overlay": {
+                                "eyebrow": "2025 REPORTED GROSS ROI",
+                                "figures": [
+                                        "7.91%"
+                                ],
+                                "note": "Area-level report · not a unit-level forecast",
+                                "source": "Bayut Dubai Sales Market Report 2025"
+                        }
+                },
+                {
+                        "label": "Arjan",
+                        "src": "/social/media/03-atlas.jpg",
+                        "overlay": {
+                                "eyebrow": "2025 REPORTED GROSS ROI",
+                                "figures": [
+                                        "6.97%"
+                                ],
+                                "note": "Compare current rents, entry price and competing supply",
+                                "source": "Bayut Dubai Sales Market Report 2025"
+                        }
+                },
+                {
+                        "label": "From gross to net",
+                        "src": "/social/media/watchlist-07-research-table-v1.jpg",
+                        "overlay": {
+                                "eyebrow": "THE REAL CALCULATION",
+                                "figures": [
+                                        "RENT",
+                                        "− COSTS",
+                                        "− VACANCY"
+                                ],
+                                "note": "Include service charge, furnishing, management and transaction costs",
+                                "source": "PSR analysis framework · verify with current DLD data"
+                        }
+                }
+        ],
+        "20": [
+                {
+                        "label": "The quoted charge",
+                        "src": "/social/media/service-charge-lobby-editorial-v1.jpg"
+                },
+                {
+                        "label": "What it maintains",
+                        "src": "/social/media/archive-lobby-single-v1.jpg"
+                },
+                {
+                        "label": "What varies by building",
+                        "src": "/social/media/square-foot-editorial-v1.jpg"
+                },
+                {
+                        "label": "The living-space test",
+                        "src": "/social/media/archive-living-single-v1.jpg"
+                }
+        ],
+        "23": [
+                {
+                        "label": "The growth headline",
+                        "src": "/social/media/sharjah-waterfront-editorial-v1.jpg"
+                },
+                {
+                        "label": "Sharjah market context",
+                        "src": "/social/media/sharjah-market-overview-v1.webp"
+                },
+                {
+                        "label": "Creative Quarter",
+                        "src": "/social/media/sharjah-creative-quarter-v1.webp"
+                },
+                {
+                        "label": "Airport expansion",
+                        "src": "/social/media/sharjah-airport-expansion-v1.webp"
+                },
+                {
+                        "label": "Sustainable City amenities",
+                        "src": "/social/media/sharjah-sustainable-city-v1.webp"
+                }
+        ],
+        "26": [
+                {
+                        "label": "The brochure split",
+                        "src": "/social/media/payment-plan-editorial-v1.jpg"
+                },
+                {
+                        "label": "Reservation obligations",
+                        "src": "/social/media/reservation-diligence-editorial-v1.jpg"
+                },
+                {
+                        "label": "The handover amount",
+                        "src": "/social/media/handover-construction-editorial-v1.jpg"
+                },
+                {
+                        "label": "The full cash-flow view",
+                        "src": "/social/media/three-markets-editorial-v1.jpg"
+                }
+        ],
+        "29": [
+                {
+                        "label": "One budget",
+                        "src": "/social/media/three-markets-editorial-v1.jpg"
+                },
+                {
+                        "label": "Dubai option",
+                        "src": "/social/media/01-dubai.jpg"
+                },
+                {
+                        "label": "Abu Dhabi option",
+                        "src": "/social/media/05-abudhabi.jpg"
+                },
+                {
+                        "label": "Northern Emirates option",
+                        "src": "/social/media/12-rak-market.jpg"
+                }
+        ]
+};
+      const socialCopy = [
+        {
+                "instagram": "Guggenheim Abu Dhabi is scheduled to open on 11 December 2026 in the Saadiyat Cultural District. Designed by Frank Gehry, the museum adds a major contemporary-art institution to Saadiyat Island’s culture-led destination story. The opening is confirmed; any effect on an individual property still requires evidence.",
+                "linkedin": "Guggenheim Abu Dhabi is scheduled to open on 11 December 2026. The Frank Gehry-designed museum adds another globally recognised institution to Saadiyat Cultural District and strengthens the island’s culture-and-place proposition without creating an automatic property-return claim.",
+                "hashtags": "#GuggenheimAbuDhabi #SaadiyatIsland #AbuDhabiCulture #UAERealEstate #PSRHomes"
+        },
+        {
+                "instagram": "Al Maktoum International Airport is becoming an airport city at a scale that can reshape Dubai South. The important buyer question is not whether infrastructure sounds impressive—it is what is funded, under construction and connected to everyday housing demand.",
+                "linkedin": "Dubai’s Al Maktoum International Airport programme links aviation, logistics, transport and future housing demand in Dubai South. This carousel separates current construction from ultimate capacity and explains which location signals deserve continued monitoring.",
+                "hashtags": "#AlMaktoumAirport #DubaiSouth #DubaiInfrastructure #DubaiRealEstate #PSRHomes"
+        },
+        {
+                "instagram": "Etihad Rail changes the way residents can think about distance between the Emirates. Our location-first view looks at passenger connectivity, station access and daily-life relevance—while keeping appreciation claims firmly out of the conversation.",
+                "linkedin": "Etihad Rail passenger connectivity introduces a new layer to UAE location analysis. The useful questions concern station access, phased delivery, commuting patterns and how connected communities may function—not guaranteed price growth.",
+                "hashtags": "#EtihadRail #UAEInfrastructure #UAERealEstate #Mobility #PSRHomes"
+        },
+        {
+                "instagram": "Meet Ujwal from PSR Homes. His first filter for any Dubai property launch is deliberately practical: developer record, project registration, usable layout and the likely future buyer.",
+                "linkedin": "Know Your Broker: Ujwal approaches Dubai property launches through four basic filters—developer record, registration, usable planning and exit audience. Excitement comes after the evidence.",
+                "hashtags": "#KnowYourBroker #DubaiPropertyAdvisor #PSRHomes #DubaiRealEstate #PropertyDueDiligence"
+        },
+        {
+                "instagram": "Disney and Miral have announced a new waterfront Disney theme park resort for Yas Island—the seventh Disney resort destination globally. Disney Imagineers will lead creative design and oversight, while Miral will develop and operate it. No official opening date has been announced.",
+                "linkedin": "The planned Disney theme park resort on Yas Island adds a major new layer to Abu Dhabi’s destination economy. The announcement confirms the partners and creative model, but not an opening date; property analysis should therefore separate the destination thesis from speculative timing or returns.",
+                "hashtags": "#DisneyAbuDhabi #YasIsland #AbuDhabiTourism #UAERealEstate #PSRHomes"
+        },
+        {
+                "instagram": "A Harry Potter themed land is planned for Warner Bros. World Abu Dhabi on Yas Island—the first of its kind in the Middle East. The destination has been announced, but its groundbreaking and opening dates have not. This is a Yas Island watchlist update, not a launch countdown.",
+                "linkedin": "Miral and Warner Bros. Discovery have announced a Harry Potter themed land for Warner Bros. World Abu Dhabi. It adds another globally recognised attraction to Yas Island’s leisure ecosystem, while the delivery timetable remains unannounced and should not be converted into a property forecast.",
+                "hashtags": "#HarryPotterAbuDhabi #WarnerBrosWorld #YasIsland #AbuDhabiTourism #PSRHomes"
+        },
+        {
+                "instagram": "Future Form is an AI-generated architecture study—not a property listing. Look beyond the façade and ask about orientation, usable area, circulation, maintenance and who would genuinely want to live there.",
+                "linkedin": "Architectural appeal can begin a conversation, but it cannot complete an investment case. This clearly labelled AI editorial concept is a prompt to assess planning efficiency, maintainability and real user demand.",
+                "hashtags": "#ArchitectureEditorial #AIConcept #DubaiDesign #RealEstateAnalysis #PSRHomes"
+        },
+        {
+                "instagram": "The Archive may begin with a memorable design idea, but the decision still comes down to location, unit logic, payment timing, buyer fit and verified availability. Design has to perform after the first impression.",
+                "linkedin": "A design-led residence should be assessed through both identity and performance. Our review framework for The Archive covers location context, unit logic, payment timing, likely exit audience and the trade-offs that require confirmation.",
+                "hashtags": "#TheArchiveDubai #DubaiResidences #DubaiOffPlan #PropertyAnalysis #PSRHomes"
+        },
+        {
+                "instagram": "A brochure quarter is not the same thing as a guaranteed moving date. Read the contract language, construction milestones, notice provisions, payment triggers and the buffer your own plan requires.",
+                "linkedin": "Property handover risk is best managed through documents and realistic buffers. Buyers should distinguish marketing timelines from contractual language, milestone evidence, notice provisions and payment obligations.",
+                "hashtags": "#PropertyHandover #DubaiOffPlan #BuyerEducation #DubaiRealEstate #PSRHomes"
+        },
+        {
+                "instagram": "Meet Mazhar from PSR Homes. Before a property film creates an emotional attachment, he wants the project file, registration evidence and material facts to withstand scrutiny.",
+                "linkedin": "Know Your Broker: Mazhar’s approach begins with the property file rather than the promotional film. Documentation, registration and material facts should lead the conversation.",
+                "hashtags": "#KnowYourBroker #DubaiPropertyAdvisor #PropertyDocuments #PSRHomes #DubaiRealEstate"
+        },
+        {
+                "instagram": "Nawayef Park Views places Hudayriyat Island at the centre of the lifestyle story. Our review asks who the residence fits, how island living works day to day and which current commercial details still require verification.",
+                "linkedin": "Nawayef Park Views should be assessed as both a residence and a Hudayriyat Island location decision. Buyer fit, daily connectivity, product character, holding horizon and verified current terms all matter.",
+                "hashtags": "#NawayefParkViews #HudayriyatIsland #AbuDhabiRealEstate #UAEProperty #PSRHomes"
+        },
+        {
+                "instagram": "Four Dubai beach-club addresses worth knowing: Gigi Rigolatto, Gitano, Bâoli and Sirene by GAIA. All sit within the Jumeirah 1 and J1 Beach lifestyle story—useful context when a buyer says they want a neighbourhood with a strong weekend rhythm, not just a postcode.",
+                "linkedin": "Beach clubs are not investment metrics, but they are part of how a neighbourhood is experienced and described. This visual shortlist uses exact venue imagery to read Jumeirah 1 and J1 Beach through four distinct hospitality destinations.",
+                "hashtags": "#DubaiBeachClubs #J1Beach #Jumeirah1 #DubaiLifestyle #PSRHomes"
+        },
+        {
+                "instagram": "Coffee before a Dubai property viewing is more than a lifestyle photograph. It is time to observe the neighbourhood: morning traffic, shade, walkability, active frontage and how the area feels before the appointment begins.",
+                "linkedin": "Neighbourhood due diligence starts outside the building. A quiet coffee before a viewing can reveal traffic rhythm, pedestrian comfort, shade, nearby services and the ordinary daily character that brochures rarely capture.",
+                "hashtags": "#DubaiLifestyle #DubaiNeighbourhoods #PropertyViewing #DubaiRealEstate #PSRHomes"
+        },
+        {
+                "instagram": "113 Residences in Al Sufouh needs more than a familiar location name. The useful review covers connectivity, planning efficiency, nearby supply, resident profile and the commercial details available on the date of assessment.",
+                "linkedin": "An Al Sufouh address can create immediate interest, but 113 Residences still needs a structured property case. We examine location utility, unit efficiency, buyer fit, nearby supply and verified availability.",
+                "hashtags": "#113Residences #AlSufouh #DubaiProperty #DubaiOffPlan #PSRHomes"
+        },
+        {
+                "instagram": "Before paying a Dubai property reservation fee, verify the developer and project record, registration, exact unit, payment obligations and a realistic exit path. Urgency is not a substitute for due diligence.",
+                "linkedin": "A reservation form should come after five checks: developer and project record, registration, exact unit, payment obligations and realistic exit planning. Independent legal advice may also be appropriate.",
+                "hashtags": "#PropertyReservation #DubaiOffPlan #BuyerChecklist #PropertyDueDiligence #PSRHomes"
+        },
+        {
+                "instagram": "Meet Sonu from PSR Homes. His first question is not which Dubai launch looks best—it is how long the buyer expects to hold, because liquidity, completion risk and exit audience change with the horizon.",
+                "linkedin": "Know Your Broker: Sonu starts with holding period. Short-, medium- and long-horizon buyers should evaluate liquidity, completion exposure and likely exit demand differently.",
+                "hashtags": "#KnowYourBroker #DubaiPropertyAdvisor #InvestmentHorizon #PSRHomes #DubaiRealEstate"
+        },
+        {
+                "instagram": "2032. AED128 billion. More than 260 million passengers in the final phase. This Al Yalayis and Dubai South watchlist follows verified airport infrastructure while keeping the rumoured project name, price, inventory, payment plan and handover explicitly unconfirmed.",
+                "linkedin": "The Al Yalayis watchlist is an infrastructure brief, not a launch announcement. Dubai’s airport programme provides verified scale and timing; the residential project’s commercial terms remain unconfirmed until official developer material is released.",
+                "hashtags": "#AlYalayis #DubaiSouth #AlMaktoumAirport #DubaiPropertyWatchlist #PSRHomes"
+        },
+        {
+                "instagram": "Dubai Sports City, Dubai Silicon Oasis and Arjan appeared among the stronger affordable-apartment gross-yield areas in Bayut’s 2025 report at 8.76%, 7.91% and 6.97% respectively. These are reported area-level gross figures—not net returns. Service charges, vacancy, furnishing, management and buying costs still have to come off.",
+                "linkedin": "A high reported gross yield is a screening signal, not an investment conclusion. Bayut’s 2025 report placed Dubai Sports City at 8.76%, Dubai Silicon Oasis at 7.91% and Arjan at 6.97% for affordable apartments. The next step is a current unit-level net-yield calculation using verified rent, service charge, vacancy and acquisition costs.",
+                "hashtags": "#DubaiRentalYield #DubaiSportsCity #DubaiSiliconOasis #ArjanDubai #PSRHomes"
+        },
+        {
+                "instagram": "Behind every PSR Homes recommendation is a team comparing evidence, buyer fit and downside—not five versions of the same sales pitch. Different points of view should lead to one standard of advice.",
+                "linkedin": "Inside PSR Homes: good advice is collaborative. Different perspectives across research, documentation, location, product and buyer fit should still produce one consistent standard of care.",
+                "hashtags": "#PSRHomes #DubaiRealEstateCompany #PropertyAdvisory #DubaiBrokers #InsidePSR"
+        },
+        {
+                "instagram": "The WADI is designed around calm, landscape and a slower residential rhythm. Our 45-second view focuses on the lived experience first, then the plan, location and commercial facts that determine buyer fit.",
+                "linkedin": "The WADI presents a calm residential proposition, but aesthetic character is only the opening layer. Location utility, planning, buyer profile and verified commercial terms complete the assessment.",
+                "hashtags": "#TheWADI #DubaiResidences #DubaiOffPlan #LuxuryRealEstateDubai #PSRHomes"
+        },
+        {
+                "instagram": "A service charge is not just an annual number. It funds the building systems, staffing, common areas and maintenance that protect daily experience—and it must be included when comparing net ownership cost.",
+                "linkedin": "Service charges affect both resident experience and net investment performance. A proper comparison considers what is maintained, how buildings differ and the annual ownership cost beyond the purchase price.",
+                "hashtags": "#ServiceCharge #DubaiPropertyCosts #DubaiApartments #PropertyInvestment #PSRHomes"
+        },
+        {
+                "instagram": "Dubai is being built forward through transport, mixed-use districts, public realm and long-horizon infrastructure. This AI editorial concept is not a listing; it is a visual prompt to examine what is genuinely funded and delivered.",
+                "linkedin": "Dubai’s future is shaped by the relationship between infrastructure, mobility, employment districts and housing. This clearly labelled AI editorial concept introduces the questions investors should investigate rather than promising outcomes.",
+                "hashtags": "#DubaiFuture #DubaiInfrastructure #AIEditorial #DubaiRealEstate #PSRHomes"
+        },
+        {
+                "instagram": "Meet Parv from PSR Homes. His work includes knowing when not to recommend a deal—especially when documentation, buyer fit, pricing logic or exit assumptions do not survive a closer look.",
+                "linkedin": "Know Your Broker: Parv treats walking away as part of responsible property advice. A deal should withstand checks on documentation, pricing logic, buyer fit and exit assumptions.",
+                "hashtags": "#KnowYourBroker #DubaiPropertyAdvisor #PropertyDueDiligence #PSRHomes #DubaiRealEstate"
+        },
+        {
+                "instagram": "Sharjah real estate growth needs to be read beyond one headline. Community delivery, employment and education anchors, infrastructure, access and actual buyer demand determine where the story has substance.",
+                "linkedin": "Sharjah’s property market is not one uniform growth narrative. Location analysis should distinguish delivered communities, infrastructure, education and employment anchors, connectivity and demand evidence.",
+                "hashtags": "#SharjahRealEstate #SharjahProperty #UAERealEstate #MarketInsight #PSRHomes"
+        },
+        {
+                "instagram": "Meet Jumanah from PSR Homes. Her ‘no list’ protects the brief: no unsuitable product, unsupported claims or forced urgency simply because a property is available.",
+                "linkedin": "Know Your Broker: Jumanah defines good advice partly through what should not be recommended. Availability is not the same thing as suitability, evidence or long-term fit.",
+                "hashtags": "#KnowYourBroker #DubaiPropertyAdvisor #WomenInRealEstate #PSRHomes #PropertyAdvice"
+        },
+        {
+                "instagram": "Linar’s waterfront setting deserves a reality check beyond the view. Access, plan efficiency, maintenance exposure, surrounding supply, resident profile and current terms should shape the decision.",
+                "linkedin": "Waterfront property analysis should include more than visual appeal. For Linar, the practical questions concern access, planning, maintenance, supply context, buyer fit and verified commercial terms.",
+                "hashtags": "#LinarResidences #DubaiWaterfront #DubaiProperty #WaterfrontLiving #PSRHomes"
+        },
+        {
+                "instagram": "A 30/70 Dubai payment plan does not describe monthly affordability. Buyers need the full dated cash-flow schedule, construction instalments, handover amount, fees and the liquidity required at every stage.",
+                "linkedin": "Payment-plan headlines can hide the real cash-flow pattern. A buyer should map every instalment, the handover balance, fees and liquidity requirements before comparing a 30/70 structure with alternatives.",
+                "hashtags": "#DubaiPaymentPlan #DubaiOffPlan #PropertyFinance #BuyerEducation #PSRHomes"
+        },
+        {
+                "instagram": "One property brief can lead to three very different Dubai homes. The right route depends on daily life, risk tolerance, holding period, liquidity and exit priorities—not simply the most dramatic view.",
+                "linkedin": "A disciplined property shortlist should present meaningful alternatives. Three homes at a similar budget can produce different trade-offs in location, lifestyle, liquidity, completion exposure and exit audience.",
+                "hashtags": "#DubaiPropertySearch #DubaiHomes #PropertyShortlist #LuxuryRealEstateDubai #PSRHomes"
+        },
+        {
+                "instagram": "Meet Louay from PSR Homes. His approach separates what is officially confirmed, what is circulating in the market and what still needs to be verified before a client acts.",
+                "linkedin": "Know Your Broker: Louay distinguishes confirmed facts from market rumours and missing information. Clear evidence status is essential when advising on upcoming Dubai property launches.",
+                "hashtags": "#KnowYourBroker #DubaiPropertyAdvisor #DubaiOffPlan #PSRHomes #PropertyResearch"
+        },
+        {
+                "instagram": "What can AED1.5 million buy across UAE property markets? The useful comparison is not three attractive photographs—it is location, usable space, fees, liquidity, risk and the buyer profile each option serves.",
+                "linkedin": "An AED1.5 million property budget can create different opportunities across Dubai, Abu Dhabi and the Northern Emirates. A like-for-like comparison should include product type, usable area, fees, liquidity, risk and buyer fit.",
+                "hashtags": "#AED15Million #UAEProperty #DubaiRealEstate #AbuDhabiRealEstate #PSRHomes"
+        }
+];
+      const posts = [
+        {
+          kicker: "Sat 14 Nov · 19:30 GST · Static editorial · Abu Dhabi culture",
+          title: "Guggenheim Abu Dhabi — Opening 11 December 2026",
+          hook: "“A new cultural landmark is joining Saadiyat Island.”",
+          build: "Use the official Guggenheim Abu Dhabi photograph as a clean, text-free editorial cover. On click, reveal the confirmed 11 December 2026 opening date, Frank Gehry architecture and Saadiyat Cultural District context. Keep the property connection observational rather than predictive.",
+          stories: "Opening-date reveal → architecture detail → Saadiyat culture map → official-source link.",
+          repurpose: "LinkedIn culture-and-place note; Abu Dhabi Highlight; Saadiyat client context card.",
+          measure: "Saves, shares, SAADIYAT DMs, source-link taps.",
+          cta: "DM <strong>SAADIYAT</strong> for a culture-and-place area brief."
+        },
+        {
+          kicker: "Thu 12 Nov · 12:30 GST · Carousel · UAE infrastructure",
+          title: "Al Maktoum Airport — The AED 128BN Expansion",
+          hook: "“AED 128 billion. Five runways. A new centre of gravity for Dubai South.”",
+          build: "A source-led carousel on the new Al Maktoum International Airport terminal and the city forming around it. Separate what is under construction now from ultimate capacity, then map the likely implications for Dubai South housing, logistics and mobility without turning infrastructure into a price promise. Use the current Dubai Media Office milestone update.",
+          stories: "Now/next timeline → airport-city map → one demand caveat → source link.",
+          repurpose: "LinkedIn infrastructure note; Dubai South Insight; buyer briefing slide.",
+          measure: "Saves, shares, DWC DMs, location-brief requests.",
+          cta: "DM <strong>DWC</strong> for the infrastructure-first Dubai South brief."
+        },
+        {
+          kicker: "Tue 10 Nov · 19:30 GST · Carousel · UAE achievement",
+          title: "Etihad Rail — What Passenger Service Changes",
+          hook: "“The station map matters more than the headline.”",
+          build: "A current, source-dated look at Etihad Rail passenger service: what is operating, which stations open in phases and how inter-emirate travel may change daily-life choices. Keep the real-estate angle disciplined—connectivity is a factor to investigate, not guaranteed appreciation.",
+          stories: "Route quiz → phased-opening timeline → commute poll → official-source link.",
+          repurpose: "LinkedIn mobility document; UAE infrastructure Highlight; area-comparison card.",
+          measure: "Saves, shares, RAIL DMs, area-comparison requests.",
+          cta: "DM <strong>RAIL</strong> for a station-by-station location watchlist."
+        },
+        {
+          kicker: "Sat 07 Nov · 19:30 GST · Weekly series · Know Your Broker",
+          title: "Know Your Broker — Ujwal",
+          hook: "“The launch is exciting. The first filter should be boring.”",
+          build: "Use Ujwal’s wider editorial portrait as a clean image-only cover. On click, reveal his caption and the first four checks: developer record, registration, usable plan and exit audience. Keep it personal, practical and free of sales theatre.",
+          stories: "One check per frame → pass/fail poll → Ujwal voice note → consultation link.",
+          repurpose: "LinkedIn advisor note; due-diligence Highlight; sales onboarding card.",
+          measure: "Profile visits, shares, CHECK DMs, advisor conversations.",
+          cta: "DM <strong>CHECK</strong> and Ujwal will test the first four filters."
+        },
+        {
+          kicker: "Thu 05 Nov · 12:30 GST · Static editorial · Abu Dhabi destination",
+          title: "Disney Is Coming to Yas Island",
+          hook: "“Disney’s seventh resort destination is planned for Yas Island.”",
+          build: "Use the official Disney and Miral concept crop as a clean image-only cover. On click, explain the announced waterfront theme park resort, Disney Imagineering’s creative role and Miral’s development and operating role. State clearly that no official opening date has been announced.",
+          stories: "Announcement reveal → Yas Island poll → what is confirmed → official-source link.",
+          repurpose: "LinkedIn destination-economy note; Yas Island Highlight; buyer context slide.",
+          measure: "Saves, shares, DISNEY DMs, official-source taps.",
+          cta: "DM <strong>YAS</strong> for a source-dated Yas Island destination brief."
+        },
+        {
+          kicker: "Tue 03 Nov · 19:30 GST · Static editorial · Abu Dhabi destination",
+          title: "Harry Potter Is Coming to Yas Island",
+          hook: "“The Middle East’s first Harry Potter themed land is planned for Yas Island.”",
+          build: "Use the official Warner Bros. World Abu Dhabi exterior as the text-free cover. On click, explain the announced Harry Potter themed land and its place within the Yas Island destination ecosystem. State clearly that the groundbreaking and opening dates remain unannounced.",
+          stories: "Announcement reveal → fan poll → confirmed versus unannounced → official-source link.",
+          repurpose: "LinkedIn destination note; Yas Island Highlight; Abu Dhabi leisure-economy card.",
+          measure: "Saves, shares, POTTER DMs, source-link taps.",
+          cta: "DM <strong>YAS</strong> for the source-dated destination watchlist."
+        },
+        {
+          kicker: "Sat 31 Oct · 19:30 GST · Static editorial · Design",
+          title: "Future Form",
+          hook: "“Good architecture should survive the render.”",
+          build: "Use the generated façade only as a clearly disclosed editorial concept. The caption separates aesthetic signals from investment fundamentals: orientation, usable area, circulation, maintenance and the real demand behind the design.",
+          stories: "Form-or-function poll → one plan check → AI disclosure → discussion prompt.",
+          repurpose: "LinkedIn design perspective; website editorial divider; brand moodboard.",
+          measure: "Shares, saves, thoughtful replies, DESIGN DMs.",
+          cta: "DM <strong>DESIGN</strong> for PSR’s plan-first viewing checklist."
+        },
+        {
+          kicker: "Thu 29 Oct · 12:30 GST · Carousel · Residence",
+          title: "The Archive — When Design Has to Perform",
+          hook: "“A memorable concept still needs a practical case.”",
+          build: "A six-frame review of The Archive’s library-led identity, location context, unit logic, payment timing, exit audience and one PSR trade-off. Recheck every commercial term before posting.",
+          stories: "Design reaction slider → buyer-fit poll → one trade-off → brochure opt-in.",
+          repurpose: "LinkedIn project analysis; Imtiaz Highlight; client comparison card.",
+          measure: "Saves, ARCHIVE DMs, brochure requests, qualified calls.",
+          cta: "DM <strong>ARCHIVE</strong> for the live fact check and comparison."
+        },
+        {
+          kicker: "Tue 27 Oct · 19:30 GST · Carousel · Buyer education",
+          title: "Between Promise and Handover",
+          hook: "“A quarter on a brochure is not a moving date.”",
+          build: "Six slides: what the contract says, construction milestones, notice language, payment triggers, buffer planning and the questions to put in writing. Use counsel-approved wording and avoid broad legal claims.",
+          stories: "Handover myth quiz → buffer slider → contract question box → save prompt.",
+          repurpose: "LinkedIn document; buyer FAQ; advisor follow-up card.",
+          measure: "Saves, shares, HANDOVER DMs, FAQ clicks.",
+          cta: "Save and DM <strong>HANDOVER</strong> for the question checklist."
+        },
+        {
+          kicker: "Sat 24 Oct · 19:30 GST · Weekly series · Know Your Broker",
+          title: "Know Your Broker — Mazhar",
+          hook: "“The file should impress you before the film does.”",
+          build: "Use Mazhar’s seated editorial portrait as a clean image-only cover. On click, reveal his caption about the records PSR checks before a client gets emotionally attached, without implying legal advice or exposing client details.",
+          stories: "Document order quiz → Mazhar voice note → red-flag frame → DM prompt.",
+          repurpose: "LinkedIn advisor POV; buyer-protection Highlight; onboarding asset.",
+          measure: "Shares, profile follows, DOCUMENTS DMs, qualified consultations.",
+          cta: "DM <strong>DOCUMENTS</strong> for Mazhar’s pre-reservation checklist."
+        },
+        {
+          kicker: "Thu 22 Oct · 12:30 GST · Reel · Upcoming residence",
+          title: "Nawayef Park Views — Island Life, Examined",
+          hook: "“Hudayriyat is the setting. Buyer fit is the decision.”",
+          build: "A restrained Reel using official Modon material: island context, product character, daily-life buyer, investment buyer, one trade-off and current-terms disclaimer. Avoid treating every waterfront buyer as the same brief.",
+          stories: "End-user or investor poll → map frame → one caveat → current update link.",
+          repurpose: "LinkedIn location review; Abu Dhabi Highlight; advisor client note.",
+          measure: "Watch time, HUDAYRIYAT DMs, shares, update opt-ins.",
+          cta: "DM <strong>HUDAYRIYAT</strong> for the current buyer-fit brief."
+        },
+        {
+          kicker: "Tue 20 Oct · 19:30 GST · Carousel · Dubai lifestyle",
+          title: "Dubai Beach Clubs — Four Addresses Worth Knowing",
+          hook: "“Four beach clubs. One useful way to read Jumeirah 1.”",
+          build: "A four-image, venue-specific carousel using exact Visit Dubai imagery for Gigi Rigolatto, Gitano, Bâoli and Sirene by GAIA. Show the venue and neighbourhood only after click; keep the grid thumbnail completely text-free.",
+          stories: "Venue reveal → pool-or-beach poll → J1 Beach map → save for the weekend.",
+          repurpose: "LinkedIn neighbourhood-lifestyle note; Dubai Life Highlight; viewing-day guide.",
+          measure: "Saves, shares, BEACH DMs, neighbourhood-guide requests.",
+          cta: "Save and DM <strong>BEACH</strong> for a lifestyle-led Dubai shortlist."
+        },
+        {
+          kicker: "Sat 17 Oct · 09:30 GST · Static editorial · Dubai life",
+          title: "Coffee Before the Viewing",
+          hook: "“A neighbourhood is also the hour before the appointment.”",
+          build: "A quiet Dubai morning scene: coffee, notebook and the streetscape before a property viewing. Keep it tactile and observational, with no sales graphic or text on the image.",
+          stories: "Morning coffee → neighbourhood walk → first viewing detail → save prompt.",
+          repurpose: "LinkedIn note on observing neighbourhood life; viewing-day story; Highlight: Dubai Life.",
+          measure: "Saves, shares, COFFEE DMs, neighbourhood conversations.",
+          cta: "DM <strong>COFFEE</strong> for a viewing-day neighbourhood shortlist."
+        },
+        {
+          kicker: "Thu 15 Oct · 12:30 GST · Static editorial · Residence",
+          title: "Al Sufouh — The Case for 113 Residences",
+          hook: "“The location is familiar. The investment case still needs unpacking.”",
+          build: "A single official residence image introducing the Al Sufouh context, buyer fit and current availability. Keep this as a static editorial until a complete verified project-media set is available.",
+          stories: "Location quiz → commute frame → plan poll → live availability link.",
+          repurpose: "LinkedIn project brief; Dubai project Highlight; client shortlist card.",
+          measure: "Saves, 113 DMs, factsheet requests, qualified site visits.",
+          cta: "DM <strong>113</strong> for the dated factsheet and current inventory."
+        },
+        {
+          kicker: "Tue 13 Oct · 19:30 GST · Carousel · Buyer education",
+          title: "Before the Reservation Form",
+          hook: "“Urgency is not due diligence.”",
+          build: "Five saveable checks: developer and project record, registration and permit, exact unit, payment obligations and realistic exit path. Add a sixth closing slide reminding buyers to seek independent legal advice where needed.",
+          stories: "Five-frame checklist → red-flag question box → advisor answer → save prompt.",
+          repurpose: "LinkedIn document; buyer guide PDF; sales follow-up asset.",
+          measure: "Saves, CHECKLIST DMs, shares, guide downloads.",
+          cta: "Save and DM <strong>CHECKLIST</strong> before paying a reservation fee."
+        },
+        {
+          kicker: "Sat 10 Oct · 19:30 GST · Weekly series · Know Your Broker",
+          title: "Know Your Broker — Sonu",
+          hook: "“Before choosing the project, choose the holding period.”",
+          build: "Use Sonu’s wider standing portrait as a clean image-only cover. On click, reveal his caption and Reel plan mapping short, medium and long holding horizons against liquidity, completion risk and likely buyer audience. No guaranteed-return language.",
+          stories: "Holding-period poll → one risk per horizon → Sonu Q&A → brief link.",
+          repurpose: "LinkedIn advisor clip; client discovery prompt; Highlight: Start Here.",
+          measure: "Completion, shares, EXIT DMs, discovery calls.",
+          cta: "DM <strong>EXIT</strong> with your horizon before choosing a launch."
+        },
+        {
+          kicker: "Thu 08 Oct · 12:30 GST · 8-frame carousel · Infrastructure watchlist",
+          title: "Al Yalayis — The Infrastructure Watchlist",
+          hook: "“2032. AED 128bn. 260m+ passengers. Now read the area—not the rumour.”",
+          build: "An eight-frame watchlist anchored to the Dubai Media Office’s 15 June 2026 Al Maktoum International Airport milestone report. Separate verified infrastructure scale from the still-unconfirmed project name, price, inventory, payment plan and handover. Label residential exterior and interior images as editorial concepts.",
+          stories: "2032 hook → infrastructure scale → area context → confirmed/not-confirmed check → update opt-in.",
+          repurpose: "LinkedIn eight-page infrastructure document; launch tracker; controlled client update.",
+          measure: "Update opt-ins, WATCH DMs, completion, qualified timeframes.",
+          cta: "DM <strong>WATCH</strong> for official updates only when released."
+        },
+        {
+          kicker: "Tue 06 Oct · 19:30 GST · Carousel · Market intelligence",
+          title: "Dubai Yield Watchlist — Gross Is Not Net",
+          hook: "“8.76% reported gross yield. Now subtract the real costs.”",
+          build: "A source-dated gross-yield watchlist covering Dubai Sports City, Dubai Silicon Oasis and Arjan using the 2025 Bayut market report, framed against DLD’s broader 6–8% gross-yield context. Every figure must be labelled reported gross yield, never guaranteed ROI, with service charges, vacancy, furnishing and transaction costs called out before any net comparison.",
+          stories: "8.76% hook → three-area reveal → gross-versus-net check → DLD rental-index link.",
+          repurpose: "LinkedIn yield document; investor email note; Market Atlas update.",
+          measure: "Saves, shares, YIELD DMs, comparison requests.",
+          cta: "Save and DM <strong>YIELD</strong> for a unit-level net-yield comparison."
+        },
+{
+          kicker: "Sat 03 Oct · 19:30 GST · Company editorial · Inside PSR",
+          title: "Behind Every Decision",
+          hook: "“Five points of view. One standard of advice.”",
+          build: "Use the approved PSR group portrait as the month’s single human anchor. Introduce the team through five concise principles—clarity, diligence, access, fit and follow-through—without turning the caption into staff bios.",
+          stories: "One principle per frame → team voice note → ‘what matters most?’ poll → consultation link.",
+          repurpose: "LinkedIn culture post; About-page proof; Highlight: Meet PSR.",
+          measure: "Profile visits, team-page taps, qualified consultation DMs.",
+          cta: "Send <strong>BRIEF</strong> and PSR will match your goal to the right advisor."
+        },
+{
+          kicker: "Thu 01 Oct · 12:30 GST · Reel · Residence",
+          title: "The WADI — 45 Seconds of Calm",
+          hook: "“Abu Dhabi waterfront: what changes when the canal is the plan?”",
+          build: "Jumanah opens on camera, then covers location, three verified project facts, one trade-off and one clear conclusion.",
+          stories: "Map quiz → one floor-plan frame → unit-type poll → WhatsApp link.",
+          repurpose: "45-second LinkedIn native clip; project Highlight; advisor WhatsApp status.",
+          measure: "Non-follower reach, 3-second hold, shares, WADI enquiries.",
+          cta: "DM <strong>WADI</strong> for the verified factsheet and current availability."
+        },
+{
+          kicker: "Tue 29 Sep · 19:30 GST · Carousel · Intelligence",
+          title: "What the Service Charge Really Pays For",
+          hook: "“The view is obvious. The annual ownership cost is not.”",
+          build: "Six frames: service-charge source, worked annual example, gross versus net yield, building comparison, ownership checklist and advisor note. No universal claim.",
+          stories: "AED quiz → reveal → ‘gross or net?’ poll → save prompt.",
+          repurpose: "LinkedIn document post; website Insight; advisor PDF follow-up.",
+          measure: "Saves per reach, shares, COSTS DMs, Insight clicks.",
+          cta: "Save this and DM <strong>COSTS</strong> for the buyer-cost worksheet."
+        },
+{
+          kicker: "Sat 26 Sep · 19:30 GST · Static editorial · People + place",
+          title: "Dubai, Built Forward",
+          hook: "“The skyline is the result. Conviction is the story.”",
+          build: "Use the generated Dubai skyline as an atmospheric editorial concept between property posts. Disclose that it is mood imagery, then pair it with a short, source-conscious PSR perspective on long-horizon ownership—no project or price claim.",
+          stories: "Dusk skyline clip → one infrastructure fact → audience question → full-post share.",
+          repurpose: "LinkedIn city perspective; website editorial opener; brand-film cutaway.",
+          measure: "Shares, profile visits, thoughtful replies, CITY DMs.",
+          cta: "DM <strong>CITY</strong> for PSR’s location-first Dubai shortlist."
+        },
+{
+          kicker: "Thu 24 Sep · 12:30 GST · Weekly series · Know Your Broker",
+          title: "Know Your Broker — Parv",
+          hook: "“Sometimes the strongest recommendation is the one we decline.”",
+          build: "Use the wider seated Parv portrait as a clean image-only cover. On click, reveal his caption about three evidence-based deal-breakers and one anonymised example, with every claim checked before publication.",
+          stories: "Deal-breaker poll → evidence frame → advisor Q&A → Live reminder.",
+          repurpose: "Expert Collab Live at 19:30; cut two clips next week; LinkedIn advisor note.",
+          measure: "Average watch time, Live reminders, TRUST DMs.",
+          cta: "DM <strong>TRUST</strong> for PSR’s buyer due-diligence checklist."
+        },
+{
+          kicker: "Tue 22 Sep · 19:30 GST · Carousel · Intelligence",
+          title: "Sharjah — Growth Beyond the Headline",
+          hook: "“Do not buy the headline. Read the infrastructure, supply and exit route.”",
+          build: "Six-slide, source-backed emirate brief: demand drivers, product types, connectivity, risks, buyer fit, PSR view.",
+          stories: "Dubai vs Sharjah poll → one myth → one chart → full carousel.",
+          repurpose: "LinkedIn document; Market Atlas Insight; email market note.",
+          measure: "Saves, shares to DMs, SHARJAH enquiries, qualified budgets.",
+          cta: "Save and DM <strong>SHARJAH</strong> for the full market brief."
+        },
+{
+          kicker: "Sat 19 Sep · 19:30 GST · Weekly series · Know Your Broker",
+          title: "Know Your Broker — Jumanah",
+          hook: "“What we will not recommend matters as much as what we will.”",
+          build: "Use Jumanah’s editorial portrait as a clean image-only cover. On click, reveal her caption and advisor-voice Reel around three things PSR will not recommend, supported by due-diligence details and one practical example.",
+          stories: "Three advisor voice notes → ‘deal-breaker?’ poll → one due-diligence check → Reel share.",
+          repurpose: "LinkedIn advisor POV; sales onboarding; Highlight: How We Advise.",
+          measure: "Completion, shares, profile follows, TRUST DMs.",
+          cta: "DM <strong>TRUST</strong> with budget + timeframe for a fit-first shortlist."
+        },
+{
+          kicker: "Thu 17 Sep · 12:30 GST · Reel · Residence",
+          title: "Linar — A Waterfront Reality Check",
+          hook: "“Below AED 2M is only interesting if the payment plan and exit both work.”",
+          build: "Ujwal opens on camera, then tests Linar’s waterfront proposition, ‘starting from’ price, payment structure, supply context and one caveat.",
+          stories: "Price-range poll → payment-plan slider → map frame → DM sticker.",
+          repurpose: "LinkedIn clip with a written trade-off; Linar Highlight update.",
+          measure: "Watch time, shares, LINAR DMs, brochure-to-call rate.",
+          cta: "DM <strong>LINAR</strong> for permit-matched price, plan and inventory."
+        },
+{
+          kicker: "Tue 15 Sep · 19:30 GST · Carousel · Intelligence",
+          title: "The Payment Plan After the Headline",
+          hook: "“A flexible payment plan can still create a difficult cash-flow month.”",
+          build: "Worked example with reservation, instalments, DLD/fees, completion balance and holding reserve. Label assumptions clearly.",
+          stories: "Cash-flow quiz → reveal → fee checklist → carousel link.",
+          repurpose: "LinkedIn document; downloadable worksheet; advisor follow-up asset.",
+          measure: "Saves, worksheet requests, PLAN DMs, call conversion.",
+          cta: "Save this and DM <strong>PLAN</strong> for the editable cash-flow sheet."
+        },
+{
+          kicker: "Sat 12 Sep · 19:30 GST · Company process · Inside PSR",
+          title: "One Brief, Three Ways Home",
+          hook: "“Same AED 1.5M budget. Three completely different investor outcomes.”",
+          build: "An advisor voiceover contrasts yield-first, growth-first and end-user-first paths. Use the generated penthouse as clearly labelled editorial concept imagery, reveal the advisor after the hook, and show only verified real options inside the Reel.",
+          stories: "Choose your priority poll → three result cards → invite a private brief.",
+          repurpose: "LinkedIn advisor clip; sales call opener; Highlight: Start Here.",
+          measure: "Shares, completed views, BRIEF DMs, qualified conversations.",
+          cta: "DM <strong>BRIEF</strong> with budget, horizon and priority."
+        },
+{
+          kicker: "Thu 10 Sep · 12:30 GST · Weekly series · Know Your Broker",
+          title: "Know Your Broker — Louay",
+          hook: "“The location is public. Price, layouts and plan need a confirmation line.”",
+          build: "Use Louay’s seated editorial portrait as a clean image-only cover. On click, reveal his caption and site-first Reel plan covering Max Metro proximity, central connectivity, developer context, confirmed facts and a ‘not yet released’ frame.",
+          stories: "Location quiz → site clip → confirmed/not confirmed card → update opt-in.",
+          repurpose: "LinkedIn launch note; Wasl Highlight; WhatsApp opt-in update.",
+          measure: "Update opt-ins, 3-second hold, WASL DMs, follow-up response.",
+          cta: "DM <strong>WASL</strong> to receive only officially released updates."
+        },
+{
+          kicker: "Tue 08 Sep · 19:30 GST · Carousel · Intelligence",
+          title: "What AED 1.5M Buys Across Three Markets",
+          hook: "“One budget. Dubai, Abu Dhabi or Ras Al Khaimah?”",
+          build: "Seven-slide comparison: buyer goal, product type, entry range, fees, liquidity, risk and PSR fit. Use live inventory and dated sources.",
+          stories: "Choose an emirate poll → reveal one trade-off each → carousel teaser.",
+          repurpose: "LinkedIn document; Market Atlas Insight; advisor lead magnet.",
+          measure: "Saves per reach, shares, ATLAS DMs, qualified emirate preference.",
+          cta: "Save and DM <strong>ATLAS</strong> for the dated comparison brief."
+        }
+      ];
+
+      const kicker = document.getElementById("psr-detail-kicker");
+      const title = document.getElementById("psr-detail-title");
+      const hook = document.getElementById("psr-detail-hook");
+      const build = document.getElementById("psr-detail-build");
+      const stories = document.getElementById("psr-detail-stories");
+      const repurpose = document.getElementById("psr-detail-repurpose");
+      const measure = document.getElementById("psr-detail-measure");
+      const cta = document.getElementById("psr-detail-cta");
+      const tiles = Array.from(root.querySelectorAll(".psr-tile"));
+      const detail = root.querySelector(".psr-detail");
+      const detailClose = root.querySelector(".psr-detail-close");
+      const carouselPreview = root.querySelector("#psr-carousel-preview");
+      const carouselCount = root.querySelector("#psr-carousel-count");
+      const carouselStrip = root.querySelector("#psr-carousel-strip");
+      const platformTabs = Array.from(root.querySelectorAll(".psr-platform-tab"));
+      const formatPreview = root.querySelector("#psr-format-preview");
+      const publishCopy = root.querySelector(".psr-publish-copy");
+      const publishLabel = root.querySelector("#psr-publish-label");
+      const publishTitle = root.querySelector("#psr-publish-title");
+      const publishCaption = root.querySelector("#psr-publish-caption");
+      const publishHashtags = root.querySelector("#psr-publish-hashtags");
+      let selectedIndex = 0;
+      let selectedPlatform = "instagram";
+
+      function closeDetail() {
+        detail.dataset.open = "false";
+        tiles[selectedIndex]?.focus({ preventScroll: true });
+      }
+
+      function renderCarousel(index) {
+        const frames = carouselPlans[index] || [];
+        carouselPreview.hidden = frames.length === 0;
+        carouselCount.textContent = frames.length ? String(frames.length) + " planned frames" : "";
+        const figures = frames.map((frame, frameIndex) => {
+          const figure = document.createElement("figure");
+          figure.className = "psr-carousel-frame";
+          const image = document.createElement("img");
+          image.src = frame.src;
+          image.alt = "";
+          image.loading = "lazy";
+          const caption = document.createElement("figcaption");
+          const number = document.createElement("b");
+          number.textContent = "FRAME " + String(frameIndex + 1).padStart(2, "0");
+          caption.append(number, document.createTextNode(frame.label));
+          figure.append(image, caption);
+          return figure;
+        });
+        carouselStrip.replaceChildren(...figures);
+      }
+
+      function renderPlatform(index, platform = selectedPlatform) {
+        selectedPlatform = platform;
+        platformTabs.forEach((tab) => {
+          tab.setAttribute("aria-selected", String(tab.dataset.platform === platform));
+        });
+        const post = posts[index];
+        const copyProfile = socialCopy[index];
+        const tile = tiles.find((item) => Number(item.dataset.index) === index);
+        const cover = tile?.querySelector("img")?.src || "";
+        const frames = carouselPlans[index] || [{ label: "Cover", src: cover }];
+        const isCarousel = Boolean(carouselPlans[index]);
+        const isReel = post.kicker.toLowerCase().includes("reel");
+        const media = document.createElement("div");
+        media.className = "psr-format-media";
+        media.dataset.platform = platform;
+        media.dataset.single = String(frames.length === 1);
+        frames.forEach((frame) => {
+          const frameShell = document.createElement("div");
+          frameShell.className = "psr-format-frame";
+          const image = document.createElement("img");
+          image.src = frame.src;
+          image.alt = "";
+          image.loading = "lazy";
+          frameShell.append(image);
+          if (frame.overlay) {
+            const overlay = document.createElement("div");
+            overlay.className = "psr-frame-hook";
+            const eyebrow = document.createElement("b");
+            eyebrow.textContent = frame.overlay.eyebrow;
+            const figures = document.createElement("strong");
+            figures.textContent = frame.overlay.figures.join(" · ");
+            const note = document.createElement("span");
+            note.textContent = frame.overlay.note;
+            const source = document.createElement("small");
+            source.textContent = frame.overlay.source;
+            overlay.append(eyebrow, figures, note, source);
+            frameShell.append(overlay);
+          }
+          media.append(frameShell);
+        });
+        const copy = document.createElement("div");
+        copy.className = "psr-format-copy";
+        const label = document.createElement("b");
+        const heading = document.createElement("h4");
+        const note = document.createElement("p");
+        if (platform === "instagram") {
+          label.textContent = isCarousel ? String(frames.length) + "-frame carousel · 4:5" : isReel ? "Reel · 9:16" : "Editorial image · 4:5";
+          heading.textContent = post.title;
+          note.textContent = isCarousel
+            ? "One idea per image, concise cover, source/caveat before the closing save or DM frame."
+            : isReel
+              ? "Immediate visual hook, advisor or place-led sequence, burned-in context and a concise closing action."
+              : "Image-led cover, short caption thesis, one proof point and a restrained conversation prompt.";
+        } else {
+          label.textContent = isCarousel ? String(frames.length) + "-page document · landscape" : isReel ? "Native clip · square" : "Image + insight · 1.91:1";
+          heading.textContent = post.title;
+          note.textContent = isCarousel
+            ? "Rebuild the same evidence as a professional document: context, sourced detail, implication and conclusion."
+            : "Lead with the business implication, add source context and finish with an advisor point of view—not an Instagram caption copy-paste.";
+        }
+        copy.append(label, heading, note);
+        const card = document.createElement("div");
+        card.className = "psr-format-card";
+        card.append(media, copy);
+        formatPreview.replaceChildren(card);
+        publishLabel.textContent = platform === "instagram" ? "Instagram caption" : "LinkedIn caption";
+        publishTitle.textContent = post.title;
+        publishCaption.textContent = platform === "instagram" ? copyProfile.instagram : copyProfile.linkedin;
+        publishHashtags.textContent = copyProfile.hashtags;
+      }
+
+      function selectPost(index, openOnMobile = false) {
+        const post = posts[index];
+        if (!post) return;
+        selectedIndex = index;
+        tiles.forEach((tile) => tile.setAttribute("aria-pressed", String(Number(tile.dataset.index) === index)));
+        kicker.textContent = post.kicker;
+        title.textContent = post.title;
+        hook.textContent = post.hook;
+        build.textContent = post.build;
+        stories.textContent = post.stories;
+        repurpose.textContent = post.repurpose;
+        measure.textContent = post.measure;
+        cta.innerHTML = post.cta;
+        renderCarousel(index);
+        renderPlatform(index);
+        if (openOnMobile) publishCopy.hidden = false;
+        if (openOnMobile) {
+          detail.dataset.open = "true";
+          detailClose.focus({ preventScroll: true });
+        }
+      }
+
+      tiles.forEach((tile) => tile.addEventListener("click", () => selectPost(Number(tile.dataset.index), true)));
+      platformTabs.forEach((tab) => tab.addEventListener("click", () => renderPlatform(selectedIndex, tab.dataset.platform)));
+      detailClose.addEventListener("click", closeDetail);
+      root.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && detail.dataset.open === "true") closeDetail();
+      });
+      window.matchMedia("(max-width: 700px)").addEventListener("change", (event) => {
+        if (!event.matches) detail.dataset.open = "false";
+      });
+      selectPost(0);
+
+      const design = { coverSystem: "graphite" };
+      function applyDesign() { root.dataset.coverSystem = design.coverSystem; }
+      applyDesign();
+      if (globalThis.Tweak) {
+        const tweak = new Tweak({ container: root, onChange: applyDesign });
+        tweak.addSelect(design, "coverSystem", {
+          label: "Cover system",
+          reference: "psr.coverSystem",
+          options: [
+            { label: "Noir editorial", value: "graphite" },
+            { label: "Natural photography", value: "balanced" },
+            { label: "Warm limestone", value: "limestone" }
+          ]
+        });
+      }
+    })();
+  </script>
+</div>

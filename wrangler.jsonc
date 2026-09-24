@@ -6,9 +6,18 @@
   "compatibility_flags": ["nodejs_compat"],
   "workers_dev": false,
   "routes": [
-    { "pattern": "psrhomes.ae/*", "zone_name": "psrhomes.ae" },
-    { "pattern": "www.psrhomes.ae/*", "zone_name": "psrhomes.ae" },
-    { "pattern": "psr.espacios.me", "custom_domain": true }
+    {
+      "pattern": "psrhomes.ae/*",
+      "zone_name": "psrhomes.ae"
+    },
+    {
+      "pattern": "www.psrhomes.ae/*",
+      "zone_name": "psrhomes.ae"
+    },
+    {
+      "pattern": "psr.espacios.me",
+      "custom_domain": true
+    }
   ],
   "vars": {
     "CAMPAIGN_DELIVERY_ENABLED": "false",
@@ -20,7 +29,11 @@
   "secrets": {
     "required": ["LEADRAT_API_KEY", "LEADRAT_SECRET_KEY", "LEADRAT_TENANT"]
   },
-  "send_email": [{ "name": "EMAIL" }],
+  "send_email": [
+    {
+      "name": "EMAIL"
+    }
+  ],
   "d1_databases": [
     {
       "binding": "DB",
@@ -29,16 +42,35 @@
       "migrations_dir": "drizzle-agent"
     }
   ],
-  "r2_buckets": [{ "binding": "MEDIA", "bucket_name": "psr-property-media" }],
-  "ai": { "binding": "AI" },
+  "r2_buckets": [
+    {
+      "binding": "MEDIA",
+      "bucket_name": "psr-property-media"
+    }
+  ],
+  "ai": {
+    "binding": "AI"
+  },
   "durable_objects": {
-    "bindings": [{ "name": "GRACE_PUBLIC_AGENT", "class_name": "GracePublicAgent" }]
+    "bindings": [
+      {
+        "name": "GRACE_PUBLIC_AGENT",
+        "class_name": "GracePublicAgent"
+      }
+    ]
   },
   "migrations": [
-    { "tag": "psr-public-agent-v1", "new_sqlite_classes": ["GracePublicAgent"] }
+    {
+      "tag": "psr-public-agent-v1",
+      "new_sqlite_classes": ["GracePublicAgent"]
+    }
   ],
-  "images": { "binding": "IMAGES" },
-  "triggers": { "crons": ["17 */6 * * *"] },
+  "images": {
+    "binding": "IMAGES"
+  },
+  "triggers": {
+    "crons": ["17 */6 * * *"]
+  },
   "assets": {
     "directory": "./dist/client",
     "binding": "ASSETS",
@@ -53,7 +85,14 @@
   },
   "observability": {
     "enabled": true,
-    "logs": { "enabled": true, "head_sampling_rate": 1, "invocation_logs": true },
-    "traces": { "enabled": true, "head_sampling_rate": 0.01 }
+    "logs": {
+      "enabled": true,
+      "head_sampling_rate": 1,
+      "invocation_logs": true
+    },
+    "traces": {
+      "enabled": true,
+      "head_sampling_rate": 0.01
+    }
   }
 }
