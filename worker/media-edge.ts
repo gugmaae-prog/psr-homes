@@ -1,4 +1,5 @@
 import mediaManifest from "../data/r2-external-media-map.json";
+import { ServiceBodyTooLargeError, serviceRequest } from "./forward-request";
 
 type MediaManifest = {
   version: number;
@@ -419,10 +420,24 @@ function upstreamFor(request: Request, env: MediaEdgeEnv) {
 const worker = {
   async fetch(request: Request, env: MediaEdgeEnv, ctx: ExecutionContext): Promise<Response> {
     const url = new URL(request.url);
-    const media = await resolveMedia(url.pathname);
-    if (media) return serveMedia(request, env, ctx, media);
+    let forwarded: Request;
     try {
-      return await rewriteResponse(request, await upstreamFor(request, env).fetch(request), ctx);
+      // Consume the incoming body before any response is returned. A service
+      // binding that receives the original request can still be reading it
+      // after this worker responds, which throws "Can't read from request
+      // stream after response has been sent."
+      forwarded = await serviceRequest(request);
+    } catch (error) {
+      if (error instanceof ServiceBodyTooLargeError) {
+        return new Response("Request body is too large.", { status: 413, headers: { "cache-control": "no-store" } });
+      }
+      logError("media_edge_request_failed", error, { path: url.pathname });
+      return Response.json({ error: "PSR media edge request failed." }, { status: 502 });
+    }
+    const media = await resolveMedia(url.pathname);
+    if (media) return serveMedia(forwarded, env, ctx, media);
+    try {
+      return await rewriteResponse(forwarded, await upstreamFor(forwarded, env).fetch(forwarded), ctx);
     } catch (error) {
       logError("media_edge_request_failed", error, { path: url.pathname });
       return Response.json({ error: "PSR media edge request failed." }, { status: 502 });

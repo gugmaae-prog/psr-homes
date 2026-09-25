@@ -34,8 +34,7 @@ jobs:
       - run: chmod +x scripts/*.sh
       - name: Build and test
         run: npm run test:source
-      - name: Lint report
-        continue-on-error: true
+      - name: Lint
         run: npm run lint
       - name: Validate Cloudflare manifests
         run: |

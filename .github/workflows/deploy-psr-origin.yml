@@ -34,6 +34,10 @@ jobs:
       - name: Verify source and compatibility manifest
         run: |
           npm run test:source
+          # test:source builds dist/client. public/ is gitignored, so that
+          # directory does not contain the live media tree. wrangler deploy
+          # replaces the Workers asset manifest with whatever is in dist/client.
+          node scripts/assert-deployable-assets.mjs
           npx wrangler deploy --dry-run --config wrangler.jsonc
           if grep -q '"renamed_classes"' wrangler.jsonc; then
             echo "Blocked: compatibility deploy must not contain a Durable Object class rename"

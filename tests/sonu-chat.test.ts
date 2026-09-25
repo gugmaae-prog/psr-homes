@@ -756,7 +756,7 @@ test("keeps quick replies aligned after a harmless Sonu detour", async () => {
       async get(key: string) { return storageMap.get(key); },
       async put(key: string, value: unknown) { storageMap.set(key, value); },
     },
-  } as any, { DB: null, AI: null } as any);
+  } as unknown as ConstructorParameters<typeof SonuPublicAgent>[0], { DB: null, AI: null } as unknown as ConstructorParameters<typeof SonuPublicAgent>[1]);
   async function send(message: string) {
     const response = await agent.fetch(new Request("https://psrhomes.ae/api/sonu-chat", {
       method: "POST",
