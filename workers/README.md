@@ -1,5 +1,17 @@
 # PSR Workers
 
+## Production incident note — 25 September 2026
+
+A production compatibility regression was repaired directly in Cloudflare after a source/runtime reconciliation deploy:
+
+- `psr-portfolio-map-v2` was routed from `psrhomes.ae/map*` but the deployed Worker rejected every hostname except `espacios.me`, causing the complete PSR map surface and map APIs to return 404. The live Worker now accepts `psrhomes.ae`, `www.psrhomes.ae`, `psr.espacios.me`, and `espacios.me`.
+- `psr-media-edge` still targeted legacy `.grace-chat` / `.grace-chat-launcher` selectors after the origin application moved to Sonu. The live Worker now supports both Sonu and Grace selectors during the compatibility window.
+- The checked-in `worker/media-edge.ts` is not yet byte-for-byte source parity with the live Worker; production contains additional runtime repair logic. **Do not deploy the current repository media-edge source over production until the live bundle is fully backfilled/reconciled.**
+- Do not remove the Sonu compatibility bridge or apply the Durable Object class rename as part of an unrelated release.
+
+Verified after the repair: homepage, projects, developers, communities, insights, events, agent entry, logos, robots, sitemap, `/map`, `/map/app-v2.js`, `/map/map-core.json`, and `/map/api/projects-all` all return successful Cloudflare production status.
+
+
 The PSR Cloudflare account is a multi-Worker application. `psr-property` is the primary application/origin, while `psr-media-edge` owns the public apex/`www` wildcard routes.
 
 The full verified Cloudflare snapshot is in `docs/cloudflare-live-topology-2026-09-24.md`.
