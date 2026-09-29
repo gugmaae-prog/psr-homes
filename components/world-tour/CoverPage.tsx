@@ -1,5 +1,4 @@
-import { withBasePath } from "@/lib/base-path";
-import { WORLD_TOUR_PAGE_COUNT, worldTourEdition } from "@/lib/world-tour/edition";
+import { WORLD_TOUR_PAGE_COUNT, worldTourAsset, worldTourEdition } from "@/lib/world-tour/edition";
 import styles from "@/app/events/roadshow/world-tour/world-tour.module.css";
 
 export function CoverPage() {
@@ -8,7 +7,7 @@ export function CoverPage() {
     <div className={styles.cover}>
       <img
         className={styles.coverLogo}
-        src={withBasePath("/brand/psr-logo-dark.png")}
+        src={worldTourAsset("/brand/psr-logo-dark.png")}
         alt="PSR Homes"
         width="1254"
         height="1254"
@@ -16,7 +15,7 @@ export function CoverPage() {
       <div className={styles.coverBody}>
         <figure className={styles.frame}>
           <img
-            src={withBasePath(edition.coverImage.src)}
+            src={worldTourAsset(edition.coverImage.src)}
             alt={edition.coverImage.alt}
             width={edition.coverImage.width}
             height={edition.coverImage.height}

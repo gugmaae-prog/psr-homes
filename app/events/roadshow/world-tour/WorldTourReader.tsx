@@ -31,7 +31,13 @@ export function WorldTourReader() {
   function show(next: number) {
     const target = Math.max(0, Math.min(FOLIOS.length - 1, next));
     setIndex(target);
-    document.getElementById(`p${FOLIOS[target]}`)?.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+    const sheet = document.getElementById(`p${FOLIOS[target]}`);
+    const stage = document.getElementById("world-tour-reader");
+    if (stage && sheet && stage.scrollWidth > stage.clientWidth + 8) {
+      stage.scrollTo({ left: sheet.offsetLeft - (stage.clientWidth - sheet.clientWidth) / 2, behavior: "smooth" });
+      return;
+    }
+    sheet?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   return <div className={`${styles.edition} wt-edition`}>

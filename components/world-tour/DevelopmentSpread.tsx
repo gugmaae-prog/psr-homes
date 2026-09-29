@@ -1,11 +1,10 @@
 import Link from "@/components/SiteLink";
-import { withBasePath } from "@/lib/base-path";
-import { WORLD_TOUR_PAGE_COUNT, worldTourEdition } from "@/lib/world-tour/edition";
+import { WORLD_TOUR_PAGE_COUNT, worldTourAsset, worldTourEdition } from "@/lib/world-tour/edition";
 import styles from "@/app/events/roadshow/world-tour/world-tour.module.css";
 
 function Folio({ section, folio }: { section: string; folio: string }) {
   return <header className={styles.folio}>
-    <img className={styles.folioLogo} src={withBasePath("/brand/psr-logo-dark.png")} alt="" width="1254" height="1254" />
+    <img className={styles.folioLogo} src={worldTourAsset("/brand/psr-logo-dark.png")} alt="" width="1254" height="1254" />
     <span>{section}</span>
     <span>{folio} / {WORLD_TOUR_PAGE_COUNT}</span>
   </header>;
@@ -21,7 +20,7 @@ export function DevelopmentSpread() {
         <div className={styles.story}>
           <div className={styles.feature}>
             <figure className={styles.frame}>
-              <img src={withBasePath(image.src)} alt={image.alt} width={image.width} height={image.height} />
+              <img src={worldTourAsset(image.src)} alt={image.alt} width={image.width} height={image.height} />
               <figcaption className={styles.caption}>{image.caption}</figcaption>
             </figure>
             <div className={styles.featureCopy}>

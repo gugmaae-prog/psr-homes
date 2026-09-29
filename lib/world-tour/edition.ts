@@ -1,4 +1,5 @@
 import { SG26_INVITATION_ACTION, SG26_INVITATION_NOTE, SG26_REGISTRATION_HREF, SG26_SESSIONS, formatSingaporeSession } from "@/lib/sg26";
+import { SITE_ORIGIN } from "@/lib/seo";
 
 export const WORLD_TOUR_PAGE_COUNT = 32;
 export const WORLD_TOUR_PATH = "/events/roadshow/world-tour";
@@ -304,6 +305,11 @@ export const worldTourEdition = {
     ],
   },
 };
+
+export function worldTourAsset(path: string) {
+  if (/^https?:\/\//i.test(path)) return path;
+  return `${SITE_ORIGIN}${path.startsWith("/") ? path : `/${path}`}`;
+}
 
 export function editionFigures(): EditionFigure[] {
   return [
