@@ -3,7 +3,7 @@
 import { FormEvent, useCallback, useEffect, useRef, useState } from "react";
 import Link from "@/components/SiteLink";
 import { withBasePath } from "@/lib/base-path";
-import { SG26_SESSIONS, SG26_SOURCE } from "@/lib/sg26";
+import { SG26_INVITATION_ACTION, SG26_INVITATION_NOTE, SG26_SESSIONS, SG26_SOURCE } from "@/lib/sg26";
 import styles from "./sg26.module.css";
 
 type RegistrationResponse = {
@@ -137,7 +137,7 @@ export function SingaporeRegistration() {
     {status === "success" ? <div className={styles.successCard} role="status">
       <span>Request received</span>
       <h3>Thank you. Your invitation is under review.</h3>
-      <p>A PSR advisor will contact you through the details provided to confirm your session and share the final event details.</p>
+      <p>A PSR advisor will contact you through the details provided. {SG26_INVITATION_NOTE}</p>
       <button type="button" onClick={() => setStatus("idle")}>Register another guest</button>
     </div> : <form className={styles.form} onSubmit={submit}>
       <label className={styles.honey} aria-hidden="true"><span>Website</span><input name="website" tabIndex={-1} autoComplete="off" /></label>
@@ -154,8 +154,8 @@ export function SingaporeRegistration() {
       <label><span>Company or family office <small>Optional</small></span><input name="company" autoComplete="organization" placeholder="Organisation name" /></label>
       <label><span>Anything we should prepare? <small>Optional</small></span><textarea name="notes" rows={3} placeholder="Your objectives, preferred property type or UAE plans" /></label>
       <label className={styles.consent}><input name="consent" type="checkbox" value="yes" required /><span>I agree to be contacted about this event and accept the <Link href="/privacy">privacy policy</Link>.</span></label>
-      <button className={styles.submitButton} type="submit" disabled={status === "sending"}>{status === "sending" ? "Submitting request…" : "Request my invitation"}<span aria-hidden="true">↗</span></button>
-      <p className={`${styles.formStatus} ${status === "error" ? styles.formError : ""}`} aria-live="polite">{status === "error" ? errorMessage : "Attendance is reviewed and confirmed individually."}</p>
+      <button className={styles.submitButton} type="submit" disabled={status === "sending"}>{status === "sending" ? "Submitting request…" : SG26_INVITATION_ACTION}<span aria-hidden="true">↗</span></button>
+      <p className={`${styles.formStatus} ${status === "error" ? styles.formError : ""}`} aria-live="polite">{status === "error" ? errorMessage : SG26_INVITATION_NOTE}</p>
     </form>}
   </div>;
 }

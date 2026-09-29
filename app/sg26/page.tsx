@@ -2,6 +2,7 @@ import { PsrPageShell } from "@/components/PsrPageShell";
 import { withBasePath } from "@/lib/base-path";
 import { pageMetadata, SITE_ORIGIN } from "@/lib/seo";
 import { SG26_EVENT_NAME, SG26_SESSIONS } from "@/lib/sg26";
+import { WORLD_TOUR_PATH } from "@/lib/world-tour/edition";
 import { SingaporeRegistration } from "./SingaporeRegistration";
 import { WorldTourHero } from "./WorldTourHero";
 import styles from "./sg26.module.css";
@@ -115,6 +116,7 @@ export default function SingaporePropertyShowPage() {
           <div><dt>Advisory services</dt><dd>PSR Homes &amp; Eastlink Gateway</dd></div>
         </dl>
         <p className={styles.partnerNote}>Property availability and pricing remain subject to confirmation. Business setup and family office services remain subject to applicable eligibility and regulatory requirements.</p>
+        <p className={styles.partnerNote}><a href={withBasePath(WORLD_TOUR_PATH)}>Read the Singapore edition</a></p>
       </div>
       <SingaporeRegistration />
     </section>
