@@ -111,8 +111,8 @@ test("renders the PSR Singapore Property Show registration experience", async ()
   assert.doesNotMatch(html, /Home base/i);
   assert.doesNotMatch(html, /Dubai to Singapore/i);
   assert.doesNotMatch(html, /24 Jan/i);
-  assert.match(html, /Friday[\s\S]*13 November[\s\S]*5:30 PM/i);
-  assert.match(html, /Saturday[\s\S]*14 November[\s\S]*3:30 PM/i);
+  assert.match(html, /Friday[\s\S]*13 November[\s\S]*5:00 PM onwards/i);
+  assert.match(html, /Saturday[\s\S]*14 November[\s\S]*5:00 PM onwards/i);
   assert.match(html, /Eastlink Gateway/i);
   assert.match(html, /Business setup/i);
   assert.match(html, /Family office migration/i);
@@ -122,8 +122,8 @@ test("renders the PSR Singapore Property Show registration experience", async ()
   assert.match(html, /property budget/i);
   assert.match(html, /OfflineEventAttendanceMode/i);
   assert.equal((html.match(/"@type":"Event"/g) || []).length, 2);
-  assert.match(html, /2026-11-13T17:30:00\+08:00/i);
-  assert.match(html, /2026-11-14T15:30:00\+08:00/i);
+  assert.match(html, /2026-11-13T17:00:00\+08:00/i);
+  assert.match(html, /2026-11-14T17:00:00\+08:00/i);
   assert.match(html, /hero\/psr-global-roadshow-singapore-cover\.png/i);
   assert.match(html, /projects\/al-yalayis\/hero\.webp/i);
   assert.equal((html.match(/<small[^>]*>Concept imagery<\/small>/g) || []).length, 2);

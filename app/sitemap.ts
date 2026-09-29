@@ -9,7 +9,7 @@ import { seoLandingPages } from "@/data/seo-landing-pages";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const projectRecords = getIndexableProjectRecords();
-  const staticRoutes = ["", "/projects", "/off-plan", "/developers", "/communities", "/emirate", "/insights", "/insights/daily", "/journal", "/services", "/about", "/advisors", "/contact", "/sg26", "/list-your-property", "/mortgage-calculator", "/privacy", "/terms"];
+  const staticRoutes = ["", "/projects", "/off-plan", "/developers", "/communities", "/emirate", "/insights", "/insights/daily", "/journal", "/services", "/about", "/advisors", "/contact", "/sg26", "/events/roadshow/world-tour", "/list-your-property", "/mortgage-calculator", "/privacy", "/terms"];
   const staticUpdatedAt = new Date("2026-08-31T00:00:00.000Z");
   return [
     ...staticRoutes.map((route, index) => ({ url: `${SITE_ORIGIN}${route}`, lastModified: staticUpdatedAt, changeFrequency: (index < 4 ? "weekly" : "monthly") as "weekly" | "monthly", priority: route === "" ? 1 : .8 })),

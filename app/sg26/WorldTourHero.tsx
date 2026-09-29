@@ -10,6 +10,7 @@ import {
   useState,
   useSyncExternalStore,
 } from "react";
+import { SG26_INVITATION_ACTION, SG26_SESSIONS } from "@/lib/sg26";
 import styles from "./WorldTourHero.module.css";
 import { CITY_OUTLINES, CITY_VIEWBOXES } from "./city-outlines";
 
@@ -350,8 +351,11 @@ export function WorldTourHero({ className = "", dubaiImage = "/sg26/psr-world-to
         </div>
 
         {activeCity.id === "singapore" ? <div className={styles.sessionList}>
-          <div><span>Session 01</span><strong>Friday 13 November</strong><time dateTime="2026-11-13T17:30:00+08:00">5:30 PM</time></div>
-          <div><span>Session 02</span><strong>Saturday 14 November</strong><time dateTime="2026-11-14T15:30:00+08:00">3:30 PM</time></div>
+          {SG26_SESSIONS.map((session, index) => <div key={session.id}>
+            <span>Session {String(index + 1).padStart(2, "0")}</span>
+            <strong>{session.day} {session.date.replace(" 2026", "")}</strong>
+            <time dateTime={session.iso}>{session.time}</time>
+          </div>)}
         </div> : <div className={styles.archiveDate}>
           <span>Illustrative route date</span>
           <strong>{activeCity.fullDate}</strong>
@@ -361,14 +365,14 @@ export function WorldTourHero({ className = "", dubaiImage = "/sg26/psr-world-to
         <div className={styles.eventAction}>
           <p>UAE property · business setup · family office migration</p>
           {activeCity.id === "singapore"
-            ? <a href="#request-invite">Request your invitation <span aria-hidden="true">↗</span></a>
+            ? <a href="#request-invite">{SG26_INVITATION_ACTION} <span aria-hidden="true">↗</span></a>
             : <button type="button" onClick={() => selectCity(SINGAPORE_INDEX)}>View Singapore dates <span aria-hidden="true">→</span></button>}
         </div>
       </div>
     </div>
 
     <p className={styles.srOnly} aria-live="polite">{activeCity.id === "singapore"
-      ? "Singapore selected. Confirmed sessions Friday 13 November at 5:30 PM and Saturday 14 November at 3:30 PM."
+      ? `Singapore selected. Confirmed sessions ${SG26_SESSIONS.map((session) => `${session.day} ${session.date} at ${session.time}`).join(" and ")}.`
       : `${activeCity.name} selected. The ${activeCity.fullDate} route date is illustrative and pending PSR confirmation.`}</p>
     <p className={styles.mapAttribution}><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">Map data © OpenStreetMap contributors</a> · <a href="/sg26/city-outline-sources.json" target="_blank" rel="noreferrer">Outline sources</a></p>
     <p className={styles.routeDisclosure}>Artist’s impressions · illustrative 2026 world-tour route · prior cities and dates require confirmation · Singapore sessions confirmed for 13–14 November</p>
