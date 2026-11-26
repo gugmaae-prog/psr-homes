@@ -1,0 +1,1499 @@
+{
+  "schema": "psr-community-image-candidates-v1",
+  "checkedAt": "2026-11-27",
+  "scope": "First sourcing batch, matched against current community card slugs; no live publication",
+  "baseline": {
+    "cards": 225,
+    "distinctImageUrls": 50,
+    "cardsSharingImageUrls": 186
+  },
+  "counts": {
+    "total": 61,
+    "uniqueSourceUrls": 61,
+    "decodePassed": 55,
+    "landscapeAtLeast960": 30,
+    "byEmirate": {
+      "Dubai": 50,
+      "Sharjah": 3,
+      "Umm Al Quwain": 2,
+      "Ras Al Khaimah": 4,
+      "Ajman": 1,
+      "Abu Dhabi": 1
+    },
+    "projectOrUnconfirmed": 9
+  },
+  "notes": [
+    "Only direct asset URLs observed on listed source pages. Source match is not proof of usage rights, image quality, or visual accuracy.",
+    "No competitor stock imagery, generated location imagery, or cross-emirate replacement.",
+    "Project-specific renders must be labeled as such. Masterplan visualizations must not be presented as photographs.",
+    "Maintain canonical community identities; do not merge aliases or update live URLs in this sourcing batch.",
+    "Verify rights, download bytes, inspect pixels, hash and perceptual-hash; store approved original and derivatives in IDrive E2, then verify readback. No R2 or Supabase write.",
+    "Use text-only neutral fallback for unresolved records; no generic scenery assigned as factual geography."
+  ],
+  "entries": [
+    {
+      "slug": "dubai-creek-harbour",
+      "name": "Dubai Creek Harbour",
+      "emirate": "Dubai",
+      "publisher": "Emaar",
+      "sourcePage": "https://www.emaar.com/en/our-communities",
+      "imageUrl": "https://www.emaar.com/_next/image?url=%2Fcms-media%2Fuploads%2F01-Community-Image---2400x1600px.jpg&w=2560&q=75",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "dubai-creek-harbour",
+        "status": "decoded",
+        "width": 2400,
+        "height": 1600
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "dubai-hills-estate",
+      "name": "Dubai Hills Estate",
+      "emirate": "Dubai",
+      "publisher": "Emaar",
+      "sourcePage": "https://www.emaar.com/en/our-communities",
+      "imageUrl": "https://www.emaar.com/_next/image?url=%2Fcms-media%2Fuploads%2F01_Community_Image_2400x1600px_da5cbb63ef.jpg&w=2560&q=75",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "dubai-hills-estate",
+        "status": "decoded",
+        "width": 2400,
+        "height": 1600
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "the-oasis",
+      "name": "The Oasis",
+      "emirate": "Dubai",
+      "publisher": "Emaar",
+      "sourcePage": "https://www.emaar.com/en/our-communities",
+      "imageUrl": "https://www.emaar.com/_next/image?url=%2Fcms-media%2Fuploads%2F01_Community_Image_2400x1600px_fe0ff4db67.jpg&w=2560&q=75",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "the-oasis",
+        "status": "decoded",
+        "width": 2400,
+        "height": 1600
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "grand-polo-club-and-resort",
+      "name": "Grand Polo Club & Resort",
+      "emirate": "Dubai",
+      "publisher": "Emaar",
+      "sourcePage": "https://www.emaar.com/en/our-communities",
+      "imageUrl": "https://www.emaar.com/_next/image?url=%2Fcms-media%2Fuploads%2F01_Community_Image_2400x1600px_dd31d3764c.jpg&w=2560&q=75",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "grand-polo-club-and-resort",
+        "status": "decoded",
+        "width": 2400,
+        "height": 1600
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "rashid-yachts-and-marina",
+      "name": "Rashid Yachts & Marina",
+      "emirate": "Dubai",
+      "publisher": "Emaar",
+      "sourcePage": "https://www.emaar.com/en/our-communities",
+      "imageUrl": "https://www.emaar.com/_next/image?url=%2Fcms-media%2Fuploads%2F01_Community_Image_2400x1600px_abedc64b4f.jpg&w=2560&q=75",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "rashid-yachts-and-marina",
+        "status": "decoded",
+        "width": 2400,
+        "height": 1600
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "the-valley",
+      "name": "The Valley",
+      "emirate": "Dubai",
+      "publisher": "Emaar",
+      "sourcePage": "https://www.emaar.com/en/our-communities",
+      "imageUrl": "https://www.emaar.com/_next/image?url=%2Fcms-media%2Fuploads%2F01_Community_Image_2400x1600px_847728711e.jpg&w=2560&q=75",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "the-valley",
+        "status": "decoded",
+        "width": 2400,
+        "height": 1600
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "the-heights-country-club-and-wellness",
+      "name": "The Heights Country Club & Wellness",
+      "emirate": "Dubai",
+      "publisher": "Emaar",
+      "sourcePage": "https://www.emaar.com/en/our-communities",
+      "imageUrl": "https://www.emaar.com/_next/image?url=%2Fcms-media%2Fuploads%2F01_Community_Image_2400x1600px_f10dad83a0.jpg&w=2560&q=75",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "the-heights-country-club-and-wellness",
+        "status": "decoded",
+        "width": 2400,
+        "height": 1600
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "emaar-south",
+      "name": "Emaar South",
+      "emirate": "Dubai",
+      "publisher": "Emaar",
+      "sourcePage": "https://www.emaar.com/en/our-communities",
+      "imageUrl": "https://www.emaar.com/_next/image?url=%2Fcms-media%2Fuploads%2F01_Community_Image_2400x1600px_8d14864b10.jpg&w=2560&q=75",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "emaar-south",
+        "status": "decoded",
+        "width": 2400,
+        "height": 1600
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "emaar-beachfront",
+      "name": "Emaar Beachfront",
+      "emirate": "Dubai",
+      "publisher": "Emaar",
+      "sourcePage": "https://www.emaar.com/en/our-communities",
+      "imageUrl": "https://www.emaar.com/_next/image?url=%2Fcms-media%2Fuploads%2F01_Community_Image_2400x1600px_5277e296f9.jpg&w=2560&q=75",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "emaar-beachfront",
+        "status": "decoded",
+        "width": 2400,
+        "height": 1600
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "downtown-dubai",
+      "name": "Downtown Dubai",
+      "emirate": "Dubai",
+      "publisher": "Emaar",
+      "sourcePage": "https://www.emaar.com/en/our-communities",
+      "imageUrl": "https://www.emaar.com/_next/image?url=%2Fcms-media%2Fuploads%2Fdowntown_desktop_bc9a2f8d92.webp&w=2560&q=75",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "downtown-dubai",
+        "status": "decoded",
+        "width": 2560,
+        "height": 800
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "dubai-marina",
+      "name": "Dubai Marina",
+      "emirate": "Dubai",
+      "publisher": "Emaar",
+      "sourcePage": "https://www.emaar.com/en/our-communities",
+      "imageUrl": "https://www.emaar.com/_next/image?url=%2Fcms-media%2Fuploads%2F2822_hero_Image_dc232572ee_prod.jpg&w=2560&q=75",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "dubai-marina",
+        "status": "decoded",
+        "width": 1800,
+        "height": 924
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "arabian-ranches",
+      "name": "Arabian Ranches",
+      "emirate": "Dubai",
+      "publisher": "Emaar",
+      "sourcePage": "https://www.emaar.com/en/our-communities",
+      "imageUrl": "https://www.emaar.com/_next/image?url=%2Fcms-media%2Fuploads%2F1268_hero_Image_70e56c5ea9_prod.jpg&w=2560&q=75",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "arabian-ranches",
+        "status": "decoded",
+        "width": 2560,
+        "height": 1707
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "arabian-ranches-iii",
+      "name": "Arabian Ranches III",
+      "emirate": "Dubai",
+      "publisher": "Emaar",
+      "sourcePage": "https://www.emaar.com/en/our-communities",
+      "imageUrl": "https://www.emaar.com/_next/image?url=%2Fcms-media%2Fuploads%2F1286_hero_Image_dd2a3822b6_prod.jpg&w=2560&q=75",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "arabian-ranches-iii",
+        "status": "decoded",
+        "width": 2560,
+        "height": 1440
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "zabeel",
+      "name": "Zabeel",
+      "emirate": "Dubai",
+      "publisher": "Emaar",
+      "sourcePage": "https://www.emaar.com/en/our-communities",
+      "imageUrl": "https://www.emaar.com/_next/image?url=%2Fcms-media%2Fuploads%2FCommunities-Zabeel-thumbnail.jpg&w=2560&q=75",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "zabeel",
+        "status": "decoded",
+        "width": 1600,
+        "height": 1067
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "emirates-living",
+      "name": "Emirates Living",
+      "emirate": "Dubai",
+      "publisher": "Emaar",
+      "sourcePage": "https://www.emaar.com/en/our-communities",
+      "imageUrl": "https://www.emaar.com/_next/image?url=%2Fcms-media%2Fuploads%2F418659_hero_Image_d97aa11971_prod.jpg&w=2560&q=75",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "emirates-living",
+        "status": "decoded",
+        "width": 1920,
+        "height": 1080
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "the-greens-and-views",
+      "name": "The Greens & Views",
+      "emirate": "Dubai",
+      "publisher": "Emaar",
+      "sourcePage": "https://www.emaar.com/en/our-communities",
+      "imageUrl": "https://www.emaar.com/_next/image?url=%2Fcms-media%2Fuploads%2F2765_hero_Image_0e53a06000_prod.jpg&w=2560&q=75",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "the-greens-and-views",
+        "status": "decoded",
+        "width": 1800,
+        "height": 925
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "palm-jumeirah",
+      "name": "Palm Jumeirah",
+      "emirate": "Dubai",
+      "publisher": "Nakheel",
+      "sourcePage": "https://www.nakheel.com/en/developments/nakheel-projects",
+      "imageUrl": "https://www.nakheel.com/images/nakheelcorporatelibraries/developments/palmjumeirah.jpg?sfvrsn=9298fc5a_1",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "palm-jumeirah",
+        "status": "decoded",
+        "width": 420,
+        "height": 200
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "palm-jebel-ali",
+      "name": "Palm Jebel Ali",
+      "emirate": "Dubai",
+      "publisher": "Nakheel",
+      "sourcePage": "https://www.nakheel.com/en/developments/nakheel-projects",
+      "imageUrl": "https://www.nakheel.com/images/nakheelcorporatelibraries/developments/palmjebelali.jpg?sfvrsn=1c0ac8a8_1",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "palm-jebel-ali",
+        "status": "decoded",
+        "width": 420,
+        "height": 200
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "dubai-islands",
+      "name": "Dubai Islands",
+      "emirate": "Dubai",
+      "publisher": "Nakheel",
+      "sourcePage": "https://www.nakheel.com/en/developments/nakheel-projects",
+      "imageUrl": "https://www.nakheel.com/images/nakheelcorporatelibraries/developments/dubaiislands.jpg?sfvrsn=d3909993_1",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "dubai-islands",
+        "status": "decoded",
+        "width": 420,
+        "height": 200
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "the-world-islands",
+      "name": "The World Islands",
+      "emirate": "Dubai",
+      "publisher": "Nakheel",
+      "sourcePage": "https://www.nakheel.com/en/developments/nakheel-projects",
+      "imageUrl": "https://www.nakheel.com/images/nakheelcorporatelibraries/developments/theworldisland.jpg?sfvrsn=1e9e5843_1",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "the-world-islands",
+        "status": "decoded",
+        "width": 420,
+        "height": 200
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "district-one",
+      "name": "District One",
+      "emirate": "Dubai",
+      "publisher": "Nakheel",
+      "sourcePage": "https://www.nakheel.com/en/developments/nakheel-projects",
+      "imageUrl": "https://www.nakheel.com/images/nakheelcorporatelibraries/developments/district-one8eda6661-df53-47ca-b970-9c2a1076b34f.jpg?sfvrsn=456d1639_1",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "district-one",
+        "status": "decoded",
+        "width": 1920,
+        "height": 1080
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "discovery-gardens",
+      "name": "Discovery Gardens",
+      "emirate": "Dubai",
+      "publisher": "Nakheel",
+      "sourcePage": "https://www.nakheel.com/en/developments/nakheel-projects",
+      "imageUrl": "https://www.nakheel.com/images/nakheelcorporatelibraries/developments/discovery-gardens14da191e-c5b1-468d-995f-fc388947ba0b.jpg?sfvrsn=cb441207_1",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "discovery-gardens",
+        "status": "decoded",
+        "width": 600,
+        "height": 1000
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "dubai-international-city",
+      "name": "Dubai International City",
+      "emirate": "Dubai",
+      "publisher": "Nakheel",
+      "sourcePage": "https://www.nakheel.com/en/developments/nakheel-projects",
+      "imageUrl": "https://www.nakheel.com/images/nakheelcorporatelibraries/developments/international-city.jpg?sfvrsn=ce498aac_1",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "dubai-international-city",
+        "status": "decoded",
+        "width": 600,
+        "height": 1000
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "jumeirah-islands",
+      "name": "Jumeirah Islands",
+      "emirate": "Dubai",
+      "publisher": "Nakheel",
+      "sourcePage": "https://www.nakheel.com/en/developments/nakheel-projects/jumeirah-islands",
+      "imageUrl": "https://www.nakheel.com/images/nakheelcorporatelibraries/developments/jumeirah-islands.jpg?sfvrsn=940fd57e_3",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "jumeirah-islands",
+        "status": "decoded",
+        "width": 1920,
+        "height": 1080
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "jumeirah-park",
+      "name": "Jumeirah Park",
+      "emirate": "Dubai",
+      "publisher": "Nakheel",
+      "sourcePage": "https://www.nakheel.com/en/developments/nakheel-projects",
+      "imageUrl": "https://www.nakheel.com/images/nakheelcorporatelibraries/developments/jumeirah-park7dd20154-9172-45d2-87ef-1b7d85f48af4.jpg?sfvrsn=feae2b55_1",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "jumeirah-park",
+        "status": "decoded",
+        "width": 600,
+        "height": 1000
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "al-furjan",
+      "name": "Al Furjan",
+      "emirate": "Dubai",
+      "publisher": "Nakheel",
+      "sourcePage": "https://www.nakheel.com/en/developments/nakheel-projects",
+      "imageUrl": "https://www.nakheel.com/images/nakheelcorporatelibraries/developments/al-furjanca03fc59-bfba-440c-bab0-a4898623fadd.jpg?sfvrsn=86c72d25_1",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "al-furjan",
+        "status": "decoded",
+        "width": 600,
+        "height": 1000
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "jumeirah-village-circle-jvc",
+      "name": "Jumeirah Village Circle (JVC)",
+      "emirate": "Dubai",
+      "publisher": "Nakheel",
+      "sourcePage": "https://www.nakheel.com/en/developments/nakheel-projects",
+      "imageUrl": "https://www.nakheel.com/images/nakheelcorporatelibraries/developments/jumeirah-village-circleb50ec4dd-6e4d-4ec1-92ce-d7cb1ee9aa29.jpg?sfvrsn=3aa5ca40_1",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "jumeirah-village-circle-jvc",
+        "status": "decoded",
+        "width": 600,
+        "height": 1000
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "jumeirah-village-triangle-jvt",
+      "name": "Jumeirah Village Triangle (JVT)",
+      "emirate": "Dubai",
+      "publisher": "Nakheel",
+      "sourcePage": "https://www.nakheel.com/en/developments/nakheel-projects",
+      "imageUrl": "https://www.nakheel.com/images/nakheelcorporatelibraries/developments/jumeirah-village-triangle211ca66f-6ad2-45b0-a011-2bfb1f0762df.jpg?sfvrsn=49b7b07c_1",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "jumeirah-village-triangle-jvt",
+        "status": "decoded",
+        "width": 600,
+        "height": 1000
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "jebel-ali-village",
+      "name": "Jebel Ali Village",
+      "emirate": "Dubai",
+      "publisher": "Nakheel",
+      "sourcePage": "https://www.nakheel.com/en",
+      "imageUrl": "https://www.nakheel.com/images/nakheelcorporatelibraries/developments/jebel-ali-village9030b338-f2bd-4c01-bab3-d110e49fdb07.jpg?sfvrsn=5eeb3640_1",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "jebel-ali-village",
+        "status": "decoded",
+        "width": 600,
+        "height": 1000
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "nad-al-sheba",
+      "name": "Nad Al Sheba",
+      "emirate": "Dubai",
+      "publisher": "Nakheel",
+      "sourcePage": "https://www.nakheel.com/en/developments/nakheel-projects",
+      "imageUrl": "https://www.nakheel.com/images/nakheelcorporatelibraries/developments/nad-al-sheba-villas.jpg?sfvrsn=f7871261_1",
+      "kind": "project_within_community",
+      "note": "Caption as Nad Al Sheba Villas, not the entire wider district.",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "nad-al-sheba",
+        "status": "decoded",
+        "width": 600,
+        "height": 1000
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "ghaf-woods",
+      "name": "Ghaf Woods",
+      "emirate": "Dubai",
+      "publisher": "Majid Al Futtaim",
+      "sourcePage": "https://communities.majidalfuttaim.com/en/index.html",
+      "imageUrl": "https://communities.majidalfuttaim.com/en/assets/images/allbanner/Ghaf-Woods-1.jpg",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "ghaf-woods",
+        "status": "decoded",
+        "width": 1920,
+        "height": 966
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "tilal-al-ghaf",
+      "name": "Tilal Al Ghaf",
+      "emirate": "Dubai",
+      "publisher": "Majid Al Futtaim",
+      "sourcePage": "https://communities.majidalfuttaim.com/en/index.html",
+      "imageUrl": "https://communities.majidalfuttaim.com/en/assets/images/allbanner/Tilal-Al-Ghaf-1.jpg",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "tilal-al-ghaf",
+        "status": "decoded",
+        "width": 1920,
+        "height": 966
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "al-zahia",
+      "name": "Al Zahia",
+      "emirate": "Sharjah",
+      "publisher": "Majid Al Futtaim",
+      "sourcePage": "https://communities.majidalfuttaim.com/en/index.html",
+      "imageUrl": "https://communities.majidalfuttaim.com/en/assets/images/allbanner/Al-Zahia-1.jpg",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "al-zahia",
+        "status": "decoded",
+        "width": 1920,
+        "height": 966
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "sobha-hartland",
+      "name": "Sobha Hartland",
+      "emirate": "Dubai",
+      "publisher": "Sobha Realty",
+      "sourcePage": "https://sobharealty.com/sobha-communities/sobha-sanctuary",
+      "imageUrl": "https://sobharealty.com/sites/default/files/styles/webp/public/2026-11/Sobha_Hartland_community.jpg.webp?itok=91WN2bqj",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "sobha-hartland",
+        "status": "load_error",
+        "width": 0,
+        "height": 0
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "sobha-hartland-ii",
+      "name": "Sobha Hartland II",
+      "emirate": "Dubai",
+      "publisher": "Sobha Realty",
+      "sourcePage": "https://sobharealty.com/sobha-communities/sobha-sanctuary",
+      "imageUrl": "https://sobharealty.com/sites/default/files/styles/webp/public/2026-11/Sobha_hartland2_MENU_0.jpg.webp?itok=5tzB8VSs",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "sobha-hartland-ii",
+        "status": "load_error",
+        "width": 0,
+        "height": 0
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "sobha-central",
+      "name": "Sobha Central",
+      "emirate": "Dubai",
+      "publisher": "Sobha Realty",
+      "sourcePage": "https://sobharealty.com/sobha-communities/sobha-sanctuary",
+      "imageUrl": "https://sobharealty.com/sites/default/files/styles/webp/public/2026-11/Sobha_Central_%28Community_Page%29_MENU_0.jpg.webp?itok=DofWYhPN",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "sobha-central",
+        "status": "load_error",
+        "width": 0,
+        "height": 0
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "sobha-sanctuary",
+      "name": "Sobha Sanctuary",
+      "emirate": "Dubai",
+      "publisher": "Sobha Realty",
+      "sourcePage": "https://sobharealty.com/sobha-communities/sobha-sanctuary",
+      "imageUrl": "https://sobharealty.com/sites/default/files/styles/webp/public/2026-11/The_Woods_%28Community%20Page%29_Sobha_Sanctuary_%20Desk.jpg.webp?itok=QlpsQ47X",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "sobha-sanctuary",
+        "status": "load_error",
+        "width": 0,
+        "height": 0
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "sobha-siniya-island-umm-al-quwain",
+      "name": "Sobha Siniya Island",
+      "emirate": "Umm Al Quwain",
+      "publisher": "Sobha Realty",
+      "sourcePage": "https://sobharealty.com/sobha-communities/sobha-sanctuary",
+      "imageUrl": "https://sobharealty.com/sites/default/files/styles/webp/public/2026-11/siniya_island_community.jpg.webp?itok=6ayrVT_T",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "sobha-siniya-island-umm-al-quwain",
+        "status": "load_error",
+        "width": 0,
+        "height": 0
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "downtown-umm-al-quwain",
+      "name": "Downtown Umm Al Quwain",
+      "emirate": "Umm Al Quwain",
+      "publisher": "Sobha Realty",
+      "sourcePage": "https://sobharealty.com/sobha-communities/sobha-sanctuary",
+      "imageUrl": "https://sobharealty.com/sites/default/files/styles/webp/public/2026-11/Downtown_UAQ_communities.jpg.webp?itok=Kqtu4KaW",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "downtown-umm-al-quwain",
+        "status": "load_error",
+        "width": 0,
+        "height": 0
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "al-marjan-island",
+      "name": "Al Marjan Island",
+      "emirate": "Ras Al Khaimah",
+      "publisher": "Marjan",
+      "sourcePage": "https://marjan.ae/development/masterplans/al-marjan-island",
+      "imageUrl": "https://marjan.ae/hs-fs/hubfs/Marjan_2025/Images/Al%20Marjan%20Island.webp?width=1500&height=845&name=Al%20Marjan%20Island.webp",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "al-marjan-island",
+        "status": "decoded",
+        "width": 1000,
+        "height": 563
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "mina",
+      "name": "Mina Al Arab",
+      "emirate": "Ras Al Khaimah",
+      "publisher": "RAK Properties",
+      "sourcePage": "https://mina.rakproperties.ae/",
+      "imageUrl": "https://mina.rakproperties.ae/wp-content/themes/mina-coastal/assets/figma/hero-still.webp",
+      "kind": "community_visual",
+      "note": "Destination hero; verify frame and whether photograph or artist impression.",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "mina",
+        "status": "decoded",
+        "width": 1366,
+        "height": 720
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "raha-island",
+      "name": "Raha Island",
+      "emirate": "Ras Al Khaimah",
+      "publisher": "RAK Properties",
+      "sourcePage": "https://www.rakproperties.ae/news/raha-island-by-rak-properties-a-luxury-island-destination-in-mina-al-arab/",
+      "imageUrl": "https://www.rakproperties.ae/wp-content/uploads/2024/05/raha.jpg",
+      "kind": "developer_press_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "raha-island",
+        "status": "decoded",
+        "width": 1200,
+        "height": 628
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "hayat-island",
+      "name": "Hayat Island",
+      "emirate": "Ras Al Khaimah",
+      "publisher": "RAK Properties",
+      "sourcePage": "https://mina.rakproperties.ae/",
+      "imageUrl": "https://mina.rakproperties.ae/wp-content/themes/mina-coastal/assets/figma/bdp-beach.webp",
+      "kind": "local_landmark_photo",
+      "note": "Bar du Port Beach on Hayat Island; caption as venue, not island aerial.",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "hayat-island",
+        "status": "decoded",
+        "width": 1600,
+        "height": 1114
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "al-zorah-al-zorah-city",
+      "name": "Al Zorah City",
+      "emirate": "Ajman",
+      "publisher": "Al Zorah City",
+      "sourcePage": "https://www.alzorahcity.com/",
+      "imageUrl": "https://www.alzorahcity.com/storage/288/Al-Zorah-Natural-Mangrove-Reserve-in-Ajman-1.webp",
+      "kind": "local_landmark_photo",
+      "note": "Mangrove reserve, a genuine local landmark; caption accordingly.",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "al-zorah-al-zorah-city",
+        "status": "decoded",
+        "width": 792,
+        "height": 528
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "expo-city-dubai",
+      "name": "Expo City Dubai",
+      "emirate": "Dubai",
+      "publisher": "Expo City Dubai",
+      "sourcePage": "https://www.expocitydubai.com/en/the-expo-city-dubai-master-plan/",
+      "imageUrl": "https://images.ctfassets.net/r2cfrvo3y08m/3P04vhO3MtTxgG2CCZFs7j/903f5254b19932b1b234e07ff9b32258/240821_ECD_39_DMP_Visual_Aerial_UNStudio-update.jpg?w=1440",
+      "kind": "masterplan_render",
+      "note": "Label as official masterplan illustration, not completed site.",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "expo-city-dubai",
+        "status": "decoded",
+        "width": 1439,
+        "height": 661
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "business-bay",
+      "name": "Business Bay",
+      "emirate": "Dubai",
+      "publisher": "Visit Dubai",
+      "sourcePage": "https://www.visitdubai.com/explore-dubai/dubai-neighbourhoods/business-bay",
+      "imageUrl": "https://www.visitdubai.com/-/media/images/leisure/detail-pages/explore-dubai/1-3-dubai-neighbourhoods-t34/dubai-neighborhood-business-bay.jpg?rev=d940b398612f40179ba13112e1150898&cx=0.53&cy=0.4&cw=1556&ch=690",
+      "kind": "tourism_photo",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "business-bay",
+        "status": "decoded",
+        "width": 1556,
+        "height": 690
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "aljada",
+      "name": "Aljada",
+      "emirate": "Sharjah",
+      "publisher": "Arada",
+      "sourcePage": "https://www.arada.com/en/aljada/",
+      "imageUrl": "https://aradawebcontent.blob.core.windows.net/arada-com/2022/06/aljada-banner-2.jpg",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "aljada",
+        "status": "decoded",
+        "width": 960,
+        "height": 500
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "damac-hills-2",
+      "name": "DAMAC Hills 2",
+      "emirate": "Dubai",
+      "publisher": "DAMAC",
+      "sourcePage": "https://preprod.damacproperties.com/en/communities/damac-hills-2-community/",
+      "imageUrl": "https://speed.damacproperties.com/sites/default/files/2022-11/DH2-1.jpg",
+      "kind": "community_visual",
+      "note": "Developer gallery; confirm visual content and permission before publication.",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "damac-hills-2",
+        "status": "decoded",
+        "width": 425,
+        "height": 455
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "fahid-island",
+      "name": "Fahid Island",
+      "emirate": "Abu Dhabi",
+      "publisher": "Aldar",
+      "sourcePage": "https://www.aldar.com/en/news-and-media/aldar-unveils-fahid-island",
+      "imageUrl": "https://images2.cmp.optimizely.com/assets/aldar+fahid+island+pic/Zz1jYzA2MWRhZTVjZWExMWYwYjcwYTk2MzJhODNhOTRmZA==",
+      "kind": "developer_press_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "fahid-island",
+        "status": "decoded",
+        "width": 1430,
+        "height": 804
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "maryam-island",
+      "name": "Maryam Island",
+      "emirate": "Sharjah",
+      "publisher": "Maryam Island / Eagle Hills",
+      "sourcePage": "https://maryamisland.ae/",
+      "imageUrl": "https://maryamisland.ae/wp-content/uploads/2024/05/1maryam-beach-residence-new-renders-hi-res-09-2000x1000-1-1-1536x864.jpg",
+      "kind": "project_within_community",
+      "note": "Maryam Beach Residence official render; label as project within Maryam Island.",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "maryam-island",
+        "status": "decoded",
+        "width": 1536,
+        "height": 864
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "central-park",
+      "name": "Central Park",
+      "emirate": "Dubai",
+      "publisher": "Meraas",
+      "sourcePage": "https://meraas.com/en/master-development/city-walk",
+      "imageUrl": "https://meraas.com/sites/default/files/styles/smallwebp/public/2024-05/City%20Walk%20Central%20Park%20Project%20Listing%20Image.jpg.webp?itok=j-Kbrxnl",
+      "kind": "project_within_community",
+      "note": "City Walk Central Park listing; prefer larger official hero for production.",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "central-park",
+        "status": "decoded",
+        "width": 768,
+        "height": 432
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "city-walk",
+      "name": "City Walk",
+      "emirate": "Dubai",
+      "publisher": "Meraas",
+      "sourcePage": "https://meraas.com/en/master-development/city-walk",
+      "imageUrl": "https://meraas.com/sites/default/files/styles/smallwebp/public/2024-05/Citywalk%20Residences%20Project%20Listing%20Image.jpg.webp?itok=iuq-yAvB",
+      "kind": "project_within_community",
+      "note": "City Walk Residences, not an aerial of the whole community.",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "city-walk",
+        "status": "decoded",
+        "width": 768,
+        "height": 432
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "nad-al-sheba-gardens",
+      "name": "Nad Al Sheba Gardens",
+      "emirate": "Dubai",
+      "publisher": "Meraas",
+      "sourcePage": "https://meraas.com/en/master-development/city-walk",
+      "imageUrl": "https://meraas.com/sites/default/files/2025-08/NASG-listing-Image.jpg",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "nad-al-sheba-gardens",
+        "status": "decoded",
+        "width": 768,
+        "height": 432
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "the-acres",
+      "name": "The Acres",
+      "emirate": "Dubai",
+      "publisher": "Meraas",
+      "sourcePage": "https://meraas.com/en/master-development/city-walk",
+      "imageUrl": "https://meraas.com/sites/default/files/styles/smallwebp/public/2024-04/The%20Acres%20Project%20Page%20Listing%20Image.jpg.webp?itok=-tJHe-pw",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "the-acres",
+        "status": "decoded",
+        "width": 768,
+        "height": 432
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "madinat-jumeirah",
+      "name": "Madinat Jumeirah",
+      "emirate": "Dubai",
+      "publisher": "Meraas",
+      "sourcePage": "https://meraas.com/en/master-development/city-walk",
+      "imageUrl": "https://meraas.com/sites/default/files/styles/smallwebp/public/2024-03/Madinat%20Jumeirah%20Living%20MD%20Listing%20Image.jpg.webp?itok=M6cRz0FV",
+      "kind": "project_within_community",
+      "note": "Madinat Jumeirah Living, not Madinat Jumeirah resort. Confirm identity.",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "madinat-jumeirah",
+        "status": "decoded",
+        "width": 768,
+        "height": 432
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "dubai-design-district",
+      "name": "Dubai Design District",
+      "emirate": "Dubai",
+      "publisher": "Meraas",
+      "sourcePage": "https://meraas.com/en/master-development/city-walk",
+      "imageUrl": "https://meraas.com/sites/default/files/styles/smallwebp/public/2024-05/Design%20Quarter%20at%20d3%20ilisting%20image.jpg.webp?itok=O_Hg11mv",
+      "kind": "project_within_community",
+      "note": "Design Quarter at d3; label project render.",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "dubai-design-district",
+        "status": "decoded",
+        "width": 768,
+        "height": 432
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "jumeirah-beach-residence-jbr",
+      "name": "Jumeirah Beach Residence (JBR)",
+      "emirate": "Dubai",
+      "publisher": "Meraas",
+      "sourcePage": "https://meraas.com/en/master-development/city-walk",
+      "imageUrl": "https://meraas.com/sites/default/files/styles/smallwebp/public/2024-04/1-JBR%20Project%20Page-MD%20Listing%20Image.jpg.webp?itok=dCMqUwba",
+      "kind": "project_within_community",
+      "note": "1/JBR, not the entire district.",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "jumeirah-beach-residence-jbr",
+        "status": "decoded",
+        "width": 768,
+        "height": 432
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "bluewaters-residences",
+      "name": "Bluewaters Residences",
+      "emirate": "Dubai",
+      "publisher": "Meraas",
+      "sourcePage": "https://meraas.com/en/master-development/city-walk",
+      "imageUrl": "https://meraas.com/sites/default/files/styles/smallwebp/public/2024-04/Bluewaters%20Residences%20Project%20Listing%20Image.jpg.webp?itok=jCpuy0Ek",
+      "kind": "project_within_community",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "bluewaters-residences",
+        "status": "decoded",
+        "width": 768,
+        "height": 432
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "port-de-la-mer",
+      "name": "Port De La Mer",
+      "emirate": "Dubai",
+      "publisher": "Meraas",
+      "sourcePage": "https://meraas.com/en/master-development/city-walk",
+      "imageUrl": "https://meraas.com/sites/default/files/styles/smallwebp/public/2024-04/Port%20de%20La%20Mer%20Project%20Listing%20Image_0.jpg.webp?itok=mgjbmIaH",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "port-de-la-mer",
+        "status": "decoded",
+        "width": 768,
+        "height": 432
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "jumeira-bay",
+      "name": "Jumeira Bay",
+      "emirate": "Dubai",
+      "publisher": "Meraas",
+      "sourcePage": "https://meraas.com/en/master-development/city-walk",
+      "imageUrl": "https://meraas.com/sites/default/files/styles/smallwebp/public/2024-03/Jumeirah%20Bay%20MD%20Listing%20Image.jpg.webp?itok=kwuwFVIy",
+      "kind": "community_visual",
+      "note": "Exact community association in source page or named source asset; visual and rights review pending",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "jumeira-bay",
+        "status": "decoded",
+        "width": 768,
+        "height": 432
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    },
+    {
+      "slug": "town-square-dubai",
+      "name": "Town Square Dubai",
+      "emirate": "Dubai",
+      "publisher": "Nshama",
+      "sourcePage": "https://nshamacommunity.ae/",
+      "imageUrl": "https://nshamacommunity.ae/public/uploads/coverImages/1749738571RD973.jpg",
+      "kind": "candidate_needs_visual_confirmation",
+      "note": "Homepage image URL; exact scene and watermark require visual confirmation.",
+      "sourceCheckedAt": "2026-11-27",
+      "imageDecode": {
+        "slug": "town-square-dubai",
+        "status": "decoded",
+        "width": 714,
+        "height": 476
+      },
+      "reuseRights": "not_confirmed",
+      "visualReview": "pending",
+      "storage": {
+        "primary": "idrive_e2",
+        "status": "not_ingested"
+      },
+      "publication": "candidate_not_approved"
+    }
+  ]
+}
