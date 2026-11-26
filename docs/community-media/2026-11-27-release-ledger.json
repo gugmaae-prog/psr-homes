@@ -12,9 +12,9 @@
   "counts": {
     "liveCards": 225,
     "distinctIdentityKeys": 225,
-    "recordsWithCandidates": 76,
-    "recordsWithoutCandidates": 149,
-    "recordsWithOfficialCandidates": 68,
+    "recordsWithCandidates": 93,
+    "recordsWithoutCandidates": 132,
+    "recordsWithOfficialCandidates": 87,
     "aliasCandidates": 15,
     "approvedAssets": 0
   },
@@ -1862,9 +1862,26 @@
         "height": 1013,
         "dHash": "6592ab0b4d0f05d6"
       },
-      "candidates": [],
+      "candidates": [
+        {
+          "origin": "official_source",
+          "publisher": "Dubai Holding Community Management",
+          "sourcePage": "https://www.dubaiholding.com/en/our-business/our-companies/dubai-holding-community-management",
+          "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/697c9f0196c726255767764d_Arjan.avif",
+          "kind": "community_visual",
+          "sourceCheckedAt": "2026-11-27",
+          "selection": "needs_review",
+          "visualReview": "pending",
+          "reuseRights": "not_confirmed",
+          "storageStatus": "not_ingested",
+          "imageDecode": {
+            "status": "not_verified"
+          },
+          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending."
+        }
+      ],
       "approvedAsset": null,
-      "status": "source_required"
+      "status": "candidate_review_required"
     },
     {
       "id": "Dubai|central-park",
@@ -2299,6 +2316,22 @@
           "kind": "project_within_community",
           "selection": "needs_review",
           "storageStatus": "manifest_mapping_only_not_idrive_readback"
+        },
+        {
+          "origin": "official_source",
+          "publisher": "Dubai Holding Community Management",
+          "sourcePage": "https://www.dubaiholding.com/en/our-business/our-companies/dubai-holding-community-management",
+          "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/697c9cc96acd81e3897528cb_Meydan.avif",
+          "kind": "community_visual",
+          "sourceCheckedAt": "2026-11-27",
+          "selection": "needs_review",
+          "visualReview": "pending",
+          "reuseRights": "not_confirmed",
+          "storageStatus": "not_ingested",
+          "imageDecode": {
+            "status": "not_verified"
+          },
+          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending."
         }
       ],
       "approvedAsset": null,
@@ -2375,9 +2408,26 @@
         "height": 1350,
         "dHash": "4dcdd148590dca25"
       },
-      "candidates": [],
+      "candidates": [
+        {
+          "origin": "official_source",
+          "publisher": "Wasl",
+          "sourcePage": "https://www.wasl.ae/en/campaign/wasl-gate",
+          "imageUrl": "https://prod-waslcdn.wasl.ae/waslae-filesystem/2023-11/3_3__11zon%20%281%29.webp",
+          "kind": "community_visual",
+          "sourceCheckedAt": "2026-11-27",
+          "selection": "needs_review",
+          "visualReview": "pending",
+          "reuseRights": "not_confirmed",
+          "storageStatus": "not_ingested",
+          "imageDecode": {
+            "status": "not_verified"
+          },
+          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending."
+        }
+      ],
       "approvedAsset": null,
-      "status": "source_required"
+      "status": "candidate_review_required"
     },
     {
       "id": "Abu Dhabi|yas-island",
@@ -2569,9 +2619,26 @@
         "height": 1110,
         "dHash": "7777af97ab8dd1c9"
       },
-      "candidates": [],
+      "candidates": [
+        {
+          "origin": "official_source",
+          "publisher": "Visit Dubai",
+          "sourcePage": "https://www.visitdubai.com/en/explore-dubai/dubai-neighbourhoods/jumeirah-lakes-towers",
+          "imageUrl": "https://www.visitdubai.com/-/media/images/leisure/neighbourhood-pages/jumeirah-lakes-towers/fallback/jlt-hero.jpg?rev=2a9e645d36f947859f1c773791d3172d&cx=0.49&cy=0.33&cw=1556&ch=690",
+          "kind": "community_visual",
+          "sourceCheckedAt": "2026-11-27",
+          "selection": "needs_review",
+          "visualReview": "pending",
+          "reuseRights": "not_confirmed",
+          "storageStatus": "not_ingested",
+          "imageDecode": {
+            "status": "not_verified"
+          },
+          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending."
+        }
+      ],
       "approvedAsset": null,
-      "status": "source_required"
+      "status": "candidate_review_required"
     },
     {
       "id": "Dubai|majan",
@@ -2783,9 +2850,26 @@
         "height": 1110,
         "dHash": "7777af97ab8dd1c9"
       },
-      "candidates": [],
+      "candidates": [
+        {
+          "origin": "official_source",
+          "publisher": "Al Hamra",
+          "sourcePage": "https://communities.alhamra.ae/al-hamra-village",
+          "imageUrl": "https://communities.alhamra.ae/media/e5hoqu0h/al-hamra-village.jpg?width=1920&height=500",
+          "kind": "community_visual",
+          "sourceCheckedAt": "2026-11-27",
+          "selection": "needs_review",
+          "visualReview": "pending",
+          "reuseRights": "not_confirmed",
+          "storageStatus": "not_ingested",
+          "imageDecode": {
+            "status": "not_verified"
+          },
+          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending."
+        }
+      ],
       "approvedAsset": null,
-      "status": "source_required"
+      "status": "candidate_review_required"
     },
     {
       "id": "Sharjah|al-mamsha",
@@ -2807,9 +2891,26 @@
         "height": 1350,
         "dHash": "4dcdd148590dca25"
       },
-      "candidates": [],
+      "candidates": [
+        {
+          "origin": "official_source",
+          "publisher": "Alef Group",
+          "sourcePage": "https://www.alefgroup.ae/",
+          "imageUrl": "https://www.alefgroup.ae/wp-content/uploads/2026/03/almamsha-2x-scaled-e1778661766746.jpg",
+          "kind": "community_visual",
+          "sourceCheckedAt": "2026-11-27",
+          "selection": "needs_review",
+          "visualReview": "pending",
+          "reuseRights": "not_confirmed",
+          "storageStatus": "not_ingested",
+          "imageDecode": {
+            "status": "not_verified"
+          },
+          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending."
+        }
+      ],
       "approvedAsset": null,
-      "status": "source_required"
+      "status": "candidate_review_required"
     },
     {
       "id": "Ajman|al-zorah-al-zorah-city",
@@ -2998,9 +3099,26 @@
         "height": 832,
         "dHash": "c142aa4ac9ce2d5e"
       },
-      "candidates": [],
+      "candidates": [
+        {
+          "origin": "official_source",
+          "publisher": "Dubai Holding Community Management",
+          "sourcePage": "https://www.dubaiholding.com/en/our-business/our-companies/dubai-holding-community-management",
+          "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/697c9e661114da476c867640_Dubai%20Harbour.avif",
+          "kind": "community_visual",
+          "sourceCheckedAt": "2026-11-27",
+          "selection": "needs_review",
+          "visualReview": "pending",
+          "reuseRights": "not_confirmed",
+          "storageStatus": "not_ingested",
+          "imageDecode": {
+            "status": "not_verified"
+          },
+          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending."
+        }
+      ],
       "approvedAsset": null,
-      "status": "source_required"
+      "status": "candidate_review_required"
     },
     {
       "id": "Dubai|dubai-land-residence-complex-dlrc",
@@ -3326,6 +3444,22 @@
           "kind": "project_within_community",
           "selection": "needs_review",
           "storageStatus": "manifest_mapping_only_not_idrive_readback"
+        },
+        {
+          "origin": "official_source",
+          "publisher": "Dubai Holding Community Management",
+          "sourcePage": "https://www.dubaiholding.com/en/our-business/our-companies/dubai-holding-community-management",
+          "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/697c9c02727a4e9d561ac84a_Downtown%20Jebel%20Ali.avif",
+          "kind": "community_visual",
+          "sourceCheckedAt": "2026-11-27",
+          "selection": "needs_review",
+          "visualReview": "pending",
+          "reuseRights": "not_confirmed",
+          "storageStatus": "not_ingested",
+          "imageDecode": {
+            "status": "not_verified"
+          },
+          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending."
         }
       ],
       "approvedAsset": null,
@@ -3786,9 +3920,26 @@
         "contentType": "text/plain; charset=utf-8",
         "error": "Error: HTTP 502"
       },
-      "candidates": [],
+      "candidates": [
+        {
+          "origin": "official_source",
+          "publisher": "Dubai Holding Community Management",
+          "sourcePage": "https://www.dubaiholding.com/en/our-business/our-companies/dubai-holding-community-management",
+          "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/697c9fbec03bc590a85d5d00_Dubailand%20Residences.avif",
+          "kind": "community_visual",
+          "sourceCheckedAt": "2026-11-27",
+          "selection": "needs_review",
+          "visualReview": "pending",
+          "reuseRights": "not_confirmed",
+          "storageStatus": "not_ingested",
+          "imageDecode": {
+            "status": "not_verified"
+          },
+          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending."
+        }
+      ],
       "approvedAsset": null,
-      "status": "source_required"
+      "status": "candidate_review_required"
     },
     {
       "id": "Dubai|dubai-science-park",
@@ -3834,9 +3985,26 @@
         "height": 832,
         "dHash": "c142aa4ac9ce2d5e"
       },
-      "candidates": [],
+      "candidates": [
+        {
+          "origin": "official_source",
+          "publisher": "Dubai Holding Community Management",
+          "sourcePage": "https://www.dubaiholding.com/en/our-business/our-companies/dubai-holding-community-management",
+          "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/697c9c29b7af7265fcde3917_Dubai%20Water%20Canal.avif",
+          "kind": "community_visual",
+          "sourceCheckedAt": "2026-11-27",
+          "selection": "needs_review",
+          "visualReview": "pending",
+          "reuseRights": "not_confirmed",
+          "storageStatus": "not_ingested",
+          "imageDecode": {
+            "status": "not_verified"
+          },
+          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending."
+        }
+      ],
       "approvedAsset": null,
-      "status": "source_required"
+      "status": "candidate_review_required"
     },
     {
       "id": "Dubai|expo-valley-expo-city-dubai",
@@ -4241,9 +4409,26 @@
         "height": 1350,
         "dHash": "4dcdd148590dca25"
       },
-      "candidates": [],
+      "candidates": [
+        {
+          "origin": "official_source",
+          "publisher": "Wasl",
+          "sourcePage": "https://www.wasl.ae/en/campaign/wasl-1",
+          "imageUrl": "https://prod-waslcdn.wasl.ae/waslae-filesystem/2023-11/wasl%201.webp",
+          "kind": "community_visual",
+          "sourceCheckedAt": "2026-11-27",
+          "selection": "needs_review",
+          "visualReview": "pending",
+          "reuseRights": "not_confirmed",
+          "storageStatus": "not_ingested",
+          "imageDecode": {
+            "status": "not_verified"
+          },
+          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending."
+        }
+      ],
       "approvedAsset": null,
-      "status": "source_required"
+      "status": "candidate_review_required"
     },
     {
       "id": "Sharjah|waterfront-city",
@@ -5444,9 +5629,26 @@
         "contentType": "text/plain; charset=utf-8",
         "error": "Error: HTTP 502"
       },
-      "candidates": [],
+      "candidates": [
+        {
+          "origin": "official_source",
+          "publisher": "Alef Group",
+          "sourcePage": "https://www.alefgroup.ae/",
+          "imageUrl": "https://www.alefgroup.ae/wp-content/uploads/2026/04/Olfah-2x-2-scaled-e1778661873922.jpg",
+          "kind": "community_visual",
+          "sourceCheckedAt": "2026-11-27",
+          "selection": "needs_review",
+          "visualReview": "pending",
+          "reuseRights": "not_confirmed",
+          "storageStatus": "not_ingested",
+          "imageDecode": {
+            "status": "not_verified"
+          },
+          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending."
+        }
+      ],
       "approvedAsset": null,
-      "status": "source_required"
+      "status": "candidate_review_required"
     },
     {
       "id": "Ras Al Khaimah|raha-island",
@@ -6098,9 +6300,26 @@
         "height": 821,
         "dHash": "fffbfbfbfb7bab5a"
       },
-      "candidates": [],
+      "candidates": [
+        {
+          "origin": "official_source",
+          "publisher": "Dubai Holding Community Management",
+          "sourcePage": "https://www.dubaiholding.com/en/our-business/our-companies/dubai-holding-community-management",
+          "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/697c9e0b9ef7dde681730047_Al%20Wasl%20District.avif",
+          "kind": "community_visual",
+          "sourceCheckedAt": "2026-11-27",
+          "selection": "needs_review",
+          "visualReview": "pending",
+          "reuseRights": "not_confirmed",
+          "storageStatus": "not_ingested",
+          "imageDecode": {
+            "status": "not_verified"
+          },
+          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending."
+        }
+      ],
       "approvedAsset": null,
-      "status": "source_required"
+      "status": "candidate_review_required"
     },
     {
       "id": "Ajman|al-zorah",
@@ -6317,9 +6536,26 @@
         "height": 1110,
         "dHash": "7777af97ab8dd1c9"
       },
-      "candidates": [],
+      "candidates": [
+        {
+          "origin": "official_source",
+          "publisher": "Dubai Holding Community Management",
+          "sourcePage": "https://www.dubaiholding.com/en/our-business/our-companies/dubai-holding-community-management",
+          "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/6989d38d7a10c42ff0822157_Bluewaters.avif",
+          "kind": "community_visual",
+          "sourceCheckedAt": "2026-11-27",
+          "selection": "needs_review",
+          "visualReview": "pending",
+          "reuseRights": "not_confirmed",
+          "storageStatus": "not_ingested",
+          "imageDecode": {
+            "status": "not_verified"
+          },
+          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending."
+        }
+      ],
       "approvedAsset": null,
-      "status": "source_required"
+      "status": "candidate_review_required"
     },
     {
       "id": "Dubai|bluewaters-residences",
@@ -6665,9 +6901,26 @@
         "height": 1024,
         "dHash": "8fad0aa9692fa31e"
       },
-      "candidates": [],
+      "candidates": [
+        {
+          "origin": "official_source",
+          "publisher": "Al Hamra",
+          "sourcePage": "https://alhamra.ae/en/residential-falcon-island/",
+          "imageUrl": "https://alhamra.ae/media/ep5hp22n/falcon-banner.jpg",
+          "kind": "community_visual",
+          "sourceCheckedAt": "2026-11-27",
+          "selection": "needs_review",
+          "visualReview": "pending",
+          "reuseRights": "not_confirmed",
+          "storageStatus": "not_ingested",
+          "imageDecode": {
+            "status": "not_verified"
+          },
+          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending."
+        }
+      ],
       "approvedAsset": null,
-      "status": "source_required"
+      "status": "candidate_review_required"
     },
     {
       "id": "Fujairah|fujairah-beach",
@@ -6737,9 +6990,26 @@
         "height": 821,
         "dHash": "fffbfbfbfb7bab5a"
       },
-      "candidates": [],
+      "candidates": [
+        {
+          "origin": "official_source",
+          "publisher": "Alef Group",
+          "sourcePage": "https://www.alefgroup.ae/",
+          "imageUrl": "https://www.alefgroup.ae/wp-content/uploads/2026/04/Hayyan-2x-2-scaled-e1778661712779.jpg",
+          "kind": "community_visual",
+          "sourceCheckedAt": "2026-11-27",
+          "selection": "needs_review",
+          "visualReview": "pending",
+          "reuseRights": "not_confirmed",
+          "storageStatus": "not_ingested",
+          "imageDecode": {
+            "status": "not_verified"
+          },
+          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending."
+        }
+      ],
       "approvedAsset": null,
-      "status": "source_required"
+      "status": "candidate_review_required"
     },
     {
       "id": "Dubai|island-b-dubai-islands",
@@ -6809,9 +7079,26 @@
         "height": 1400,
         "dHash": "f0f0e4eeb5e696b7"
       },
-      "candidates": [],
+      "candidates": [
+        {
+          "origin": "official_source",
+          "publisher": "Experience Abu Dhabi",
+          "sourcePage": "https://visitabudhabi.ae/en/where-to-go/islands/jubail-island",
+          "imageUrl": "https://visitabudhabi.ae/-/media/project/maritime/where-to-go/islands/jubail-island/header/jubail-mangroves-park-1.jpg?rev=cbb2480908184d6eba65b57c9bbfbc27&cx=0.54&cy=0.43&cw=5120&ch=1240&hash=B9933AE4A36D6AF5E2291936714F82FF",
+          "kind": "community_visual",
+          "sourceCheckedAt": "2026-11-27",
+          "selection": "needs_review",
+          "visualReview": "pending",
+          "reuseRights": "not_confirmed",
+          "storageStatus": "not_ingested",
+          "imageDecode": {
+            "status": "not_verified"
+          },
+          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending."
+        }
+      ],
       "approvedAsset": null,
-      "status": "source_required"
+      "status": "candidate_review_required"
     },
     {
       "id": "Dubai|jumeira-bay-island",
@@ -6833,9 +7120,26 @@
         "height": 1400,
         "dHash": "131a3726362a4244"
       },
-      "candidates": [],
+      "candidates": [
+        {
+          "origin": "official_source",
+          "publisher": "Dubai Holding Community Management",
+          "sourcePage": "https://www.dubaiholding.com/en/our-business/our-companies/dubai-holding-community-management",
+          "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/6989d41cb31541ec913a56b2_Jumeirah%20Bay.avif",
+          "kind": "community_visual",
+          "sourceCheckedAt": "2026-11-27",
+          "selection": "needs_review",
+          "visualReview": "pending",
+          "reuseRights": "not_confirmed",
+          "storageStatus": "not_ingested",
+          "imageDecode": {
+            "status": "not_verified"
+          },
+          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending."
+        }
+      ],
       "approvedAsset": null,
-      "status": "source_required"
+      "status": "candidate_review_required"
     },
     {
       "id": "Dubai|jumeirah-park",
@@ -7124,9 +7428,26 @@
         "height": 821,
         "dHash": "fffbfbfbfb7bab5a"
       },
-      "candidates": [],
+      "candidates": [
+        {
+          "origin": "official_source",
+          "publisher": "Dubai Holding Community Management",
+          "sourcePage": "https://www.dubaiholding.com/en/our-business/our-companies/dubai-holding-community-management",
+          "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/697c9eb2eef3d8875ea6bc31_Pearl%20Jumeira.avif",
+          "kind": "community_visual",
+          "sourceCheckedAt": "2026-11-27",
+          "selection": "needs_review",
+          "visualReview": "pending",
+          "reuseRights": "not_confirmed",
+          "storageStatus": "not_ingested",
+          "imageDecode": {
+            "status": "not_verified"
+          },
+          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending."
+        }
+      ],
       "approvedAsset": null,
-      "status": "source_required"
+      "status": "candidate_review_required"
     },
     {
       "id": "Dubai|port-de-la-mer",
