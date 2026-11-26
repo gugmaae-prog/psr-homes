@@ -1,0 +1,211 @@
+{
+  "schema": "psr-community-visual-review-v1",
+  "checkedAt": "2026-11-27",
+  "counts": {
+    "reviewed": 29,
+    "rejected": 14,
+    "held": 8,
+    "shortlisted": 7,
+    "recordsWithNonRejectedCandidate": 80
+  },
+  "reviews": [
+    {
+      "slug": "al-wasl",
+      "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/697c9e0b9ef7dde681730047_Al%20Wasl%20District.avif",
+      "status": "rejected",
+      "note": "Confirmed community logo rather than a community photograph."
+    },
+    {
+      "slug": "arjan",
+      "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/697c9f0196c726255767764d_Arjan.avif",
+      "status": "rejected",
+      "note": "Confirmed community logo rather than a community photograph."
+    },
+    {
+      "slug": "bluewaters-island",
+      "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/6989d38d7a10c42ff0822157_Bluewaters.avif",
+      "status": "rejected",
+      "note": "Confirmed community logo rather than a community photograph."
+    },
+    {
+      "slug": "downtown-jebel-ali",
+      "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/697c9c02727a4e9d561ac84a_Downtown%20Jebel%20Ali.avif",
+      "status": "rejected",
+      "note": "Confirmed community logo rather than a community photograph."
+    },
+    {
+      "slug": "dubai-harbour",
+      "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/697c9e661114da476c867640_Dubai%20Harbour.avif",
+      "status": "rejected",
+      "note": "Confirmed community logo rather than a community photograph."
+    },
+    {
+      "slug": "dubai-land-residence-complex",
+      "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/697c9fbec03bc590a85d5d00_Dubailand%20Residences.avif",
+      "status": "rejected",
+      "note": "Confirmed community logo rather than a community photograph."
+    },
+    {
+      "slug": "dubai-water-canal",
+      "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/697c9c29b7af7265fcde3917_Dubai%20Water%20Canal.avif",
+      "status": "rejected",
+      "note": "Confirmed community logo rather than a community photograph."
+    },
+    {
+      "slug": "jumeira-bay-island",
+      "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/6989d41cb31541ec913a56b2_Jumeirah%20Bay.avif",
+      "status": "rejected",
+      "note": "Confirmed community logo rather than a community photograph."
+    },
+    {
+      "slug": "meydan",
+      "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/697c9cc96acd81e3897528cb_Meydan.avif",
+      "status": "rejected",
+      "note": "Confirmed community logo rather than a community photograph."
+    },
+    {
+      "slug": "pearl-jumeirah",
+      "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/697c9eb2eef3d8875ea6bc31_Pearl%20Jumeira.avif",
+      "status": "rejected",
+      "note": "Confirmed community logo rather than a community photograph."
+    },
+    {
+      "slug": "al-mamsha",
+      "imageUrl": "https://www.alefgroup.ae/wp-content/uploads/2026/03/almamsha-2x-scaled-e1778661766746.jpg",
+      "status": "hold",
+      "note": "Brand graphic bars and dark lower gradient; prefer original clean exterior."
+    },
+    {
+      "slug": "hayyan",
+      "imageUrl": "https://www.alefgroup.ae/wp-content/uploads/2026/04/Hayyan-2x-2-scaled-e1778661712779.jpg",
+      "status": "hold",
+      "note": "Brand graphic bars and dark lower gradient; prefer unaltered clean aerial."
+    },
+    {
+      "slug": "olfah-muwaileh",
+      "imageUrl": "https://www.alefgroup.ae/wp-content/uploads/2026/04/Olfah-2x-2-scaled-e1778661873922.jpg",
+      "status": "hold",
+      "note": "Brand graphic bars and dark lower gradient; prefer clean original."
+    },
+    {
+      "slug": "wasl-1",
+      "imageUrl": "https://prod-waslcdn.wasl.ae/waslae-filesystem/2023-11/wasl%201.webp",
+      "status": "shortlisted",
+      "note": "Recognizable local exterior or landscape in contact sheet; full resolution and usage approval remain pending."
+    },
+    {
+      "slug": "wasl-gate",
+      "imageUrl": "https://prod-waslcdn.wasl.ae/waslae-filesystem/2023-11/3_3__11zon%20%281%29.webp",
+      "status": "shortlisted",
+      "note": "Recognizable local exterior or landscape in contact sheet; full resolution and usage approval remain pending."
+    },
+    {
+      "slug": "jumeirah-lake-towers-jlt",
+      "imageUrl": "https://www.visitdubai.com/-/media/images/leisure/neighbourhood-pages/jumeirah-lakes-towers/fallback/jlt-hero.jpg?rev=2a9e645d36f947859f1c773791d3172d&cx=0.49&cy=0.33&cw=1556&ch=690",
+      "status": "shortlisted",
+      "note": "Recognizable local exterior or landscape in contact sheet; full resolution and usage approval remain pending."
+    },
+    {
+      "slug": "al-hamra-village",
+      "imageUrl": "https://communities.alhamra.ae/media/e5hoqu0h/al-hamra-village.jpg?width=1920&height=500",
+      "status": "hold",
+      "note": "Very wide panoramic crop; locate full landscape version."
+    },
+    {
+      "slug": "falcon-island",
+      "imageUrl": "https://alhamra.ae/media/ep5hp22n/falcon-banner.jpg",
+      "status": "rejected",
+      "note": "Text and project-statistic overlay obscures image."
+    },
+    {
+      "slug": "jubail-island",
+      "imageUrl": "https://visitabudhabi.ae/-/media/project/maritime/where-to-go/islands/jubail-island/header/jubail-mangroves-park-1.jpg?rev=cbb2480908184d6eba65b57c9bbfbc27&cx=0.54&cy=0.43&cw=5120&ch=1240&hash=B9933AE4A36D6AF5E2291936714F82FF",
+      "status": "hold",
+      "note": "Very wide crop with person; seek full mangrove view."
+    },
+    {
+      "slug": "fujairah-beach",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Fujairah_Coastline.jpg",
+      "status": "hold",
+      "note": "Could not render in contact sheet; validate original download."
+    },
+    {
+      "slug": "sharjah",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/28/Skyline_of_Sharjah_city.jpg",
+      "status": "shortlisted",
+      "note": "Recognizable local exterior or landscape in contact sheet; full resolution and usage approval remain pending."
+    },
+    {
+      "slug": "abu-dhabi",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Abu_Dhabi_Corniche_skyline.jpg",
+      "status": "rejected",
+      "note": "Tilted dark palm/sky image, not useful city skyline."
+    },
+    {
+      "slug": "al-sufouh",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Al_Sufouh_1_-_Dubai_-_United_Arab_Emirates_-_panoramio_%284%29.jpg",
+      "status": "hold",
+      "note": "Could not render in contact sheet; validate original download."
+    },
+    {
+      "slug": "saadiyat-island",
+      "imageUrl": "https://visitabudhabi.ae/-/media/project/maritime/where-to-go/islands/saadiyat-island/article/saadiyat-island-getting-there.jpg?rev=4f7551a946134263aa24e30e62752427&cx=0.52&cy=0.81&cw=2128&ch=1352&hash=3F3A397720406E5384DDAE73A4217D99",
+      "status": "shortlisted",
+      "note": "Recognizable local exterior or landscape in contact sheet; full resolution and usage approval remain pending."
+    },
+    {
+      "slug": "yas-island",
+      "imageUrl": "https://visitabudhabi.ae/-/media/project/maritime/where-to-go/islands/yas-island/article/getting-to-yas-island1.jpg?rev=3bc6a1a0c179465eaa4c3a9d6850f25f&cx=0&cy=0&cw=2128&ch=1352&hash=2889AC87CB526959DD73D6D483670522",
+      "status": "rejected",
+      "note": "Transportation bus in front of mural, not a destination landscape."
+    },
+    {
+      "slug": "al-maryah-island",
+      "imageUrl": "https://visitabudhabi.ae/-/media/project/maritime/where-to-go/islands/al-maryah-island/article/al-maryah-view.jpg?rev=3106680f525245bfbaa2017da07826df&cx=0&cy=0&cw=2128&ch=1352&hash=65BBC9E03F760E7AB1C0716077DD1467",
+      "status": "shortlisted",
+      "note": "Recognizable local exterior or landscape in contact sheet; full resolution and usage approval remain pending."
+    },
+    {
+      "slug": "al-reem-island",
+      "imageUrl": "https://visitabudhabi.ae/-/media/project/maritime/where-to-go/islands/al-reem-island/article/reem-island-hero.jpeg?rev=4e181ae8fa094b1ba6f0eea9ba9871e4&cx=0&cy=0&cw=2128&ch=1352&hash=8DED18CC485127A7617BECCBBF2C82A3",
+      "status": "shortlisted",
+      "note": "Recognizable local exterior or landscape in contact sheet; full resolution and usage approval remain pending."
+    },
+    {
+      "slug": "al-barsha",
+      "imageUrl": "https://www.visitdubai.com/-/media/images/leisure/neighbourhood-pages/al-barsha-and-barsha-heights/fallback/al-barsha-header-dtcm.jpg?rev=bb09bc9de1784f8595f4ed3b090ae2f6&cx=0.5&cy=0.5&cw=1556&ch=690",
+      "status": "rejected",
+      "note": "Shopping mall interior and people, not district."
+    },
+    {
+      "slug": "dubai-maritime-city",
+      "imageUrl": "https://www.moet.gov.ae/documents/20121/193445/Dubai-Maritime-City-%287%29.jpg/6aacbcec-44e8-d003-6ae3-5795a39aa7ce?t=1628057439598",
+      "status": "hold",
+      "note": "Could not render in contact sheet; validate source file."
+    }
+  ],
+  "alternatives": [
+    {
+      "slug": "yas-island",
+      "publisher": "Experience Abu Dhabi",
+      "sourcePage": "https://visitabudhabi.ae/en/where-to-go/islands/yas-island",
+      "imageUrl": "https://visitabudhabi.ae/-/media/project/maritime/where-to-go/islands/yas-island/header/yas-island-marina-view.jpg?rev=aac07dbf8ca54fe8aa1265d490242323&cx=0.56&cy=0.68&cw=5120&ch=1240&hash=1697B7720AF11DB648557A98378AA21D",
+      "note": "Yas Marina header; need full-size crop."
+    },
+    {
+      "slug": "jubail-island",
+      "publisher": "Experience Abu Dhabi",
+      "sourcePage": "https://visitabudhabi.ae/en/where-to-go/islands/jubail-island",
+      "imageUrl": "https://visitabudhabi.ae/-/media/project/maritime/where-to-go/islands/jubail-island/article/jubail-mangrove-park-(1).jpg?rev=5f6e80fb53904826a820291a2fa3ef94&cx=0&cy=0&cw=2128&ch=1352&hash=90F18BB19861C8CE46D21990CA5C6DA2",
+      "note": "Full landscape mangrove park alternative."
+    },
+    {
+      "slug": "falcon-island",
+      "publisher": "Al Hamra",
+      "sourcePage": "https://alhamra.ae/en/residential-falcon-island/",
+      "imageUrl": "https://alhamra.ae/media/c3ill2ob/falcon-content-1.jpg",
+      "note": "Named destination content image; review for clean landscape."
+    }
+  ],
+  "gate": "No storage or publishing approval. Rejected and held candidates remain as evidence only."
+}
