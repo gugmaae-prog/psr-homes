@@ -1,0 +1,238 @@
+{
+  "checkedAt": "2026-11-27",
+  "schema": "psr-community-visual-review-v1",
+  "sourceManifestCommit": "88302fa3be304799d3a4e96338368ea990b1174f",
+  "summary": {
+    "initialLandscapeImagesInspected": 30,
+    "initialShortlisted": 24,
+    "initialLandscapeHeld": 6,
+    "additionalShortlisted": 2
+  },
+  "reviews": [
+    {
+      "slug": "dubai-creek-harbour",
+      "imageUrl": "https://www.emaar.com/_next/image?url=%2Fcms-media%2Fuploads%2F01-Community-Image---2400x1600px.jpg&w=2560&q=75",
+      "result": "shortlisted_for_final_rights_and_integrity_review",
+      "note": "Visual contact sheet inspected; relevant community scene or clearly identified project illustration. Verify photo/render classification, crop and usage rights before publication."
+    },
+    {
+      "slug": "dubai-hills-estate",
+      "imageUrl": "https://www.emaar.com/_next/image?url=%2Fcms-media%2Fuploads%2F01_Community_Image_2400x1600px_da5cbb63ef.jpg&w=2560&q=75",
+      "result": "shortlisted_for_final_rights_and_integrity_review",
+      "note": "Visual contact sheet inspected; relevant community scene or clearly identified project illustration. Verify photo/render classification, crop and usage rights before publication."
+    },
+    {
+      "slug": "the-oasis",
+      "imageUrl": "https://www.emaar.com/_next/image?url=%2Fcms-media%2Fuploads%2F01_Community_Image_2400x1600px_fe0ff4db67.jpg&w=2560&q=75",
+      "result": "hold",
+      "note": "Road and car dominate scene; source wider landscape or aerial."
+    },
+    {
+      "slug": "grand-polo-club-and-resort",
+      "imageUrl": "https://www.emaar.com/_next/image?url=%2Fcms-media%2Fuploads%2F01_Community_Image_2400x1600px_dd31d3764c.jpg&w=2560&q=75",
+      "result": "shortlisted_for_final_rights_and_integrity_review",
+      "note": "Visual contact sheet inspected; relevant community scene or clearly identified project illustration. Verify photo/render classification, crop and usage rights before publication."
+    },
+    {
+      "slug": "rashid-yachts-and-marina",
+      "imageUrl": "https://www.emaar.com/_next/image?url=%2Fcms-media%2Fuploads%2F01_Community_Image_2400x1600px_abedc64b4f.jpg&w=2560&q=75",
+      "result": "shortlisted_for_final_rights_and_integrity_review",
+      "note": "Visual contact sheet inspected; relevant community scene or clearly identified project illustration. Verify photo/render classification, crop and usage rights before publication."
+    },
+    {
+      "slug": "the-valley",
+      "imageUrl": "https://www.emaar.com/_next/image?url=%2Fcms-media%2Fuploads%2F01_Community_Image_2400x1600px_847728711e.jpg&w=2560&q=75",
+      "result": "shortlisted_for_final_rights_and_integrity_review",
+      "note": "Visual contact sheet inspected; relevant community scene or clearly identified project illustration. Verify photo/render classification, crop and usage rights before publication."
+    },
+    {
+      "slug": "the-heights-country-club-and-wellness",
+      "imageUrl": "https://www.emaar.com/_next/image?url=%2Fcms-media%2Fuploads%2F01_Community_Image_2400x1600px_f10dad83a0.jpg&w=2560&q=75",
+      "result": "hold",
+      "note": "Road and entrance sign dominate; source wider community visual."
+    },
+    {
+      "slug": "emaar-south",
+      "imageUrl": "https://www.emaar.com/_next/image?url=%2Fcms-media%2Fuploads%2F01_Community_Image_2400x1600px_8d14864b10.jpg&w=2560&q=75",
+      "result": "shortlisted_for_final_rights_and_integrity_review",
+      "note": "Visual contact sheet inspected; relevant community scene or clearly identified project illustration. Verify photo/render classification, crop and usage rights before publication."
+    },
+    {
+      "slug": "emaar-beachfront",
+      "imageUrl": "https://www.emaar.com/_next/image?url=%2Fcms-media%2Fuploads%2F01_Community_Image_2400x1600px_5277e296f9.jpg&w=2560&q=75",
+      "result": "shortlisted_for_final_rights_and_integrity_review",
+      "note": "Visual contact sheet inspected; relevant community scene or clearly identified project illustration. Verify photo/render classification, crop and usage rights before publication."
+    },
+    {
+      "slug": "downtown-dubai",
+      "imageUrl": "https://www.emaar.com/_next/image?url=%2Fcms-media%2Fuploads%2Fdowntown_desktop_bc9a2f8d92.webp&w=2560&q=75",
+      "result": "hold",
+      "note": "Very wide 3.2:1 skyline panorama; prefer alternate for standard card crop."
+    },
+    {
+      "slug": "dubai-marina",
+      "imageUrl": "https://www.emaar.com/_next/image?url=%2Fcms-media%2Fuploads%2F2822_hero_Image_dc232572ee_prod.jpg&w=2560&q=75",
+      "result": "shortlisted_for_final_rights_and_integrity_review",
+      "note": "Visual contact sheet inspected; relevant community scene or clearly identified project illustration. Verify photo/render classification, crop and usage rights before publication."
+    },
+    {
+      "slug": "arabian-ranches",
+      "imageUrl": "https://www.emaar.com/_next/image?url=%2Fcms-media%2Fuploads%2F1268_hero_Image_70e56c5ea9_prod.jpg&w=2560&q=75",
+      "result": "shortlisted_for_final_rights_and_integrity_review",
+      "note": "Visual contact sheet inspected; relevant community scene or clearly identified project illustration. Verify photo/render classification, crop and usage rights before publication."
+    },
+    {
+      "slug": "arabian-ranches-iii",
+      "imageUrl": "https://www.emaar.com/_next/image?url=%2Fcms-media%2Fuploads%2F1286_hero_Image_dd2a3822b6_prod.jpg&w=2560&q=75",
+      "result": "shortlisted_for_final_rights_and_integrity_review",
+      "note": "Visual contact sheet inspected; relevant community scene or clearly identified project illustration. Verify photo/render classification, crop and usage rights before publication."
+    },
+    {
+      "slug": "zabeel",
+      "imageUrl": "https://www.emaar.com/_next/image?url=%2Fcms-media%2Fuploads%2FCommunities-Zabeel-thumbnail.jpg&w=2560&q=75",
+      "result": "shortlisted_for_final_rights_and_integrity_review",
+      "note": "Visual contact sheet inspected; relevant community scene or clearly identified project illustration. Verify photo/render classification, crop and usage rights before publication."
+    },
+    {
+      "slug": "emirates-living",
+      "imageUrl": "https://www.emaar.com/_next/image?url=%2Fcms-media%2Fuploads%2F418659_hero_Image_d97aa11971_prod.jpg&w=2560&q=75",
+      "result": "shortlisted_for_final_rights_and_integrity_review",
+      "note": "Visual contact sheet inspected; relevant community scene or clearly identified project illustration. Verify photo/render classification, crop and usage rights before publication."
+    },
+    {
+      "slug": "the-greens-and-views",
+      "imageUrl": "https://www.emaar.com/_next/image?url=%2Fcms-media%2Fuploads%2F2765_hero_Image_0e53a06000_prod.jpg&w=2560&q=75",
+      "result": "shortlisted_for_final_rights_and_integrity_review",
+      "note": "Visual contact sheet inspected; relevant community scene or clearly identified project illustration. Verify photo/render classification, crop and usage rights before publication."
+    },
+    {
+      "slug": "district-one",
+      "imageUrl": "https://www.nakheel.com/images/nakheelcorporatelibraries/developments/district-one8eda6661-df53-47ca-b970-9c2a1076b34f.jpg?sfvrsn=456d1639_1",
+      "result": "shortlisted_for_final_rights_and_integrity_review",
+      "note": "Visual contact sheet inspected; relevant community scene or clearly identified project illustration. Verify photo/render classification, crop and usage rights before publication."
+    },
+    {
+      "slug": "jumeirah-islands",
+      "imageUrl": "https://www.nakheel.com/images/nakheelcorporatelibraries/developments/jumeirah-islands.jpg?sfvrsn=940fd57e_3",
+      "result": "shortlisted_for_final_rights_and_integrity_review",
+      "note": "Visual contact sheet inspected; relevant community scene or clearly identified project illustration. Verify photo/render classification, crop and usage rights before publication."
+    },
+    {
+      "slug": "ghaf-woods",
+      "imageUrl": "https://communities.majidalfuttaim.com/en/assets/images/allbanner/Ghaf-Woods-1.jpg",
+      "result": "shortlisted_for_final_rights_and_integrity_review",
+      "note": "Visual contact sheet inspected; relevant community scene or clearly identified project illustration. Verify photo/render classification, crop and usage rights before publication."
+    },
+    {
+      "slug": "tilal-al-ghaf",
+      "imageUrl": "https://communities.majidalfuttaim.com/en/assets/images/allbanner/Tilal-Al-Ghaf-1.jpg",
+      "result": "shortlisted_for_final_rights_and_integrity_review",
+      "note": "Visual contact sheet inspected; relevant community scene or clearly identified project illustration. Verify photo/render classification, crop and usage rights before publication."
+    },
+    {
+      "slug": "al-zahia",
+      "imageUrl": "https://communities.majidalfuttaim.com/en/assets/images/allbanner/Al-Zahia-1.jpg",
+      "result": "shortlisted_for_final_rights_and_integrity_review",
+      "note": "Visual contact sheet inspected; relevant community scene or clearly identified project illustration. Verify photo/render classification, crop and usage rights before publication."
+    },
+    {
+      "slug": "al-marjan-island",
+      "imageUrl": "https://marjan.ae/hs-fs/hubfs/Marjan_2025/Images/Al%20Marjan%20Island.webp?width=1500&height=845&name=Al%20Marjan%20Island.webp",
+      "result": "shortlisted_for_final_rights_and_integrity_review",
+      "note": "Visual contact sheet inspected; relevant community scene or clearly identified project illustration. Verify photo/render classification, crop and usage rights before publication."
+    },
+    {
+      "slug": "mina",
+      "imageUrl": "https://mina.rakproperties.ae/wp-content/themes/mina-coastal/assets/figma/hero-still.webp",
+      "result": "hold",
+      "note": "Person-focused lifestyle image; substitute separately sourced official masterplan."
+    },
+    {
+      "slug": "raha-island",
+      "imageUrl": "https://www.rakproperties.ae/wp-content/uploads/2024/05/raha.jpg",
+      "result": "shortlisted_for_final_rights_and_integrity_review",
+      "note": "Visual contact sheet inspected; relevant community scene or clearly identified project illustration. Verify photo/render classification, crop and usage rights before publication."
+    },
+    {
+      "slug": "hayat-island",
+      "imageUrl": "https://mina.rakproperties.ae/wp-content/themes/mina-coastal/assets/figma/bdp-beach.webp",
+      "result": "hold",
+      "note": "Specific leisure venue/pool; seek a wider island view."
+    },
+    {
+      "slug": "expo-city-dubai",
+      "imageUrl": "https://images.ctfassets.net/r2cfrvo3y08m/3P04vhO3MtTxgG2CCZFs7j/903f5254b19932b1b234e07ff9b32258/240821_ECD_39_DMP_Visual_Aerial_UNStudio-update.jpg?w=1440",
+      "result": "shortlisted_for_final_rights_and_integrity_review",
+      "note": "Visual contact sheet inspected; relevant community scene or clearly identified project illustration. Verify photo/render classification, crop and usage rights before publication."
+    },
+    {
+      "slug": "business-bay",
+      "imageUrl": "https://www.visitdubai.com/-/media/images/leisure/detail-pages/explore-dubai/1-3-dubai-neighbourhoods-t34/dubai-neighborhood-business-bay.jpg?rev=d940b398612f40179ba13112e1150898&cx=0.53&cy=0.4&cw=1556&ch=690",
+      "result": "shortlisted_for_final_rights_and_integrity_review",
+      "note": "Visual contact sheet inspected; relevant community scene or clearly identified project illustration. Verify photo/render classification, crop and usage rights before publication."
+    },
+    {
+      "slug": "aljada",
+      "imageUrl": "https://aradawebcontent.blob.core.windows.net/arada-com/2022/06/aljada-banner-2.jpg",
+      "result": "hold",
+      "note": "Portrait-focused lifestyle image; not a geographic community view."
+    },
+    {
+      "slug": "fahid-island",
+      "imageUrl": "https://images2.cmp.optimizely.com/assets/aldar+fahid+island+pic/Zz1jYzA2MWRhZTVjZWExMWYwYjcwYTk2MzJhODNhOTRmZA==",
+      "result": "shortlisted_for_final_rights_and_integrity_review",
+      "note": "Visual contact sheet inspected; relevant community scene or clearly identified project illustration. Verify photo/render classification, crop and usage rights before publication."
+    },
+    {
+      "slug": "maryam-island",
+      "imageUrl": "https://maryamisland.ae/wp-content/uploads/2024/05/1maryam-beach-residence-new-renders-hi-res-09-2000x1000-1-1-1536x864.jpg",
+      "result": "shortlisted_for_final_rights_and_integrity_review",
+      "note": "Visual contact sheet inspected; relevant community scene or clearly identified project illustration. Verify photo/render classification, crop and usage rights before publication."
+    },
+    {
+      "slug": "town-square-dubai",
+      "imageUrl": "https://nshamacommunity.ae/public/uploads/coverImages/1749738571RD973.jpg",
+      "result": "hold",
+      "note": "Close-up lifestyle portrait of a family, not a view of Town Square; second homepage image is a nighttime event and also unsuitable."
+    }
+  ],
+  "alternatives": [
+    {
+      "slug": "masaar",
+      "name": "Masaar",
+      "emirate": "Sharjah",
+      "publisher": "Arada",
+      "sourcePage": "https://www.arada.com/en/latest-news/arada-finishes-another-1000-homes-at-masaar-as-sharjahs-forested-community-reaches-50-completion-mark/",
+      "imageUrl": "https://aradawebcontent.blob.core.windows.net/arada-com/2024/09/Arada-finishes-another-1000-homes-at-Masaar-as-Sharjahs-forested-community-reaches-50-completion-mark-1.jpg",
+      "visualReview": "shortlisted",
+      "note": "Wide aerial view of residential clusters associated with official handover release; confirm image type and dimensions.",
+      "alternate": {
+        "sourcePage": "https://www.arada.com/en/masaar/",
+        "imageUrl": "https://aradawebcontent.blob.core.windows.net/arada-com/2022/08/masaar-arialview.png",
+        "kind": "masterplan_render"
+      }
+    },
+    {
+      "slug": "mina",
+      "name": "Mina Al Arab",
+      "emirate": "Ras Al Khaimah",
+      "publisher": "RAK Properties",
+      "sourcePage": "https://mina.rakproperties.ae/",
+      "imageUrl": "https://mina.rakproperties.ae/wp-content/themes/mina-coastal/assets/figma/mina-map.webp",
+      "visualReview": "shortlisted",
+      "kind": "masterplan_illustration",
+      "note": "Shows the actual destination plan and both island neighborhoods; label explicitly as masterplan illustration, not a completed aerial photograph."
+    },
+    {
+      "slug": "aljada",
+      "name": "Aljada",
+      "emirate": "Sharjah",
+      "publisher": "Arada",
+      "sourcePage": "https://www.arada.com/en/aljada/",
+      "imageUrl": "https://aradawebcontent.blob.core.windows.net/arada-com/2022/06/aljada-banner-3.jpg",
+      "visualReview": "rejected",
+      "note": "Person-focused lifestyle shot; requires a different community-wide visual."
+    }
+  ],
+  "gate": "No source rights confirmed; no bytes archived to IDrive; no pHash comparison or production publication. Source candidate selection only."
+}
