@@ -17,7 +17,9 @@
     "recordsWithOfficialCandidates": 93,
     "aliasCandidates": 15,
     "approvedAssets": 0,
-    "recordsWithOpenLicenseCandidates": 4
+    "recordsWithOpenLicenseCandidates": 4,
+    "recordsWithNonRejectedCandidate": 80,
+    "recordsNeedingNewOrReplacementCandidate": 145
   },
   "aliasGroups": [
     {
@@ -898,14 +900,15 @@
           "sourcePage": "https://www.moet.gov.ae/en/-/dubai-maritime-city?redirect=%2Fen%2Fzone-details",
           "imageUrl": "https://www.moet.gov.ae/documents/20121/193445/Dubai-Maritime-City-%287%29.jpg/6aacbcec-44e8-d003-6ae3-5795a39aa7ce?t=1628057439598",
           "kind": "masterplan_render",
-          "selection": "needs_review",
-          "visualReview": "pending",
+          "selection": "hold",
+          "visualReview": "hold",
           "reuseRights": "not_confirmed",
           "sourceCheckedAt": "2026-11-27",
           "imageDecode": {
             "status": "not_verified"
           },
-          "storageStatus": "not_ingested"
+          "storageStatus": "not_ingested",
+          "visualNote": "Could not render in contact sheet; validate source file."
         }
       ],
       "approvedAsset": null,
@@ -1887,14 +1890,15 @@
           "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/697c9f0196c726255767764d_Arjan.avif",
           "kind": "community_visual",
           "sourceCheckedAt": "2026-11-27",
-          "selection": "needs_review",
-          "visualReview": "pending",
+          "selection": "rejected",
+          "visualReview": "rejected",
           "reuseRights": "not_confirmed",
           "storageStatus": "not_ingested",
           "imageDecode": {
             "status": "not_verified"
           },
-          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending."
+          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending.",
+          "visualNote": "Confirmed community logo rather than a community photograph."
         }
       ],
       "approvedAsset": null,
@@ -2156,14 +2160,15 @@
           "sourcePage": "https://visitabudhabi.ae/en/where-to-go/islands/al-reem-island",
           "imageUrl": "https://visitabudhabi.ae/-/media/project/maritime/where-to-go/islands/al-reem-island/article/reem-island-hero.jpeg?rev=4e181ae8fa094b1ba6f0eea9ba9871e4&cx=0&cy=0&cw=2128&ch=1352&hash=8DED18CC485127A7617BECCBBF2C82A3",
           "kind": "community_visual",
-          "selection": "needs_review",
-          "visualReview": "pending",
+          "selection": "shortlisted",
+          "visualReview": "shortlisted",
           "reuseRights": "not_confirmed",
           "sourceCheckedAt": "2026-11-27",
           "imageDecode": {
             "status": "not_verified"
           },
-          "storageStatus": "not_ingested"
+          "storageStatus": "not_ingested",
+          "visualNote": "Recognizable local exterior or landscape in contact sheet; full resolution and usage approval remain pending."
         }
       ],
       "approvedAsset": null,
@@ -2356,14 +2361,15 @@
           "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/697c9cc96acd81e3897528cb_Meydan.avif",
           "kind": "community_visual",
           "sourceCheckedAt": "2026-11-27",
-          "selection": "needs_review",
-          "visualReview": "pending",
+          "selection": "rejected",
+          "visualReview": "rejected",
           "reuseRights": "not_confirmed",
           "storageStatus": "not_ingested",
           "imageDecode": {
             "status": "not_verified"
           },
-          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending."
+          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending.",
+          "visualNote": "Confirmed community logo rather than a community photograph."
         }
       ],
       "approvedAsset": null,
@@ -2448,14 +2454,15 @@
           "imageUrl": "https://prod-waslcdn.wasl.ae/waslae-filesystem/2023-11/3_3__11zon%20%281%29.webp",
           "kind": "community_visual",
           "sourceCheckedAt": "2026-11-27",
-          "selection": "needs_review",
-          "visualReview": "pending",
+          "selection": "shortlisted",
+          "visualReview": "shortlisted",
           "reuseRights": "not_confirmed",
           "storageStatus": "not_ingested",
           "imageDecode": {
             "status": "not_verified"
           },
-          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending."
+          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending.",
+          "visualNote": "Recognizable local exterior or landscape in contact sheet; full resolution and usage approval remain pending."
         }
       ],
       "approvedAsset": null,
@@ -2484,14 +2491,28 @@
           "sourcePage": "https://visitabudhabi.ae/en/where-to-go/islands/yas-island",
           "imageUrl": "https://visitabudhabi.ae/-/media/project/maritime/where-to-go/islands/yas-island/article/getting-to-yas-island1.jpg?rev=3bc6a1a0c179465eaa4c3a9d6850f25f&cx=0&cy=0&cw=2128&ch=1352&hash=2889AC87CB526959DD73D6D483670522",
           "kind": "community_visual",
-          "selection": "needs_review",
-          "visualReview": "pending",
+          "selection": "rejected",
+          "visualReview": "rejected",
           "reuseRights": "not_confirmed",
           "sourceCheckedAt": "2026-11-27",
           "imageDecode": {
             "status": "not_verified"
           },
-          "storageStatus": "not_ingested"
+          "storageStatus": "not_ingested",
+          "visualNote": "Transportation bus in front of mural, not a destination landscape."
+        },
+        {
+          "origin": "official_source",
+          "publisher": "Experience Abu Dhabi",
+          "sourcePage": "https://visitabudhabi.ae/en/where-to-go/islands/yas-island",
+          "imageUrl": "https://visitabudhabi.ae/-/media/project/maritime/where-to-go/islands/yas-island/header/yas-island-marina-view.jpg?rev=aac07dbf8ca54fe8aa1265d490242323&cx=0.56&cy=0.68&cw=5120&ch=1240&hash=1697B7720AF11DB648557A98378AA21D",
+          "kind": "community_visual",
+          "sourceCheckedAt": "2026-11-27",
+          "selection": "needs_review",
+          "visualReview": "pending",
+          "reuseRights": "not_confirmed",
+          "storageStatus": "not_ingested",
+          "note": "Yas Marina header; need full-size crop."
         }
       ],
       "approvedAsset": null,
@@ -2675,14 +2696,15 @@
           "imageUrl": "https://www.visitdubai.com/-/media/images/leisure/neighbourhood-pages/jumeirah-lakes-towers/fallback/jlt-hero.jpg?rev=2a9e645d36f947859f1c773791d3172d&cx=0.49&cy=0.33&cw=1556&ch=690",
           "kind": "community_visual",
           "sourceCheckedAt": "2026-11-27",
-          "selection": "needs_review",
-          "visualReview": "pending",
+          "selection": "shortlisted",
+          "visualReview": "shortlisted",
           "reuseRights": "not_confirmed",
           "storageStatus": "not_ingested",
           "imageDecode": {
             "status": "not_verified"
           },
-          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending."
+          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending.",
+          "visualNote": "Recognizable local exterior or landscape in contact sheet; full resolution and usage approval remain pending."
         }
       ],
       "approvedAsset": null,
@@ -2884,8 +2906,8 @@
           "license": "CC BY-SA 4.0",
           "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
           "kind": "community_photo",
-          "selection": "needs_visual_review",
-          "visualReview": "pending",
+          "selection": "rejected",
+          "visualReview": "rejected",
           "reuseRights": "file_page_license_identified_other_rights_review_pending",
           "attributionRequired": true,
           "shareAlikeRequired": true,
@@ -2896,7 +2918,8 @@
             "height": 3456
           },
           "storageStatus": "not_ingested",
-          "note": "Source page confirms the named location and photographer license. Verify depicted third-party works, photo date, visual relevance and actual image bytes; include attribution and license for cropped derivatives."
+          "note": "Source page confirms the named location and photographer license. Verify depicted third-party works, photo date, visual relevance and actual image bytes; include attribution and license for cropped derivatives.",
+          "visualNote": "Tilted dark palm/sky image, not useful city skyline."
         }
       ],
       "approvedAsset": null,
@@ -2930,14 +2953,15 @@
           "imageUrl": "https://communities.alhamra.ae/media/e5hoqu0h/al-hamra-village.jpg?width=1920&height=500",
           "kind": "community_visual",
           "sourceCheckedAt": "2026-11-27",
-          "selection": "needs_review",
-          "visualReview": "pending",
+          "selection": "hold",
+          "visualReview": "hold",
           "reuseRights": "not_confirmed",
           "storageStatus": "not_ingested",
           "imageDecode": {
             "status": "not_verified"
           },
-          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending."
+          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending.",
+          "visualNote": "Very wide panoramic crop; locate full landscape version."
         }
       ],
       "approvedAsset": null,
@@ -2971,14 +2995,15 @@
           "imageUrl": "https://www.alefgroup.ae/wp-content/uploads/2026/03/almamsha-2x-scaled-e1778661766746.jpg",
           "kind": "community_visual",
           "sourceCheckedAt": "2026-11-27",
-          "selection": "needs_review",
-          "visualReview": "pending",
+          "selection": "hold",
+          "visualReview": "hold",
           "reuseRights": "not_confirmed",
           "storageStatus": "not_ingested",
           "imageDecode": {
             "status": "not_verified"
           },
-          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending."
+          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending.",
+          "visualNote": "Brand graphic bars and dark lower gradient; prefer original clean exterior."
         }
       ],
       "approvedAsset": null,
@@ -3179,14 +3204,15 @@
           "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/697c9e661114da476c867640_Dubai%20Harbour.avif",
           "kind": "community_visual",
           "sourceCheckedAt": "2026-11-27",
-          "selection": "needs_review",
-          "visualReview": "pending",
+          "selection": "rejected",
+          "visualReview": "rejected",
           "reuseRights": "not_confirmed",
           "storageStatus": "not_ingested",
           "imageDecode": {
             "status": "not_verified"
           },
-          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending."
+          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending.",
+          "visualNote": "Confirmed community logo rather than a community photograph."
         }
       ],
       "approvedAsset": null,
@@ -3487,8 +3513,8 @@
           "license": "CC BY 3.0",
           "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
           "kind": "community_photo",
-          "selection": "needs_visual_review",
-          "visualReview": "pending",
+          "selection": "hold",
+          "visualReview": "hold",
           "reuseRights": "file_page_license_identified_other_rights_review_pending",
           "attributionRequired": true,
           "shareAlikeRequired": false,
@@ -3499,7 +3525,8 @@
             "height": 3264
           },
           "storageStatus": "not_ingested",
-          "note": "Source page confirms the named location and photographer license. Verify depicted third-party works, photo date, visual relevance and actual image bytes; include attribution and license for cropped derivatives."
+          "note": "Source page confirms the named location and photographer license. Verify depicted third-party works, photo date, visual relevance and actual image bytes; include attribution and license for cropped derivatives.",
+          "visualNote": "Could not render in contact sheet; validate original download."
         }
       ],
       "approvedAsset": null,
@@ -3548,14 +3575,15 @@
           "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/697c9c02727a4e9d561ac84a_Downtown%20Jebel%20Ali.avif",
           "kind": "community_visual",
           "sourceCheckedAt": "2026-11-27",
-          "selection": "needs_review",
-          "visualReview": "pending",
+          "selection": "rejected",
+          "visualReview": "rejected",
           "reuseRights": "not_confirmed",
           "storageStatus": "not_ingested",
           "imageDecode": {
             "status": "not_verified"
           },
-          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending."
+          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending.",
+          "visualNote": "Confirmed community logo rather than a community photograph."
         }
       ],
       "approvedAsset": null,
@@ -3761,14 +3789,15 @@
           "sourcePage": "https://visitabudhabi.ae/en/where-to-go/islands/saadiyat-island",
           "imageUrl": "https://visitabudhabi.ae/-/media/project/maritime/where-to-go/islands/saadiyat-island/article/saadiyat-island-getting-there.jpg?rev=4f7551a946134263aa24e30e62752427&cx=0.52&cy=0.81&cw=2128&ch=1352&hash=3F3A397720406E5384DDAE73A4217D99",
           "kind": "community_visual",
-          "selection": "needs_review",
-          "visualReview": "pending",
+          "selection": "shortlisted",
+          "visualReview": "shortlisted",
           "reuseRights": "not_confirmed",
           "sourceCheckedAt": "2026-11-27",
           "imageDecode": {
             "status": "not_verified"
           },
-          "storageStatus": "not_ingested"
+          "storageStatus": "not_ingested",
+          "visualNote": "Recognizable local exterior or landscape in contact sheet; full resolution and usage approval remain pending."
         }
       ],
       "approvedAsset": null,
@@ -3804,8 +3833,8 @@
           "license": "CC BY-SA 4.0",
           "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
           "kind": "community_photo",
-          "selection": "needs_visual_review",
-          "visualReview": "pending",
+          "selection": "shortlisted",
+          "visualReview": "shortlisted",
           "reuseRights": "file_page_license_identified_other_rights_review_pending",
           "attributionRequired": true,
           "shareAlikeRequired": true,
@@ -3816,7 +3845,8 @@
             "height": 3776
           },
           "storageStatus": "not_ingested",
-          "note": "Source page confirms the named location and photographer license. Verify depicted third-party works, photo date, visual relevance and actual image bytes; include attribution and license for cropped derivatives."
+          "note": "Source page confirms the named location and photographer license. Verify depicted third-party works, photo date, visual relevance and actual image bytes; include attribution and license for cropped derivatives.",
+          "visualNote": "Recognizable local exterior or landscape in contact sheet; full resolution and usage approval remain pending."
         }
       ],
       "approvedAsset": null,
@@ -4064,14 +4094,15 @@
           "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/697c9fbec03bc590a85d5d00_Dubailand%20Residences.avif",
           "kind": "community_visual",
           "sourceCheckedAt": "2026-11-27",
-          "selection": "needs_review",
-          "visualReview": "pending",
+          "selection": "rejected",
+          "visualReview": "rejected",
           "reuseRights": "not_confirmed",
           "storageStatus": "not_ingested",
           "imageDecode": {
             "status": "not_verified"
           },
-          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending."
+          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending.",
+          "visualNote": "Confirmed community logo rather than a community photograph."
         }
       ],
       "approvedAsset": null,
@@ -4129,14 +4160,15 @@
           "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/697c9c29b7af7265fcde3917_Dubai%20Water%20Canal.avif",
           "kind": "community_visual",
           "sourceCheckedAt": "2026-11-27",
-          "selection": "needs_review",
-          "visualReview": "pending",
+          "selection": "rejected",
+          "visualReview": "rejected",
           "reuseRights": "not_confirmed",
           "storageStatus": "not_ingested",
           "imageDecode": {
             "status": "not_verified"
           },
-          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending."
+          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending.",
+          "visualNote": "Confirmed community logo rather than a community photograph."
         }
       ],
       "approvedAsset": null,
@@ -4553,14 +4585,15 @@
           "imageUrl": "https://prod-waslcdn.wasl.ae/waslae-filesystem/2023-11/wasl%201.webp",
           "kind": "community_visual",
           "sourceCheckedAt": "2026-11-27",
-          "selection": "needs_review",
-          "visualReview": "pending",
+          "selection": "shortlisted",
+          "visualReview": "shortlisted",
           "reuseRights": "not_confirmed",
           "storageStatus": "not_ingested",
           "imageDecode": {
             "status": "not_verified"
           },
-          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending."
+          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending.",
+          "visualNote": "Recognizable local exterior or landscape in contact sheet; full resolution and usage approval remain pending."
         }
       ],
       "approvedAsset": null,
@@ -5773,14 +5806,15 @@
           "imageUrl": "https://www.alefgroup.ae/wp-content/uploads/2026/04/Olfah-2x-2-scaled-e1778661873922.jpg",
           "kind": "community_visual",
           "sourceCheckedAt": "2026-11-27",
-          "selection": "needs_review",
-          "visualReview": "pending",
+          "selection": "hold",
+          "visualReview": "hold",
           "reuseRights": "not_confirmed",
           "storageStatus": "not_ingested",
           "imageDecode": {
             "status": "not_verified"
           },
-          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending."
+          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending.",
+          "visualNote": "Brand graphic bars and dark lower gradient; prefer clean original."
         }
       ],
       "approvedAsset": null,
@@ -6299,14 +6333,15 @@
           "sourcePage": "https://www.visitdubai.com/en/explore-dubai/dubai-neighbourhoods/al-barsha-and-barsha-heights",
           "imageUrl": "https://www.visitdubai.com/-/media/images/leisure/neighbourhood-pages/al-barsha-and-barsha-heights/fallback/al-barsha-header-dtcm.jpg?rev=bb09bc9de1784f8595f4ed3b090ae2f6&cx=0.5&cy=0.5&cw=1556&ch=690",
           "kind": "community_visual",
-          "selection": "needs_review",
-          "visualReview": "pending",
+          "selection": "rejected",
+          "visualReview": "rejected",
           "reuseRights": "not_confirmed",
           "sourceCheckedAt": "2026-11-27",
           "imageDecode": {
             "status": "not_verified"
           },
-          "storageStatus": "not_ingested"
+          "storageStatus": "not_ingested",
+          "visualNote": "Shopping mall interior and people, not district."
         }
       ],
       "approvedAsset": null,
@@ -6411,14 +6446,15 @@
           "sourcePage": "https://visitabudhabi.ae/en/where-to-go/islands/al-maryah-island",
           "imageUrl": "https://visitabudhabi.ae/-/media/project/maritime/where-to-go/islands/al-maryah-island/article/al-maryah-view.jpg?rev=3106680f525245bfbaa2017da07826df&cx=0&cy=0&cw=2128&ch=1352&hash=65BBC9E03F760E7AB1C0716077DD1467",
           "kind": "community_visual",
-          "selection": "needs_review",
-          "visualReview": "pending",
+          "selection": "shortlisted",
+          "visualReview": "shortlisted",
           "reuseRights": "not_confirmed",
           "sourceCheckedAt": "2026-11-27",
           "imageDecode": {
             "status": "not_verified"
           },
-          "storageStatus": "not_ingested"
+          "storageStatus": "not_ingested",
+          "visualNote": "Recognizable local exterior or landscape in contact sheet; full resolution and usage approval remain pending."
         }
       ],
       "approvedAsset": null,
@@ -6476,14 +6512,15 @@
           "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/697c9e0b9ef7dde681730047_Al%20Wasl%20District.avif",
           "kind": "community_visual",
           "sourceCheckedAt": "2026-11-27",
-          "selection": "needs_review",
-          "visualReview": "pending",
+          "selection": "rejected",
+          "visualReview": "rejected",
           "reuseRights": "not_confirmed",
           "storageStatus": "not_ingested",
           "imageDecode": {
             "status": "not_verified"
           },
-          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending."
+          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending.",
+          "visualNote": "Confirmed community logo rather than a community photograph."
         }
       ],
       "approvedAsset": null,
@@ -6712,14 +6749,15 @@
           "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/6989d38d7a10c42ff0822157_Bluewaters.avif",
           "kind": "community_visual",
           "sourceCheckedAt": "2026-11-27",
-          "selection": "needs_review",
-          "visualReview": "pending",
+          "selection": "rejected",
+          "visualReview": "rejected",
           "reuseRights": "not_confirmed",
           "storageStatus": "not_ingested",
           "imageDecode": {
             "status": "not_verified"
           },
-          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending."
+          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending.",
+          "visualNote": "Confirmed community logo rather than a community photograph."
         }
       ],
       "approvedAsset": null,
@@ -7077,14 +7115,28 @@
           "imageUrl": "https://alhamra.ae/media/ep5hp22n/falcon-banner.jpg",
           "kind": "community_visual",
           "sourceCheckedAt": "2026-11-27",
-          "selection": "needs_review",
-          "visualReview": "pending",
+          "selection": "rejected",
+          "visualReview": "rejected",
           "reuseRights": "not_confirmed",
           "storageStatus": "not_ingested",
           "imageDecode": {
             "status": "not_verified"
           },
-          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending."
+          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending.",
+          "visualNote": "Text and project-statistic overlay obscures image."
+        },
+        {
+          "origin": "official_source",
+          "publisher": "Al Hamra",
+          "sourcePage": "https://alhamra.ae/en/residential-falcon-island/",
+          "imageUrl": "https://alhamra.ae/media/c3ill2ob/falcon-content-1.jpg",
+          "kind": "community_visual",
+          "sourceCheckedAt": "2026-11-27",
+          "selection": "needs_review",
+          "visualReview": "pending",
+          "reuseRights": "not_confirmed",
+          "storageStatus": "not_ingested",
+          "note": "Named destination content image; review for clean landscape."
         }
       ],
       "approvedAsset": null,
@@ -7120,8 +7172,8 @@
           "license": "CC BY-SA 4.0",
           "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
           "kind": "community_photo",
-          "selection": "needs_visual_review",
-          "visualReview": "pending",
+          "selection": "hold",
+          "visualReview": "hold",
           "reuseRights": "file_page_license_identified_other_rights_review_pending",
           "attributionRequired": true,
           "shareAlikeRequired": true,
@@ -7132,7 +7184,8 @@
             "height": 3840
           },
           "storageStatus": "not_ingested",
-          "note": "Source page confirms the named location and photographer license. Verify depicted third-party works, photo date, visual relevance and actual image bytes; include attribution and license for cropped derivatives."
+          "note": "Source page confirms the named location and photographer license. Verify depicted third-party works, photo date, visual relevance and actual image bytes; include attribution and license for cropped derivatives.",
+          "visualNote": "Could not render in contact sheet; validate original download."
         }
       ],
       "approvedAsset": null,
@@ -7190,14 +7243,15 @@
           "imageUrl": "https://www.alefgroup.ae/wp-content/uploads/2026/04/Hayyan-2x-2-scaled-e1778661712779.jpg",
           "kind": "community_visual",
           "sourceCheckedAt": "2026-11-27",
-          "selection": "needs_review",
-          "visualReview": "pending",
+          "selection": "hold",
+          "visualReview": "hold",
           "reuseRights": "not_confirmed",
           "storageStatus": "not_ingested",
           "imageDecode": {
             "status": "not_verified"
           },
-          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending."
+          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending.",
+          "visualNote": "Brand graphic bars and dark lower gradient; prefer unaltered clean aerial."
         }
       ],
       "approvedAsset": null,
@@ -7279,14 +7333,28 @@
           "imageUrl": "https://visitabudhabi.ae/-/media/project/maritime/where-to-go/islands/jubail-island/header/jubail-mangroves-park-1.jpg?rev=cbb2480908184d6eba65b57c9bbfbc27&cx=0.54&cy=0.43&cw=5120&ch=1240&hash=B9933AE4A36D6AF5E2291936714F82FF",
           "kind": "community_visual",
           "sourceCheckedAt": "2026-11-27",
-          "selection": "needs_review",
-          "visualReview": "pending",
+          "selection": "hold",
+          "visualReview": "hold",
           "reuseRights": "not_confirmed",
           "storageStatus": "not_ingested",
           "imageDecode": {
             "status": "not_verified"
           },
-          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending."
+          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending.",
+          "visualNote": "Very wide crop with person; seek full mangrove view."
+        },
+        {
+          "origin": "official_source",
+          "publisher": "Experience Abu Dhabi",
+          "sourcePage": "https://visitabudhabi.ae/en/where-to-go/islands/jubail-island",
+          "imageUrl": "https://visitabudhabi.ae/-/media/project/maritime/where-to-go/islands/jubail-island/article/jubail-mangrove-park-(1).jpg?rev=5f6e80fb53904826a820291a2fa3ef94&cx=0&cy=0&cw=2128&ch=1352&hash=90F18BB19861C8CE46D21990CA5C6DA2",
+          "kind": "community_visual",
+          "sourceCheckedAt": "2026-11-27",
+          "selection": "needs_review",
+          "visualReview": "pending",
+          "reuseRights": "not_confirmed",
+          "storageStatus": "not_ingested",
+          "note": "Full landscape mangrove park alternative."
         }
       ],
       "approvedAsset": null,
@@ -7320,14 +7388,15 @@
           "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/6989d41cb31541ec913a56b2_Jumeirah%20Bay.avif",
           "kind": "community_visual",
           "sourceCheckedAt": "2026-11-27",
-          "selection": "needs_review",
-          "visualReview": "pending",
+          "selection": "rejected",
+          "visualReview": "rejected",
           "reuseRights": "not_confirmed",
           "storageStatus": "not_ingested",
           "imageDecode": {
             "status": "not_verified"
           },
-          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending."
+          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending.",
+          "visualNote": "Confirmed community logo rather than a community photograph."
         }
       ],
       "approvedAsset": null,
@@ -7628,14 +7697,15 @@
           "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/697c9eb2eef3d8875ea6bc31_Pearl%20Jumeira.avif",
           "kind": "community_visual",
           "sourceCheckedAt": "2026-11-27",
-          "selection": "needs_review",
-          "visualReview": "pending",
+          "selection": "rejected",
+          "visualReview": "rejected",
           "reuseRights": "not_confirmed",
           "storageStatus": "not_ingested",
           "imageDecode": {
             "status": "not_verified"
           },
-          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending."
+          "note": "Named official source asset; pixel-level geographic, quality, license and storage verification pending.",
+          "visualNote": "Confirmed community logo rather than a community photograph."
         }
       ],
       "approvedAsset": null,
