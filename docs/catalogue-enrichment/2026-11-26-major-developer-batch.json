@@ -1,0 +1,1126 @@
+{
+  "schema": "psr-project-enrichment-v1",
+  "source": "psr-major-developer-enrichment-20261126",
+  "checkedAt": "2026-11-26",
+  "baseline": {
+    "tenant_key": "psr",
+    "revision": 2,
+    "project_count": 1091,
+    "content_hash": "01ee8ae625988bb935d8ffcd2a61d76f30298bfd50e27e3b6454381847a61b81",
+    "updated_at": "2026-09-27 08:49:40"
+  },
+  "expectedRegistryHash": "7108a973e9d3d04058f41e21407994f4c9d3e2bdd2f0761636c41f4376db8bff",
+  "projects": [
+    {
+      "title": "Rancho Villas at Palm Springs",
+      "developer": "Nakheel",
+      "emirate": "Dubai",
+      "area": "Palm Springs, near Palm Jebel Ali",
+      "slug": "rancho-villas-palm-springs-nakheel-dubai",
+      "bedrooms": [
+        "4BR",
+        "5BR"
+      ],
+      "types": [
+        "Villas"
+      ],
+      "launch": "2026-11-18",
+      "status": "Developer-confirmed release",
+      "summary": "The first Palm Springs villa collection comprises four- and five-bedroom homes with private outdoor space, gardens, courtyards and pools. Nakheel's wider southern Dubai community is planned around Canyon Park, connected paths, schools and leisure facilities.",
+      "amenities": [
+        "Private gardens",
+        "Private pools",
+        "Canyon Park",
+        "Thousand Palms Country Club",
+        "Silver Spur Racquet Club",
+        "Planned schools and healthcare"
+      ],
+      "parent": "Palm Springs",
+      "sources": [
+        [
+          "https://www.nakheel.com/en/media-centre/press-releases/news-detail/2026/11/18/nakheel-unveils-first-villas-and-townhouses-at-palm-springs",
+          "developer_press_release"
+        ],
+        [
+          "https://www.palmsprings.nakheel.com/",
+          "developer_project"
+        ]
+      ]
+    },
+    {
+      "title": "Aliso Townhouses at Palm Springs",
+      "developer": "Nakheel",
+      "emirate": "Dubai",
+      "area": "Palm Springs, near Palm Jebel Ali",
+      "slug": "aliso-townhouses-palm-springs-nakheel-dubai",
+      "bedrooms": [
+        "3BR",
+        "4BR"
+      ],
+      "types": [
+        "Townhouses"
+      ],
+      "launch": "2026-11-18",
+      "status": "Developer-confirmed release",
+      "summary": "Nakheel's first Palm Springs townhouse release offers three- and four-bedroom homes with private gardens and pedestrian connections to nearby parks. The community is designed around Canyon Park, sports and family services.",
+      "amenities": [
+        "Private gardens",
+        "Walking and cycling paths",
+        "Canyon Park",
+        "Country club",
+        "Racquet club",
+        "Planned schools"
+      ],
+      "parent": "Palm Springs",
+      "sources": [
+        [
+          "https://www.nakheel.com/en/media-centre/press-releases/news-detail/2026/11/18/nakheel-unveils-first-villas-and-townhouses-at-palm-springs",
+          "developer_press_release"
+        ],
+        [
+          "https://www.palmsprings.nakheel.com/",
+          "developer_project"
+        ]
+      ]
+    },
+    {
+      "title": "Nad Al Sheba Gardens Phase 12",
+      "developer": "Meraas",
+      "emirate": "Dubai",
+      "area": "Nad Al Sheba Gardens",
+      "slug": "nad-al-sheba-gardens-phase-12-meraas-dubai",
+      "bedrooms": [
+        "4BR",
+        "5BR"
+      ],
+      "types": [
+        "Villas"
+      ],
+      "launch": "2026-11-17",
+      "status": "Developer-announced final phase",
+      "units": 97,
+      "summary": "Meraas's final Nad Al Sheba Gardens release comprises 55 four-bedroom and 42 five-bedroom villas along the northern edge of the master development. The community includes landscaped parks, sports areas and a planned private school.",
+      "amenities": [
+        "Parks",
+        "Cycling and running tracks",
+        "Wave pool",
+        "Community gym",
+        "Multi-sports court",
+        "Planned private school"
+      ],
+      "parent": "Nad Al Sheba Gardens",
+      "mediaSourceUrls": [
+        "https://meraas.com/sites/default/files/2026-11/Nad%20Al%20Sheba%20Gardens%201.jpg"
+      ],
+      "sources": [
+        [
+          "https://nasg.meraas.com/",
+          "developer_project"
+        ],
+        [
+          "https://meraas.com/en/latest-post/news/meraas-unveils-97-villas-nad-al-sheba-gardens-alongside-plans-private-school",
+          "developer_press_release"
+        ]
+      ]
+    },
+    {
+      "title": "Yardlands by BEYOND",
+      "developer": "BEYOND",
+      "emirate": "Dubai",
+      "area": "Sheikh Mohammed Bin Zayed Road",
+      "slug": "yardlands-beyond-sheikh-mohammed-bin-zayed-road-dubai",
+      "bedrooms": [],
+      "types": [
+        "Master Development"
+      ],
+      "launch": "2026-11-23",
+      "status": "Masterplan announced — unit releases unconfirmed",
+      "recordKind": "masterplan",
+      "units": 25000,
+      "summary": "BEYOND announced a city-scale mixed-use district planned for approximately 25,000 homes, with offices, education, healthcare, hospitality and retail. The announced masterplan targets completion by 2040; individual phases, prices and unit availability require separate confirmation.",
+      "amenities": [
+        "Planned offices and retail",
+        "Schools and clinics",
+        "Hotels",
+        "Cycling network"
+      ],
+      "masterplanTarget": "2040 (masterplan target, not a unit handover date)",
+      "sources": [
+        [
+          "https://www.einnews.com/pr_news/958471088/beyond-developments-unveils-usd-21-8-billion-yardlands-masterplan-along-sheikh-mohammed-bin-zayed-road",
+          "developer_distributed_release"
+        ],
+        [
+          "https://www.thenationalnews.com/business/property/2026/11/23/yardlands-dubai-sheikh-mohamed-bin-zayed-road/",
+          "independent_news"
+        ]
+      ]
+    },
+    {
+      "title": "Shione by BEYOND",
+      "developer": "BEYOND",
+      "emirate": "Dubai",
+      "area": "Siora, Dubai Islands",
+      "slug": "shione-beyond-dubai-islands-dubai",
+      "bedrooms": [
+        "1BR",
+        "2BR",
+        "3BR",
+        "4BR"
+      ],
+      "types": [
+        "Apartments",
+        "Duplexes"
+      ],
+      "handover": "2030",
+      "status": "Developer-confirmed project",
+      "units": 603,
+      "summary": "Shione is a two-building coastal residential development within Siora, beside Hado on Dubai Islands. The developer describes 603 residences, including a signature collection of 24 duplexes, with landscaped shared podiums and private outdoor spaces.",
+      "amenities": [
+        "Landscaped podium",
+        "Gardens and water features",
+        "Terraces",
+        "Coastal setting"
+      ],
+      "parent": "Siora",
+      "sources": [
+        [
+          "https://beyonddevelopments.ae/Projects/shione/",
+          "developer_project"
+        ]
+      ]
+    },
+    {
+      "title": "Yas Riva Reserve",
+      "developer": "Aldar",
+      "emirate": "Abu Dhabi",
+      "area": "Yas Island",
+      "slug": "yas-riva-reserve-aldar-yas-island-abu-dhabi",
+      "bedrooms": [
+        "4BR",
+        "5BR",
+        "6BR"
+      ],
+      "types": [
+        "Villas"
+      ],
+      "launch": "2026-09-18",
+      "price": 7900000,
+      "plan": "50/50 (5% initial payment)",
+      "status": "Developer-confirmed release",
+      "units": 292,
+      "summary": "A gated residential collection of 292 four- to six-bedroom villas at the northeastern waterfront of Yas Island, including 45 directly waterfront homes. Aldar publishes inland and waterfront villa categories, with a new connection to Yas Island planned.",
+      "amenities": [
+        "Clubhouse",
+        "Community retail",
+        "Linear parks",
+        "Pocket gardens",
+        "Waterfront setting"
+      ],
+      "unitMix": [
+        {
+          "bedrooms": 4,
+          "type": "Inland villa",
+          "units": 96,
+          "startingPrice": 7900000
+        },
+        {
+          "bedrooms": 5,
+          "type": "Inland villa",
+          "units": 116,
+          "startingPrice": 9300000
+        },
+        {
+          "bedrooms": 6,
+          "type": "Inland villa",
+          "units": 35,
+          "startingPrice": 10500000
+        },
+        {
+          "bedrooms": 5,
+          "type": "Waterfront villa",
+          "units": 17,
+          "startingPrice": 13300000
+        },
+        {
+          "bedrooms": 6,
+          "type": "Waterfront villa",
+          "units": 28,
+          "startingPrice": 14500000
+        }
+      ],
+      "sources": [
+        [
+          "https://www.aldar.com/properties/en/yasrivareserve?enquiryCategory=Aldar+Database&offer=YasRivaReserveTeaser2026",
+          "developer_project"
+        ],
+        [
+          "https://www.aldar.com/en/news-and-media/aldar-launches-yas-riva-reserve-a-gated-villa-community-along-yas-island-s-scenic-waterfront",
+          "developer_press_release"
+        ]
+      ]
+    },
+    {
+      "title": "The Canopies Sanctuary",
+      "developer": "Aldar",
+      "emirate": "Abu Dhabi",
+      "area": "Yas Point, Yas Island",
+      "slug": "the-canopies-sanctuary-aldar-yas-point-abu-dhabi",
+      "bedrooms": [
+        "Studios",
+        "1BR",
+        "2BR",
+        "3BR"
+      ],
+      "types": [
+        "Apartments"
+      ],
+      "price": 1660000,
+      "plan": "55/45 (5% down payment)",
+      "handover": "Q1 2031",
+      "status": "Developer-confirmed project",
+      "summary": "A distinct three-building residential release at Yas Point, combining studio through three-bedroom apartments with shaded outdoor areas and communal spaces. Aldar's campaign page publishes indicative starting prices and an estimated first-quarter 2031 handover.",
+      "amenities": [
+        "Podium garden",
+        "Swimming pool",
+        "Canopy lounge",
+        "Parkland outlook",
+        "Children's play areas",
+        "Outdoor exercise"
+      ],
+      "parent": "Yas Point",
+      "notes": [
+        "Official pages disagree on total units (388 vs 392); no total adopted pending reconciliation."
+      ],
+      "sources": [
+        [
+          "https://www.aldar.com/properties/en/canopiessanctuary",
+          "developer_campaign"
+        ],
+        [
+          "https://www.aldar.com/properties/en/uae/yas-island/the-canopies-sanctuary",
+          "developer_project"
+        ]
+      ]
+    },
+    {
+      "title": "Sei Saadiyat",
+      "developer": "Aldar",
+      "emirate": "Abu Dhabi",
+      "area": "Saadiyat Cultural District, Saadiyat Island",
+      "slug": "sei-saadiyat-aldar-saadiyat-cultural-district-abu-dhabi",
+      "bedrooms": [
+        "1BR",
+        "2BR",
+        "3BR"
+      ],
+      "types": [
+        "Apartments",
+        "Lofts"
+      ],
+      "price": 2950000,
+      "plan": "50/50 (5% down payment)",
+      "handover": "Q4 2030",
+      "units": 778,
+      "areaMin": 70,
+      "areaMax": 208,
+      "areaUnit": "sqm",
+      "status": "Developer-confirmed project",
+      "summary": "Aldar's six-tower collection comprises one- and two-bedroom apartments, three-bedroom Kanso residences and two-bedroom Kanso lofts near Saadiyat's cultural institutions. The developer lists 778 homes and estimated handover in Q4 2030.",
+      "amenities": [
+        "Landscaped outdoor areas",
+        "Cultural district setting"
+      ],
+      "sources": [
+        [
+          "https://www.aldar.com/properties/en/seisaadiyat",
+          "developer_project"
+        ]
+      ]
+    },
+    {
+      "title": "NOMA at Saadiyat Cultural District",
+      "developer": "Aldar",
+      "emirate": "Abu Dhabi",
+      "area": "Saadiyat Cultural District",
+      "slug": "noma-aldar-saadiyat-cultural-district-abu-dhabi",
+      "bedrooms": [
+        "Studios",
+        "1BR",
+        "2BR"
+      ],
+      "types": [
+        "Master Development",
+        "Apartments",
+        "Townhouses"
+      ],
+      "launch": "2026-11-20",
+      "recordKind": "masterplan",
+      "status": "Masterplan announced — sales terms unconfirmed",
+      "summary": "Aldar unveiled an 88,000-square-metre arts-oriented neighbourhood with studios, apartments, townhouses and limited live-work homes. The plan includes galleries, cultural spaces, hospitality and the first Hoxton-branded residences; individual Hoxton unit types and sale terms are not yet established.",
+      "amenities": [
+        "Arts studios and galleries",
+        "Community theatre",
+        "Creative hubs",
+        "Pedestrian routes",
+        "Planned Hoxton hotel and residences"
+      ],
+      "sources": [
+        [
+          "https://www.aldar.com/en/news-and-media/aldar-unveils-noma-abu-dhabi-s-creative-neighbourhood-in-saadiyat-cultural-district",
+          "developer_press_release"
+        ]
+      ]
+    },
+    {
+      "title": "Address Villas – Tierra",
+      "developer": "Emaar",
+      "emirate": "Dubai",
+      "area": "The Oasis by Emaar",
+      "slug": "address-villas-tierra-emaar-the-oasis-dubai",
+      "bedrooms": [
+        "4BR",
+        "5BR",
+        "6BR"
+      ],
+      "types": [
+        "Villas"
+      ],
+      "price": 13160000,
+      "status": "Developer-confirmed project",
+      "summary": "Address-branded four- to six-bedroom villas in The Oasis, organised around waterfront scenery, greenery and wellness-oriented facilities. Emaar's project page publishes a starting price of AED 13.16 million, subject to a current unit offer.",
+      "amenities": [
+        "Swimmable lagoon",
+        "Community parks",
+        "Wellness and spa facilities",
+        "Sports courts",
+        "Retail",
+        "Swimming pools"
+      ],
+      "parent": "The Oasis",
+      "sources": [
+        [
+          "https://www.emaar.com/en/properties/address-villas-tierra",
+          "developer_project"
+        ]
+      ]
+    },
+    {
+      "title": "River Cove Residences at Sobha City",
+      "developer": "Sobha",
+      "emirate": "Abu Dhabi",
+      "area": "Sobha City, Al Bahya",
+      "slug": "river-cove-residences-sobha-city-abu-dhabi",
+      "bedrooms": [
+        "1BR",
+        "2BR",
+        "3BR",
+        "4BR"
+      ],
+      "types": [
+        "Apartments"
+      ],
+      "price": 3950000,
+      "handover": "December 2029",
+      "status": "Developer-confirmed project",
+      "summary": "A waterfront apartment development at Sobha City, with two towers and published floor-plan examples. Sobha's current property listing advertises two- to four-bedroom stock from AED 3.95 million, while its project page also includes one-bedroom layouts.",
+      "amenities": [
+        "Waterfront promenade",
+        "Lagoon beach",
+        "Cycling trails",
+        "Fitness centre",
+        "Family parks",
+        "Cafés and retail"
+      ],
+      "parent": "Sobha City",
+      "notes": [
+        "Starting price applies to published current inventory, not necessarily the smallest floor-plan type."
+      ],
+      "sources": [
+        [
+          "https://sobharealty.com/properties-in-abu-dhabi/sobha-city/river-cove-residences",
+          "developer_project"
+        ],
+        [
+          "https://sobharealty.com/properties-in-abu-dhabi/apartments-for-sale-in-abu-dhabi/sobha-city-apartments",
+          "developer_inventory"
+        ]
+      ]
+    },
+    {
+      "title": "The Orchard at Sobha City",
+      "developer": "Sobha",
+      "emirate": "Abu Dhabi",
+      "area": "Sobha City, Al Bahya",
+      "slug": "the-orchard-sobha-city-abu-dhabi",
+      "bedrooms": [
+        "4BR",
+        "5BR"
+      ],
+      "types": [
+        "Villas"
+      ],
+      "price": 9050000,
+      "handover": "December 2029",
+      "areaMin": 4309.4,
+      "areaMax": 5418.3,
+      "areaUnit": "sqft",
+      "status": "Developer-confirmed project",
+      "summary": "Sobha City's Orchard collection comprises four- and five-bedroom villas. The developer inventory page gives approximate sizes of 4,309–5,418 sq ft and a December 2029 estimated handover.",
+      "parent": "Sobha City",
+      "sources": [
+        [
+          "https://sobharealty.com/properties-in-abu-dhabi/villas-for-sale-in-abu-dhabi/sobha-city-villas",
+          "developer_inventory"
+        ]
+      ]
+    },
+    {
+      "title": "The Terraces at Sobha City",
+      "developer": "Sobha",
+      "emirate": "Abu Dhabi",
+      "area": "Sobha City, Al Bahya",
+      "slug": "the-terraces-sobha-city-abu-dhabi",
+      "bedrooms": [
+        "3BR",
+        "4BR"
+      ],
+      "types": [
+        "Villas"
+      ],
+      "price": 5090000,
+      "status": "Developer-confirmed project",
+      "summary": "The Terraces is a separately named villa collection at Sobha City. Sobha's search listings identify three- and four-bedroom configurations and an indicative entry price of AED 5.09 million. Request the current unit schedule before quoting delivery or instalments.",
+      "parent": "Sobha City",
+      "sources": [
+        [
+          "https://sobharealty.com/search-results",
+          "developer_inventory"
+        ],
+        [
+          "https://sobharealty.com/properties-in-abu-dhabi/villas-for-sale-in-abu-dhabi/sobha-city-villas",
+          "developer_inventory"
+        ]
+      ]
+    },
+    {
+      "title": "The Woods Horizon at Sobha Sanctuary",
+      "developer": "Sobha",
+      "emirate": "Dubai",
+      "area": "Sobha Sanctuary, Dubailand",
+      "slug": "the-woods-horizon-sobha-sanctuary-dubai",
+      "bedrooms": [
+        "1BR",
+        "2BR"
+      ],
+      "types": [
+        "Apartments"
+      ],
+      "price": 1090000,
+      "status": "Developer-confirmed named phase",
+      "summary": "A named apartment release within The Woods at Sobha Sanctuary, offering one- and two-bedroom homes amid landscaped grounds. Official floor-plan examples range from approximately 547 to 964 sq ft; the developer lists a starting price of AED 1.09 million.",
+      "amenities": [
+        "Pool deck",
+        "Yoga and meditation areas",
+        "Coworking",
+        "Outdoor fitness",
+        "Children's play area",
+        "Library"
+      ],
+      "parent": "The Woods at Sobha Sanctuary",
+      "sources": [
+        [
+          "https://sobharealty.com/properties-in-dubai/sobha-sanctuary/the-woods-horizon",
+          "developer_project"
+        ]
+      ]
+    },
+    {
+      "title": "The Woods Abode at Sobha Sanctuary",
+      "developer": "Sobha",
+      "emirate": "Dubai",
+      "area": "Sobha Sanctuary, Dubailand",
+      "slug": "the-woods-abode-sobha-sanctuary-dubai",
+      "bedrooms": [
+        "1BR",
+        "2BR"
+      ],
+      "types": [
+        "Apartments"
+      ],
+      "price": 1040000,
+      "handover": "2029",
+      "status": "Developer-confirmed named phase",
+      "summary": "A separate one- and two-bedroom apartment collection listed by Sobha within Sobha Sanctuary. The developer's current Dubai apartment list gives a starting price of AED 1.04 million and a 2029 handover, subject to availability.",
+      "parent": "The Woods at Sobha Sanctuary",
+      "sources": [
+        [
+          "https://sobharealty.com/apartments-for-sale-in-dubai",
+          "developer_inventory"
+        ],
+        [
+          "https://sobharealty.com/sobha-communities/sobha-sanctuary/apartments",
+          "developer_community"
+        ]
+      ]
+    },
+    {
+      "title": "The Woods Serenity at Sobha Sanctuary",
+      "developer": "Sobha",
+      "emirate": "Dubai",
+      "area": "Sobha Sanctuary, Dubailand",
+      "slug": "the-woods-serenity-sobha-sanctuary-dubai",
+      "bedrooms": [
+        "1BR",
+        "2BR"
+      ],
+      "types": [
+        "Apartments"
+      ],
+      "price": 1050000,
+      "status": "Developer-confirmed named phase",
+      "summary": "The Woods Serenity is a separately named one- and two-bedroom apartment release in Sobha Sanctuary. The developer search listing shows an indicative AED 1.05 million starting price; current inventory and final commercial terms need reconfirmation.",
+      "parent": "The Woods at Sobha Sanctuary",
+      "notes": [
+        "Different official catalogue pages display different starting prices; AED 1.05M is the search listing figure, not a guaranteed offer."
+      ],
+      "sources": [
+        [
+          "https://sobharealty.com/search-results",
+          "developer_inventory"
+        ],
+        [
+          "https://sobharealty.com/sobha-communities/sobha-sanctuary/apartments",
+          "developer_community"
+        ]
+      ]
+    },
+    {
+      "title": "The Woods Retreat at Sobha Sanctuary",
+      "developer": "Sobha",
+      "emirate": "Dubai",
+      "area": "Sobha Sanctuary, Dubailand",
+      "slug": "the-woods-retreat-sobha-sanctuary-dubai",
+      "bedrooms": [
+        "1BR",
+        "2BR"
+      ],
+      "types": [
+        "Apartments"
+      ],
+      "price": 1200000,
+      "handover": "2029",
+      "status": "Developer-confirmed named phase",
+      "summary": "The Woods Retreat is an apartment enclave with stepped towers, planted courtyards and water features in Sobha Sanctuary. Official listings describe one- and two-bedroom homes, indicative pricing from AED 1.20 million and an estimated 2029 handover.",
+      "amenities": [
+        "Landscaped courtyards",
+        "Shaded walking routes",
+        "Water features",
+        "Wellness areas"
+      ],
+      "parent": "The Woods at Sobha Sanctuary",
+      "sources": [
+        [
+          "https://sobharealty.com/properties-in-uae",
+          "developer_inventory"
+        ],
+        [
+          "https://sobharealty.com/properties-in-dubai/sobha-sanctuary/the-woods-retreat?utm_campaign%2525252525253Futm_source=rentpackage.com",
+          "developer_project"
+        ]
+      ]
+    },
+    {
+      "title": "Capeside Marina Residences",
+      "developer": "Sobha",
+      "emirate": "Umm Al Quwain",
+      "area": "Sobha Siniya Island",
+      "slug": "capeside-marina-residences-sobha-siniya-island-uaq",
+      "bedrooms": [],
+      "types": [
+        "Apartments"
+      ],
+      "handover": "June 2030",
+      "status": "Sold out — resale enquiries only",
+      "summary": "Capeside is a named marinafront development at Sobha Siniya Island. Sobha's official marina collection labels it sold out and lists a June 2030 handover. It is retained as a catalogue reference, not represented as available developer stock.",
+      "parent": "Siniya Marina Residences",
+      "sources": [
+        [
+          "https://sobharealty.com/properties-in-uaq/sobha-siniya-island/siniya-marina-residences",
+          "developer_inventory"
+        ]
+      ]
+    },
+    {
+      "title": "Nura",
+      "developer": "RAK Properties",
+      "emirate": "Ras Al Khaimah",
+      "area": "Downtown Mina, Raha Island",
+      "slug": "nura-rak-properties-downtown-mina-ras-al-khaimah",
+      "bedrooms": [
+        "Studios",
+        "1BR",
+        "2BR",
+        "3BR",
+        "4BR"
+      ],
+      "types": [
+        "Apartments",
+        "Penthouses"
+      ],
+      "launch": "2025-12-08",
+      "handover": "Q1 2029",
+      "units": 312,
+      "areaMin": 375,
+      "areaMax": 2754,
+      "areaUnit": "sqft",
+      "status": "Under construction — confirm availability",
+      "summary": "RAK Properties' two-tower Nura development offers 312 homes, from studios through three-bedroom apartments and four-bedroom penthouses. The developer confirms a Q1 2029 completion target and unit sizes from 375 to 2,754 sq ft.",
+      "amenities": [
+        "Rooftop infinity pool",
+        "Outdoor gym",
+        "Clubhouse",
+        "Padel court",
+        "Outdoor cinema",
+        "Mini golf",
+        "Children's play areas"
+      ],
+      "sources": [
+        [
+          "https://www.rakproperties.ae/our-properties/nura/",
+          "developer_project"
+        ],
+        [
+          "https://www.rakproperties.ae/news/downtown-minas-cityscape-continues-to-evolve-with-the-launch-of-nura-rak-properties-newest-contemporary-luxury-development-on-raha-island/",
+          "developer_press_release"
+        ]
+      ]
+    },
+    {
+      "title": "Riviera Residences Phase 1",
+      "developer": "MERED",
+      "emirate": "Abu Dhabi",
+      "area": "Al Reem Island, ADGM",
+      "slug": "riviera-residences-phase-1-mered-al-reem-island-abu-dhabi",
+      "bedrooms": [
+        "1BR",
+        "2BR",
+        "3BR"
+      ],
+      "types": [
+        "Apartments",
+        "Villas",
+        "Duplexes",
+        "Penthouses"
+      ],
+      "plan": "50/50 (5% booking included)",
+      "handover": "Q3 2029",
+      "status": "Developer-confirmed phase — under construction",
+      "summary": "The first phase of MERED's waterfront Riviera Residences, designed by Herzog & de Meuron, has a Q3 2029 estimated handover. MERED announced the appointment of Dutco Construction for Phase 1 in November 2026. Residence types listed are for the wider Riviera development; confirm allocation within Phase 1.",
+      "amenities": [
+        "Pools",
+        "Wellness facilities",
+        "Sports areas",
+        "Family spaces"
+      ],
+      "parent": "Riviera Residences",
+      "sources": [
+        [
+          "https://mered.ae/projects/riviera",
+          "developer_project"
+        ],
+        [
+          "https://mered.ae/news/mered-appoints-dutco-construction-as-main-contractor-for-riviera-residences-phase-1",
+          "developer_press_release"
+        ]
+      ]
+    },
+    {
+      "title": "Riviera Residences Phase 2",
+      "developer": "MERED",
+      "emirate": "Abu Dhabi",
+      "area": "Al Reem Island, ADGM",
+      "slug": "riviera-residences-phase-2-mered-al-reem-island-abu-dhabi",
+      "bedrooms": [
+        "1BR",
+        "2BR",
+        "3BR"
+      ],
+      "types": [
+        "Apartments",
+        "Duplexes",
+        "Penthouses"
+      ],
+      "launch": "2026-11-05",
+      "plan": "50/50 (5% booking included)",
+      "handover": "Q2 2030",
+      "units": 404,
+      "status": "Developer-confirmed new phase",
+      "summary": "MERED's second Riviera Residences phase adds 404 luxury waterfront homes on Al Reem Island. The official development page lists estimated Phase 2 delivery in Q2 2030 and a 50/50 payment structure. Confirm specific residence types and pricing against Phase 2 offers.",
+      "amenities": [
+        "Pools",
+        "Wellness facilities",
+        "Sports areas",
+        "Family spaces"
+      ],
+      "parent": "Riviera Residences",
+      "sources": [
+        [
+          "https://mered.ae/news/mered-launches-riviera-residences-phase-2-expanding-its-landmark-waterfront-development-in-abu-dhabi",
+          "developer_press_release"
+        ],
+        [
+          "https://mered.ae/projects/riviera",
+          "developer_project"
+        ]
+      ]
+    },
+    {
+      "title": "Artistry Two Residences",
+      "developer": "Select Group",
+      "emirate": "Dubai",
+      "area": "Dubai Design District",
+      "slug": "artistry-two-residences-select-group-dubai-design-district",
+      "bedrooms": [
+        "1BR",
+        "2BR",
+        "3BR",
+        "4BR"
+      ],
+      "types": [
+        "Apartments",
+        "Duplexes",
+        "Penthouses"
+      ],
+      "launch": "2026-02",
+      "plan": "50/50",
+      "handover": "2029",
+      "status": "Developer-confirmed project",
+      "summary": "A 37-storey canal-side tower with one- to three-bedroom homes and four-bedroom duplex penthouses. Select Group confirms a 50/50 plan and 2029 delivery; its penthouse collection includes private terraces and plunge pools.",
+      "amenities": [
+        "Waterfront views",
+        "Private terraces",
+        "Wellness and recreation facilities",
+        "Selected penthouse pools"
+      ],
+      "notes": [
+        "Developer's journey page dates initial launch to February 2026, not November."
+      ],
+      "sources": [
+        [
+          "https://www.select-group.ae/developments/artistry-two-residences",
+          "developer_project"
+        ],
+        [
+          "https://www.select-group.ae/our-journey",
+          "developer_launch_history"
+        ]
+      ]
+    },
+    {
+      "title": "East Residence 2 at Serenia District",
+      "developer": "Palma Holding",
+      "emirate": "Dubai",
+      "area": "Serenia District, Jumeirah Islands",
+      "slug": "east-residence-2-serenia-district-palma-dubai",
+      "bedrooms": [
+        "2BR",
+        "3BR",
+        "4BR"
+      ],
+      "types": [
+        "Apartments"
+      ],
+      "launch": "2026-01-29",
+      "status": "Developer-confirmed tower",
+      "summary": "East Residence 2 is a distinct tower in Palma's Serenia District masterplan, designed around connections to green spaces, water and the pedestrian network. The developer's floor-plan booklet identifies two-, three- and four-bedroom examples.",
+      "parent": "Serenia District",
+      "documentSources": [
+        {
+          "kind": "floor_plan_booklet",
+          "url": "https://palmaholding.com/wp-content/uploads/2026/01/1.-East-Residence-2-Floorplan-Booklet.pdf"
+        }
+      ],
+      "sources": [
+        [
+          "https://palmaholding.com/east-residence-2-serenia-district/",
+          "developer_project"
+        ],
+        [
+          "https://palmaholding.com/sereniadistrict-brokers/",
+          "developer_materials"
+        ]
+      ]
+    },
+    {
+      "title": "East Residence 3 at Serenia District",
+      "developer": "Palma Holding",
+      "emirate": "Dubai",
+      "area": "Serenia District, Jumeirah Islands",
+      "slug": "east-residence-3-serenia-district-palma-dubai",
+      "bedrooms": [
+        "1BR",
+        "2BR"
+      ],
+      "types": [
+        "Apartments"
+      ],
+      "launch": "2026-01-30",
+      "status": "Developer-confirmed tower",
+      "summary": "East Residence 3 is a distinct Serenia District tower facing the Jumeirah Islands landscape and JLT. Palma identifies one- and two-bedroom apartments in its factsheet and describes the building's collaborative design with Nikken Sekkei.",
+      "parent": "Serenia District",
+      "documentSources": [
+        {
+          "kind": "factsheet",
+          "url": "https://palmaholding.com/wp-content/uploads/2026/01/East-Residence-3-Fact-Sheet.pdf"
+        }
+      ],
+      "sources": [
+        [
+          "https://palmaholding.com/east-residence-3-serenia-district/",
+          "developer_project"
+        ],
+        [
+          "https://palmaholding.com/sereniadistrict-brokers/",
+          "developer_materials"
+        ]
+      ]
+    },
+    {
+      "title": "East Residence 4 at Serenia District",
+      "developer": "Palma Holding",
+      "emirate": "Dubai",
+      "area": "Serenia District, Jumeirah Islands",
+      "slug": "east-residence-4-serenia-district-palma-dubai",
+      "bedrooms": [],
+      "types": [
+        "Apartments"
+      ],
+      "status": "Developer-confirmed tower",
+      "summary": "The fourth East Residence tower forms part of Serenia District at Jumeirah Islands. Palma describes views towards Serenity Lake and JLT, a landscaped podium, four pools and access to the district's community hub.",
+      "amenities": [
+        "Infinity pool",
+        "Indoor pool",
+        "Lap pool",
+        "Shallow pool",
+        "Community hub"
+      ],
+      "parent": "Serenia District",
+      "sources": [
+        [
+          "https://palmaholding.com/sereniadistrict-brokers/eastresidence4/",
+          "developer_materials"
+        ],
+        [
+          "https://palmaholding.com/east-residences-serenia-district/",
+          "developer_project"
+        ]
+      ]
+    },
+    {
+      "title": "Nawayef West",
+      "developer": "Modon",
+      "emirate": "Abu Dhabi",
+      "area": "Hudayriyat Island",
+      "slug": "nawayef-west-modon-hudayriyat-island-abu-dhabi",
+      "bedrooms": [],
+      "types": [
+        "Villas",
+        "Mansions"
+      ],
+      "status": "Construction confirmed — verify resale availability",
+      "summary": "Nawayef West is a distinct hillside villa development within Modon's Hudayriyat Island masterplan. Modon confirmed a joint construction contract for Nawayef East and West in December 2025. The joint contract's 735 villas and three- to eight-bedroom range are not assumed to apply exclusively to West.",
+      "amenities": [
+        "Hillside setting",
+        "Nearby sports facilities",
+        "Retail and dining",
+        "Island cycling network"
+      ],
+      "parent": "Nawayef",
+      "sources": [
+        [
+          "https://www.modon.com/about-modon/media-centre/details/2025/12/19/modon-awards-the-largest-residential-construction-contract-in-abu-dhabi-in-2025-for-nawayef-east-and-nawayef-west-on-hudayriyat-island",
+          "developer_press_release"
+        ]
+      ]
+    },
+    {
+      "title": "Cheval South Bay",
+      "developer": "Dubai South Properties",
+      "emirate": "Dubai",
+      "area": "South Bay, Dubai South",
+      "slug": "cheval-south-bay-dubai-south-dubai",
+      "bedrooms": [],
+      "types": [
+        "Branded Residences",
+        "Serviced Apartments"
+      ],
+      "launch": "2026-11-11",
+      "status": "Announced — sales terms unconfirmed",
+      "units": 193,
+      "summary": "Dubai South and Cheval Collection announced a mixed hospitality and residential development comprising 98 serviced hotel apartments and 95 branded residences. The opening is planned for 2030, which is not yet a confirmed residential unit handover date.",
+      "amenities": [
+        "Waterfront community",
+        "Lagoon setting",
+        "Connection to South Bay Mall"
+      ],
+      "parent": "South Bay",
+      "notes": [
+        "Opening targeted for 2030; residential handover and ownership terms not confirmed."
+      ],
+      "sources": [
+        [
+          "https://www.wam.ae/en/article/c37a8ey-dubai-south-signs-agreement-with-cheval-collection",
+          "developer_statement_via_wam"
+        ]
+      ]
+    },
+    {
+      "title": "KORE by Imtiaz",
+      "developer": "Imtiaz",
+      "emirate": "Dubai",
+      "area": "Dubailand",
+      "slug": "kore-by-imtiaz-dubailand-dubai",
+      "bedrooms": [],
+      "types": [
+        "Apartments"
+      ],
+      "status": "Developer-confirmed project",
+      "summary": "Imtiaz's wellness-oriented KORE development is organised around training, nutrition and recovery, within a Dubailand neighbourhood with landscaped walking and cycling routes. Prices, unit mix and completion require a dated offer from the developer.",
+      "amenities": [
+        "Fitness technology",
+        "Nutrition-oriented facilities",
+        "Recovery experiences",
+        "Walking and cycling routes"
+      ],
+      "sources": [
+        [
+          "https://real.imtiaz.ae/property/kore-by-imtiaz",
+          "developer_project"
+        ]
+      ]
+    },
+    {
+      "title": "Khalid Bin Sultan City",
+      "developer": "BEEAH",
+      "emirate": "Sharjah",
+      "area": "Sharjah",
+      "slug": "khalid-bin-sultan-city-beeah-sharjah",
+      "bedrooms": [],
+      "types": [
+        "Master Development",
+        "Apartments",
+        "Townhouses",
+        "Villas"
+      ],
+      "launch": "2025-06-19",
+      "recordKind": "masterplan",
+      "status": "Masterplan confirmed — unit terms unconfirmed",
+      "summary": "BEEAH's first real-estate development, designed by Zaha Hadid Architects, combines residential neighbourhoods, commercial areas and civic facilities. The masterplan emphasises sustainability, smart services and public spaces; individual residential phases need separate registration.",
+      "amenities": [
+        "Central park",
+        "Cultural centre",
+        "Retail mall",
+        "Community mosque",
+        "Lifestyle avenue"
+      ],
+      "sources": [
+        [
+          "https://www.beeahgroup.com/beeah-unveils-khalid-bin-sultan-city-the-groups-first-real-estate-development-a-landmark-in-smart-sustainable-living/",
+          "developer_press_release"
+        ],
+        [
+          "https://www.beeahgroup.com/services/developments/",
+          "developer_project"
+        ]
+      ]
+    },
+    {
+      "title": "The Arts District by Binghatti",
+      "developer": "Binghatti Properties",
+      "emirate": "Dubai",
+      "area": "Al Rowaiyah First, Dubai",
+      "slug": "the-arts-district-binghatti-al-rowaiyah-dubai",
+      "bedrooms": [
+        "Studios",
+        "1BR",
+        "2BR"
+      ],
+      "types": [
+        "Apartments"
+      ],
+      "status": "Pre-launch — EOI terms require confirmation",
+      "summary": "The Arts District is listed on Binghatti's official sitemap. Broker pre-launch materials describe studio, one- and two-bedroom apartments in the Al Rowaiyah First area. Exact EOI opening, commercial terms and completion require the developer's current documentation.",
+      "notes": [
+        "Broker reports conflict on EOI dates. AED 525,000 starting-price indication is not a developer-verified current offer."
+      ],
+      "indicativePrice": 525000,
+      "sources": [
+        [
+          "https://www.binghatti.com/sitemap.html",
+          "developer_project_index"
+        ],
+        [
+          "https://theartsdistricts.com/",
+          "broker_prelaunch_information"
+        ],
+        [
+          "https://theartsdistricts.com/about/",
+          "broker_source_disclosure"
+        ]
+      ]
+    },
+    {
+      "title": "Sorrento Lagoon Views",
+      "developer": "DAMAC",
+      "emirate": "Dubai",
+      "area": "DAMAC Lagoons",
+      "slug": "sorrento-lagoon-views-damac-lagoons-dubai",
+      "bedrooms": [
+        "Studios",
+        "1BR"
+      ],
+      "types": [
+        "Apartments"
+      ],
+      "handover": "January 2030 (reported register target)",
+      "status": "Under construction — confirm developer terms",
+      "summary": "Sorrento is a named Lagoon Views apartment development at DAMAC Lagoons. Published DLD-derived tracking identifies project number 4381 and studio and one-bedroom residences, with a January 2030 declared completion date. Confirm exact tower allocation and contractual handover with DAMAC.",
+      "notes": [
+        "DLD-derived source names Island Oasis Properties as registered developer; DAMAC is the marketed brand. Tower C/D require further registration and identity review. The date is not a contractual guarantee."
+      ],
+      "regId": "4381",
+      "documentSources": [
+        {
+          "kind": "developer_branded_brochure_reference",
+          "url": "https://assets.ctfassets.net/zoq5l15g49wj/4vxj7LXGvBwEGsE1GeiJJS/3e319f4b8720c97962a19e5586f71529/Lagoons_Sorrento_Brochure_DIGITAL_v2_1_1.pdf"
+        }
+      ],
+      "sources": [
+        [
+          "https://www.propertyfinder.ae/en/new-projects/damac-properties/sorrento",
+          "property_portal"
+        ],
+        [
+          "https://tryhp.app/projects/damac-lagoons/sorrento",
+          "published_dld_derived_report"
+        ],
+        [
+          "https://buydubai.io/market/launch-sales/projects/sorrento/",
+          "published_transaction_tracking"
+        ]
+      ]
+    }
+  ],
+  "publication": {
+    "tenant": "psr",
+    "indexable": false,
+    "reason": "Index only after detail-page content, media and SEO verification"
+  },
+  "mediaPolicy": "No files uploaded to R2 or Supabase; verified IDrive ingest pending.",
+  "notes": [
+    "Registry records are not proof of current unit availability. Developer-published prices are indicative.",
+    "Masterplans and prelaunch or sold-out developments are explicitly labeled.",
+    "Lyra resembles an existing generic Ghaf Woods record; held for identity reconciliation."
+  ]
+}
