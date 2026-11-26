@@ -1,0 +1,1922 @@
+{
+  "schema": "psr-community-live-media-byte-audit-v1",
+  "checkedAt": "2026-11-27",
+  "scope": "Live current community image URLs, byte and dHash audit; source headers distinguish IDrive-primary from fallback; no storage mutation",
+  "counts": {
+    "cards": 225,
+    "uniqueUrls": 50,
+    "successfulImageDecodes": 31,
+    "failedImages": 19,
+    "distinctSuccessfulByteHashes": 31,
+    "idrivePrimaryUrls": 0,
+    "idrivePrimaryCards": 0,
+    "fallbackUrls": 31,
+    "unattributedUrls": 0,
+    "duplicateByteGroups": 0,
+    "nearDuplicateCandidates": 0,
+    "failCards": 19
+  },
+  "exactDuplicateGroups": [],
+  "nearDuplicates": [],
+  "images": [
+    {
+      "url": "https://psrhomes.ae/insights/rak-resort-residence.webp",
+      "communities": [
+        {
+          "slug": "al-marjan-island",
+          "name": "Al Marjan Island",
+          "emirate": "Ras Al Khaimah"
+        },
+        {
+          "slug": "emaar-beachfront",
+          "name": "Emaar Beachfront",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "maryam-island",
+          "name": "Maryam Island",
+          "emirate": "Sharjah"
+        },
+        {
+          "slug": "hayat-island",
+          "name": "Hayat Island",
+          "emirate": "Ras Al Khaimah"
+        },
+        {
+          "slug": "dubai-sports-city",
+          "name": "Dubai Sports City",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "jumeirah-beach-residence-jbr",
+          "name": "Jumeirah Beach Residence (JBR)",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "al-hamra-waterfront",
+          "name": "Al Hamra Waterfront",
+          "emirate": "Ras Al Khaimah"
+        },
+        {
+          "slug": "falcon-island",
+          "name": "Falcon Island",
+          "emirate": "Ras Al Khaimah"
+        },
+        {
+          "slug": "fujairah-beach",
+          "name": "Fujairah Beach",
+          "emirate": "Fujairah"
+        },
+        {
+          "slug": "island-b-dubai-islands",
+          "name": "Island B, Dubai Islands",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "sobha-siniya-island",
+          "name": "Sobha Siniya Island",
+          "emirate": "Umm Al Quwain"
+        },
+        {
+          "slug": "umm-al-quwain-marina",
+          "name": "Umm Al Quwain Marina (Mistral)",
+          "emirate": "Umm Al Quwain"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/insights/rak-resort-residence.webp",
+        "status": 200,
+        "source": "cloudflare-fallback",
+        "cache": "BYPASS",
+        "contentType": "image/webp",
+        "bytes": 182064,
+        "sha256": "36f64b64ddbd5e229a7547427b0362c9f8ba2174f9170a31bf74169a81ed076e",
+        "width": 2048,
+        "height": 1024,
+        "dHash": "8fad0aa9692fa31e"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/insights/dubai-hills-residences.jpg",
+      "communities": [
+        {
+          "slug": "dubai-hills-estate",
+          "name": "Dubai Hills Estate",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "jumeirah-village-circle-jvc",
+          "name": "Jumeirah Village Circle (JVC)",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "damac-hills",
+          "name": "DAMAC Hills",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "arabian-ranches",
+          "name": "Arabian Ranches",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "dubai-silicon-oasis",
+          "name": "Dubai Silicon Oasis",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "the-valley",
+          "name": "The Valley",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "the-oasis",
+          "name": "The Oasis",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "jumeirah-garden-city",
+          "name": "Jumeirah Garden City",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "ghaf-woods",
+          "name": "Ghaf Woods",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "dubai-science-park",
+          "name": "Dubai Science Park",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "dubai-investment-park-2",
+          "name": "Dubai Investment Park 2",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "eden-hills",
+          "name": "Eden Hills",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "emirates-hills",
+          "name": "Emirates Hills",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "garden-city",
+          "name": "Garden City",
+          "emirate": "Sharjah"
+        },
+        {
+          "slug": "serena",
+          "name": "Serena",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "the-greens-and-views",
+          "name": "The Greens & Views",
+          "emirate": "Dubai"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/insights/dubai-hills-residences.jpg",
+        "status": 200,
+        "source": "cloudflare-fallback",
+        "cache": "BYPASS",
+        "contentType": "image/jpeg",
+        "bytes": 540487,
+        "sha256": "1bda47895fed4bb8d3f4c9ed57455fb8e4dbd326ab0448276d1add850e61c6b8",
+        "width": 2400,
+        "height": 1351,
+        "dHash": "2c526aa14c0ada95"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/insights/dubai-marina-residences.webp",
+      "communities": [
+        {
+          "slug": "dubai-islands",
+          "name": "Dubai Islands",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "dubai-marina",
+          "name": "Dubai Marina",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "jumeirah-lake-towers-jlt",
+          "name": "Jumeirah Lake Towers (JLT)",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "palm-jebel-ali",
+          "name": "Palm Jebel Ali",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "al-hamra-village",
+          "name": "Al Hamra Village",
+          "emirate": "Ras Al Khaimah"
+        },
+        {
+          "slug": "jumeirah-islands",
+          "name": "Jumeirah Islands",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "bluewaters-island",
+          "name": "Bluewaters Island",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "bluewaters-residences",
+          "name": "Bluewaters Residences",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "marina",
+          "name": "Marina",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "palm-jumeirah-island",
+          "name": "Palm Jumeirah Island",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "port-de-la-mer",
+          "name": "Port De La Mer",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "ras-al-khaimah-al-marjan-island",
+          "name": "Ras Al-Khaimah, Al Marjan Island",
+          "emirate": "Ras Al Khaimah"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/insights/dubai-marina-residences.webp",
+        "status": 200,
+        "source": "cloudflare-fallback",
+        "cache": "BYPASS",
+        "contentType": "image/webp",
+        "bytes": 286590,
+        "sha256": "1e2b145ad2dc43c1e9d4e85567226d404933e2652923a8effd726112e4d892a6",
+        "width": 2000,
+        "height": 1110,
+        "dHash": "7777af97ab8dd1c9"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/insights/business-bay-waterfront.jpg",
+      "communities": [
+        {
+          "slug": "business-bay",
+          "name": "Business Bay",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "dubai-creek-harbour",
+          "name": "Dubai Creek Harbour",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "sheikh-zayed-road",
+          "name": "Sheikh Zayed Road",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "al-jaddaf",
+          "name": "Al Jaddaf",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "dubai-motor-city",
+          "name": "Dubai Motor City",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "masaar",
+          "name": "Masaar",
+          "emirate": "Sharjah"
+        },
+        {
+          "slug": "wasl-gate",
+          "name": "Wasl Gate",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "city-walk",
+          "name": "City Walk",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "al-mamsha",
+          "name": "Al Mamsha",
+          "emirate": "Sharjah"
+        },
+        {
+          "slug": "dubai-canal",
+          "name": "Dubai Canal",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "sharjah",
+          "name": "Sharjah",
+          "emirate": "Sharjah"
+        },
+        {
+          "slug": "tilal-binghatti",
+          "name": "Tilal Binghatti",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "district-one",
+          "name": "District One",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "jebel-ali",
+          "name": "Jebel Ali",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "jumeirah",
+          "name": "Jumeirah",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "safa-park",
+          "name": "Safa Park",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "wasl-1",
+          "name": "Wasl 1",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "academic-city",
+          "name": "Academic City",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "dubai-healthcare-city",
+          "name": "Dubai Healthcare City",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "dubai-internet-city",
+          "name": "Dubai Internet City",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "jumeirah-canal",
+          "name": "Jumeirah Canal",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "nad-al-sheba",
+          "name": "Nad Al Sheba",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "riverside",
+          "name": "Riverside",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "dubai-festival-city",
+          "name": "Dubai Festival City",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "jumeirah-village-circle",
+          "name": "Jumeirah Village Circle",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "jumeirah-village-triangle",
+          "name": "Jumeirah Village Triangle",
+          "emirate": "Dubai"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/insights/business-bay-waterfront.jpg",
+        "status": 200,
+        "source": "cloudflare-fallback",
+        "cache": "BYPASS",
+        "contentType": "image/jpeg",
+        "bytes": 551622,
+        "sha256": "c8c22d8bc39657668dd61b986f7f68e1192d95f3c2c019882c61bc69a08937b8",
+        "width": 2400,
+        "height": 1350,
+        "dHash": "4dcdd148590dca25"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/insights/dubai-zabeel-skyline.jpg",
+      "communities": [
+        {
+          "slug": "town-square-dubai",
+          "name": "Town Square Dubai",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "mbr-city",
+          "name": "MBR City",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "sobha-hartland",
+          "name": "Sobha Hartland",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "madinat-jumeirah",
+          "name": "Madinat Jumeirah",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "meydan-horizon",
+          "name": "Meydan Horizon",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "district-11-meydan",
+          "name": "District 11 Meydan",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "sobha-sanctuary",
+          "name": "Sobha Sanctuary",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "ajmal-makan-city",
+          "name": "Ajmal Makan City",
+          "emirate": "Sharjah"
+        },
+        {
+          "slug": "al-sufouh",
+          "name": "Al Sufouh",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "ras-al-khaimah-emirate",
+          "name": "Ras Al Khaimah Emirate",
+          "emirate": "Ras Al Khaimah"
+        },
+        {
+          "slug": "the-heights-country-club-and-wellness",
+          "name": "The Heights Country Club & Wellness",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "al-belaida",
+          "name": "Al Belaida",
+          "emirate": "Sharjah"
+        },
+        {
+          "slug": "rak-central",
+          "name": "RAK Central",
+          "emirate": "Ras Al Khaimah"
+        },
+        {
+          "slug": "al-khan",
+          "name": "Al Khan",
+          "emirate": "Sharjah"
+        },
+        {
+          "slug": "district-11-meydan-south",
+          "name": "District 11 Meydan South",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "downtown-umm-al-quwain",
+          "name": "Downtown Umm Al Quwain",
+          "emirate": "Umm Al Quwain"
+        },
+        {
+          "slug": "dubai-studio-city",
+          "name": "Dubai Studio City",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "emirates-living",
+          "name": "Emirates Living",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "jvt",
+          "name": "JVT",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "madinat-badr",
+          "name": "Madinat Badr",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "muweilah",
+          "name": "Muweilah",
+          "emirate": "Sharjah"
+        },
+        {
+          "slug": "rashidiya-1",
+          "name": "Rashidiya 1",
+          "emirate": "Ajman"
+        },
+        {
+          "slug": "um-fanain",
+          "name": "Um Fanain",
+          "emirate": "Sharjah"
+        },
+        {
+          "slug": "al-zorah-city",
+          "name": "Al Zorah City",
+          "emirate": "Ajman"
+        },
+        {
+          "slug": "burj-khalifa-district",
+          "name": "Burj Khalifa District",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "dubai-international-city",
+          "name": "Dubai International City",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "emirates-city",
+          "name": "Emirates City",
+          "emirate": "Ajman"
+        },
+        {
+          "slug": "villanova",
+          "name": "Villanova",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "za-abeel",
+          "name": "Za’abeel",
+          "emirate": "Dubai"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/insights/dubai-zabeel-skyline.jpg",
+        "status": 200,
+        "source": "cloudflare-fallback",
+        "cache": "BYPASS",
+        "contentType": "image/jpeg",
+        "bytes": 185404,
+        "sha256": "a31b6a76a4a65540e352a282489413007438e1185bd8b56a01762f116eb9a804",
+        "width": 2450,
+        "height": 1400,
+        "dHash": "3f3f23371d2f1b6f"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/about-jumeirah-burj-banner.webp",
+      "communities": [
+        {
+          "slug": "downtown-dubai",
+          "name": "Downtown Dubai",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "jumeirah-village-triangle-jvt",
+          "name": "Jumeirah Village Triangle (JVT)",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "difc",
+          "name": "DIFC",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "meydan",
+          "name": "Meydan",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "damac-lagoons",
+          "name": "DAMAC Lagoons",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "grand-polo-club-and-resort",
+          "name": "Grand Polo Club & Resort",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "downtown-jebel-ali",
+          "name": "Downtown Jebel Ali",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "la-mer",
+          "name": "La Mer",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "rise-by-athlon",
+          "name": "Rise by Athlon",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "dubai-international-financial-centre",
+          "name": "Dubai International Financial Centre",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "jumeira-bay",
+          "name": "Jumeira Bay",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "marasi-bay",
+          "name": "Marasi Bay",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "al-qudra-road",
+          "name": "Al Qudra Road",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "al-wasl",
+          "name": "Al Wasl",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "al-zorah",
+          "name": "Al Zorah",
+          "emirate": "Ajman"
+        },
+        {
+          "slug": "barsha-heights",
+          "name": "Barsha Heights",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "hayyan",
+          "name": "Hayyan",
+          "emirate": "Sharjah"
+        },
+        {
+          "slug": "jbr",
+          "name": "JBR",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "mirdif",
+          "name": "Mirdif",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "pearl-jumeirah",
+          "name": "Pearl Jumeirah",
+          "emirate": "Dubai"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/about-jumeirah-burj-banner.webp",
+        "status": 200,
+        "source": "cloudflare-fallback",
+        "cache": "BYPASS",
+        "contentType": "image/webp",
+        "bytes": 119324,
+        "sha256": "f49fe4f66df3ca7256e3d56425ff89b28ab7cfa5d57a101cce5d927a16ee59d5",
+        "width": 1915,
+        "height": 821,
+        "dHash": "fffbfbfbfb7bab5a"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/insights/green-community.jpg",
+      "communities": [
+        {
+          "slug": "al-furjan",
+          "name": "Al Furjan",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "damac-hills-2",
+          "name": "DAMAC Hills 2",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "tilal-al-ghaf",
+          "name": "Tilal Al Ghaf",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "jumeirah-golf-estates",
+          "name": "Jumeirah Golf Estates",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "central-park",
+          "name": "Central Park",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "emaar-the-valley",
+          "name": "Emaar The Valley",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "the-valley-2",
+          "name": "The Valley 2",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "city-walk-central-park",
+          "name": "City Walk (Central Park)",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "dubai-investments-park",
+          "name": "Dubai Investments Park",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "nad-al-sheba-gardens",
+          "name": "Nad Al Sheba Gardens",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "the-acres",
+          "name": "The Acres",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "al-helio",
+          "name": "Al Helio",
+          "emirate": "Ajman"
+        },
+        {
+          "slug": "arabian-ranches-iii",
+          "name": "Arabian Ranches III",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "discovery-gardens",
+          "name": "Discovery Gardens",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "dubai-industrial-park",
+          "name": "Dubai Industrial Park",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "jumeirah-park",
+          "name": "Jumeirah Park",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "mudon",
+          "name": "Mudon",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "the-sustainable-city-dubai",
+          "name": "The Sustainable City Dubai",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "the-villa",
+          "name": "The Villa",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "tilal-city",
+          "name": "Tilal City",
+          "emirate": "Sharjah"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/insights/green-community.jpg",
+        "status": 200,
+        "source": "cloudflare-fallback",
+        "cache": "BYPASS",
+        "contentType": "image/jpeg",
+        "bytes": 730981,
+        "sha256": "e974ae078cf57e017600701562d4afcfaab5c737c764405774430fadea0e2ca4",
+        "width": 2667,
+        "height": 1500,
+        "dHash": "93b2a7590b8c5d4d"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/projects/golf-trails/hero.jpg",
+      "communities": [
+        {
+          "slug": "emaar-south",
+          "name": "Emaar South",
+          "emirate": "Dubai"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/projects/golf-trails/hero.jpg",
+        "status": 200,
+        "source": "cloudflare-fallback",
+        "cache": "BYPASS",
+        "contentType": "image/jpeg",
+        "bytes": 580102,
+        "sha256": "52825101adc159c0663dffc1490dd775634440af447a63e75f1a989c890ecdbc",
+        "width": 2399,
+        "height": 1500,
+        "dHash": "afbe284a68aa8b97"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/insights/palm-branded-residence.webp",
+      "communities": [
+        {
+          "slug": "palm-jumeirah",
+          "name": "Palm Jumeirah",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "waterfront-city",
+          "name": "Waterfront City",
+          "emirate": "Sharjah"
+        },
+        {
+          "slug": "jumeira-bay-island",
+          "name": "Jumeira Bay Island",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "maritime-city",
+          "name": "Maritime City",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "mina-al-arab",
+          "name": "Mina Al Arab",
+          "emirate": "Ras Al Khaimah"
+        },
+        {
+          "slug": "ras-al-khaimah-mina",
+          "name": "Ras Al-Khaimah, Mina",
+          "emirate": "Ras Al Khaimah"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/insights/palm-branded-residence.webp",
+        "status": 200,
+        "source": "cloudflare-fallback",
+        "cache": "BYPASS",
+        "contentType": "image/webp",
+        "bytes": 151198,
+        "sha256": "f476630376a30e0d26c6e820eaeb15fe30c60352d570ddfd728dcf21a1f0ae89",
+        "width": 2450,
+        "height": 1400,
+        "dHash": "131a3726362a4244"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/media-reviewed/20260912/project-the-wow-tower-mr-eight-development-dlrc-dubai.7ea514881f7e.webp",
+      "communities": [
+        {
+          "slug": "dubailand",
+          "name": "Dubailand",
+          "emirate": "Dubai"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/media-reviewed/20260912/project-the-wow-tower-mr-eight-development-dlrc-dubai.7ea514881f7e.webp",
+        "status": 200,
+        "source": "cloudflare-fallback",
+        "cache": "BYPASS",
+        "contentType": "image/webp",
+        "bytes": 118616,
+        "sha256": "4b0ee8acba9bedf52695f9eabf2ba27aeecb48e4cbcd0aa4946590cf5b5dbae2",
+        "width": 1800,
+        "height": 939,
+        "dHash": "0c0a133617362c0d"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/projects/azizi-venice/hero-clean.webp",
+      "communities": [
+        {
+          "slug": "dubai-south",
+          "name": "Dubai South",
+          "emirate": "Dubai"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/projects/azizi-venice/hero-clean.webp",
+        "status": 200,
+        "source": "cloudflare-fallback",
+        "cache": "BYPASS",
+        "contentType": "image/webp",
+        "bytes": 338116,
+        "sha256": "4a77cdc7283790ab49309582410d14a3f80a03452355239dfc66019afdc34c83",
+        "width": 1672,
+        "height": 941,
+        "dHash": "af6f5569a95b86b6"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/insights/dubai-maritime-residences.webp",
+      "communities": [
+        {
+          "slug": "dubai-maritime-city",
+          "name": "Dubai Maritime City",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "rashid-yachts-and-marina",
+          "name": "Rashid Yachts & Marina",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "damac-islands",
+          "name": "Damac Islands",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "mina",
+          "name": "Mina",
+          "emirate": "Ras Al Khaimah"
+        },
+        {
+          "slug": "mina-rashid",
+          "name": "Mina Rashid",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "dubai-harbour",
+          "name": "Dubai Harbour",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "jebel-ali-village",
+          "name": "Jebel Ali Village",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "dubai-water-canal",
+          "name": "Dubai Water Canal",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "khorfakkan-beach-east-coast",
+          "name": "Khorfakkan Beach, East Coast",
+          "emirate": "Sharjah"
+        },
+        {
+          "slug": "the-world-islands",
+          "name": "The World Islands",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "hayat-island-mina",
+          "name": "Hayat Island Mina",
+          "emirate": "Ras Al Khaimah"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/insights/dubai-maritime-residences.webp",
+        "status": 200,
+        "source": "cloudflare-fallback",
+        "cache": "BYPASS",
+        "contentType": "image/webp",
+        "bytes": 175992,
+        "sha256": "bdabec88d2a6c28a58cfec0e70e2bc7992430a38668b6e093e69bd296adf9ca4",
+        "width": 1161,
+        "height": 832,
+        "dHash": "c142aa4ac9ce2d5e"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/media-reviewed/20260912/project-jenna-1-arada-aljada-sharjah.0ee588558ad4.webp",
+      "communities": [
+        {
+          "slug": "aljada",
+          "name": "Aljada",
+          "emirate": "Sharjah"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/media-reviewed/20260912/project-jenna-1-arada-aljada-sharjah.0ee588558ad4.webp",
+        "status": 200,
+        "source": "cloudflare-fallback",
+        "cache": "BYPASS",
+        "contentType": "image/webp",
+        "bytes": 203658,
+        "sha256": "6934efef44000660aa8ede317052dbb6df43b1b76c6ea23fde7fee9c3d230d17",
+        "width": 1519,
+        "height": 877,
+        "dHash": "551f8e8aced4365d"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/hero/psr-cinematic-dubai.webp",
+      "communities": [
+        {
+          "slug": "sobha-hartland-ii",
+          "name": "Sobha Hartland II",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "expo-city-dubai",
+          "name": "Expo City Dubai",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "al-zahia",
+          "name": "Al Zahia",
+          "emirate": "Sharjah"
+        },
+        {
+          "slug": "dubai-production-city",
+          "name": "Dubai Production City",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "majan",
+          "name": "Majan",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "umm-al-quwain",
+          "name": "Umm Al Quwain",
+          "emirate": "Umm Al Quwain"
+        },
+        {
+          "slug": "zabeel",
+          "name": "Zabeel",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "al-zorah-al-zorah-city",
+          "name": "Al Zorah (Al Zorah City)",
+          "emirate": "Ajman"
+        },
+        {
+          "slug": "dubai-design-district",
+          "name": "Dubai Design District",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "dubai-land-residence-complex-dlrc",
+          "name": "Dubai Land Residence Complex (DLRC)",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "sobha-central",
+          "name": "Sobha Central",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "al-barari",
+          "name": "Al Barari",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "jumeirah-1",
+          "name": "Jumeirah 1",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "liwan",
+          "name": "Liwan",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "al-habtoor-city",
+          "name": "Al Habtoor City",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "uptown-dubai",
+          "name": "Uptown Dubai",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "wadi-al-safa",
+          "name": "Wadi Al Safa",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "al-barsha",
+          "name": "Al Barsha",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "al-barsha-south",
+          "name": "Al Barsha South",
+          "emirate": "Dubai"
+        },
+        {
+          "slug": "jvc",
+          "name": "JVC",
+          "emirate": "Dubai"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/hero/psr-cinematic-dubai.webp",
+        "status": 200,
+        "source": "cloudflare-fallback",
+        "cache": "BYPASS",
+        "contentType": "image/webp",
+        "bytes": 191258,
+        "sha256": "ed5561a36bc3d170feaf85d20d998faa15374bc69a2eb1e64a7142849000d0fd",
+        "width": 2400,
+        "height": 1350,
+        "dHash": "01010101020b1301"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/media-reviewed/20260912/project-tranquil-beach-residences-sobha-siniya-island-uaq.210edd2dce77.webp",
+      "communities": [
+        {
+          "slug": "sobha-siniya-island-umm-al-quwain",
+          "name": "Sobha Siniya Island (Umm Al Quwain)",
+          "emirate": "Umm Al Quwain"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/media-reviewed/20260912/project-tranquil-beach-residences-sobha-siniya-island-uaq.210edd2dce77.webp",
+        "status": 200,
+        "source": "cloudflare-fallback",
+        "cache": "BYPASS",
+        "contentType": "image/webp",
+        "bytes": 273776,
+        "sha256": "0eec143fc4508ce58d82ff271cd2202f9c0e245f64a36aedefe760f79f2a8ab8",
+        "width": 1800,
+        "height": 1013,
+        "dHash": "fefaf97a9a8a653d"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/media-reviewed/20260912/project-enchante-grid-properties-arjan-dubai.724399ab99a8.webp",
+      "communities": [
+        {
+          "slug": "arjan",
+          "name": "Arjan",
+          "emirate": "Dubai"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/media-reviewed/20260912/project-enchante-grid-properties-arjan-dubai.724399ab99a8.webp",
+        "status": 200,
+        "source": "cloudflare-fallback",
+        "cache": "BYPASS",
+        "contentType": "image/webp",
+        "bytes": 270304,
+        "sha256": "e8590bc28d0444ec80d1a5db25b251c4d6dcb3a91762d1e13b909982ed151f1a",
+        "width": 1800,
+        "height": 1013,
+        "dHash": "6592ab0b4d0f05d6"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/projects/avenew-888/hero.webp",
+      "communities": [
+        {
+          "slug": "dubai-south-residential-district",
+          "name": "Dubai South Residential District",
+          "emirate": "Dubai"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/projects/avenew-888/hero.webp",
+        "status": 200,
+        "source": "cloudflare-fallback",
+        "cache": "BYPASS",
+        "contentType": "image/webp",
+        "bytes": 731640,
+        "sha256": "b7fed6fa68580b8b1677a466b540bbb64b9fde4dfc58a8b1f519e647f5cfaf39",
+        "width": 2560,
+        "height": 1707,
+        "dHash": "266366fa929329bd"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/projects/radisson-residences-al-reem/hero.jpg",
+      "communities": [
+        {
+          "slug": "al-reem-island",
+          "name": "Al Reem Island",
+          "emirate": "Abu Dhabi"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/projects/radisson-residences-al-reem/hero.jpg",
+        "status": 200,
+        "source": "cloudflare-fallback",
+        "cache": "BYPASS",
+        "contentType": "image/jpeg",
+        "bytes": 292998,
+        "sha256": "f81eb0edbd5c94af5c61d4b1c3f88437c66d8d754646db56abdc4a84b3e85429",
+        "width": 1920,
+        "height": 1080,
+        "dHash": "0041612153c20cb8"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/media/external/source/aHR0cHM6Ly93d3cubW9kb24uY29tL2ltYWdlcy9tb2RvbmNvcnBvcmF0ZWxpYnJhcmllcy9hYm91dC11cy9uYXdheWVmLXBhcmstdmlld3NhZjNhMjZjOS05ZjFmLTRjZjAtYmUwYi1kMzVlNmJkZmQ4NDMuanBnP3NmdnJzbj02ZTc5MmE4M18x/nawayef-park-viewsaf3a26c9-9f1f-4cf0-be0b-d35e6bdfd843.jpg",
+      "communities": [
+        {
+          "slug": "hudayriyat-island",
+          "name": "Hudayriyat Island",
+          "emirate": "Abu Dhabi"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/media/external/source/aHR0cHM6Ly93d3cubW9kb24uY29tL2ltYWdlcy9tb2RvbmNvcnBvcmF0ZWxpYnJhcmllcy9hYm91dC11cy9uYXdheWVmLXBhcmstdmlld3NhZjNhMjZjOS05ZjFmLTRjZjAtYmUwYi1kMzVlNmJkZmQ4NDMuanBnP3NmdnJzbj02ZTc5MmE4M18x/nawayef-park-viewsaf3a26c9-9f1f-4cf0-be0b-d35e6bdfd843.jpg",
+        "status": 502,
+        "source": null,
+        "cache": "BYPASS",
+        "contentType": "text/plain; charset=utf-8",
+        "error": "Error: HTTP 502"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/media/external/source/aHR0cHM6Ly9yZXBvcnRhZ2Vncm91cC5jb20vd3AtY29udGVudC91cGxvYWRzL1BFUkxBSEVJR0hUU19XRUJTSVRFX0JBTk5FUl9WMS0wMi5qcGc/PERLAHEIGHTS_WEBSITE_BANNER_V1-02.jpg",
+      "communities": [
+        {
+          "slug": "yas-island",
+          "name": "Yas Island",
+          "emirate": "Abu Dhabi"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/media/external/source/aHR0cHM6Ly9yZXBvcnRhZ2Vncm91cC5jb20vd3AtY29udGVudC91cGxvYWRzL1BFUkxBSEVJR0hUU19XRUJTSVRFX0JBTk5FUl9WMS0wMi5qcGc/PERLAHEIGHTS_WEBSITE_BANNER_V1-02.jpg",
+        "status": 502,
+        "source": null,
+        "cache": "BYPASS",
+        "contentType": "text/plain; charset=utf-8",
+        "error": "Error: HTTP 502"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/insights/abu-dhabi-community.jpg",
+      "communities": [
+        {
+          "slug": "abu-dhabi",
+          "name": "Abu Dhabi",
+          "emirate": "Abu Dhabi"
+        },
+        {
+          "slug": "arabian-hills-estate",
+          "name": "Arabian Hills Estate",
+          "emirate": "Abu Dhabi"
+        },
+        {
+          "slug": "fay-hills",
+          "name": "Fay Hills",
+          "emirate": "Abu Dhabi"
+        },
+        {
+          "slug": "luluat-al-raha-island",
+          "name": "Luluat Al Raha Island",
+          "emirate": "Abu Dhabi"
+        },
+        {
+          "slug": "raha-island",
+          "name": "Raha Island",
+          "emirate": "Ras Al Khaimah"
+        },
+        {
+          "slug": "saadiyat-grove",
+          "name": "Saadiyat Grove",
+          "emirate": "Abu Dhabi"
+        },
+        {
+          "slug": "zayed-city",
+          "name": "Zayed City",
+          "emirate": "Abu Dhabi"
+        },
+        {
+          "slug": "al-maryah-island",
+          "name": "Al Maryah Island",
+          "emirate": "Abu Dhabi"
+        },
+        {
+          "slug": "aljurf",
+          "name": "AlJurf",
+          "emirate": "Abu Dhabi"
+        },
+        {
+          "slug": "bloom-gardens",
+          "name": "Bloom Gardens",
+          "emirate": "Abu Dhabi"
+        },
+        {
+          "slug": "bloom-living",
+          "name": "Bloom Living",
+          "emirate": "Abu Dhabi"
+        },
+        {
+          "slug": "fahid-island",
+          "name": "Fahid Island",
+          "emirate": "Abu Dhabi"
+        },
+        {
+          "slug": "jubail-island",
+          "name": "Jubail Island",
+          "emirate": "Abu Dhabi"
+        },
+        {
+          "slug": "seih-sedeirah",
+          "name": "Seih Sedeirah",
+          "emirate": "Abu Dhabi"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/insights/abu-dhabi-community.jpg",
+        "status": 200,
+        "source": "cloudflare-fallback",
+        "cache": "BYPASS",
+        "contentType": "image/jpeg",
+        "bytes": 159349,
+        "sha256": "ef3dbac8165371037593d98428f43c0abcf3d61066fbf9836d854d7cf01e7be4",
+        "width": 2450,
+        "height": 1400,
+        "dHash": "f0f0e4eeb5e696b7"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/media-reviewed/20260912/project-roudah-expo-valley-views-expo-city-dubai.59848d316a29.webp",
+      "communities": [
+        {
+          "slug": "expo-valley",
+          "name": "Expo Valley",
+          "emirate": "Dubai"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/media-reviewed/20260912/project-roudah-expo-valley-views-expo-city-dubai.59848d316a29.webp",
+        "status": 200,
+        "source": "cloudflare-fallback",
+        "cache": "BYPASS",
+        "contentType": "image/webp",
+        "bytes": 336594,
+        "sha256": "2c6c0877ef09b79f7467989ccd705071876a479efc57728222e72fe62e4d7c8f",
+        "width": 1800,
+        "height": 1013,
+        "dHash": "266464646c65b4ba"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/media/external/source/aHR0cHM6Ly9yZXBvcnRhZ2Vncm91cC5jb20vd3AtY29udGVudC91cGxvYWRzL1JFUE9SVEFHRV9XRUJTSVRFX0hFQURFUl9TRU5TSS5wbmc/REPORTAGE_WEBSITE_HEADER_SENSI.png",
+      "communities": [
+        {
+          "slug": "saadiyat-island",
+          "name": "Saadiyat Island",
+          "emirate": "Abu Dhabi"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/media/external/source/aHR0cHM6Ly9yZXBvcnRhZ2Vncm91cC5jb20vd3AtY29udGVudC91cGxvYWRzL1JFUE9SVEFHRV9XRUJTSVRFX0hFQURFUl9TRU5TSS5wbmc/REPORTAGE_WEBSITE_HEADER_SENSI.png",
+        "status": 502,
+        "source": null,
+        "cache": "BYPASS",
+        "contentType": "text/plain; charset=utf-8",
+        "error": "Error: HTTP 502"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/media-reviewed/20260912/project-ayami-residence-ayat-development-warsan-first-dubai.c107d75744cf.webp",
+      "communities": [
+        {
+          "slug": "al-warsan-first",
+          "name": "Al Warsan First",
+          "emirate": "Dubai"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/media-reviewed/20260912/project-ayami-residence-ayat-development-warsan-first-dubai.c107d75744cf.webp",
+        "status": 200,
+        "source": "cloudflare-fallback",
+        "cache": "BYPASS",
+        "contentType": "image/webp",
+        "bytes": 287432,
+        "sha256": "18b4b769239b79cf36d3647c97e09ef1eac7479b03e5c4f871caefd1e090bcc3",
+        "width": 1800,
+        "height": 656,
+        "dHash": "55211b75ad33a50d"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/media/external/source/aHR0cHM6Ly9iZXlvbmRkZXZlbG9wbWVudHMuYWUvUHJvamVjdHMvYXJhbmNpYS9UaGUlMjBQcm9qZWN0L1dhdGVyJTIwRmVhdHVyZS53ZWJw/Water%20Feature.webp",
+      "communities": [
+        {
+          "slug": "city-of-arabia",
+          "name": "City of Arabia",
+          "emirate": "Dubai"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/media/external/source/aHR0cHM6Ly9iZXlvbmRkZXZlbG9wbWVudHMuYWUvUHJvamVjdHMvYXJhbmNpYS9UaGUlMjBQcm9qZWN0L1dhdGVyJTIwRmVhdHVyZS53ZWJw/Water%20Feature.webp",
+        "status": 502,
+        "source": null,
+        "cache": "BYPASS",
+        "contentType": "text/plain; charset=utf-8",
+        "error": "Error: HTTP 502"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/media/external/source/aHR0cHM6Ly9uZXctcHJvamVjdHMtbWVkaWEucHJvcGVydHlmaW5kZXIuY29tL3Byb2plY3QvZWI2NmI4MzEtOTc5Yy00MGZkLTgwMjEtNWI3YmExOTRiMzY3L2dhbGxlcnkvaW1hZ2UvOFBWUWNqNXRLSFF2UTBjTzhFRXhwMFhYczRwYWNqejNoVG52cTQ3MlRiaz0vb3JpZ2luYWwud2VicA/original.webp",
+      "communities": [
+        {
+          "slug": "dubai-land-residence-complex",
+          "name": "Dubai Land Residence Complex",
+          "emirate": "Dubai"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/media/external/source/aHR0cHM6Ly9uZXctcHJvamVjdHMtbWVkaWEucHJvcGVydHlmaW5kZXIuY29tL3Byb2plY3QvZWI2NmI4MzEtOTc5Yy00MGZkLTgwMjEtNWI3YmExOTRiMzY3L2dhbGxlcnkvaW1hZ2UvOFBWUWNqNXRLSFF2UTBjTzhFRXhwMFhYczRwYWNqejNoVG52cTQ3MlRiaz0vb3JpZ2luYWwud2VicA/original.webp",
+        "status": 502,
+        "source": null,
+        "cache": "BYPASS",
+        "contentType": "text/plain; charset=utf-8",
+        "error": "Error: HTTP 502"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/projects/expo-valley-views/hero.png",
+      "communities": [
+        {
+          "slug": "expo-valley-expo-city-dubai",
+          "name": "Expo Valley, Expo City Dubai",
+          "emirate": "Dubai"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/projects/expo-valley-views/hero.png",
+        "status": 200,
+        "source": "cloudflare-fallback",
+        "cache": "BYPASS",
+        "contentType": "image/png",
+        "bytes": 656281,
+        "sha256": "98ec83c912280a9c02abb268386458c30f6012725437de206ee468b3d16ca047",
+        "width": 1400,
+        "height": 840,
+        "dHash": "ede1e839591a56a9"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/media/external/source/aHR0cHM6Ly9yZXBvcnRhZ2Vncm91cC5jb20vd3AtY29udGVudC91cGxvYWRzL1JFUE9SVEFHRV9XRUJTSVRFX0hFQURFUl9TSUxBLnBuZw/REPORTAGE_WEBSITE_HEADER_SILA.png",
+      "communities": [
+        {
+          "slug": "masdar-city",
+          "name": "Masdar City",
+          "emirate": "Abu Dhabi"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/media/external/source/aHR0cHM6Ly9yZXBvcnRhZ2Vncm91cC5jb20vd3AtY29udGVudC91cGxvYWRzL1JFUE9SVEFHRV9XRUJTSVRFX0hFQURFUl9TSUxBLnBuZw/REPORTAGE_WEBSITE_HEADER_SILA.png",
+        "status": 502,
+        "source": null,
+        "cache": "BYPASS",
+        "contentType": "text/plain; charset=utf-8",
+        "error": "Error: HTTP 502"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/media-reviewed/20260912/project-sharjah-sustainable-city-ii-shurooq-see-holding-al-rahmaniya.c6b2227a6e1d.webp",
+      "communities": [
+        {
+          "slug": "sustainable-city",
+          "name": "Sustainable City",
+          "emirate": "Sharjah"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/media-reviewed/20260912/project-sharjah-sustainable-city-ii-shurooq-see-holding-al-rahmaniya.c6b2227a6e1d.webp",
+        "status": 200,
+        "source": "cloudflare-fallback",
+        "cache": "BYPASS",
+        "contentType": "image/webp",
+        "bytes": 455296,
+        "sha256": "80f31f6cc3e81d1e5e9675922a822be74138544c519769bd54e069663c5377bb",
+        "width": 1800,
+        "height": 1013,
+        "dHash": "49abcdd969da5b9c"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/media/external/df5cdaba3edd49cf/1_15e8845fbe_051aab9432.webp",
+      "communities": [
+        {
+          "slug": "al-mairid",
+          "name": "Al Mairid",
+          "emirate": "Ras Al Khaimah"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/media/external/df5cdaba3edd49cf/1_15e8845fbe_051aab9432.webp",
+        "status": 502,
+        "source": null,
+        "cache": "BYPASS",
+        "contentType": "text/plain; charset=utf-8",
+        "error": "Error: HTTP 502"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/media/external/81f8497044896345/original.webp",
+      "communities": [
+        {
+          "slug": "al-mamzar",
+          "name": "Al Mamzar",
+          "emirate": "Sharjah"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/media/external/81f8497044896345/original.webp",
+        "status": 502,
+        "source": null,
+        "cache": "BYPASS",
+        "contentType": "text/plain; charset=utf-8",
+        "error": "Error: HTTP 502"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/media/external/source/aHR0cHM6Ly9yZXBvcnRhZ2Vncm91cC5jb20vd3AtY29udGVudC91cGxvYWRzL1JFUE9SVEFHRV9XRUJTSVRFX0hFQURFUl9CUkFCVVMtNy5wbmc/REPORTAGE_WEBSITE_HEADER_BRABUS-7.png",
+      "communities": [
+        {
+          "slug": "al-raha-beach",
+          "name": "Al Raha Beach",
+          "emirate": "Abu Dhabi"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/media/external/source/aHR0cHM6Ly9yZXBvcnRhZ2Vncm91cC5jb20vd3AtY29udGVudC91cGxvYWRzL1JFUE9SVEFHRV9XRUJTSVRFX0hFQURFUl9CUkFCVVMtNy5wbmc/REPORTAGE_WEBSITE_HEADER_BRABUS-7.png",
+        "status": 502,
+        "source": null,
+        "cache": "BYPASS",
+        "contentType": "text/plain; charset=utf-8",
+        "error": "Error: HTTP 502"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/projects/al-yalayis/hero.webp",
+      "communities": [
+        {
+          "slug": "al-yalayis-1",
+          "name": "Al Yalayis 1",
+          "emirate": "Dubai"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/projects/al-yalayis/hero.webp",
+        "status": 200,
+        "source": "cloudflare-fallback",
+        "cache": "BYPASS",
+        "contentType": "image/webp",
+        "bytes": 205868,
+        "sha256": "ac22f4390102415b0b9126882df7d462b03217c18304a2127ba21546663285dd",
+        "width": 1672,
+        "height": 941,
+        "dHash": "1a3f3f7f3c496339"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/media/external/b8e644e0a5cf87ee/img80.jpg",
+      "communities": [
+        {
+          "slug": "bloom-living-zayed-city",
+          "name": "Bloom Living, Zayed City",
+          "emirate": "Abu Dhabi"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/media/external/b8e644e0a5cf87ee/img80.jpg",
+        "status": 502,
+        "source": null,
+        "cache": "BYPASS",
+        "contentType": "text/plain; charset=utf-8",
+        "error": "Error: HTTP 502"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/media/external/aaf9a48c8535cc41/img100.jpg",
+      "communities": [
+        {
+          "slug": "downtown-jebel-ali-sheikh-zayed-road",
+          "name": "Downtown Jebel Ali, Sheikh Zayed Road",
+          "emirate": "Dubai"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/media/external/aaf9a48c8535cc41/img100.jpg",
+        "status": 502,
+        "source": null,
+        "cache": "BYPASS",
+        "contentType": "text/plain; charset=utf-8",
+        "error": "Error: HTTP 502"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/media/external/source/aHR0cHM6Ly9yZXBvcnRhZ2Vncm91cC5jb20vd3AtY29udGVudC91cGxvYWRzL1JFUE9SVEFHRV9XRUJTSVRFX0hFQURFUl9PQ0VBTkEtMS5wbmc/REPORTAGE_WEBSITE_HEADER_OCEANA-1.png",
+      "communities": [
+        {
+          "slug": "fujairah-shoreline",
+          "name": "Fujairah shoreline",
+          "emirate": "Fujairah"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/media/external/source/aHR0cHM6Ly9yZXBvcnRhZ2Vncm91cC5jb20vd3AtY29udGVudC91cGxvYWRzL1JFUE9SVEFHRV9XRUJTSVRFX0hFQURFUl9PQ0VBTkEtMS5wbmc/REPORTAGE_WEBSITE_HEADER_OCEANA-1.png",
+        "status": 502,
+        "source": null,
+        "cache": "BYPASS",
+        "contentType": "text/plain; charset=utf-8",
+        "error": "Error: HTTP 502"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/media/external/source/aHR0cHM6Ly9pbWczLmNyZWF0aXVtLnJ1L2Rpc2syL2UzLzM3L2U0L2JmYjlmZjA0YTI3ODliOTUyY2FiMjIwZTVmMDc3MTgwODkvZ2hhZl93b29kc182Y3pveV94bC5qcGc/ghaf_woods_6czoy_xl.jpg",
+      "communities": [
+        {
+          "slug": "ghaf-woods-dubailand",
+          "name": "Ghaf Woods, Dubailand",
+          "emirate": "Dubai"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/media/external/source/aHR0cHM6Ly9pbWczLmNyZWF0aXVtLnJ1L2Rpc2syL2UzLzM3L2U0L2JmYjlmZjA0YTI3ODliOTUyY2FiMjIwZTVmMDc3MTgwODkvZ2hhZl93b29kc182Y3pveV94bC5qcGc/ghaf_woods_6czoy_xl.jpg",
+        "status": 200,
+        "source": "original-fallback",
+        "cache": "BYPASS",
+        "contentType": "image/jpeg",
+        "bytes": 2333827,
+        "sha256": "474796fb1318ae76cb142fb115603ca657fc6060b8dadddd526624d93e9c499a",
+        "width": 1665,
+        "height": 1110,
+        "dHash": "01444b30d414aa52"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/media/external/source/aHR0cHM6Ly9pbWczLmNyZWF0aXVtLnJ1L2Rpc2syLzZkLzk4LzBkLzY1ZTQ1NWYxZDQ5ZTQ1NzIzZTk3YWZlZTczNmZkNDFhYTEvYmF5X3ZpbGxhc19iYW5uZXIxX2Fwcl8yNi5qcGc/bay_villas_banner1_apr_26.jpg",
+      "communities": [
+        {
+          "slug": "island-e-dubai-islands",
+          "name": "Island E, Dubai Islands",
+          "emirate": "Dubai"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/media/external/source/aHR0cHM6Ly9pbWczLmNyZWF0aXVtLnJ1L2Rpc2syLzZkLzk4LzBkLzY1ZTQ1NWYxZDQ5ZTQ1NzIzZTk3YWZlZTczNmZkNDFhYTEvYmF5X3ZpbGxhc19iYW5uZXIxX2Fwcl8yNi5qcGc/bay_villas_banner1_apr_26.jpg",
+        "status": 200,
+        "source": "original-fallback",
+        "cache": "BYPASS",
+        "contentType": "image/jpeg",
+        "bytes": 376424,
+        "sha256": "d60826d6ea80ce1c9aa408af8e159a98eb782fbb2ef798a333ab06eafacfe95a",
+        "width": 1920,
+        "height": 1080,
+        "dHash": "01e3256da9977b5f"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/media/external/source/aHR0cHM6Ly9pbWczLmNyZWF0aXVtLnJ1L2Rpc2syLzdhLzBjLzE5LzViMzYxMjE3NTQ3Mzg3ZTUxYTMxNmJlM2ViNDlmYzZkMGQvZmFjYWRlLmpwZw/facade.jpg",
+      "communities": [
+        {
+          "slug": "jumeirah-village-triangle-jvt-district-2",
+          "name": "Jumeirah Village Triangle (JVT), District 2",
+          "emirate": "Dubai"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/media/external/source/aHR0cHM6Ly9pbWczLmNyZWF0aXVtLnJ1L2Rpc2syLzdhLzBjLzE5LzViMzYxMjE3NTQ3Mzg3ZTUxYTMxNmJlM2ViNDlmYzZkMGQvZmFjYWRlLmpwZw/facade.jpg",
+        "status": 200,
+        "source": "original-fallback",
+        "cache": "BYPASS",
+        "contentType": "image/jpeg",
+        "bytes": 742730,
+        "sha256": "729a02d6b83329d201c45ec20ed80bd7597bdafb2d10ebec5d81b409d024fc00",
+        "width": 2500,
+        "height": 2899,
+        "dHash": "29050e1e5b172a5b"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/media/external/source/aHR0cHM6Ly9pbWczLmNyZWF0aXVtLnJ1L2Rpc2syL2VjL2I4LzFlLzI3YzdhYjMyZTQ1ZjIzOWI3MWQzMWYzYTFlNTM5NTVkZWIvYWxkYXJfc2FhZGl5YXRtYXJpbmFkaXN0cmljdDAxX2NnaTA1XzA2LmpwZw/aldar_saadiyatmarinadistrict01_cgi05_06.jpg",
+      "communities": [
+        {
+          "slug": "marsa-al-saadiyat-saadiyat-island",
+          "name": "Marsa Al Saadiyat, Saadiyat Island",
+          "emirate": "Abu Dhabi"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/media/external/source/aHR0cHM6Ly9pbWczLmNyZWF0aXVtLnJ1L2Rpc2syL2VjL2I4LzFlLzI3YzdhYjMyZTQ1ZjIzOWI3MWQzMWYzYTFlNTM5NTVkZWIvYWxkYXJfc2FhZGl5YXRtYXJpbmFkaXN0cmljdDAxX2NnaTA1XzA2LmpwZw/aldar_saadiyatmarinadistrict01_cgi05_06.jpg",
+        "status": 200,
+        "source": "original-fallback",
+        "cache": "BYPASS",
+        "contentType": "image/jpeg",
+        "bytes": 841184,
+        "sha256": "8a20c779b8b432ffe90d7cc3258b02f2ee23530616229e419028de58523dbef8",
+        "width": 2666,
+        "height": 1500,
+        "dHash": "1001386d676ca875"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/media/external/source/aHR0cHM6Ly93d3cubW9kb24uY29tL2ltYWdlcy9tb2RvbmNvcnBvcmF0ZWxpYnJhcmllcy9yZWFsLWVzdGF0ZS9tdWhpZXJhLWIvcHJvbW8tY2FyZC9tdWhlaXJhLXByb21vY2FyZC5qcGc_c2Z2cnNuPWU0NDFmMTFjXzE/muheira-promocard.jpg",
+      "communities": [
+        {
+          "slug": "maysan-al-reem-island",
+          "name": "Maysan, Al Reem Island",
+          "emirate": "Abu Dhabi"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/media/external/source/aHR0cHM6Ly93d3cubW9kb24uY29tL2ltYWdlcy9tb2RvbmNvcnBvcmF0ZWxpYnJhcmllcy9yZWFsLWVzdGF0ZS9tdWhpZXJhLWIvcHJvbW8tY2FyZC9tdWhlaXJhLXByb21vY2FyZC5qcGc_c2Z2cnNuPWU0NDFmMTFjXzE/muheira-promocard.jpg",
+        "status": 502,
+        "source": null,
+        "cache": "BYPASS",
+        "contentType": "text/plain; charset=utf-8",
+        "error": "Error: HTTP 502"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/media/external/79947d1b639666d0/img51.jpg",
+      "communities": [
+        {
+          "slug": "olfah-muwaileh",
+          "name": "Olfah, Muwaileh",
+          "emirate": "Sharjah"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/media/external/79947d1b639666d0/img51.jpg",
+        "status": 502,
+        "source": null,
+        "cache": "BYPASS",
+        "contentType": "text/plain; charset=utf-8",
+        "error": "Error: HTTP 502"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/media/external/c8cf681f27dd0f91/edge-thumb.jpg",
+      "communities": [
+        {
+          "slug": "raha-island-mina-al-arab",
+          "name": "Raha Island, Mina Al Arab",
+          "emirate": "Ras Al Khaimah"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/media/external/c8cf681f27dd0f91/edge-thumb.jpg",
+        "status": 502,
+        "source": null,
+        "cache": "BYPASS",
+        "contentType": "text/plain; charset=utf-8",
+        "error": "Error: HTTP 502"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/media/external/source/aHR0cHM6Ly9uZXctcHJvamVjdHMtbWVkaWEucHJvcGVydHlmaW5kZXIuY29tL3Byb2plY3QvNDA3ZGUzMWYtY2FmNC00NWY0LTgzMTktYTQ0NWUxNDU3ZmYxL2dhbGxlcnkvaW1hZ2UvTFJCRjVMbFNYQm8weVhIdmNaVnNjcmRUOUw3dklTQVREWnFJdVZrRjlRaz0vb3JpZ2luYWwud2VicA/original.webp",
+      "communities": [
+        {
+          "slug": "ramhan-island",
+          "name": "Ramhan Island",
+          "emirate": "Abu Dhabi"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/media/external/source/aHR0cHM6Ly9uZXctcHJvamVjdHMtbWVkaWEucHJvcGVydHlmaW5kZXIuY29tL3Byb2plY3QvNDA3ZGUzMWYtY2FmNC00NWY0LTgzMTktYTQ0NWUxNDU3ZmYxL2dhbGxlcnkvaW1hZ2UvTFJCRjVMbFNYQm8weVhIdmNaVnNjcmRUOUw3dklTQVREWnFJdVZrRjlRaz0vb3JpZ2luYWwud2VicA/original.webp",
+        "status": 502,
+        "source": null,
+        "cache": "BYPASS",
+        "contentType": "text/plain; charset=utf-8",
+        "error": "Error: HTTP 502"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/media/external/source/aHR0cHM6Ly9pbWczLmNyZWF0aXVtLnJ1L2Rpc2syL2YxLzZjLzc4LzM5OTU4YzFjY2FiNDJmMjlhMzE4NmE3ZWYxNjVhMjAwZGEvaW1nMjYuanBn/img26.jpg",
+      "communities": [
+        {
+          "slug": "sama-al-jaddaf",
+          "name": "Sama Al Jaddaf",
+          "emirate": "Dubai"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/media/external/source/aHR0cHM6Ly9pbWczLmNyZWF0aXVtLnJ1L2Rpc2syL2YxLzZjLzc4LzM5OTU4YzFjY2FiNDJmMjlhMzE4NmE3ZWYxNjVhMjAwZGEvaW1nMjYuanBn/img26.jpg",
+        "status": 200,
+        "source": "original-fallback",
+        "cache": "BYPASS",
+        "contentType": "image/jpeg",
+        "bytes": 508987,
+        "sha256": "976f223b06320ea27a6dd44cb80c26fc8ffcb8cb751805544927f04262d149ea",
+        "width": 2400,
+        "height": 1567,
+        "dHash": "082078747565ba55"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/media/external/c5b99f1332ce6390/76.jpg",
+      "communities": [
+        {
+          "slug": "seih-al-sedeirah-between-abu-dhabi-and-dubai",
+          "name": "Seih Al Sedeirah between Abu Dhabi and Dubai",
+          "emirate": "Abu Dhabi"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/media/external/c5b99f1332ce6390/76.jpg",
+        "status": 502,
+        "source": null,
+        "cache": "BYPASS",
+        "contentType": "text/plain; charset=utf-8",
+        "error": "Error: HTTP 502"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/media/external/364a06f3c883b972/img440.jpg",
+      "communities": [
+        {
+          "slug": "sobha-sanctuary-dubailand",
+          "name": "Sobha Sanctuary, Dubailand",
+          "emirate": "Dubai"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/media/external/364a06f3c883b972/img440.jpg",
+        "status": 502,
+        "source": null,
+        "cache": "BYPASS",
+        "contentType": "text/plain; charset=utf-8",
+        "error": "Error: HTTP 502"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/projects/avenue-park-towers-ii/official-hero.webp",
+      "communities": [
+        {
+          "slug": "wasl-1-al-kifaf",
+          "name": "Wasl 1, Al Kifaf",
+          "emirate": "Dubai"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/projects/avenue-park-towers-ii/official-hero.webp",
+        "status": 200,
+        "source": "cloudflare-fallback",
+        "cache": "BYPASS",
+        "contentType": "image/webp",
+        "bytes": 231568,
+        "sha256": "d15bf33625b4627b611942c29d6b5fc00c7e52df7a733846f21380ab2aaf482c",
+        "width": 4036,
+        "height": 2296,
+        "dHash": "fdfde6d9c5f1b7e5"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/media/external/7f029066d0151106/canopies_welcome_background_desktop.webp",
+      "communities": [
+        {
+          "slug": "yas-point-yas-island",
+          "name": "Yas Point, Yas Island",
+          "emirate": "Abu Dhabi"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/media/external/7f029066d0151106/canopies_welcome_background_desktop.webp",
+        "status": 502,
+        "source": null,
+        "cache": "BYPASS",
+        "contentType": "text/plain; charset=utf-8",
+        "error": "Error: HTTP 502"
+      }
+    },
+    {
+      "url": "https://psrhomes.ae/media-reviewed/20260912/developer-canal.19781aa20ccb.webp",
+      "communities": [
+        {
+          "slug": "dubai",
+          "name": "Dubai",
+          "emirate": "Dubai"
+        }
+      ],
+      "readback": {
+        "url": "https://psrhomes.ae/media-reviewed/20260912/developer-canal.19781aa20ccb.webp",
+        "status": 200,
+        "source": "cloudflare-fallback",
+        "cache": "BYPASS",
+        "contentType": "image/webp",
+        "bytes": 228406,
+        "sha256": "44da59ec2b4f13e314fe3b62e802802cb44ed3166373703aaa730080e8464a56",
+        "width": 1600,
+        "height": 833,
+        "dHash": "6735ed95499940c6"
+      }
+    }
+  ]
+}
