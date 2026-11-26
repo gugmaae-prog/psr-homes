@@ -12,11 +12,12 @@
   "counts": {
     "liveCards": 225,
     "distinctIdentityKeys": 225,
-    "recordsWithCandidates": 93,
-    "recordsWithoutCandidates": 132,
-    "recordsWithOfficialCandidates": 87,
+    "recordsWithCandidates": 102,
+    "recordsWithoutCandidates": 123,
+    "recordsWithOfficialCandidates": 93,
     "aliasCandidates": 15,
-    "approvedAssets": 0
+    "approvedAssets": 0,
+    "recordsWithOpenLicenseCandidates": 4
   },
   "aliasGroups": [
     {
@@ -890,9 +891,25 @@
         "height": 832,
         "dHash": "c142aa4ac9ce2d5e"
       },
-      "candidates": [],
+      "candidates": [
+        {
+          "origin": "official_source",
+          "publisher": "UAE Ministry of Economy and Tourism",
+          "sourcePage": "https://www.moet.gov.ae/en/-/dubai-maritime-city?redirect=%2Fen%2Fzone-details",
+          "imageUrl": "https://www.moet.gov.ae/documents/20121/193445/Dubai-Maritime-City-%287%29.jpg/6aacbcec-44e8-d003-6ae3-5795a39aa7ce?t=1628057439598",
+          "kind": "masterplan_render",
+          "selection": "needs_review",
+          "visualReview": "pending",
+          "reuseRights": "not_confirmed",
+          "sourceCheckedAt": "2026-11-27",
+          "imageDecode": {
+            "status": "not_verified"
+          },
+          "storageStatus": "not_ingested"
+        }
+      ],
       "approvedAsset": null,
-      "status": "source_required"
+      "status": "candidate_review_required"
     },
     {
       "id": "Sharjah|aljada",
@@ -2132,6 +2149,21 @@
           "kind": "project_within_community",
           "selection": "needs_review",
           "storageStatus": "manifest_mapping_only_not_idrive_readback"
+        },
+        {
+          "origin": "official_source",
+          "publisher": "Experience Abu Dhabi",
+          "sourcePage": "https://visitabudhabi.ae/en/where-to-go/islands/al-reem-island",
+          "imageUrl": "https://visitabudhabi.ae/-/media/project/maritime/where-to-go/islands/al-reem-island/article/reem-island-hero.jpeg?rev=4e181ae8fa094b1ba6f0eea9ba9871e4&cx=0&cy=0&cw=2128&ch=1352&hash=8DED18CC485127A7617BECCBBF2C82A3",
+          "kind": "community_visual",
+          "selection": "needs_review",
+          "visualReview": "pending",
+          "reuseRights": "not_confirmed",
+          "sourceCheckedAt": "2026-11-27",
+          "imageDecode": {
+            "status": "not_verified"
+          },
+          "storageStatus": "not_ingested"
         }
       ],
       "approvedAsset": null,
@@ -2445,9 +2477,25 @@
         "contentType": "text/plain; charset=utf-8",
         "error": "Error: HTTP 502"
       },
-      "candidates": [],
+      "candidates": [
+        {
+          "origin": "official_source",
+          "publisher": "Experience Abu Dhabi",
+          "sourcePage": "https://visitabudhabi.ae/en/where-to-go/islands/yas-island",
+          "imageUrl": "https://visitabudhabi.ae/-/media/project/maritime/where-to-go/islands/yas-island/article/getting-to-yas-island1.jpg?rev=3bc6a1a0c179465eaa4c3a9d6850f25f&cx=0&cy=0&cw=2128&ch=1352&hash=2889AC87CB526959DD73D6D483670522",
+          "kind": "community_visual",
+          "selection": "needs_review",
+          "visualReview": "pending",
+          "reuseRights": "not_confirmed",
+          "sourceCheckedAt": "2026-11-27",
+          "imageDecode": {
+            "status": "not_verified"
+          },
+          "storageStatus": "not_ingested"
+        }
+      ],
       "approvedAsset": null,
-      "status": "source_required"
+      "status": "candidate_review_required"
     },
     {
       "id": "Sharjah|al-zahia",
@@ -2826,9 +2874,33 @@
         "height": 1400,
         "dHash": "f0f0e4eeb5e696b7"
       },
-      "candidates": [],
+      "candidates": [
+        {
+          "origin": "open_license_source",
+          "publisher": "Wikimedia Commons",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Abu_Dhabi_Corniche_skyline.jpg",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Abu_Dhabi_Corniche_skyline.jpg",
+          "credit": "AdnanDekedek",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "kind": "community_photo",
+          "selection": "needs_visual_review",
+          "visualReview": "pending",
+          "reuseRights": "file_page_license_identified_other_rights_review_pending",
+          "attributionRequired": true,
+          "shareAlikeRequired": true,
+          "sourceCheckedAt": "2026-11-27",
+          "imageDecode": {
+            "status": "source_declared_dimensions",
+            "width": 5184,
+            "height": 3456
+          },
+          "storageStatus": "not_ingested",
+          "note": "Source page confirms the named location and photographer license. Verify depicted third-party works, photo date, visual relevance and actual image bytes; include attribution and license for cropped derivatives."
+        }
+      ],
       "approvedAsset": null,
-      "status": "source_required"
+      "status": "candidate_review_required"
     },
     {
       "id": "Ras Al Khaimah|al-hamra-village",
@@ -3405,9 +3477,33 @@
         "height": 1400,
         "dHash": "3f3f23371d2f1b6f"
       },
-      "candidates": [],
+      "candidates": [
+        {
+          "origin": "open_license_source",
+          "publisher": "Wikimedia Commons",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Al_Sufouh_1_-_Dubai_-_United_Arab_Emirates_-_panoramio_(4).jpg",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Al_Sufouh_1_-_Dubai_-_United_Arab_Emirates_-_panoramio_%284%29.jpg",
+          "credit": "7777777kz",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+          "kind": "community_photo",
+          "selection": "needs_visual_review",
+          "visualReview": "pending",
+          "reuseRights": "file_page_license_identified_other_rights_review_pending",
+          "attributionRequired": true,
+          "shareAlikeRequired": false,
+          "sourceCheckedAt": "2026-11-27",
+          "imageDecode": {
+            "status": "source_declared_dimensions",
+            "width": 4928,
+            "height": 3264
+          },
+          "storageStatus": "not_ingested",
+          "note": "Source page confirms the named location and photographer license. Verify depicted third-party works, photo date, visual relevance and actual image bytes; include attribution and license for cropped derivatives."
+        }
+      ],
       "approvedAsset": null,
-      "status": "source_required"
+      "status": "candidate_review_required"
     },
     {
       "id": "Dubai|downtown-jebel-ali",
@@ -3658,9 +3754,25 @@
         "contentType": "text/plain; charset=utf-8",
         "error": "Error: HTTP 502"
       },
-      "candidates": [],
+      "candidates": [
+        {
+          "origin": "official_source",
+          "publisher": "Experience Abu Dhabi",
+          "sourcePage": "https://visitabudhabi.ae/en/where-to-go/islands/saadiyat-island",
+          "imageUrl": "https://visitabudhabi.ae/-/media/project/maritime/where-to-go/islands/saadiyat-island/article/saadiyat-island-getting-there.jpg?rev=4f7551a946134263aa24e30e62752427&cx=0.52&cy=0.81&cw=2128&ch=1352&hash=3F3A397720406E5384DDAE73A4217D99",
+          "kind": "community_visual",
+          "selection": "needs_review",
+          "visualReview": "pending",
+          "reuseRights": "not_confirmed",
+          "sourceCheckedAt": "2026-11-27",
+          "imageDecode": {
+            "status": "not_verified"
+          },
+          "storageStatus": "not_ingested"
+        }
+      ],
       "approvedAsset": null,
-      "status": "source_required"
+      "status": "candidate_review_required"
     },
     {
       "id": "Sharjah|sharjah",
@@ -3682,9 +3794,33 @@
         "height": 1350,
         "dHash": "4dcdd148590dca25"
       },
-      "candidates": [],
+      "candidates": [
+        {
+          "origin": "open_license_source",
+          "publisher": "Wikimedia Commons",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Skyline_of_Sharjah_city.jpg",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/28/Skyline_of_Sharjah_city.jpg",
+          "credit": "Mueed Ahmed",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "kind": "community_photo",
+          "selection": "needs_visual_review",
+          "visualReview": "pending",
+          "reuseRights": "file_page_license_identified_other_rights_review_pending",
+          "attributionRequired": true,
+          "shareAlikeRequired": true,
+          "sourceCheckedAt": "2026-11-27",
+          "imageDecode": {
+            "status": "source_declared_dimensions",
+            "width": 6000,
+            "height": 3776
+          },
+          "storageStatus": "not_ingested",
+          "note": "Source page confirms the named location and photographer license. Verify depicted third-party works, photo date, visual relevance and actual image bytes; include attribution and license for cropped derivatives."
+        }
+      ],
       "approvedAsset": null,
-      "status": "source_required"
+      "status": "candidate_review_required"
     },
     {
       "id": "Dubai|the-heights-country-club-and-wellness",
@@ -6156,9 +6292,25 @@
         "height": 1350,
         "dHash": "01010101020b1301"
       },
-      "candidates": [],
+      "candidates": [
+        {
+          "origin": "official_source",
+          "publisher": "Visit Dubai",
+          "sourcePage": "https://www.visitdubai.com/en/explore-dubai/dubai-neighbourhoods/al-barsha-and-barsha-heights",
+          "imageUrl": "https://www.visitdubai.com/-/media/images/leisure/neighbourhood-pages/al-barsha-and-barsha-heights/fallback/al-barsha-header-dtcm.jpg?rev=bb09bc9de1784f8595f4ed3b090ae2f6&cx=0.5&cy=0.5&cw=1556&ch=690",
+          "kind": "community_visual",
+          "selection": "needs_review",
+          "visualReview": "pending",
+          "reuseRights": "not_confirmed",
+          "sourceCheckedAt": "2026-11-27",
+          "imageDecode": {
+            "status": "not_verified"
+          },
+          "storageStatus": "not_ingested"
+        }
+      ],
       "approvedAsset": null,
-      "status": "source_required"
+      "status": "candidate_review_required"
     },
     {
       "id": "Dubai|al-barsha-south",
@@ -6252,9 +6404,25 @@
         "height": 1400,
         "dHash": "f0f0e4eeb5e696b7"
       },
-      "candidates": [],
+      "candidates": [
+        {
+          "origin": "official_source",
+          "publisher": "Experience Abu Dhabi",
+          "sourcePage": "https://visitabudhabi.ae/en/where-to-go/islands/al-maryah-island",
+          "imageUrl": "https://visitabudhabi.ae/-/media/project/maritime/where-to-go/islands/al-maryah-island/article/al-maryah-view.jpg?rev=3106680f525245bfbaa2017da07826df&cx=0&cy=0&cw=2128&ch=1352&hash=65BBC9E03F760E7AB1C0716077DD1467",
+          "kind": "community_visual",
+          "selection": "needs_review",
+          "visualReview": "pending",
+          "reuseRights": "not_confirmed",
+          "sourceCheckedAt": "2026-11-27",
+          "imageDecode": {
+            "status": "not_verified"
+          },
+          "storageStatus": "not_ingested"
+        }
+      ],
       "approvedAsset": null,
-      "status": "source_required"
+      "status": "candidate_review_required"
     },
     {
       "id": "Dubai|al-qudra-road",
@@ -6942,9 +7110,33 @@
         "height": 1024,
         "dHash": "8fad0aa9692fa31e"
       },
-      "candidates": [],
+      "candidates": [
+        {
+          "origin": "open_license_source",
+          "publisher": "Wikimedia Commons",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Fujairah_Coastline.jpg",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Fujairah_Coastline.jpg",
+          "credit": "JSPhotography2016",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "kind": "community_photo",
+          "selection": "needs_visual_review",
+          "visualReview": "pending",
+          "reuseRights": "file_page_license_identified_other_rights_review_pending",
+          "attributionRequired": true,
+          "shareAlikeRequired": true,
+          "sourceCheckedAt": "2026-11-27",
+          "imageDecode": {
+            "status": "source_declared_dimensions",
+            "width": 5616,
+            "height": 3840
+          },
+          "storageStatus": "not_ingested",
+          "note": "Source page confirms the named location and photographer license. Verify depicted third-party works, photo date, visual relevance and actual image bytes; include attribution and license for cropped derivatives."
+        }
+      ],
       "approvedAsset": null,
-      "status": "source_required"
+      "status": "candidate_review_required"
     },
     {
       "id": "Ras Al Khaimah|hayat-island-mina",
