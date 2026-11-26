@@ -1,0 +1,192 @@
+{
+  "schema": "psr-community-sourcing-batch-v1",
+  "checkedAt": "2026-11-27",
+  "newRows": [
+    {
+      "slug": "al-wasl",
+      "name": "Al Wasl",
+      "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/697c9e0b9ef7dde681730047_Al%20Wasl%20District.avif",
+      "publisher": "Dubai Holding Community Management",
+      "alternatives": []
+    },
+    {
+      "slug": "arjan",
+      "name": "Arjan",
+      "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/697c9f0196c726255767764d_Arjan.avif",
+      "publisher": "Dubai Holding Community Management",
+      "alternatives": []
+    },
+    {
+      "slug": "bluewaters-island",
+      "name": "Bluewaters Island",
+      "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/6989d38d7a10c42ff0822157_Bluewaters.avif",
+      "publisher": "Dubai Holding Community Management",
+      "alternatives": []
+    },
+    {
+      "slug": "downtown-jebel-ali",
+      "name": "Downtown Jebel Ali",
+      "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/697c9c02727a4e9d561ac84a_Downtown%20Jebel%20Ali.avif",
+      "publisher": "Dubai Holding Community Management",
+      "alternatives": []
+    },
+    {
+      "slug": "dubai-harbour",
+      "name": "Dubai Harbour",
+      "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/697c9e661114da476c867640_Dubai%20Harbour.avif",
+      "publisher": "Dubai Holding Community Management",
+      "alternatives": []
+    },
+    {
+      "slug": "dubai-land-residence-complex",
+      "name": "Dubai Land Residence Complex",
+      "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/697c9fbec03bc590a85d5d00_Dubailand%20Residences.avif",
+      "publisher": "Dubai Holding Community Management",
+      "alternatives": []
+    },
+    {
+      "slug": "dubai-water-canal",
+      "name": "Dubai Water Canal",
+      "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/697c9c29b7af7265fcde3917_Dubai%20Water%20Canal.avif",
+      "publisher": "Dubai Holding Community Management",
+      "alternatives": []
+    },
+    {
+      "slug": "jumeira-bay-island",
+      "name": "Jumeira Bay Island",
+      "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/6989d41cb31541ec913a56b2_Jumeirah%20Bay.avif",
+      "publisher": "Dubai Holding Community Management",
+      "alternatives": []
+    },
+    {
+      "slug": "meydan",
+      "name": "Meydan",
+      "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/697c9cc96acd81e3897528cb_Meydan.avif",
+      "publisher": "Dubai Holding Community Management",
+      "alternatives": []
+    },
+    {
+      "slug": "pearl-jumeirah",
+      "name": "Pearl Jumeirah",
+      "imageUrl": "https://cdn.prod.website-files.com/692849e2f0997b3e87f86c6e/697c9eb2eef3d8875ea6bc31_Pearl%20Jumeira.avif",
+      "publisher": "Dubai Holding Community Management",
+      "alternatives": []
+    },
+    {
+      "slug": "al-mamsha",
+      "name": "Al Mamsha",
+      "imageUrl": "https://www.alefgroup.ae/wp-content/uploads/2026/03/almamsha-2x-scaled-e1778661766746.jpg",
+      "publisher": "Alef Group",
+      "alternatives": []
+    },
+    {
+      "slug": "hayyan",
+      "name": "Hayyan",
+      "imageUrl": "https://www.alefgroup.ae/wp-content/uploads/2026/04/Hayyan-2x-2-scaled-e1778661712779.jpg",
+      "publisher": "Alef Group",
+      "alternatives": []
+    },
+    {
+      "slug": "olfah-muwaileh",
+      "name": "Olfah, Muwaileh",
+      "imageUrl": "https://www.alefgroup.ae/wp-content/uploads/2026/04/Olfah-2x-2-scaled-e1778661873922.jpg",
+      "publisher": "Alef Group",
+      "alternatives": []
+    },
+    {
+      "slug": "wasl-1",
+      "name": "Wasl 1",
+      "imageUrl": "https://prod-waslcdn.wasl.ae/waslae-filesystem/2023-11/wasl%201.webp",
+      "publisher": "Wasl",
+      "alternatives": []
+    },
+    {
+      "slug": "wasl-gate",
+      "name": "Wasl Gate",
+      "imageUrl": "https://prod-waslcdn.wasl.ae/waslae-filesystem/2023-11/3_3__11zon%20%281%29.webp",
+      "publisher": "Wasl",
+      "alternatives": []
+    },
+    {
+      "slug": "jumeirah-lake-towers-jlt",
+      "name": "Jumeirah Lake Towers (JLT)",
+      "imageUrl": "https://www.visitdubai.com/-/media/images/leisure/neighbourhood-pages/jumeirah-lakes-towers/fallback/jlt-hero.jpg?rev=2a9e645d36f947859f1c773791d3172d&cx=0.49&cy=0.33&cw=1556&ch=690",
+      "publisher": "Visit Dubai",
+      "alternatives": []
+    },
+    {
+      "slug": "al-hamra-village",
+      "name": "Al Hamra Village",
+      "imageUrl": "https://communities.alhamra.ae/media/e5hoqu0h/al-hamra-village.jpg?width=1920&height=500",
+      "publisher": "Al Hamra",
+      "alternatives": []
+    },
+    {
+      "slug": "falcon-island",
+      "name": "Falcon Island",
+      "imageUrl": "https://alhamra.ae/media/ep5hp22n/falcon-banner.jpg",
+      "publisher": "Al Hamra",
+      "alternatives": [
+        "https://alhamra.ae/media/c3ill2ob/falcon-content-1.jpg",
+        "https://alhamra.ae/media/0eif35vc/falcon-gym-tennis-court.jpg?width=1800&height=800&mode=crop",
+        "https://alhamra.ae/media/fjtdoip0/falcon-pool.jpg?width=1800&height=800&mode=crop",
+        "https://alhamra.ae/media/vkmn0oux/falcon-al-hamra-golf-club.jpg?width=1800&height=800&mode=crop"
+      ]
+    },
+    {
+      "slug": "jubail-island",
+      "name": "Jubail Island",
+      "imageUrl": "https://visitabudhabi.ae/-/media/project/maritime/where-to-go/islands/jubail-island/header/jubail-mangroves-park-1.jpg?rev=cbb2480908184d6eba65b57c9bbfbc27&cx=0.54&cy=0.43&cw=5120&ch=1240&hash=B9933AE4A36D6AF5E2291936714F82FF",
+      "publisher": "Experience Abu Dhabi",
+      "alternatives": [
+        "https://visitabudhabi.ae/-/media/project/maritime/where-to-go/islands/jubail-island/article/jubail-mangrove-park-(1).jpg?rev=5f6e80fb53904826a820291a2fa3ef94&cx=0&cy=0&cw=2128&ch=1352&hash=90F18BB19861C8CE46D21990CA5C6DA2",
+        "https://visitabudhabi.ae/-/media/project/maritime/where-to-go/islands/jubail-island/article/getting-to-jubail-island.jpg?rev=926f73abc76c4443bb741d49d942bb3a&cx=0&cy=0&cw=2128&ch=1352&hash=7E6B7780955A3CA6B3A1977D0FF3D522",
+        "https://visitabudhabi.ae/-/media/project/maritime/where-to-go/islands/jubail-island/multicardcarousel-type3/layover-jubail-tour.jpg?rev=ade3e79db2514255923731d91992df4c&cx=0.46&cy=0.70&cw=2524&ch=1480&hash=8E0C607E0AC63B39D4E2C07170FFAF86"
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "slug": "villanova",
+      "reason": "no exact named image",
+      "otherImages": [
+        "https://cdn.prod.website-files.com/68f5cbe21e1b5a51012ad187/699e8e86b5296064d445b853_DSCF1519%20R%202880x1728pix.avif",
+        "https://cdn.prod.website-files.com/68f5cbe21e1b5a51012ad187/699ec4344b3d30f7c79e6659_DSCF1519%20R%20750x1500pix.avif",
+        "https://cdn.prod.website-files.com/68f5cbe21e1b5a51012ad187/699ec4344b3d30f7c79e6659_DSCF1519%20R%20750x1500pix-p-500.avif",
+        "https://cdn.prod.website-files.com/68f5cbe21e1b5a51012ad187/699e8ea403371db025abec4e_ALTR0286%20R%201620x1080pix.avif",
+        "https://cdn.prod.website-files.com/68f5cbe21e1b5a51012ad187/699e8ea403371db025abec4e_ALTR0286%20R%201620x1080pix-p-500.avif",
+        "https://cdn.prod.website-files.com/68f5cbe21e1b5a51012ad187/699e8ea403371db025abec4e_ALTR0286%20R%201620x1080pix-p-800.avif",
+        "https://cdn.prod.website-files.com/68f5cbe21e1b5a51012ad187/699e8ea403371db025abec4e_ALTR0286%20R%201620x1080pix-p-1080.avif"
+      ]
+    },
+    {
+      "slug": "rak-central",
+      "reason": "no exact named image",
+      "otherImages": [
+        "https://marjan.ae/hs-fs/hubfs/Marjan_2025/Images/Vector%20(6).png?width=21&height=21&name=Vector%20(6).png",
+        "https://marjan.ae/hs-fs/hubfs/Marjan_2025/Images/Vector%20(6).png?width=11&height=11&name=Vector%20(6).png",
+        "https://marjan.ae/hs-fs/hubfs/Marjan_2025/Images/Vector%20(6).png?width=32&height=32&name=Vector%20(6).png",
+        "https://marjan.ae/hs-fs/hubfs/Marjan_2025/Images/Vector%20(6).png?width=42&height=42&name=Vector%20(6).png",
+        "https://marjan.ae/hs-fs/hubfs/Marjan_2025/Images/Vector%20(6).png?width=53&height=53&name=Vector%20(6).png",
+        "https://marjan.ae/hs-fs/hubfs/Marjan_2025/Images/Vector%20(6).png?width=63&height=63&name=Vector%20(6).png",
+        "https://marjan.ae/hs-fs/hubfs/Jebel_Jais_2025/Images/V03.jpg?width=1200&height=675&name=V03.jpg"
+      ]
+    },
+    {
+      "slug": "al-barari",
+      "reason": "no exact named image",
+      "otherImages": [
+        "https://static.wixstatic.com/media/95d3dc_5730414b648b46e7825a247b9a9139f3~mv2.png/v1/crop/x_528",
+        "https://www.albarari.com/y_106",
+        "https://www.albarari.com/w_2375",
+        "https://www.albarari.com/h_2377/fill/w_51",
+        "https://www.albarari.com/h_52",
+        "https://www.albarari.com/al_c",
+        "https://www.albarari.com/q_85"
+      ]
+    }
+  ],
+  "notes": [
+    "Named source association only; no reuse permission, direct IDrive write or publish proof. AVIF and other originals may require supported conversion."
+  ]
+}
