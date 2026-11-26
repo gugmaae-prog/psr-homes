@@ -1,0 +1,542 @@
+{
+  "auditDate": "2026-11-26",
+  "scope": "read-only D1 storage audit and PSR IDrive migration readiness",
+  "storagePolicy": "IDrive E2 primary for files; R2 and Supabase fallback only; D1 structured indexes and application records",
+  "registry": {
+    "tenant_key": "psr",
+    "revision": 2,
+    "project_count": 1091,
+    "content_hash": "01ee8ae625988bb935d8ffcd2a61d76f30298bfd50e27e3b6454381847a61b81",
+    "updated_at": "2026-09-27 08:49:40"
+  },
+  "databaseIds": {
+    "paln": "e0e4a9de-c0ef-4ca4-9751-245d235b04ec",
+    "cba-property-db": "a5165cff-70a5-4685-af87-5ffdcf08652a",
+    "espacios-mail": "dba20cd3-6f77-42af-a572-2579050ce6b8",
+    "espacios-data-registry": "3ad3a1ff-83cc-42fa-a106-d6f715e1e967"
+  },
+  "workspaceLocations": [
+    {
+      "provider": "idrive_e2",
+      "is_primary": 0,
+      "checksum_verified": 1,
+      "n": 1140
+    },
+    {
+      "provider": "r2",
+      "is_primary": 1,
+      "checksum_verified": 0,
+      "n": 1
+    },
+    {
+      "provider": "r2",
+      "is_primary": 1,
+      "checksum_verified": 1,
+      "n": 957
+    }
+  ],
+  "historySnapshots": [
+    {
+      "snapshot_version": "20261005-enrichment-v3",
+      "as_of": "2026-10-05",
+      "record_count": 1860,
+      "root_sha256": "872849151f2f5022e2cc1b5df5f2af8d589fbabb1e78c7ac0f0112391a2cd402",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 28020859,
+      "series_count": 11872,
+      "series_bytes": 22709724
+    },
+    {
+      "snapshot_version": "20261005-enrichment-v4",
+      "as_of": "2026-10-05",
+      "record_count": 1860,
+      "root_sha256": "711a075f3f50b0aabd3fb7732a18d3eac65c7f82a02ba3ecfc87bde001c56c62",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 28062396,
+      "series_count": 11916,
+      "series_bytes": 22816133
+    },
+    {
+      "snapshot_version": "20261005-enrichment-v5",
+      "as_of": "2026-10-05",
+      "record_count": 1860,
+      "root_sha256": "b8e953208b704e035f7c8a5592798b6c2103a51e4100f5552a32b512d5961dc7",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 28115917,
+      "series_count": 12042,
+      "series_bytes": 23153339
+    },
+    {
+      "snapshot_version": "20261005-enrichment-v6",
+      "as_of": "2026-10-05",
+      "record_count": 1860,
+      "root_sha256": "1b08ea5399fe895ec218c81add963e2078184b32ff575b0a3ca4ddbca4f7e60b",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 28248499,
+      "series_count": 12204,
+      "series_bytes": 23634798
+    },
+    {
+      "snapshot_version": "20261005-enrichment-v7",
+      "as_of": "2026-10-05",
+      "record_count": 1860,
+      "root_sha256": "95dd7288ae021719f55f2c387c28cca8fa5b9929cf7f3431128711ef5653bd1e",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 28412377,
+      "series_count": 12444,
+      "series_bytes": 24442164
+    },
+    {
+      "snapshot_version": "20261005-enrichment-v8",
+      "as_of": "2026-10-05",
+      "record_count": 1860,
+      "root_sha256": "b20844387ce587afdb5c6f30795286fcf97a91209d984f775c5372ca30946b7b",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 28501380,
+      "series_count": 12640,
+      "series_bytes": 24988431
+    },
+    {
+      "snapshot_version": "20261005-enrichment-v9",
+      "as_of": "2026-10-05",
+      "record_count": 1860,
+      "root_sha256": "6c5c0219d3293786dd9a3c2aebb9ab828cb6600ab2d33782d83a997215060138",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 28709475,
+      "series_count": 13158,
+      "series_bytes": 26236290
+    },
+    {
+      "snapshot_version": "20261007-enrichment-v11",
+      "as_of": "2026-10-06",
+      "record_count": 1860,
+      "root_sha256": "1b2e552ce4075c58a7758b5d4cd480019875ece00074fd4b60985d92534a6111",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 29499192,
+      "series_count": 13396,
+      "series_bytes": 26791459
+    },
+    {
+      "snapshot_version": "20261007-enrichment-v12",
+      "as_of": "2026-10-07",
+      "record_count": 1860,
+      "root_sha256": "a0add7a06d7f826d290fcb4bc83a10831faf38654b2e25a51692f52f8725338b",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 29517061,
+      "series_count": 13396,
+      "series_bytes": 26791459
+    },
+    {
+      "snapshot_version": "20261007-enrichment-v13",
+      "as_of": "2026-10-07",
+      "record_count": 1860,
+      "root_sha256": "e012f3df833a7416d7def131ba7cc42c8e84a177f8323cec2b51f4e6e6027cf9",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 29554915,
+      "series_count": 13396,
+      "series_bytes": 26791459
+    },
+    {
+      "snapshot_version": "20261007-enrichment-v14",
+      "as_of": "2026-10-07",
+      "record_count": 1860,
+      "root_sha256": "9d1aa8ebf18b46b88aa3b2da4510306dc997d4e6eab97426b415dff62afe9ed8",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 29572352,
+      "series_count": 13396,
+      "series_bytes": 26791459
+    },
+    {
+      "snapshot_version": "20261007-enrichment-v15",
+      "as_of": "2026-10-07",
+      "record_count": 1860,
+      "root_sha256": "5936489a8c1d4d31d84e937d7954807a1e9b3eb9476777aec0a85b66ffc7c283",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 29579910,
+      "series_count": 13396,
+      "series_bytes": 26791459
+    },
+    {
+      "snapshot_version": "20261007-enrichment-v16",
+      "as_of": "2026-10-07",
+      "record_count": 1860,
+      "root_sha256": "f886d7d611d9d1e8450b942ade7e001b32ac4186efe889184964d98f5ce6609a",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 29593216,
+      "series_count": 13401,
+      "series_bytes": 26801967
+    },
+    {
+      "snapshot_version": "20261007-enrichment-v17",
+      "as_of": "2026-10-07",
+      "record_count": 1860,
+      "root_sha256": "a58ec645d1ab28ac59320e4fc87f48c418935cfb02bfda20e096b41fe268164c",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 30877099,
+      "series_count": 13401,
+      "series_bytes": 26801967
+    },
+    {
+      "snapshot_version": "20261007-enrichment-v18",
+      "as_of": "2026-10-07",
+      "record_count": 1860,
+      "root_sha256": "970ec651f9d3c502146327dd5843f86ab1edea75ea444c48aa50b3b5295a2771",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 31598947,
+      "series_count": 13401,
+      "series_bytes": 26801967
+    },
+    {
+      "snapshot_version": "20261007-enrichment-v19",
+      "as_of": "2026-10-07",
+      "record_count": 1860,
+      "root_sha256": "5d2b451187dc838ce1e5198281dce16cdacb702e58fd42c52e296f5556d50fcf",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 32137563,
+      "series_count": 14563,
+      "series_bytes": 35285511
+    },
+    {
+      "snapshot_version": "20261008-enrichment-v20",
+      "as_of": "2026-10-08",
+      "record_count": 1860,
+      "root_sha256": "98d686ca18d6e887cb9dff2eed58c6ac9dfe6a781901f4cc9731e6a3f158fa28",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 32293525,
+      "series_count": 14771,
+      "series_bytes": 35867948
+    },
+    {
+      "snapshot_version": "20261008-enrichment-v21",
+      "as_of": "2026-10-08",
+      "record_count": 1860,
+      "root_sha256": "d690dac8b2ac109e20f18122d17f0b84e16409ef944ca26546a467317c5e124a",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 32406393,
+      "series_count": 14771,
+      "series_bytes": 35867948
+    },
+    {
+      "snapshot_version": "20261008-enrichment-v22",
+      "as_of": "2026-10-08",
+      "record_count": 1860,
+      "root_sha256": "b0d09d29026776ac15bfb28b4f7d5857f8c927d38eab6135a5c71122f1898375",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 32433498,
+      "series_count": 14789,
+      "series_bytes": 35925875
+    },
+    {
+      "snapshot_version": "20261008-enrichment-v23",
+      "as_of": "2026-10-08",
+      "record_count": 1860,
+      "root_sha256": "d5fec2bb098c8ecacd5e40174fb130e66f0dbf9f520fae368e72f0c442cefa36",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 32727333,
+      "series_count": 15063,
+      "series_bytes": 36749798
+    },
+    {
+      "snapshot_version": "20261008-enrichment-v24",
+      "as_of": "2026-10-08",
+      "record_count": 1860,
+      "root_sha256": "9e4581704a848a309c5ca3c408f47a97f415bb92cc262486446841be61cdef6c",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 32734249,
+      "series_count": 15063,
+      "series_bytes": 36749798
+    },
+    {
+      "snapshot_version": "20261008-enrichment-v25",
+      "as_of": "2026-10-08",
+      "record_count": 1860,
+      "root_sha256": "946c256bfc4de99402b53a04b1269a714473fde6e01a478611f584d262f8f169",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 32790205,
+      "series_count": 15063,
+      "series_bytes": 36749794
+    },
+    {
+      "snapshot_version": "20261008-enrichment-v26",
+      "as_of": "2026-10-08",
+      "record_count": 1860,
+      "root_sha256": "8ef9fa8b190548c9252c94c9e3ae7206614b97388b0de58682dc8167d53db5c7",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 32839593,
+      "series_count": 15063,
+      "series_bytes": 36749798
+    },
+    {
+      "snapshot_version": "20261008-enrichment-v27",
+      "as_of": "2026-10-08",
+      "record_count": 1860,
+      "root_sha256": "fbb97f2a2dbb850bc9306b1c1126358194390b762135d655256dbfc7963e8dd2",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 32847531,
+      "series_count": 15063,
+      "series_bytes": 36749798
+    },
+    {
+      "snapshot_version": "20261008-enrichment-v28",
+      "as_of": "2026-10-08",
+      "record_count": 1860,
+      "root_sha256": "56bfa34d020bdfbc76440333971ded5ce65c2025f4a1efe3414469929b3e123f",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 32859582,
+      "series_count": 15126,
+      "series_bytes": 36924898
+    },
+    {
+      "snapshot_version": "20261008-enrichment-v29",
+      "as_of": "2026-10-08",
+      "record_count": 1860,
+      "root_sha256": "93e7a841f50314d457c33f9540fb45007214b3665e16e21a5f85e3df1dcbba06",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 32901297,
+      "series_count": 15182,
+      "series_bytes": 37107987
+    },
+    {
+      "snapshot_version": "20261008-enrichment-v30",
+      "as_of": "2026-10-08",
+      "record_count": 1860,
+      "root_sha256": "cf17752fd97e3e5e930d3d100cdbec20f16f05e1f3c39ad59fef52964f944e0d",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 32901297,
+      "series_count": 15182,
+      "series_bytes": 36052515
+    },
+    {
+      "snapshot_version": "20261008-enrichment-v31",
+      "as_of": "2026-10-08",
+      "record_count": 1860,
+      "root_sha256": "0f40ed398d7f0ec1d940a0076930f217dc04ca6dfd116b67fec7326fbebdec8b",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 32990529,
+      "series_count": 16872,
+      "series_bytes": 42529998
+    },
+    {
+      "snapshot_version": "20261008-enrichment-v32",
+      "as_of": "2026-10-08",
+      "record_count": 1860,
+      "root_sha256": "de0215ebbee2786d83b74ccc156a82c344d93070fcbb1ef012928a15918003ea",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 33023709,
+      "series_count": 16872,
+      "series_bytes": 42530002
+    },
+    {
+      "snapshot_version": "20261008-enrichment-v33",
+      "as_of": "2026-10-08",
+      "record_count": 1860,
+      "root_sha256": "a58abd05d631031630296caf1e4f2586e9a7024276f49699bb3f0465e6247796",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 33066868,
+      "series_count": 16872,
+      "series_bytes": 42530002
+    },
+    {
+      "snapshot_version": "20261008-enrichment-v34",
+      "as_of": "2026-10-08",
+      "record_count": 1860,
+      "root_sha256": "d0fec5b56923a727846875e2daecdc6aa324d20377375319d347951a645668be",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 33200690,
+      "series_count": 16872,
+      "series_bytes": 42530002
+    },
+    {
+      "snapshot_version": "20261008-enrichment-v35",
+      "as_of": "2026-10-08",
+      "record_count": 1860,
+      "root_sha256": "9ddb117034ebb4012b4c1669fa75e7774967aef17e600d3e1d680388b780372d",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 33228479,
+      "series_count": 16872,
+      "series_bytes": 42530002
+    },
+    {
+      "snapshot_version": "20261008-enrichment-v36",
+      "as_of": "2026-10-08",
+      "record_count": 1860,
+      "root_sha256": "3995529ceb9737e72ad485deb445ad538446e0c26edbb009b67da4a643034b57",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 33267856,
+      "series_count": 16872,
+      "series_bytes": 42530002
+    },
+    {
+      "snapshot_version": "20261008-enrichment-v37",
+      "as_of": "2026-10-08",
+      "record_count": 1860,
+      "root_sha256": "be31d7f61e60b822c9fc005051f958613d2cd2db0c830b69fb1366e9a3dacf75",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 33294415,
+      "series_count": 16872,
+      "series_bytes": 42530002
+    },
+    {
+      "snapshot_version": "20261008-enrichment-v38",
+      "as_of": "2026-10-08",
+      "record_count": 1860,
+      "root_sha256": "01b716e001347142944eda86c5c649f4a2e05b47be05df70f8302db4450d09fd",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 33378330,
+      "series_count": 16872,
+      "series_bytes": 42530002
+    },
+    {
+      "snapshot_version": "20261009-enrichment-v39",
+      "as_of": "2026-10-09",
+      "record_count": 1860,
+      "root_sha256": "b1e9735a5a602a8dd214955271f7d9b95feb5671281232bb304e63194c31f760",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 33387708,
+      "series_count": 16872,
+      "series_bytes": 42529998
+    },
+    {
+      "snapshot_version": "20261009-enrichment-v40",
+      "as_of": "2026-10-09",
+      "record_count": 1860,
+      "root_sha256": "498a797f39e12ce9d702ec6ed364f1f874c730e376cb98f2fdd096e75cc1cae9",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 33397534,
+      "series_count": 16872,
+      "series_bytes": 42529998
+    },
+    {
+      "snapshot_version": "20261012-enrichment-v41",
+      "as_of": "2026-10-12",
+      "record_count": 1860,
+      "root_sha256": "eea871f5edf732a1ec1c041d1e85ae4dd24d876b1cb4455fdef8908723ab1e79",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 33553916,
+      "series_count": 16872,
+      "series_bytes": 42529998
+    },
+    {
+      "snapshot_version": "20261012-enrichment-v42",
+      "as_of": "2026-10-12",
+      "record_count": 1860,
+      "root_sha256": "472486d78f139da3a2e111fbaa110578698248c20e31359c96580b8200cce05a",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 33848329,
+      "series_count": 16872,
+      "series_bytes": 42529998
+    },
+    {
+      "snapshot_version": "20261012-enrichment-v43",
+      "as_of": "2026-10-12",
+      "record_count": 1860,
+      "root_sha256": "999760c4e7fade1d3f6f5398f19f0521a96dd403cbcc51ac1d2e242188061998",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 33917621,
+      "series_count": 16872,
+      "series_bytes": 42530002
+    },
+    {
+      "snapshot_version": "20261012-enrichment-v44",
+      "as_of": "2026-10-12",
+      "record_count": 1860,
+      "root_sha256": "b87232342eabc47776b97277cc7cc8a63dc59846264eb406e816ff2c97bcab4d",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 34026486,
+      "series_count": 16872,
+      "series_bytes": 42529998
+    },
+    {
+      "snapshot_version": "20261013-enrichment-v45",
+      "as_of": "2026-10-13",
+      "record_count": 1860,
+      "root_sha256": "1c17824d39f4399e1fb1088bb52c2a0e761cb2e935286c617e25c883b4afa2c0",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 34054855,
+      "series_count": 16872,
+      "series_bytes": 42529998
+    },
+    {
+      "snapshot_version": "20261013-enrichment-v46",
+      "as_of": "2026-10-13",
+      "record_count": 1860,
+      "root_sha256": "9912e0a2c673160168f5f223ec67c482e230db5bca51a532d4fe0d2e64eea672",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 34090806,
+      "series_count": 16872,
+      "series_bytes": 42529998
+    },
+    {
+      "snapshot_version": "20261013-enrichment-v47",
+      "as_of": "2026-10-13",
+      "record_count": 1860,
+      "root_sha256": "66755b6af985b16b56ea331353769914dfd9cff92678c0fd8e9f0f1e6ddb1240",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 34097648,
+      "series_count": 16872,
+      "series_bytes": 42529998
+    },
+    {
+      "snapshot_version": "20261014-enrichment-v48",
+      "as_of": "2026-10-14",
+      "record_count": 1860,
+      "root_sha256": "ca1133d5169abc0bc2aec24eb193719018e47a3e9d06c773a951b9cc9a7424a0",
+      "publication_state": "complete",
+      "actual_records": 1860,
+      "record_bytes": 34104934,
+      "series_count": 16872,
+      "series_bytes": 42529998
+    }
+  ],
+  "olderCandidateRawBytes": 2941697181,
+  "notes": [
+    "Historical payload counts measure stored JSON byte lengths, not reclaimable database allocation.",
+    "No historical snapshot or workspace row is approved for deletion. Verify complete per-version archival manifests, live readers, tenant ownership and recovery first.",
+    "The 31-record PSR enrichment manifest is retained in GitHub; D1 write remains blocked by account quota. No IDrive write was verified; staged archive attempt returned HTTP 405 and original live media deployment was restored.",
+    "Existing preview endpoints remain disabled."
+  ]
+}
